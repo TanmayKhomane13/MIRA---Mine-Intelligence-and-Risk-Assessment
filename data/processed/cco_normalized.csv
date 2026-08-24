@@ -1,0 +1,409 @@
+mine_id,name,state,district,company,mine_type,ownership,status,name_normalized,company_normalized,state_normalized,district_normalized
+CM-001,Aadocm,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,aadocm,ccl,jharkhand,bokaro
+CM-002,ABGC,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,abgc,bccl,jharkhand,dhanbad
+CM-003,Adasa (UG to OC),Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,adasa ug to oc,wcl,maharashtra,nagpur
+CM-004,Adriyala Saft Project,Telangana,PEDDAPALLI,SCCL,UNDERGROUND,PUBLIC,WORKING,adriyala saft,sccl,telangana,peddapalli
+CM-005,AGKCC,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,agkcc,bccl,jharkhand,dhanbad
+CM-006,AKK OCP,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,akk ocp,ccl,jharkhand,bokaro
+CM-007,AKWMC,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,akwmc,bccl,jharkhand,dhanbad
+CM-008,Amadand,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,amadand,secl,madhya pradesh,shahdol
+CM-009,Amagamated Dhansar-Industry,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,amagamated dhansar industry,bccl,jharkhand,dhanbad
+CM-010,Amalgamated BOCP,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,amalgamated bocp,bccl,jharkhand,dhanbad
+CM-011,Amalgamated Gondegaon Ghatrohana,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,amalgamated gondegaon ghatrohana,wcl,maharashtra,nagpur
+CM-012,Amalgamated Inder Kamptee OCM,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,amalgamated inder kamptee ocm,wcl,maharashtra,nagpur
+CM-013,Amalgamated Yekona I & II,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,amalgamated yekona i ii,wcl,maharashtra,chandrapur
+CM-014,Amalgameted Sudamdih-Patherdih,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,amalgameted sudamdih patherdih,bccl,jharkhand,dhanbad
+CM-015,Amelia (North ) Coal Mine,Madhya Pradesh,SINGRAULI,JPVL,OPENCAST,PRIVATE,WORKING,amelia north,jpvl,madhya pradesh,singrauli
+CM-016,Amelia Coal Block,Madhya Pradesh,SINGRAULI,THDC,OPENCAST,PUBLIC,WORKING,amelia block,thdc,madhya pradesh,singrauli
+CM-017,Amera,Chhattisgarh,SURGUJA,SECL,OPENCAST,PUBLIC,WORKING,amera,secl,chhattisgarh,surguja
+CM-018,Amgaon,Chhattisgarh,SURGUJA,SECL,OPENCAST,PUBLIC,WORKING,amgaon,secl,chhattisgarh,surguja
+CM-019,Amlai OC,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,amlai oc,secl,madhya pradesh,shahdol
+CM-020,Amlohri,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,amlohri,ncl,madhya pradesh,singrauli
+CM-021,AMP Colliery,Jharkhand,DHANBAD,BCCL,MIXED,PUBLIC,WORKING,amp,bccl,jharkhand,dhanbad
+CM-022,Amrapali OCP,Jharkhand,CHATRA,CCL,OPENCAST,PUBLIC,WORKING,amrapali ocp,ccl,jharkhand,chatra
+CM-023,Amritnagar Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,amritnagar,ecl,west bengal,bardhaman
+CM-024,Ananta OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,ananta ocp,mcl,odisha,angul
+CM-025,ARA Reorganisation,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,ara reorganisation,ccl,jharkhand,ramgarh
+CM-026,Ashoka,Jharkhand,CHATRA,CCL,OPENCAST,PUBLIC,WORKING,ashoka,ccl,jharkhand,chatra
+CM-027,Badjna Colliery,Jharkhand,DHANBAD,ECL,MIXED,PUBLIC,WORKING,badjna,ecl,jharkhand,dhanbad
+CM-028,Bagdeva,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,bagdeva,secl,chhattisgarh,korba
+CM-029,Bahula Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,bahula,ecl,west bengal,bardhaman
+CM-030,Ballarpur 3 & 4 Pits,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,WORKING,ballarpur 3 4 pits,wcl,maharashtra,chandrapur
+CM-031,Ballarpur OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,ballarpur ocm,wcl,maharashtra,chandrapur
+CM-032,Balram OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,balram ocp,mcl,odisha,angul
+CM-033,Balrampur,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,balrampur,secl,chhattisgarh,surguja
+CM-034,Bangwar,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bangwar,secl,madhya pradesh,shahdol
+CM-035,Bankola Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,bankola,ecl,west bengal,bardhaman
+CM-036,Bansra Colliery,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,bansra,ecl,west bengal,bardhaman
+CM-037,Baranj,Maharashtra,CHANDRAPUR,KPCL,OPENCAST,PUBLIC,WORKING,baranj,kpcl,maharashtra,chandrapur
+CM-038,Barjora (North) Coal Mine,West Bengal,BANKURA,WBPDCL,OPENCAST,PUBLIC,WORKING,barjora north,wbpdcl,west bengal,bankura
+CM-039,Barmuri,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,barmuri,ecl,jharkhand,dhanbad
+CM-040,Baroud OC,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,baroud oc,secl,chhattisgarh,raigarh
+CM-041,Bartarai,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bartarai,secl,madhya pradesh,shahdol
+CM-042,Basantimata -Dahibari,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,basantimata dahibari,bccl,jharkhand,dhanbad
+CM-043,Basdeopur,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,basdeopur,bccl,jharkhand,dhanbad
+CM-044,Bastacolla,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,bastacolla,bccl,jharkhand,dhanbad
+CM-045,Basundhara (West) OCP,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,basundhara west ocp,mcl,odisha,sundargarh
+CM-046,Behraband,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,behraband,secl,madhya pradesh,shahdol
+CM-047,Bejdih Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,bejdih,ecl,west bengal,bardhaman
+CM-048,Belbaid Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,belbaid,ecl,west bengal,bardhaman
+CM-049,Belgaon Coal Mine,Maharashtra,CHANDRAPUR,SISCO,UNDERGROUND,PRIVATE,WORKING,belgaon,sisco,maharashtra,chandrapur
+CM-050,Bhadra,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bhadra,secl,madhya pradesh,shahdol
+CM-051,Bhanegaon OCM,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,bhanegaon ocm,wcl,maharashtra,nagpur
+CM-052,Bhanora West Block colliery & Bhanora OC patch (H),West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,bhanora west block bhanora oc patch h,ecl,west bengal,bardhaman
+CM-053,Bharatpur OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,bharatpur ocp,mcl,odisha,angul
+CM-054,Bhatadi OC Mine,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,bhatadi oc,wcl,maharashtra,chandrapur
+CM-055,Bhatgaon,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,bhatgaon,secl,chhattisgarh,surguja
+CM-056,Bhelatand Colliery,Jharkhand,DHANBAD,TSL,UNDERGROUND,PRIVATE,WORKING,bhelatand,tsl,jharkhand,dhanbad
+CM-057,Bhowra(S),Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,bhowra s,bccl,jharkhand,dhanbad
+CM-058,Bhubaneswari OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,bhubaneswari ocp,mcl,odisha,angul
+CM-059,Bhurkunda,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,bhurkunda,ccl,jharkhand,ramgarh
+CM-060,Bhurkunda (Sangum),Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,bhurkunda sangum,ccl,jharkhand,ramgarh
+CM-061,Bicharpur,Madhya Pradesh,SHAHDOL,UTCL,UNDERGROUND,PRIVATE,WORKING,bicharpur,utcl,madhya pradesh,shahdol
+CM-062,Bijari OC,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,bijari oc,secl,chhattisgarh,raigarh
+CM-063,Bijuri,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bijuri,secl,madhya pradesh,shahdol
+CM-064,Bina Extn,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,bina extn,ncl,uttar pradesh,sonbhadra
+CM-065,Block-B Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,block b,ncl,madhya pradesh,singrauli
+CM-066,Bokaro OC (Bermo),Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,bokaro oc bermo,ccl,jharkhand,bokaro
+CM-067,Bonjemehari OC (Extn),West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,bonjemehari oc extn,ecl,west bengal,bardhaman
+CM-068,C L Jambad OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,c l jambad ocp,ecl,west bengal,bardhaman
+CM-069,Central Kajora Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,central kajora,ecl,west bengal,bardhaman
+CM-070,Central Saunda,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,central saunda,ccl,jharkhand,ramgarh
+CM-071,Chainpur(Sarubera) Colly.,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,chainpur sarubera colly,ccl,jharkhand,ramgarh
+CM-072,Chanda Rayatwari Colliery,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,chanda rayatwari,wcl,maharashtra,chandrapur
+CM-073,Chapapur-II & Chappapur 10 Quarry (OC),Jharkhand,DHANBAD,ECL,MIXED,PUBLIC,WORKING,chapapur ii chappapur 10 quarry oc,ecl,jharkhand,dhanbad
+CM-074,Chapuikhas Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chapuikhas,ecl,west bengal,bardhaman
+CM-075,Chasnalla Colliery,Jharkhand,DHANBAD,IISCO,UNDERGROUND,PUBLIC,WORKING,chasnalla,iisco,jharkhand,dhanbad
+CM-076,Chatti Bariatu Coal Mining Project,Jharkhand,HAZARIBAGH,NTPC,OPENCAST,PUBLIC,WORKING,chatti bariatu mining,ntpc,jharkhand,hazaribagh
+CM-077,Chhal OC,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,chhal oc,secl,chhattisgarh,raigarh
+CM-078,Chhatarpur -II,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,chhatarpur ii,wcl,madhya pradesh,betul
+CM-079,Chhatarpur 1,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,chhatarpur 1,wcl,madhya pradesh,betul
+CM-080,Chhinda,Madhya Pradesh,CHHINDWARA,WCL,OPENCAST,PUBLIC,NON_WORKING,chhinda,wcl,madhya pradesh,chhindwara
+CM-081,Chinakuri Mine III,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chinakuri iii,ecl,west bengal,bardhaman
+CM-082,Chirimiri,Chhattisgarh,KOREA,SECL,OPENCAST,PUBLIC,WORKING,chirimiri,secl,chhattisgarh,korea
+CM-083,Chitra East OCP,Jharkhand,DEOGHAR,ECL,OPENCAST,PUBLIC,WORKING,chitra east ocp,ecl,jharkhand,deoghar
+CM-084,Chora 10 Pit Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chora 10 pit,ecl,west bengal,bardhaman
+CM-085,Chora 7&9 Pits Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chora 7 9 pits,ecl,west bengal,bardhaman
+CM-086,Chora Block Incline UG & Shankarpur OC & Banbahal OC,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,chora block incline ug shankarpur oc banbahal oc,ecl,west bengal,bardhaman
+CM-087,Churcha RO,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,churcha ro,secl,chhattisgarh,korea
+CM-088,Dabor Ph-II & III OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,dabor ph ii iii oc,ecl,west bengal,bardhaman
+CM-089,Dakra Bukbuka OC,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,dakra bukbuka oc,ccl,jharkhand,ranchi
+CM-090,Dalurband OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,dalurband oc,ecl,west bengal,bardhaman
+CM-091,Damini,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,damini,secl,madhya pradesh,shahdol
+CM-092,Damoda,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,damoda,bccl,jharkhand,dhanbad
+CM-093,Dhankasa & Jamunia,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,NON_WORKING,dhankasa jamunia,wcl,madhya pradesh,chhindwara
+CM-094,Dhanpuri,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,dhanpuri,secl,madhya pradesh,shahdol
+CM-095,Dhelwadih Colliery,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,dhelwadih,secl,chhattisgarh,korba
+CM-096,Dhemomain Incl Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,dhemomain incl,ecl,west bengal,bardhaman
+CM-097,Dhemomain Pit Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,dhemomain pit,ecl,west bengal,bardhaman
+CM-098,Dhoptala OC (Sasti Colliery),Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,dhoptala oc sasti,wcl,maharashtra,chandrapur
+CM-099,Dhori Khas(UG),Jharkhand,BOKARO,CCL,UNDERGROUND,PUBLIC,WORKING,dhori khas ug,ccl,jharkhand,bokaro
+CM-100,Dipka,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,dipka,secl,chhattisgarh,korba
+CM-101,Dubeswari Colliery,West Bengal,PURULIA,ECL,UNDERGROUND,PUBLIC,WORKING,dubeswari,ecl,west bengal,purulia
+CM-102,Dudhichua Project,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,dudhichua,ncl,uttar pradesh,sonbhadra
+CM-103,Dulanga Coal Mining Project,Odisha,SUNDARGARH,NTPC,OPENCAST,PUBLIC,WORKING,dulanga mining,ntpc,odisha,sundargarh
+CM-104,Durgapur Open Cast,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,durgapur open cast,wcl,maharashtra,chandrapur
+CM-105,Durgapur Rayatwari Colly,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,WORKING,durgapur rayatwari colly,wcl,maharashtra,chandrapur
+CM-106,DVC Tubed Mines,Jharkhand,LATEHAR,DVC,OPENCAST,PUBLIC,WORKING,dvc tubed mines,dvc,jharkhand,latehar
+CM-107,E.Basuria,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,e basuria,bccl,jharkhand,dhanbad
+CM-108,Ena,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,ena,bccl,jharkhand,dhanbad
+CM-109,G & G B Coal Mine,West Bengal,BIRBHUM,WBPDCL,OPENCAST,PUBLIC,WORKING,g g b,wbpdcl,west bengal,birbhum
+CM-110,Gare Palma IV 6,Chhattisgarh,RAIGARH,JSPL,OPENCAST,PRIVATE,WORKING,gare palma iv 6,jspl,chhattisgarh,raigarh
+CM-111,Gare Palma IV-2&3,Chhattisgarh,KORBA,BALCO,OPENCAST,PRIVATE,WORKING,gare palma iv 2 3,balco,chhattisgarh,korba
+CM-112,Gare Palma IV/1,Chhattisgarh,RAIGARH,JPL,OPENCAST,PRIVATE,WORKING,gare palma iv 1,jpl,chhattisgarh,raigarh
+CM-113,Gare Palma IV/2&3,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,gare palma iv 2 3,secl,chhattisgarh,raigarh
+CM-114,Gare Palma IV/2&3,Chhattisgarh,RAIGARH,JPL,OPENCAST,PRIVATE,WORKING,gare palma iv 2 3,jpl,chhattisgarh,raigarh
+CM-115,Gare Palma IV/7,Chhattisgarh,RAIGARH,SEML,OPENCAST,PRIVATE,WORKING,gare palma iv 7,seml,chhattisgarh,raigarh
+CM-116,Gare Palma Sector III,Chhattisgarh,RAIGARH,CSPGCL,OPENCAST,PUBLIC,WORKING,gare palma sector iii,cspgcl,chhattisgarh,raigarh
+CM-117,Garjanbahal OCP,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,garjanbahal ocp,mcl,odisha,sundargarh
+CM-118,Gayatri,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,gayatri,secl,chhattisgarh,surguja
+CM-119,Gevra,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,gevra,secl,chhattisgarh,korba
+CM-120,"Ghonsa,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,ghonsa,wcl,maharashtra,yavatmal
+CM-121,Gidi `A',Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,gidi a,ccl,jharkhand,hazaribagh
+CM-122,Gidi `C',Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,gidi c,ccl,jharkhand,hazaribagh
+CM-123,Giridih OC,Jharkhand,GIRIDIH,CCL,OPENCAST,PUBLIC,NON_WORKING,giridih oc,ccl,jharkhand,giridih
+CM-124,Godavari Khani 1 & 3,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,godavari khani 1 3,sccl,telangana,khammam
+CM-125,Godavari Khani-11 Incline,Telangana,PEDDAPALLI,SCCL,UNDERGROUND,PUBLIC,WORKING,godavari khani 11 incline,sccl,telangana,peddapalli
+CM-126,Godavari Khani-2 & 2A,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,godavari khani 2 2a,sccl,telangana,khammam
+CM-127,Godavarikhani V OC,Telangana,PEDDAPALLI,SCCL,OPENCAST,PUBLIC,WORKING,godavarikhani v oc,sccl,telangana,peddapalli
+CM-128,Gokul OC Mine + Gokul Extn.,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,gokul oc gokul extn,wcl,maharashtra,nagpur
+CM-129,Gondudih/Khas Kusunda,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,gondudih khas kusunda,bccl,jharkhand,dhanbad
+CM-130,Gopalichuck,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,gopalichuck,bccl,jharkhand,dhanbad
+CM-131,Gopinathpur,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,NON_WORKING,gopinathpur,ecl,jharkhand,dhanbad
+CM-132,Gotitoria E & W,Madhya Pradesh,Narsinghpur,BSMPL,OPENCAST,PRIVATE,WORKING,gotitoria e w,bsmpl,madhya pradesh,narsinghpur
+CM-133,Gourangdi-A OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,gourangdi a ocp,ecl,west bengal,bardhaman
+CM-134,Gourangdih Extn OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,gourangdih extn oc,ecl,west bengal,bardhaman
+CM-135,Gouri -Pauni(A) OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,gouri pauni a ocm,wcl,maharashtra,chandrapur
+CM-136,Gouri Deep,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,gouri deep,wcl,maharashtra,chandrapur
+CM-137,Gouthampur Khani OCP,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,gouthampur khani ocp,sccl,telangana,khammam
+CM-138,Govindpur,Jharkhand,BOKARO,CCL,UNDERGROUND,PUBLIC,WORKING,govindpur,ccl,jharkhand,bokaro
+CM-139,Govindpur Ph-II OCP,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,govindpur ph ii ocp,ccl,jharkhand,bokaro
+CM-140,GP-IV-8 Coal Mine,Chhattisgarh,RAIGARH,AMBUJA,UNDERGROUND,PRIVATE,WORKING,gp iv 8,ambuja,chhattisgarh,raigarh
+CM-141,Haldibari,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,haldibari,secl,chhattisgarh,korea
+CM-142,Hariajam,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,hariajam,ecl,jharkhand,dhanbad
+CM-143,Hindustan Lalpeth Colliery No.1,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,hindustan lalpeth no 1,wcl,maharashtra,chandrapur
+CM-144,Hindustan Lalpeth OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,hindustan lalpeth oc,wcl,maharashtra,chandrapur
+CM-145,Hingula OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,hingula ocp,mcl,odisha,angul
+CM-146,Hirakhand Bundia Mine,Odisha,JHARSUGUDA,MCL,UNDERGROUND,PUBLIC,WORKING,hirakhand bundia,mcl,odisha,jharsuguda
+CM-147,Hurra C,Jharkhand,GODDA,ECL,OPENCAST,PUBLIC,WORKING,hurra c,ecl,jharkhand,godda
+CM-148,"Indaram Khani-1A, Incline",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,indaram khani 1a incline,sccl,telangana,mancherial
+CM-149,Indaram Khani-OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,indaram khani oc,sccl,telangana,mancherial
+CM-150,Int. Lakhanpur-Belpahar-Lilari OCP,Odisha,JHARSUGUDA,MCL,OPENCAST,PUBLIC,WORKING,int lakhanpur belpahar lilari ocp,mcl,odisha,jharsuguda
+CM-151,Itapara OC Patch,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,itapara oc patch,ecl,west bengal,bardhaman
+CM-152,J. K. Nagar Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,j k nagar,ecl,west bengal,bardhaman
+CM-153,Jaganathpur,Chhattisgarh,SURGUJA,SECL,OPENCAST,PUBLIC,WORKING,jaganathpur,secl,chhattisgarh,surguja
+CM-154,Jagannath Re-org OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,jagannath re org ocp,mcl,odisha,angul
+CM-155,Jalagam Vengala Rao OC-2,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,jalagam vengala rao oc 2,sccl,telangana,khammam
+CM-156,Jalipa,Chhattisgarh,RAIGARH,HIL,OPENCAST,PRIVATE,WORKING,jalipa,hil,chhattisgarh,raigarh
+CM-157,Jamadoba Colliery,Jharkhand,DHANBAD,TSL,MIXED,PRIVATE,WORKING,jamadoba,tsl,jharkhand,dhanbad
+CM-158,Jambad OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,jambad ocp,ecl,west bengal,bardhaman
+CM-159,Jambad UG Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,jambad ug,ecl,west bengal,bardhaman
+CM-160,Jamkhani Coal Mine,Odisha,SUNDARGARH,Vedanta,OPENCAST,PRIVATE,WORKING,jamkhani,vedanta,odisha,sundargarh
+CM-161,Jampali,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,jampali,secl,chhattisgarh,raigarh
+CM-162,Jamuna 9 & 10 Jamuna RO,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,jamuna 9 10 jamuna ro,secl,madhya pradesh,shahdol
+CM-163,Jarangdih OC,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,jarangdih oc,ccl,jharkhand,bokaro
+CM-164,"Jawahar Khani OC-5,",Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,jawahar khani oc 5,sccl,telangana,khammam
+CM-165,Jayant Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,jayant,ncl,madhya pradesh,singrauli
+CM-166,Jhanjra Project Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,jhanjra,ecl,west bengal,bardhaman
+CM-167,Jharkhand OCP,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,jharkhand ocp,ccl,jharkhand,ramgarh
+CM-168,Jhilimili Colliery,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,jhilimili,secl,chhattisgarh,korea
+CM-169,Jhingurda Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,jhingurda,ncl,madhya pradesh,singrauli
+CM-170,Jhiria,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,jhiria,secl,madhya pradesh,shahdol
+CM-171,Jitpur Colliery,Jharkhand,DHANBAD,IISCO,UNDERGROUND,PUBLIC,WORKING,jitpur,iisco,jharkhand,dhanbad
+CM-172,Jogidih,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,jogidih,bccl,jharkhand,dhanbad
+CM-173,Joyrampur,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,joyrampur,bccl,jharkhand,dhanbad
+CM-174,"Junad,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,junad,wcl,maharashtra,yavatmal
+CM-175,K. Dewarkhand,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,k dewarkhand,ccl,jharkhand,ranchi
+CM-176,Kabribad OC,Jharkhand,GIRIDIH,CCL,OPENCAST,PUBLIC,WORKING,kabribad oc,ccl,jharkhand,giridih
+CM-177,Kakatiya Khani-1 & 1A Incline,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 1 1a incline,sccl,telangana,jayashankar bhupalpally
+CM-178,Kakatiya Khani-5 Incline,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 5 incline,sccl,telangana,jayashankar bhupalpally
+CM-179,"Kakatiya Khani-6, Incline",Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 6 incline,sccl,telangana,jayashankar bhupalpally
+CM-180,Kakatiya Khani-8 & 8A Incline,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 8 8a incline,sccl,telangana,jayashankar bhupalpally
+CM-181,Kakatiya Khani-OC II,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,OPENCAST,PUBLIC,WORKING,kakatiya khani oc ii,sccl,telangana,jayashankar bhupalpally
+CM-182,Kakatiya Khani-OC-III,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,OPENCAST,PUBLIC,WORKING,kakatiya khani oc iii,sccl,telangana,jayashankar bhupalpally
+CM-183,Kakri Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,kakri,ncl,madhya pradesh,singrauli
+CM-184,Kalidaspur Project,West Bengal,BANKURA,ECL,UNDERGROUND,PUBLIC,WORKING,kalidaspur,ecl,west bengal,bankura
+CM-185,Kalyan Khani OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,kalyan khani oc,sccl,telangana,mancherial
+CM-186,Kalyan Khani-1 & 5 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,kalyan khani 1 5 incline,sccl,telangana,mancherial
+CM-187,Kanchan OC,Madhya Pradesh,UMARIA,SECL,OPENCAST,PUBLIC,WORKING,kanchan oc,secl,madhya pradesh,umaria
+CM-188,Kaniha OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,kaniha ocp,mcl,odisha,angul
+CM-189,Kankanee,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,kankanee,bccl,jharkhand,dhanbad
+CM-190,Kapasara,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,kapasara,ecl,jharkhand,dhanbad
+CM-191,Kapurdi,Chhattisgarh,RAIGARH,HIL,UNDERGROUND,PRIVATE,NON_WORKING,kapurdi,hil,chhattisgarh,raigarh
+CM-192,Kargali OC,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,NON_WORKING,kargali oc,ccl,jharkhand,bokaro
+CM-193,Karma,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,karma,ccl,jharkhand,ramgarh
+CM-194,KARO SPL.UG,Jharkhand,BOKARO,CCL,UNDERGROUND,PUBLIC,NON_WORKING,karo spl ug,ccl,jharkhand,bokaro
+CM-195,Karo-I OC,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,karo i oc,ccl,jharkhand,bokaro
+CM-196,Kasipet 1 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,kasipet 1 incline,sccl,telangana,mancherial
+CM-197,Kasipet 2 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,kasipet 2 incline,sccl,telangana,mancherial
+CM-198,Kathara Colly,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,kathara colly,ccl,jharkhand,bokaro
+CM-199,Kathautia Open Cast Coal Mine,Jharkhand,PALAMU,HIL,OPENCAST,PRIVATE,WORKING,kathautia open cast,hil,jharkhand,palamu
+CM-200,Katkona 1 & 2,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,katkona 1 2,secl,chhattisgarh,korea
+CM-201,Kedla (OC),Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,kedla oc,ccl,jharkhand,ramgarh
+CM-202,Kedla UG,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,kedla ug,ccl,jharkhand,ramgarh
+CM-203,Kerandari,Jharkhand,HAZARIBAGH,NTPC,OPENCAST,PUBLIC,WORKING,kerandari,ntpc,jharkhand,hazaribagh
+CM-204,Ketki,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,ketki,secl,chhattisgarh,surguja
+CM-205,Khadia Project,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,khadia,ncl,uttar pradesh,sonbhadra
+CM-206,Khairagura OC,Telangana,Komaram Bheem,SCCL,OPENCAST,PUBLIC,WORKING,khairagura oc,sccl,telangana,komaram bheem
+CM-207,Khairaha,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,khairaha,secl,madhya pradesh,shahdol
+CM-208,Khandra Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,khandra,ecl,west bengal,bardhaman
+CM-209,Kharkharee,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,kharkharee,bccl,jharkhand,dhanbad
+CM-210,Khas Kajora Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,khas kajora,ecl,west bengal,bardhaman
+CM-211,Khoodia,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,khoodia,ecl,jharkhand,dhanbad
+CM-212,Khottadih OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,khottadih ocp,ecl,west bengal,bardhaman
+CM-213,Khottadih UG,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,khottadih ug,ecl,west bengal,bardhaman
+CM-214,Kistaram OC,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,kistaram oc,sccl,telangana,khammam
+CM-215,"Kolarpimpri,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,kolarpimpri,wcl,maharashtra,yavatmal
+CM-216,Kolgaon OC,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,kolgaon oc,wcl,maharashtra,yavatmal
+CM-217,Kondapuram UG,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,kondapuram ug,sccl,telangana,khammam
+CM-218,Koya Gundem OC II,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,koya gundem oc ii,sccl,telangana,khammam
+CM-219,Krishnshila OCP,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,krishnshila ocp,ncl,uttar pradesh,sonbhadra
+CM-220,Kujama,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,kujama,bccl,jharkhand,dhanbad
+CM-221,Kuju Colliery,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,kuju,ccl,jharkhand,ramgarh
+CM-222,Kulda OCP Balinga,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,kulda ocp balinga,mcl,odisha,sundargarh
+CM-223,Kumardhubi Colliery,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,kumardhubi,ecl,jharkhand,dhanbad
+CM-224,Kumardihi-A Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,kumardihi a,ecl,west bengal,bardhaman
+CM-225,Kumda 7 & 8,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,kumda 7 8,secl,chhattisgarh,surguja
+CM-226,Kunustoria Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,kunustoria,ecl,west bengal,bardhaman
+CM-227,Kurasia UG,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,kurasia ug,secl,chhattisgarh,korea
+CM-228,Kurja/Sheetaldhara/Kapildhara,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,kurja sheetaldhara kapildhara,secl,madhya pradesh,shahdol
+CM-229,Kusmunda Project,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,kusmunda,secl,chhattisgarh,korba
+CM-230,Kuya,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,kuya,bccl,jharkhand,dhanbad
+CM-231,Laiyo UGP,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,laiyo ugp,ccl,jharkhand,ramgarh
+CM-232,Lajkura OCP,Odisha,JHARSUGUDA,MCL,OPENCAST,PUBLIC,WORKING,lajkura ocp,mcl,odisha,jharsuguda
+CM-233,Lakhimata,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,lakhimata,ecl,jharkhand,dhanbad
+CM-234,Lingaraj OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,lingaraj ocp,mcl,odisha,angul
+CM-235,Lower Kenda Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,lower kenda,ecl,west bengal,bardhaman
+CM-236,Madhaipur,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,madhaipur,ecl,west bengal,bardhaman
+CM-237,Madhaipur Mixed,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,madhaipur mixed,ecl,west bengal,bardhaman
+CM-238,Madhusudanpur 7 Pit & Incline,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,madhusudanpur 7 pit incline,ecl,west bengal,bardhaman
+CM-239,Magadh OCP,Jharkhand,CHATRA,CCL,OPENCAST,PUBLIC,WORKING,magadh ocp,ccl,jharkhand,chatra
+CM-240,Mahadeopuri,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,mahadeopuri,wcl,madhya pradesh,chhindwara
+CM-241,Mahakali Colliery,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,mahakali,wcl,maharashtra,chandrapur
+CM-242,Maheshpur,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,maheshpur,bccl,jharkhand,dhanbad
+CM-243,Makardhokra-I OC Expansion Mine,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,makardhokra i oc expansion,wcl,maharashtra,nagpur
+CM-244,Makardhokra-III OC MINE,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,makardhokra iii oc,wcl,maharashtra,nagpur
+CM-245,Mandarboni,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,mandarboni,ecl,west bengal,bardhaman
+CM-246,Manikpur,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,manikpur,secl,chhattisgarh,korba
+CM-247,Manki/Churi,Jharkhand,RANCHI,CCL,UNDERGROUND,PUBLIC,WORKING,manki churi,ccl,jharkhand,ranchi
+CM-248,Manna Incline,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,manna incline,wcl,maharashtra,chandrapur
+CM-249,Manoharpur Coal Mine,Odisha,SUNDARGARH,OCPL,OPENCAST,PUBLIC,WORKING,manoharpur,ocpl,odisha,sundargarh
+CM-250,Manuguru Opencast,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,manuguru opencast,sccl,telangana,khammam
+CM-251,Marki Mangli - I Coal Mine,Maharashtra,YAVATMAL,TUML,OPENCAST,PRIVATE,WORKING,marki mangli i,tuml,maharashtra,yavatmal
+CM-252,Marki Mangli III,Maharashtra,YAVATMAL,BSIL,OPENCAST,PRIVATE,WORKING,marki mangli iii,bsil,maharashtra,yavatmal
+CM-253,Mathani,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,mathani,wcl,madhya pradesh,chhindwara
+CM-254,Meera,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,meera,secl,madhya pradesh,shahdol
+CM-255,Methani Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,methani,ecl,west bengal,bardhaman
+CM-256,Metica Coal Mine,Jammu & Kashmir,Rajouri,JKML,UNDERGROUND,PUBLIC,WORKING,metica,jkml,jammu kashmir,rajouri
+CM-257,Mohan (Mohan UG),Madhya Pradesh,CHHINDWARA,WCL,MIXED,PUBLIC,WORKING,mohan mohan ug,wcl,madhya pradesh,chhindwara
+CM-258,Mohanpur (Expn),West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,mohanpur expn,ecl,west bengal,bardhaman
+CM-259,Moher & Moher Amlohri Extn,West Bengal,BIRBHUM,WBPDCL,OPENCAST,PUBLIC,WORKING,moher moher amlohri extn,wbpdcl,west bengal,birbhum
+CM-260,Moher & Moher Amlohri Extn,Madhya Pradesh,SINGRAULI,Sasan Power Limited,OPENCAST,PRIVATE,WORKING,moher moher amlohri extn,sasan power,madhya pradesh,singrauli
+CM-261,Moonidih,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,moonidih,bccl,jharkhand,dhanbad
+CM-262,Mudidih,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,mudidih,bccl,jharkhand,dhanbad
+CM-263,Mungoli OCM,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,mungoli ocm,wcl,maharashtra,yavatmal
+CM-264,N.C.P.H. Colliery (NEW),Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,n c p h new,secl,chhattisgarh,korea
+CM-265,Nabakajora Colliery,Jharkhand,RAMGARH,ECL,UNDERGROUND,PUBLIC,NON_WORKING,nabakajora,ecl,jharkhand,ramgarh
+CM-266,Naigaon OCM,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,naigaon ocm,wcl,maharashtra,yavatmal
+CM-267,NAKC,Jharkhand,DHANBAD,BCCL,MIXED,PUBLIC,WORKING,nakc,bccl,jharkhand,dhanbad
+CM-268,Nakrakonda -Kumardihi 'B' UG,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,nakrakonda kumardihi b ug,ecl,west bengal,bardhaman
+CM-269,Nandgaon Incline,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,WORKING,nandgaon incline,wcl,maharashtra,chandrapur
+CM-270,Nandira Colliery,Odisha,Angul,MCL,UNDERGROUND,PUBLIC,WORKING,nandira,mcl,odisha,angul
+CM-271,Narsamuda Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,narsamuda,ecl,west bengal,bardhaman
+CM-272,Navapara,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,navapara,secl,chhattisgarh,surguja
+CM-273,Neelijay OCM,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,neelijay ocm,wcl,maharashtra,yavatmal
+CM-274,Nehariya,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,nehariya,wcl,madhya pradesh,chhindwara
+CM-275,New Godhur-Kusunda-Alkusa,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,new godhur kusunda alkusa,bccl,jharkhand,dhanbad
+CM-276,New Kenda Colliery,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,new kenda,ecl,west bengal,bardhaman
+CM-277,New Majri - I(A) & II Extn. (A) OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,new majri i a ii extn a oc,wcl,maharashtra,chandrapur
+CM-278,New Majri UG to OC Expn.,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,new majri ug to oc expn,wcl,maharashtra,chandrapur
+CM-279,New Moghla Coal Mine,Jammu & Kashmir,Rajouri,JKML,UNDERGROUND,PUBLIC,WORKING,new moghla,jkml,jammu kashmir,rajouri
+CM-280,New Sethia,Madhya Pradesh,CHHINDWARA,WCL,OPENCAST,PUBLIC,NON_WORKING,new sethia,wcl,madhya pradesh,chhindwara
+CM-281,Nichitpur,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,nichitpur,bccl,jharkhand,dhanbad
+CM-282,Nigahi Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,nigahi,ncl,madhya pradesh,singrauli
+CM-283,"Nimcha Colliery , Nimcha OC (Amkola) & Nimcha Highwall",West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,nimcha nimcha oc amkola nimcha highwall,ecl,west bengal,bardhaman
+CM-284,Ningah Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,ningah,ecl,west bengal,bardhaman
+CM-285,Ningha (SSI) OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,ningha ssi oc,ecl,west bengal,bardhaman
+CM-286,Nirsha,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,nirsha,ecl,jharkhand,dhanbad
+CM-287,North Searsole OC Colliery,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,north searsole oc,ecl,west bengal,bardhaman
+CM-288,North Urimari/Birsa-OC,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,north urimari birsa oc,ccl,jharkhand,hazaribagh
+CM-289,Nowrozabad (W),Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,nowrozabad w,secl,madhya pradesh,umaria
+CM-290,NTST-Jeenagora,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,ntst jeenagora,bccl,jharkhand,dhanbad
+CM-291,Orient Mine No. 1 & 2,Odisha,JHARSUGUDA,MCL,UNDERGROUND,PUBLIC,WORKING,orient no 1 2,mcl,odisha,jharsuguda
+CM-292,Pacchwara North Coal Mine,Jharkhand,PAKUR,WBPDCL,OPENCAST,PUBLIC,WORKING,pacchwara north,wbpdcl,jharkhand,pakur
+CM-293,Pachhwara Central Coal Mine,Jharkhand,PAKUR,PSPCL,OPENCAST,PUBLIC,WORKING,pachhwara central,pspcl,jharkhand,pakur
+CM-294,Padampur OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,NON_WORKING,padampur oc,wcl,maharashtra,chandrapur
+CM-295,Padmavathi Khani No.5 Incline,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,padmavathi khani no 5 incline,sccl,telangana,khammam
+CM-296,Pakri Barwadih,Jharkhand,HAZARIBAGH,NTPC,OPENCAST,PUBLIC,WORKING,pakri barwadih,ntpc,jharkhand,hazaribagh
+CM-297,Pali,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,pali,secl,madhya pradesh,umaria
+CM-298,Pandaveswar UG,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,pandaveswar ug,ecl,west bengal,bardhaman
+CM-299,Pandavpara Colliery,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,pandavpara,secl,chhattisgarh,korea
+CM-300,Paoni II OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,paoni ii ocm,wcl,maharashtra,chandrapur
+CM-301,Parasea Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,parasea,ecl,west bengal,bardhaman
+CM-302,Parbelia Colliery,West Bengal,PURULIA,ECL,UNDERGROUND,PUBLIC,WORKING,parbelia,ecl,west bengal,purulia
+CM-303,Parej East OCP,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,parej east ocp,ccl,jharkhand,ramgarh
+CM-304,Parsa East and Kanta Basan OCM,Chhattisgarh,SURGUJA,RRVUNL,OPENCAST,PUBLIC,WORKING,parsa east and kanta basan ocm,rrvunl,chhattisgarh,surguja
+CM-305,Patansaongi Colliery,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,patansaongi,wcl,maharashtra,nagpur
+CM-306,Patmohana Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,patmohana,ecl,west bengal,bardhaman
+CM-307,Penganga OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,penganga oc,wcl,maharashtra,chandrapur
+CM-308,"Pimpalgaon,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,NON_WORKING,pimpalgaon,wcl,maharashtra,yavatmal
+CM-309,Pindra Colliery,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,pindra,ccl,jharkhand,ramgarh
+CM-310,Piparia,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,piparia,secl,madhya pradesh,umaria
+CM-311,Porascol East Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,porascol east,ecl,west bengal,bardhaman
+CM-312,Porascol West Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,porascol west,ecl,west bengal,bardhaman
+CM-313,Prakasham Khani OC,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,prakasham khani oc,sccl,telangana,khammam
+CM-314,Pundi,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,pundi,ccl,jharkhand,ramgarh
+CM-315,Pure Searsole Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,pure searsole,ecl,west bengal,bardhaman
+CM-316,Purnadih,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,purnadih,ccl,jharkhand,ranchi
+CM-317,Rajendra,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,rajendra,secl,madhya pradesh,shahdol
+CM-318,Rajhara,Jharkhand,PALAMU,CCL,OPENCAST,PUBLIC,NON_WORKING,rajhara,ccl,jharkhand,palamu
+CM-319,Rajmahal OCP,Jharkhand,GODDA,ECL,OPENCAST,PUBLIC,WORKING,rajmahal ocp,ecl,jharkhand,godda
+CM-320,Rajnagar RO,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,rajnagar ro,secl,madhya pradesh,shahdol
+CM-321,Rajpura,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,rajpura,ecl,jharkhand,dhanbad
+CM-322,Rajrappa Project,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,rajrappa,ccl,jharkhand,ramgarh
+CM-323,Rajur UG,Maharashtra,YAVATMAL,WCL,UNDERGROUND,PUBLIC,WORKING,rajur ug,wcl,maharashtra,yavatmal
+CM-324,Ramagundam OC-I Extn. Ph-II,Telangana,PEDDAPALLI,SCCL,OPENCAST,PUBLIC,WORKING,ramagundam oc i extn ph ii,sccl,telangana,peddapalli
+CM-325,Ramagundam-OC 3 & OC III,Telangana,PEDDAPALLI,SCCL,OPENCAST,PUBLIC,WORKING,ramagundam oc 3 oc iii,sccl,telangana,peddapalli
+CM-326,Ramakrishnapur OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,ramakrishnapur oc,sccl,telangana,mancherial
+CM-327,Ramnagar Colliery,West Bengal,PASCHIM BARDHAMAN,IISCO,UNDERGROUND,PUBLIC,NON_WORKING,ramnagar,iisco,west bengal,paschim bardhaman
+CM-328,Ramnagar Colliery,West Bengal,PASCHIM BARDHAMAN,IISCO,OPENCAST,PUBLIC,WORKING,ramnagar,iisco,west bengal,paschim bardhaman
+CM-329,Rampur Batura,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,rampur batura,secl,madhya pradesh,shahdol
+CM-330,Raniatari,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,raniatari,secl,chhattisgarh,korea
+CM-331,Ravindra Khani-5 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani 5 incline,sccl,telangana,mancherial
+CM-332,Ravindra Khani-6 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani 6 incline,sccl,telangana,mancherial
+CM-333,"Ravindra Khani-7,Incline",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani 7 incline,sccl,telangana,mancherial
+CM-334,"Ravindra Khani-New Tech,",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani new tech,sccl,telangana,mancherial
+CM-335,Rehar,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,rehar,secl,chhattisgarh,surguja
+CM-336,Religara,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,religara,ccl,jharkhand,hazaribagh
+CM-337,ROCP/S. Jharia,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,rocp s jharia,bccl,jharkhand,dhanbad
+CM-338,Rohini,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,rohini,ccl,jharkhand,ranchi
+CM-339,Samleswari OCP,Odisha,JHARSUGUDA,MCL,OPENCAST,PUBLIC,WORKING,samleswari ocp,mcl,odisha,jharsuguda
+CM-340,Sankarpur Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,sankarpur,ecl,west bengal,bardhaman
+CM-341,Saoner Mine - II,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,saoner ii,wcl,maharashtra,nagpur
+CM-342,Saoner Mine - III,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,saoner iii,wcl,maharashtra,nagpur
+CM-343,Saoner Mine-I,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,saoner i,wcl,maharashtra,nagpur
+CM-344,Saraipali,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,saraipali,secl,chhattisgarh,korba
+CM-345,Sarisatolli Coal Mine,West Bengal,PASCHIM BARDHAMAN,CESC,OPENCAST,PRIVATE,WORKING,sarisatolli,cesc,west bengal,paschim bardhaman
+CM-346,Sarni Mine,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,NON_WORKING,sarni,wcl,madhya pradesh,betul
+CM-347,Sarubera,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,sarubera,ccl,jharkhand,ramgarh
+CM-348,Sasti Expn. OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,sasti expn ocm,wcl,maharashtra,chandrapur
+CM-349,Satgram Incline,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,satgram incline,ecl,west bengal,bardhaman
+CM-350,Satgram Project,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,satgram,ecl,west bengal,bardhaman
+CM-351,Saunda (Ncdc),Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,saunda ncdc,ccl,jharkhand,ramgarh
+CM-352,Sayal `D',Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,sayal d,ccl,jharkhand,ramgarh
+CM-353,SD OC Mine,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,sd oc,ccl,jharkhand,bokaro
+CM-354,Sendra Bansjora,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,sendra bansjora,bccl,jharkhand,dhanbad
+CM-355,Shampur B,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,shampur b,ecl,jharkhand,dhanbad
+CM-356,Shanthi Khani,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,shanthi khani,sccl,telangana,mancherial
+CM-357,Sharda Highwall,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,sharda highwall,secl,madhya pradesh,shahdol
+CM-358,Sharda UG,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,sharda ug,wcl,madhya pradesh,chhindwara
+CM-359,Shivani,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,shivani,secl,chhattisgarh,surguja
+CM-360,Shyam Sundarpur Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,shyam sundarpur,ecl,west bengal,bardhaman
+CM-361,Sial Ghogri Coal Mine,Madhya Pradesh,CHHINDWARA,RCCPL,UNDERGROUND,PRIVATE,WORKING,sial ghogri,rccpl,madhya pradesh,chhindwara
+CM-362,Siarmal OCP,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,siarmal ocp,mcl,odisha,sundargarh
+CM-363,Siduli Colliery,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,siduli,ecl,west bengal,bardhaman
+CM-364,Sijua Colliery,Jharkhand,DHANBAD,TSL,UNDERGROUND,PRIVATE,WORKING,sijua,tsl,jharkhand,dhanbad
+CM-365,Sikni OC Mine,Jharkhand,LATEHAR,JSMDCL,OPENCAST,PUBLIC,WORKING,sikni oc,jsmdcl,jharkhand,latehar
+CM-366,Silewara Colliery,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,silewara,wcl,maharashtra,nagpur
+CM-367,Singhali Colliery,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,singhali,secl,chhattisgarh,korba
+CM-368,Singori OC,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,singori oc,wcl,maharashtra,nagpur
+CM-369,Sirka,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,sirka,ccl,jharkhand,ramgarh
+CM-370,Sonepur Bazari Project OCM,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,sonepur bazari ocm,ecl,west bengal,bardhaman
+CM-371,South Samla,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,south samla,ecl,west bengal,bardhaman
+CM-372,Srirampur OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,srirampur oc,sccl,telangana,mancherial
+CM-373,"Srirampur-1, Incline",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,srirampur 1 incline,sccl,telangana,mancherial
+CM-374,Srirampur-3 & 3A Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,srirampur 3 3a incline,sccl,telangana,mancherial
+CM-375,Suliyari,Madhya Pradesh,SINGRAULI,APMDCL,OPENCAST,PUBLIC,WORKING,suliyari,apmdcl,madhya pradesh,singrauli
+CM-376,Tadicherla 1 OCM,Telangana,JAYASHANKAR BHUPALPALLY,TGGENCO,OPENCAST,PUBLIC,WORKING,tadicherla 1 ocm,tggenco,telangana,jayashankar bhupalpally
+CM-377,Takli Jena Bellora,Maharashtra,CHANDRAPUR,AIPL,OPENCAST,PRIVATE,WORKING,takli jena bellora,aipl,maharashtra,chandrapur
+CM-378,Talabira II & III,Odisha,SAMBALPUR,NLCIL,OPENCAST,PUBLIC,WORKING,talabira ii iii,nlcil,odisha,sambalpur
+CM-379,Talaipalli Coal Mine,Chhattisgarh,RAIGARH,NTPC,OPENCAST,PUBLIC,WORKING,talaipalli,ntpc,chhattisgarh,raigarh
+CM-380,Tandsi,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,tandsi,wcl,madhya pradesh,chhindwara
+CM-381,Tapin North,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,tapin north,ccl,jharkhand,ramgarh
+CM-382,Tapin South,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,tapin south,ccl,jharkhand,hazaribagh
+CM-383,Tara(E&W),West Bengal,BIRBHUM,WBPDCL,OPENCAST,PUBLIC,WORKING,tara e w,wbpdcl,west bengal,birbhum
+CM-384,Tarmi,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,tarmi,ccl,jharkhand,bokaro
+CM-385,Tasra Colliery,Jharkhand,DHANBAD,SAIL,OPENCAST,PUBLIC,WORKING,tasra,sail,jharkhand,dhanbad
+CM-386,Tawa Mine,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,tawa,wcl,madhya pradesh,betul
+CM-387,Tawa-II,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,tawa ii,wcl,madhya pradesh,betul
+CM-388,Tetaria Khar,Jharkhand,LATEHAR,CCL,OPENCAST,PUBLIC,WORKING,tetaria khar,ccl,jharkhand,latehar
+CM-389,Tetulmari,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,tetulmari,bccl,jharkhand,dhanbad
+CM-390,Tikak Colliery,Assam,TINSUKIA,NEC,OPENCAST,PUBLIC,WORKING,tikak,nec,assam,tinsukia
+CM-391,Tilaboni Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,tilaboni,ecl,west bengal,bardhaman
+CM-392,Topa Marginal Scheme,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,topa marginal scheme,ccl,jharkhand,ramgarh
+CM-393,Trans Damodar Coal Mine,West Bengal,PASCHIM BARDHAMAN,DPL,OPENCAST,PUBLIC,WORKING,trans damodar,dpl,west bengal,paschim bardhaman
+CM-394,Ukni OC,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,ukni oc,wcl,maharashtra,yavatmal
+CM-395,Umaria,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,umaria,secl,madhya pradesh,umaria
+CM-396,Umrer OC Mine,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,umrer oc,wcl,maharashtra,nagpur
+CM-397,Urdhan,Madhya Pradesh,CHHINDWARA,WCL,OPENCAST,PUBLIC,WORKING,urdhan,wcl,madhya pradesh,chhindwara
+CM-398,Urimari,Jharkhand,HAZARIBAGH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,urimari,ccl,jharkhand,hazaribagh
+CM-399,Urimari,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,urimari,ccl,jharkhand,hazaribagh
+CM-400,Utkal C Coal Mine,Odisha,Angul,JSPL,OPENCAST,PRIVATE,WORKING,utkal c,jspl,odisha,angul
+CM-401,Utkal D,Odisha,Angul,NALCO,OPENCAST,PUBLIC,WORKING,utkal d,nalco,odisha,angul
+CM-402,Vakilpalli,Telangana,PEDDAPALLI,SCCL,UNDERGROUND,PUBLIC,WORKING,vakilpalli,sccl,telangana,peddapalli
+CM-403,Vijay West,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,vijay west,secl,chhattisgarh,korba
+CM-404,Vindhya,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,vindhya,secl,madhya pradesh,umaria
+CM-405,Vishnupuri-II,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,vishnupuri ii,wcl,madhya pradesh,chhindwara
+CM-406,West Bokaro OC (Quarry-E & SE),Jharkhand,HAZARIBAGH,TSL,OPENCAST,PRIVATE,WORKING,west bokaro oc quarry e se,tsl,jharkhand,hazaribagh
+CM-407,West Bokaro OC Quarry-AB,Jharkhand,HAZARIBAGH,TSL,OPENCAST,PRIVATE,WORKING,west bokaro oc quarry ab,tsl,jharkhand,hazaribagh
+CM-408,West Jhagrakhand,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,west jhagrakhand,secl,chhattisgarh,korea

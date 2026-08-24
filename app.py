@@ -65,6 +65,7 @@ def gis_mines():
     )
 
     if not geojson_path.exists():
+
         return jsonify({
             "type": "FeatureCollection",
             "features": [],
@@ -72,20 +73,24 @@ def gis_mines():
         }), 404
 
     try:
+
         with open(
             geojson_path,
             "r",
             encoding="utf-8"
         ) as file:
+
             data = json.load(file)
+
         return jsonify(data)
 
     except Exception as e:
+
         return jsonify({
             "type": "FeatureCollection",
             "features": [],
             "error": str(e)
         }), 500
-
+        
 if __name__ == "__main__":
     app.run(debug=True)

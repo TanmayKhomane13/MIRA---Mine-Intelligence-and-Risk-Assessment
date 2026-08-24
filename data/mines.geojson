@@ -1,23 +1,276 @@
 {
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [82.6134, 23.8142]
-  },
-  "properties": {
-    "mine_id": "MG-0001",
-    "name": "Example Coal Mine",
-    "state": "Jharkhand",
-    "district": "Dhanbad",
-    "company": "Example Mining Company",
-    "mine_type": "OPENCAST",
-    "ownership": "PUBLIC",
-    "status": "WORKING",
-    "risk_level": "MEDIUM",
-    "risk_score": 62,
-    "compliance": 78,"coordinate_source": "reference_dataset",
-    "coordinate_status": "VALID",
-    "coordinate_match_method": "EXACT",
-    "coordinate_match_score": "100"
-  }
+  "type": "FeatureCollection",
+  "name": "MineGuard India Coal Mines",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.00171,
+          23.889479
+        ]
+      },
+      "properties": {
+        "mine_id": "CM-022",
+        "name": "Amrapali OCP",
+        "state": "Jharkhand",
+        "district": "CHATRA",
+        "company": "CCL",
+        "mine_type": "OPENCAST",
+        "ownership": "PUBLIC",
+        "status": "WORKING",
+        "coordinate_source": "reference_dataset",
+        "coordinate_status": "VALID",
+        "coordinate_match_method": "EXACT",
+        "coordinate_match_score": "100",
+        "risk_level": "LOW",
+        "risk_score": 0,
+        "compliance": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.037525,
+          23.724268
+        ]
+      },
+      "properties": {
+        "mine_id": "CM-026",
+        "name": "Ashoka",
+        "state": "Jharkhand",
+        "district": "CHATRA",
+        "company": "CCL",
+        "mine_type": "OPENCAST",
+        "ownership": "PUBLIC",
+        "status": "WORKING",
+        "coordinate_source": "reference_dataset",
+        "coordinate_status": "VALID",
+        "coordinate_match_method": "EXACT",
+        "coordinate_match_score": "100",
+        "risk_level": "LOW",
+        "risk_score": 0,
+        "compliance": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.55,
+          22.35
+        ]
+      },
+      "properties": {
+        "mine_id": "CM-100",
+        "name": "Dipka",
+        "state": "Chhattisgarh",
+        "district": "KORBA",
+        "company": "SECL",
+        "mine_type": "OPENCAST",
+        "ownership": "PUBLIC",
+        "status": "WORKING",
+        "coordinate_source": "reference_dataset",
+        "coordinate_status": "VALID",
+        "coordinate_match_method": "EXACT",
+        "coordinate_match_score": "100",
+        "risk_level": "LOW",
+        "risk_score": 0,
+        "compliance": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.55,
+          22.35
+        ]
+      },
+      "properties": {
+        "mine_id": "CM-119",
+        "name": "Gevra",
+        "state": "Chhattisgarh",
+        "district": "KORBA",
+        "company": "SECL",
+        "mine_type": "OPENCAST",
+        "ownership": "PUBLIC",
+        "status": "WORKING",
+        "coordinate_source": "reference_dataset",
+        "coordinate_status": "VALID",
+        "coordinate_match_method": "EXACT",
+        "coordinate_match_score": "100",
+        "risk_level": "LOW",
+        "risk_score": 0,
+        "compliance": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.666666,
+          22.332635
+        ]
+      },
+      "properties": {
+        "mine_id": "CM-229",
+        "name": "Kusmunda Project",
+        "state": "Chhattisgarh",
+        "district": "KORBA",
+        "company": "SECL",
+        "mine_type": "OPENCAST",
+        "ownership": "PUBLIC",
+        "status": "WORKING",
+        "coordinate_source": "reference_dataset",
+        "coordinate_status": "VALID",
+        "coordinate_match_method": "EXACT",
+        "coordinate_match_score": "100",
+        "risk_level": "LOW",
+        "risk_score": 0,
+        "compliance": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.200747,
+          20.960432
+        ]
+      },
+      "properties": {
+        "mine_id": "CM-234",
+        "name": "Lingaraj OCP",
+        "state": "Odisha",
+        "district": "Angul",
+        "company": "MCL",
+        "mine_type": "OPENCAST",
+        "ownership": "PUBLIC",
+        "status": "WORKING",
+        "coordinate_source": "reference_dataset",
+        "coordinate_status": "VALID",
+        "coordinate_match_method": "EXACT",
+        "coordinate_match_score": "100",
+        "risk_level": "LOW",
+        "risk_score": 0,
+        "compliance": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.00171,
+          23.889479
+        ]
+      },
+      "properties": {
+        "mine_id": "CM-239",
+        "name": "Magadh OCP",
+        "state": "Jharkhand",
+        "district": "CHATRA",
+        "company": "CCL",
+        "mine_type": "OPENCAST",
+        "ownership": "PUBLIC",
+        "status": "WORKING",
+        "coordinate_source": "reference_dataset",
+        "coordinate_status": "VALID",
+        "coordinate_match_method": "EXACT",
+        "coordinate_match_score": "100",
+        "risk_level": "LOW",
+        "risk_score": 0,
+        "compliance": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.71690602,
+          22.32047888
+        ]
+      },
+      "properties": {
+        "mine_id": "CM-246",
+        "name": "Manikpur",
+        "state": "Chhattisgarh",
+        "district": "KORBA",
+        "company": "SECL",
+        "mine_type": "OPENCAST",
+        "ownership": "PUBLIC",
+        "status": "WORKING",
+        "coordinate_source": "reference_dataset",
+        "coordinate_status": "VALID",
+        "coordinate_match_method": "EXACT",
+        "coordinate_match_score": "100",
+        "risk_level": "LOW",
+        "risk_score": 0,
+        "compliance": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.00171,
+          23.889479
+        ]
+      },
+      "properties": {
+        "mine_id": "CM-297",
+        "name": "Pali",
+        "state": "Madhya Pradesh",
+        "district": "UMARIA",
+        "company": "SECL",
+        "mine_type": "UNDERGROUND",
+        "ownership": "PUBLIC",
+        "status": "WORKING",
+        "coordinate_source": "reference_dataset",
+        "coordinate_status": "VALID",
+        "coordinate_match_method": "EXACT",
+        "coordinate_match_score": "100",
+        "risk_level": "LOW",
+        "risk_score": 0,
+        "compliance": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.989074,
+          23.685074
+        ]
+      },
+      "properties": {
+        "mine_id": "CM-338",
+        "name": "Rohini",
+        "state": "Jharkhand",
+        "district": "RANCHI",
+        "company": "CCL",
+        "mine_type": "OPENCAST",
+        "ownership": "PUBLIC",
+        "status": "WORKING",
+        "coordinate_source": "reference_dataset",
+        "coordinate_status": "VALID",
+        "coordinate_match_method": "EXACT",
+        "coordinate_match_score": "100",
+        "risk_level": "LOW",
+        "risk_score": 0,
+        "compliance": 100
+      }
+    }
+  ]
 }

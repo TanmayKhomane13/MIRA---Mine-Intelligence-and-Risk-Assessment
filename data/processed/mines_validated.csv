@@ -1,0 +1,409 @@
+mine_id,name,state,district,company,mine_type,ownership,status,name_normalized,company_normalized,state_normalized,district_normalized,_match_name,match_name,match_score,match_method,coordinate_source_name,latitude,longitude,coordinate_valid,coordinate_status
+CM-001,Aadocm,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,aadocm,ccl,jharkhand,bokaro,aadocm,aadocm,100,EXACT,Aadocm,,,False,MISSING_OR_INVALID
+CM-002,ABGC,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,abgc,bccl,jharkhand,dhanbad,abgc,abgc,100,EXACT,ABGC,,,False,MISSING_OR_INVALID
+CM-003,Adasa (UG to OC),Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,adasa ug to oc,wcl,maharashtra,nagpur,adasa ug to oc,adasa ug to oc,100,EXACT,Adasa (UG to OC),,,False,MISSING_OR_INVALID
+CM-004,Adriyala Saft Project,Telangana,PEDDAPALLI,SCCL,UNDERGROUND,PUBLIC,WORKING,adriyala saft,sccl,telangana,peddapalli,adriyala saft,adriyala saft,100,EXACT,Adriyala Saft Project,,,False,MISSING_OR_INVALID
+CM-005,AGKCC,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,agkcc,bccl,jharkhand,dhanbad,agkcc,agkcc,100,EXACT,AGKCC,,,False,MISSING_OR_INVALID
+CM-006,AKK OCP,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,akk ocp,ccl,jharkhand,bokaro,akk ocp,akk ocp,100,EXACT,AKK OCP,,,False,MISSING_OR_INVALID
+CM-007,AKWMC,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,akwmc,bccl,jharkhand,dhanbad,akwmc,akwmc,100,EXACT,AKWMC,,,False,MISSING_OR_INVALID
+CM-008,Amadand,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,amadand,secl,madhya pradesh,shahdol,amadand,amadand,100,EXACT,Amadand,,,False,MISSING_OR_INVALID
+CM-009,Amagamated Dhansar-Industry,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,amagamated dhansar industry,bccl,jharkhand,dhanbad,amagamated dhansar industry,amagamated dhansar industry,100,EXACT,Amagamated Dhansar-Industry,,,False,MISSING_OR_INVALID
+CM-010,Amalgamated BOCP,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,amalgamated bocp,bccl,jharkhand,dhanbad,amalgamated bocp,amalgamated bocp,100,EXACT,Amalgamated BOCP,,,False,MISSING_OR_INVALID
+CM-011,Amalgamated Gondegaon Ghatrohana,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,amalgamated gondegaon ghatrohana,wcl,maharashtra,nagpur,amalgamated gondegaon ghatrohana,amalgamated gondegaon ghatrohana,100,EXACT,Amalgamated Gondegaon Ghatrohana,,,False,MISSING_OR_INVALID
+CM-012,Amalgamated Inder Kamptee OCM,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,amalgamated inder kamptee ocm,wcl,maharashtra,nagpur,amalgamated inder kamptee ocm,amalgamated inder kamptee ocm,100,EXACT,Amalgamated Inder Kamptee OCM,,,False,MISSING_OR_INVALID
+CM-013,Amalgamated Yekona I & II,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,amalgamated yekona i ii,wcl,maharashtra,chandrapur,amalgamated yekona i ii,amalgamated yekona i ii,100,EXACT,Amalgamated Yekona I & II,,,False,MISSING_OR_INVALID
+CM-014,Amalgameted Sudamdih-Patherdih,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,amalgameted sudamdih patherdih,bccl,jharkhand,dhanbad,amalgameted sudamdih patherdih,amalgameted sudamdih patherdih,100,EXACT,Amalgameted Sudamdih-Patherdih,,,False,MISSING_OR_INVALID
+CM-015,Amelia (North ) Coal Mine,Madhya Pradesh,SINGRAULI,JPVL,OPENCAST,PRIVATE,WORKING,amelia north,jpvl,madhya pradesh,singrauli,amelia north,amelia north,100,EXACT,Amelia (North ) Coal Mine,,,False,MISSING_OR_INVALID
+CM-016,Amelia Coal Block,Madhya Pradesh,SINGRAULI,THDC,OPENCAST,PUBLIC,WORKING,amelia block,thdc,madhya pradesh,singrauli,amelia block,amelia block,100,EXACT,Amelia Coal Block,,,False,MISSING_OR_INVALID
+CM-017,Amera,Chhattisgarh,SURGUJA,SECL,OPENCAST,PUBLIC,WORKING,amera,secl,chhattisgarh,surguja,amera,amera,100,EXACT,Amera,,,False,MISSING_OR_INVALID
+CM-018,Amgaon,Chhattisgarh,SURGUJA,SECL,OPENCAST,PUBLIC,WORKING,amgaon,secl,chhattisgarh,surguja,amgaon,amgaon,100,EXACT,Amgaon,,,False,MISSING_OR_INVALID
+CM-019,Amlai OC,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,amlai oc,secl,madhya pradesh,shahdol,amlai oc,amlai oc,100,EXACT,Amlai OC,,,False,MISSING_OR_INVALID
+CM-020,Amlohri,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,amlohri,ncl,madhya pradesh,singrauli,amlohri,amlohri,100,EXACT,Amlohri,,,False,MISSING_OR_INVALID
+CM-021,AMP Colliery,Jharkhand,DHANBAD,BCCL,MIXED,PUBLIC,WORKING,amp,bccl,jharkhand,dhanbad,amp,amp,100,EXACT,AMP Colliery,,,False,MISSING_OR_INVALID
+CM-022,Amrapali OCP,Jharkhand,CHATRA,CCL,OPENCAST,PUBLIC,WORKING,amrapali ocp,ccl,jharkhand,chatra,amrapali ocp,amrapali ocp,100,EXACT,Amrapali OCP,23.889479,85.00171,True,VALID
+CM-023,Amritnagar Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,amritnagar,ecl,west bengal,bardhaman,amritnagar,amritnagar,100,EXACT,Amritnagar Colliery,,,False,MISSING_OR_INVALID
+CM-024,Ananta OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,ananta ocp,mcl,odisha,angul,ananta ocp,ananta ocp,100,EXACT,Ananta OCP,,,False,MISSING_OR_INVALID
+CM-025,ARA Reorganisation,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,ara reorganisation,ccl,jharkhand,ramgarh,ara reorganisation,ara reorganisation,100,EXACT,ARA Reorganisation,,,False,MISSING_OR_INVALID
+CM-026,Ashoka,Jharkhand,CHATRA,CCL,OPENCAST,PUBLIC,WORKING,ashoka,ccl,jharkhand,chatra,ashoka,ashoka,100,EXACT,Ashoka,23.724268,85.037525,True,VALID
+CM-027,Badjna Colliery,Jharkhand,DHANBAD,ECL,MIXED,PUBLIC,WORKING,badjna,ecl,jharkhand,dhanbad,badjna,badjna,100,EXACT,Badjna Colliery,,,False,MISSING_OR_INVALID
+CM-028,Bagdeva,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,bagdeva,secl,chhattisgarh,korba,bagdeva,bagdeva,100,EXACT,Bagdeva,,,False,MISSING_OR_INVALID
+CM-029,Bahula Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,bahula,ecl,west bengal,bardhaman,bahula,bahula,100,EXACT,Bahula Colliery,,,False,MISSING_OR_INVALID
+CM-030,Ballarpur 3 & 4 Pits,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,WORKING,ballarpur 3 4 pits,wcl,maharashtra,chandrapur,ballarpur 3 4 pits,ballarpur 3 4 pits,100,EXACT,Ballarpur 3 & 4 Pits,,,False,MISSING_OR_INVALID
+CM-031,Ballarpur OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,ballarpur ocm,wcl,maharashtra,chandrapur,ballarpur ocm,ballarpur ocm,100,EXACT,Ballarpur OCM,,,False,MISSING_OR_INVALID
+CM-032,Balram OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,balram ocp,mcl,odisha,angul,balram ocp,balram ocp,100,EXACT,Balram OCP,,,False,MISSING_OR_INVALID
+CM-033,Balrampur,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,balrampur,secl,chhattisgarh,surguja,balrampur,balrampur,100,EXACT,Balrampur,,,False,MISSING_OR_INVALID
+CM-034,Bangwar,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bangwar,secl,madhya pradesh,shahdol,bangwar,bangwar,100,EXACT,Bangwar,,,False,MISSING_OR_INVALID
+CM-035,Bankola Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,bankola,ecl,west bengal,bardhaman,bankola,bankola,100,EXACT,Bankola Colliery,,,False,MISSING_OR_INVALID
+CM-036,Bansra Colliery,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,bansra,ecl,west bengal,bardhaman,bansra,bansra,100,EXACT,Bansra Colliery,,,False,MISSING_OR_INVALID
+CM-037,Baranj,Maharashtra,CHANDRAPUR,KPCL,OPENCAST,PUBLIC,WORKING,baranj,kpcl,maharashtra,chandrapur,baranj,baranj,100,EXACT,Baranj,,,False,MISSING_OR_INVALID
+CM-038,Barjora (North) Coal Mine,West Bengal,BANKURA,WBPDCL,OPENCAST,PUBLIC,WORKING,barjora north,wbpdcl,west bengal,bankura,barjora north,barjora north,100,EXACT,Barjora (North) Coal Mine,,,False,MISSING_OR_INVALID
+CM-039,Barmuri,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,barmuri,ecl,jharkhand,dhanbad,barmuri,barmuri,100,EXACT,Barmuri,,,False,MISSING_OR_INVALID
+CM-040,Baroud OC,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,baroud oc,secl,chhattisgarh,raigarh,baroud oc,baroud oc,100,EXACT,Baroud OC,,,False,MISSING_OR_INVALID
+CM-041,Bartarai,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bartarai,secl,madhya pradesh,shahdol,bartarai,bartarai,100,EXACT,Bartarai,,,False,MISSING_OR_INVALID
+CM-042,Basantimata -Dahibari,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,basantimata dahibari,bccl,jharkhand,dhanbad,basantimata dahibari,basantimata dahibari,100,EXACT,Basantimata -Dahibari,,,False,MISSING_OR_INVALID
+CM-043,Basdeopur,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,basdeopur,bccl,jharkhand,dhanbad,basdeopur,basdeopur,100,EXACT,Basdeopur,,,False,MISSING_OR_INVALID
+CM-044,Bastacolla,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,bastacolla,bccl,jharkhand,dhanbad,bastacolla,bastacolla,100,EXACT,Bastacolla,,,False,MISSING_OR_INVALID
+CM-045,Basundhara (West) OCP,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,basundhara west ocp,mcl,odisha,sundargarh,basundhara west ocp,basundhara west ocp,100,EXACT,Basundhara (West) OCP,,,False,MISSING_OR_INVALID
+CM-046,Behraband,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,behraband,secl,madhya pradesh,shahdol,behraband,behraband,100,EXACT,Behraband,,,False,MISSING_OR_INVALID
+CM-047,Bejdih Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,bejdih,ecl,west bengal,bardhaman,bejdih,bejdih,100,EXACT,Bejdih Colliery,,,False,MISSING_OR_INVALID
+CM-048,Belbaid Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,belbaid,ecl,west bengal,bardhaman,belbaid,belbaid,100,EXACT,Belbaid Colliery,,,False,MISSING_OR_INVALID
+CM-049,Belgaon Coal Mine,Maharashtra,CHANDRAPUR,SISCO,UNDERGROUND,PRIVATE,WORKING,belgaon,sisco,maharashtra,chandrapur,belgaon,belgaon,100,EXACT,Belgaon Coal Mine,,,False,MISSING_OR_INVALID
+CM-050,Bhadra,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bhadra,secl,madhya pradesh,shahdol,bhadra,bhadra,100,EXACT,Bhadra,,,False,MISSING_OR_INVALID
+CM-051,Bhanegaon OCM,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,bhanegaon ocm,wcl,maharashtra,nagpur,bhanegaon ocm,bhanegaon ocm,100,EXACT,Bhanegaon OCM,,,False,MISSING_OR_INVALID
+CM-052,Bhanora West Block colliery & Bhanora OC patch (H),West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,bhanora west block bhanora oc patch h,ecl,west bengal,bardhaman,bhanora west block bhanora oc patch h,bhanora west block bhanora oc patch h,100,EXACT,Bhanora West Block colliery & Bhanora OC patch (H),,,False,MISSING_OR_INVALID
+CM-053,Bharatpur OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,bharatpur ocp,mcl,odisha,angul,bharatpur ocp,bharatpur ocp,100,EXACT,Bharatpur OCP,,,False,MISSING_OR_INVALID
+CM-054,Bhatadi OC Mine,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,bhatadi oc,wcl,maharashtra,chandrapur,bhatadi oc,bhatadi oc,100,EXACT,Bhatadi OC Mine,,,False,MISSING_OR_INVALID
+CM-055,Bhatgaon,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,bhatgaon,secl,chhattisgarh,surguja,bhatgaon,bhatgaon,100,EXACT,Bhatgaon,,,False,MISSING_OR_INVALID
+CM-056,Bhelatand Colliery,Jharkhand,DHANBAD,TSL,UNDERGROUND,PRIVATE,WORKING,bhelatand,tsl,jharkhand,dhanbad,bhelatand,bhelatand,100,EXACT,Bhelatand Colliery,,,False,MISSING_OR_INVALID
+CM-057,Bhowra(S),Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,bhowra s,bccl,jharkhand,dhanbad,bhowra s,bhowra s,100,EXACT,Bhowra(S),,,False,MISSING_OR_INVALID
+CM-058,Bhubaneswari OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,bhubaneswari ocp,mcl,odisha,angul,bhubaneswari ocp,bhubaneswari ocp,100,EXACT,Bhubaneswari OCP,,,False,MISSING_OR_INVALID
+CM-059,Bhurkunda,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,bhurkunda,ccl,jharkhand,ramgarh,bhurkunda,bhurkunda,100,EXACT,Bhurkunda,,,False,MISSING_OR_INVALID
+CM-060,Bhurkunda (Sangum),Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,bhurkunda sangum,ccl,jharkhand,ramgarh,bhurkunda sangum,bhurkunda sangum,100,EXACT,Bhurkunda (Sangum),,,False,MISSING_OR_INVALID
+CM-061,Bicharpur,Madhya Pradesh,SHAHDOL,UTCL,UNDERGROUND,PRIVATE,WORKING,bicharpur,utcl,madhya pradesh,shahdol,bicharpur,bicharpur,100,EXACT,Bicharpur,,,False,MISSING_OR_INVALID
+CM-062,Bijari OC,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,bijari oc,secl,chhattisgarh,raigarh,bijari oc,bijari oc,100,EXACT,Bijari OC,,,False,MISSING_OR_INVALID
+CM-063,Bijuri,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bijuri,secl,madhya pradesh,shahdol,bijuri,bijuri,100,EXACT,Bijuri,,,False,MISSING_OR_INVALID
+CM-064,Bina Extn,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,bina extn,ncl,uttar pradesh,sonbhadra,bina extn,bina extn,100,EXACT,Bina Extn,,,False,MISSING_OR_INVALID
+CM-065,Block-B Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,block b,ncl,madhya pradesh,singrauli,block b,block b,100,EXACT,Block-B Project,,,False,MISSING_OR_INVALID
+CM-066,Bokaro OC (Bermo),Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,bokaro oc bermo,ccl,jharkhand,bokaro,bokaro oc bermo,bokaro oc bermo,100,EXACT,Bokaro OC (Bermo),,,False,MISSING_OR_INVALID
+CM-067,Bonjemehari OC (Extn),West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,bonjemehari oc extn,ecl,west bengal,bardhaman,bonjemehari oc extn,bonjemehari oc extn,100,EXACT,Bonjemehari OC (Extn),,,False,MISSING_OR_INVALID
+CM-068,C L Jambad OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,c l jambad ocp,ecl,west bengal,bardhaman,c l jambad ocp,c l jambad ocp,100,EXACT,C L Jambad OCP,,,False,MISSING_OR_INVALID
+CM-069,Central Kajora Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,central kajora,ecl,west bengal,bardhaman,central kajora,central kajora,100,EXACT,Central Kajora Colliery,,,False,MISSING_OR_INVALID
+CM-070,Central Saunda,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,central saunda,ccl,jharkhand,ramgarh,central saunda,central saunda,100,EXACT,Central Saunda,,,False,MISSING_OR_INVALID
+CM-071,Chainpur(Sarubera) Colly.,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,chainpur sarubera colly,ccl,jharkhand,ramgarh,chainpur sarubera colly,chainpur sarubera colly,100,EXACT,Chainpur(Sarubera) Colly.,,,False,MISSING_OR_INVALID
+CM-072,Chanda Rayatwari Colliery,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,chanda rayatwari,wcl,maharashtra,chandrapur,chanda rayatwari,chanda rayatwari,100,EXACT,Chanda Rayatwari Colliery,,,False,MISSING_OR_INVALID
+CM-073,Chapapur-II & Chappapur 10 Quarry (OC),Jharkhand,DHANBAD,ECL,MIXED,PUBLIC,WORKING,chapapur ii chappapur 10 quarry oc,ecl,jharkhand,dhanbad,chapapur ii chappapur 10 quarry oc,chapapur ii chappapur 10 quarry oc,100,EXACT,Chapapur-II & Chappapur 10 Quarry (OC),,,False,MISSING_OR_INVALID
+CM-074,Chapuikhas Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chapuikhas,ecl,west bengal,bardhaman,chapuikhas,chapuikhas,100,EXACT,Chapuikhas Colliery,,,False,MISSING_OR_INVALID
+CM-075,Chasnalla Colliery,Jharkhand,DHANBAD,IISCO,UNDERGROUND,PUBLIC,WORKING,chasnalla,iisco,jharkhand,dhanbad,chasnalla,chasnalla,100,EXACT,Chasnalla Colliery,,,False,MISSING_OR_INVALID
+CM-076,Chatti Bariatu Coal Mining Project,Jharkhand,HAZARIBAGH,NTPC,OPENCAST,PUBLIC,WORKING,chatti bariatu mining,ntpc,jharkhand,hazaribagh,chatti bariatu mining,chatti bariatu mining,100,EXACT,Chatti Bariatu Coal Mining Project,,,False,MISSING_OR_INVALID
+CM-077,Chhal OC,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,chhal oc,secl,chhattisgarh,raigarh,chhal oc,chhal oc,100,EXACT,Chhal OC,,,False,MISSING_OR_INVALID
+CM-078,Chhatarpur -II,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,chhatarpur ii,wcl,madhya pradesh,betul,chhatarpur ii,chhatarpur ii,100,EXACT,Chhatarpur -II,,,False,MISSING_OR_INVALID
+CM-079,Chhatarpur 1,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,chhatarpur 1,wcl,madhya pradesh,betul,chhatarpur 1,chhatarpur 1,100,EXACT,Chhatarpur 1,,,False,MISSING_OR_INVALID
+CM-080,Chhinda,Madhya Pradesh,CHHINDWARA,WCL,OPENCAST,PUBLIC,NON_WORKING,chhinda,wcl,madhya pradesh,chhindwara,chhinda,chhinda,100,EXACT,Chhinda,,,False,MISSING_OR_INVALID
+CM-081,Chinakuri Mine III,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chinakuri iii,ecl,west bengal,bardhaman,chinakuri iii,chinakuri iii,100,EXACT,Chinakuri Mine III,,,False,MISSING_OR_INVALID
+CM-082,Chirimiri,Chhattisgarh,KOREA,SECL,OPENCAST,PUBLIC,WORKING,chirimiri,secl,chhattisgarh,korea,chirimiri,chirimiri,100,EXACT,Chirimiri,,,False,MISSING_OR_INVALID
+CM-083,Chitra East OCP,Jharkhand,DEOGHAR,ECL,OPENCAST,PUBLIC,WORKING,chitra east ocp,ecl,jharkhand,deoghar,chitra east ocp,chitra east ocp,100,EXACT,Chitra East OCP,,,False,MISSING_OR_INVALID
+CM-084,Chora 10 Pit Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chora 10 pit,ecl,west bengal,bardhaman,chora 10 pit,chora 10 pit,100,EXACT,Chora 10 Pit Colliery,,,False,MISSING_OR_INVALID
+CM-085,Chora 7&9 Pits Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chora 7 9 pits,ecl,west bengal,bardhaman,chora 7 9 pits,chora 7 9 pits,100,EXACT,Chora 7&9 Pits Colliery,,,False,MISSING_OR_INVALID
+CM-086,Chora Block Incline UG & Shankarpur OC & Banbahal OC,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,chora block incline ug shankarpur oc banbahal oc,ecl,west bengal,bardhaman,chora block incline ug shankarpur oc banbahal oc,chora block incline ug shankarpur oc banbahal oc,100,EXACT,Chora Block Incline UG & Shankarpur OC & Banbahal OC,,,False,MISSING_OR_INVALID
+CM-087,Churcha RO,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,churcha ro,secl,chhattisgarh,korea,churcha ro,churcha ro,100,EXACT,Churcha RO,,,False,MISSING_OR_INVALID
+CM-088,Dabor Ph-II & III OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,dabor ph ii iii oc,ecl,west bengal,bardhaman,dabor ph ii iii oc,dabor ph ii iii oc,100,EXACT,Dabor Ph-II & III OC,,,False,MISSING_OR_INVALID
+CM-089,Dakra Bukbuka OC,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,dakra bukbuka oc,ccl,jharkhand,ranchi,dakra bukbuka oc,dakra bukbuka oc,100,EXACT,Dakra Bukbuka OC,,,False,MISSING_OR_INVALID
+CM-090,Dalurband OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,dalurband oc,ecl,west bengal,bardhaman,dalurband oc,dalurband oc,100,EXACT,Dalurband OC,,,False,MISSING_OR_INVALID
+CM-091,Damini,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,damini,secl,madhya pradesh,shahdol,damini,damini,100,EXACT,Damini,,,False,MISSING_OR_INVALID
+CM-092,Damoda,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,damoda,bccl,jharkhand,dhanbad,damoda,damoda,100,EXACT,Damoda,,,False,MISSING_OR_INVALID
+CM-093,Dhankasa & Jamunia,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,NON_WORKING,dhankasa jamunia,wcl,madhya pradesh,chhindwara,dhankasa jamunia,dhankasa jamunia,100,EXACT,Dhankasa & Jamunia,,,False,MISSING_OR_INVALID
+CM-094,Dhanpuri,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,dhanpuri,secl,madhya pradesh,shahdol,dhanpuri,dhanpuri,100,EXACT,Dhanpuri,,,False,MISSING_OR_INVALID
+CM-095,Dhelwadih Colliery,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,dhelwadih,secl,chhattisgarh,korba,dhelwadih,dhelwadih,100,EXACT,Dhelwadih Colliery,,,False,MISSING_OR_INVALID
+CM-096,Dhemomain Incl Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,dhemomain incl,ecl,west bengal,bardhaman,dhemomain incl,dhemomain incl,100,EXACT,Dhemomain Incl Colliery,,,False,MISSING_OR_INVALID
+CM-097,Dhemomain Pit Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,dhemomain pit,ecl,west bengal,bardhaman,dhemomain pit,dhemomain pit,100,EXACT,Dhemomain Pit Colliery,,,False,MISSING_OR_INVALID
+CM-098,Dhoptala OC (Sasti Colliery),Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,dhoptala oc sasti,wcl,maharashtra,chandrapur,dhoptala oc sasti,dhoptala oc sasti,100,EXACT,Dhoptala OC (Sasti Colliery),,,False,MISSING_OR_INVALID
+CM-099,Dhori Khas(UG),Jharkhand,BOKARO,CCL,UNDERGROUND,PUBLIC,WORKING,dhori khas ug,ccl,jharkhand,bokaro,dhori khas ug,dhori khas ug,100,EXACT,Dhori Khas(UG),,,False,MISSING_OR_INVALID
+CM-100,Dipka,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,dipka,secl,chhattisgarh,korba,dipka,dipka,100,EXACT,Dipka,22.35,82.55,True,VALID
+CM-101,Dubeswari Colliery,West Bengal,PURULIA,ECL,UNDERGROUND,PUBLIC,WORKING,dubeswari,ecl,west bengal,purulia,dubeswari,dubeswari,100,EXACT,Dubeswari Colliery,,,False,MISSING_OR_INVALID
+CM-102,Dudhichua Project,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,dudhichua,ncl,uttar pradesh,sonbhadra,dudhichua,dudhichua,100,EXACT,Dudhichua Project,,,False,MISSING_OR_INVALID
+CM-103,Dulanga Coal Mining Project,Odisha,SUNDARGARH,NTPC,OPENCAST,PUBLIC,WORKING,dulanga mining,ntpc,odisha,sundargarh,dulanga mining,dulanga mining,100,EXACT,Dulanga Coal Mining Project,,,False,MISSING_OR_INVALID
+CM-104,Durgapur Open Cast,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,durgapur open cast,wcl,maharashtra,chandrapur,durgapur open cast,durgapur open cast,100,EXACT,Durgapur Open Cast,,,False,MISSING_OR_INVALID
+CM-105,Durgapur Rayatwari Colly,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,WORKING,durgapur rayatwari colly,wcl,maharashtra,chandrapur,durgapur rayatwari colly,durgapur rayatwari colly,100,EXACT,Durgapur Rayatwari Colly,,,False,MISSING_OR_INVALID
+CM-106,DVC Tubed Mines,Jharkhand,LATEHAR,DVC,OPENCAST,PUBLIC,WORKING,dvc tubed mines,dvc,jharkhand,latehar,dvc tubed mines,dvc tubed mines,100,EXACT,DVC Tubed Mines,,,False,MISSING_OR_INVALID
+CM-107,E.Basuria,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,e basuria,bccl,jharkhand,dhanbad,e basuria,e basuria,100,EXACT,E.Basuria,,,False,MISSING_OR_INVALID
+CM-108,Ena,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,ena,bccl,jharkhand,dhanbad,ena,ena,100,EXACT,Ena,,,False,MISSING_OR_INVALID
+CM-109,G & G B Coal Mine,West Bengal,BIRBHUM,WBPDCL,OPENCAST,PUBLIC,WORKING,g g b,wbpdcl,west bengal,birbhum,g g b,g g b,100,EXACT,G & G B Coal Mine,,,False,MISSING_OR_INVALID
+CM-110,Gare Palma IV 6,Chhattisgarh,RAIGARH,JSPL,OPENCAST,PRIVATE,WORKING,gare palma iv 6,jspl,chhattisgarh,raigarh,gare palma iv 6,gare palma iv 6,100,EXACT,Gare Palma IV 6,,,False,MISSING_OR_INVALID
+CM-111,Gare Palma IV-2&3,Chhattisgarh,KORBA,BALCO,OPENCAST,PRIVATE,WORKING,gare palma iv 2 3,balco,chhattisgarh,korba,gare palma iv 2 3,gare palma iv 2 3,100,EXACT,Gare Palma IV-2&3,,,False,MISSING_OR_INVALID
+CM-112,Gare Palma IV/1,Chhattisgarh,RAIGARH,JPL,OPENCAST,PRIVATE,WORKING,gare palma iv 1,jpl,chhattisgarh,raigarh,gare palma iv 1,gare palma iv 1,100,EXACT,Gare Palma IV/1,,,False,MISSING_OR_INVALID
+CM-113,Gare Palma IV/2&3,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,gare palma iv 2 3,secl,chhattisgarh,raigarh,gare palma iv 2 3,gare palma iv 2 3,100,EXACT,Gare Palma IV-2&3,,,False,MISSING_OR_INVALID
+CM-114,Gare Palma IV/2&3,Chhattisgarh,RAIGARH,JPL,OPENCAST,PRIVATE,WORKING,gare palma iv 2 3,jpl,chhattisgarh,raigarh,gare palma iv 2 3,gare palma iv 2 3,100,EXACT,Gare Palma IV-2&3,,,False,MISSING_OR_INVALID
+CM-115,Gare Palma IV/7,Chhattisgarh,RAIGARH,SEML,OPENCAST,PRIVATE,WORKING,gare palma iv 7,seml,chhattisgarh,raigarh,gare palma iv 7,gare palma iv 7,100,EXACT,Gare Palma IV/7,,,False,MISSING_OR_INVALID
+CM-116,Gare Palma Sector III,Chhattisgarh,RAIGARH,CSPGCL,OPENCAST,PUBLIC,WORKING,gare palma sector iii,cspgcl,chhattisgarh,raigarh,gare palma sector iii,gare palma sector iii,100,EXACT,Gare Palma Sector III,,,False,MISSING_OR_INVALID
+CM-117,Garjanbahal OCP,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,garjanbahal ocp,mcl,odisha,sundargarh,garjanbahal ocp,garjanbahal ocp,100,EXACT,Garjanbahal OCP,,,False,MISSING_OR_INVALID
+CM-118,Gayatri,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,gayatri,secl,chhattisgarh,surguja,gayatri,gayatri,100,EXACT,Gayatri,,,False,MISSING_OR_INVALID
+CM-119,Gevra,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,gevra,secl,chhattisgarh,korba,gevra,gevra,100,EXACT,Gevra,22.35,82.55,True,VALID
+CM-120,"Ghonsa,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,ghonsa,wcl,maharashtra,yavatmal,ghonsa,ghonsa,100,EXACT,"Ghonsa,",,,False,MISSING_OR_INVALID
+CM-121,Gidi `A',Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,gidi a,ccl,jharkhand,hazaribagh,gidi a,gidi a,100,EXACT,Gidi `A',,,False,MISSING_OR_INVALID
+CM-122,Gidi `C',Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,gidi c,ccl,jharkhand,hazaribagh,gidi c,gidi c,100,EXACT,Gidi `C',,,False,MISSING_OR_INVALID
+CM-123,Giridih OC,Jharkhand,GIRIDIH,CCL,OPENCAST,PUBLIC,NON_WORKING,giridih oc,ccl,jharkhand,giridih,giridih oc,giridih oc,100,EXACT,Giridih OC,,,False,MISSING_OR_INVALID
+CM-124,Godavari Khani 1 & 3,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,godavari khani 1 3,sccl,telangana,khammam,godavari khani 1 3,godavari khani 1 3,100,EXACT,Godavari Khani 1 & 3,,,False,MISSING_OR_INVALID
+CM-125,Godavari Khani-11 Incline,Telangana,PEDDAPALLI,SCCL,UNDERGROUND,PUBLIC,WORKING,godavari khani 11 incline,sccl,telangana,peddapalli,godavari khani 11 incline,godavari khani 11 incline,100,EXACT,Godavari Khani-11 Incline,,,False,MISSING_OR_INVALID
+CM-126,Godavari Khani-2 & 2A,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,godavari khani 2 2a,sccl,telangana,khammam,godavari khani 2 2a,godavari khani 2 2a,100,EXACT,Godavari Khani-2 & 2A,,,False,MISSING_OR_INVALID
+CM-127,Godavarikhani V OC,Telangana,PEDDAPALLI,SCCL,OPENCAST,PUBLIC,WORKING,godavarikhani v oc,sccl,telangana,peddapalli,godavarikhani v oc,godavarikhani v oc,100,EXACT,Godavarikhani V OC,,,False,MISSING_OR_INVALID
+CM-128,Gokul OC Mine + Gokul Extn.,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,gokul oc gokul extn,wcl,maharashtra,nagpur,gokul oc gokul extn,gokul oc gokul extn,100,EXACT,Gokul OC Mine + Gokul Extn.,,,False,MISSING_OR_INVALID
+CM-129,Gondudih/Khas Kusunda,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,gondudih khas kusunda,bccl,jharkhand,dhanbad,gondudih khas kusunda,gondudih khas kusunda,100,EXACT,Gondudih/Khas Kusunda,,,False,MISSING_OR_INVALID
+CM-130,Gopalichuck,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,gopalichuck,bccl,jharkhand,dhanbad,gopalichuck,gopalichuck,100,EXACT,Gopalichuck,,,False,MISSING_OR_INVALID
+CM-131,Gopinathpur,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,NON_WORKING,gopinathpur,ecl,jharkhand,dhanbad,gopinathpur,gopinathpur,100,EXACT,Gopinathpur,,,False,MISSING_OR_INVALID
+CM-132,Gotitoria E & W,Madhya Pradesh,Narsinghpur,BSMPL,OPENCAST,PRIVATE,WORKING,gotitoria e w,bsmpl,madhya pradesh,narsinghpur,gotitoria e w,gotitoria e w,100,EXACT,Gotitoria E & W,,,False,MISSING_OR_INVALID
+CM-133,Gourangdi-A OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,gourangdi a ocp,ecl,west bengal,bardhaman,gourangdi a ocp,gourangdi a ocp,100,EXACT,Gourangdi-A OCP,,,False,MISSING_OR_INVALID
+CM-134,Gourangdih Extn OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,gourangdih extn oc,ecl,west bengal,bardhaman,gourangdih extn oc,gourangdih extn oc,100,EXACT,Gourangdih Extn OC,,,False,MISSING_OR_INVALID
+CM-135,Gouri -Pauni(A) OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,gouri pauni a ocm,wcl,maharashtra,chandrapur,gouri pauni a ocm,gouri pauni a ocm,100,EXACT,Gouri -Pauni(A) OCM,,,False,MISSING_OR_INVALID
+CM-136,Gouri Deep,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,gouri deep,wcl,maharashtra,chandrapur,gouri deep,gouri deep,100,EXACT,Gouri Deep,,,False,MISSING_OR_INVALID
+CM-137,Gouthampur Khani OCP,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,gouthampur khani ocp,sccl,telangana,khammam,gouthampur khani ocp,gouthampur khani ocp,100,EXACT,Gouthampur Khani OCP,,,False,MISSING_OR_INVALID
+CM-138,Govindpur,Jharkhand,BOKARO,CCL,UNDERGROUND,PUBLIC,WORKING,govindpur,ccl,jharkhand,bokaro,govindpur,govindpur,100,EXACT,Govindpur,,,False,MISSING_OR_INVALID
+CM-139,Govindpur Ph-II OCP,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,govindpur ph ii ocp,ccl,jharkhand,bokaro,govindpur ph ii ocp,govindpur ph ii ocp,100,EXACT,Govindpur Ph-II OCP,,,False,MISSING_OR_INVALID
+CM-140,GP-IV-8 Coal Mine,Chhattisgarh,RAIGARH,AMBUJA,UNDERGROUND,PRIVATE,WORKING,gp iv 8,ambuja,chhattisgarh,raigarh,gp iv 8,gp iv 8,100,EXACT,GP-IV-8 Coal Mine,,,False,MISSING_OR_INVALID
+CM-141,Haldibari,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,haldibari,secl,chhattisgarh,korea,haldibari,haldibari,100,EXACT,Haldibari,,,False,MISSING_OR_INVALID
+CM-142,Hariajam,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,hariajam,ecl,jharkhand,dhanbad,hariajam,hariajam,100,EXACT,Hariajam,,,False,MISSING_OR_INVALID
+CM-143,Hindustan Lalpeth Colliery No.1,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,hindustan lalpeth no 1,wcl,maharashtra,chandrapur,hindustan lalpeth no 1,hindustan lalpeth no 1,100,EXACT,Hindustan Lalpeth Colliery No.1,,,False,MISSING_OR_INVALID
+CM-144,Hindustan Lalpeth OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,hindustan lalpeth oc,wcl,maharashtra,chandrapur,hindustan lalpeth oc,hindustan lalpeth oc,100,EXACT,Hindustan Lalpeth OC,,,False,MISSING_OR_INVALID
+CM-145,Hingula OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,hingula ocp,mcl,odisha,angul,hingula ocp,hingula ocp,100,EXACT,Hingula OCP,,,False,MISSING_OR_INVALID
+CM-146,Hirakhand Bundia Mine,Odisha,JHARSUGUDA,MCL,UNDERGROUND,PUBLIC,WORKING,hirakhand bundia,mcl,odisha,jharsuguda,hirakhand bundia,hirakhand bundia,100,EXACT,Hirakhand Bundia Mine,,,False,MISSING_OR_INVALID
+CM-147,Hurra C,Jharkhand,GODDA,ECL,OPENCAST,PUBLIC,WORKING,hurra c,ecl,jharkhand,godda,hurra c,hurra c,100,EXACT,Hurra C,,,False,MISSING_OR_INVALID
+CM-148,"Indaram Khani-1A, Incline",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,indaram khani 1a incline,sccl,telangana,mancherial,indaram khani 1a incline,indaram khani 1a incline,100,EXACT,"Indaram Khani-1A, Incline",,,False,MISSING_OR_INVALID
+CM-149,Indaram Khani-OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,indaram khani oc,sccl,telangana,mancherial,indaram khani oc,indaram khani oc,100,EXACT,Indaram Khani-OC,,,False,MISSING_OR_INVALID
+CM-150,Int. Lakhanpur-Belpahar-Lilari OCP,Odisha,JHARSUGUDA,MCL,OPENCAST,PUBLIC,WORKING,int lakhanpur belpahar lilari ocp,mcl,odisha,jharsuguda,int lakhanpur belpahar lilari ocp,int lakhanpur belpahar lilari ocp,100,EXACT,Int. Lakhanpur-Belpahar-Lilari OCP,,,False,MISSING_OR_INVALID
+CM-151,Itapara OC Patch,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,itapara oc patch,ecl,west bengal,bardhaman,itapara oc patch,itapara oc patch,100,EXACT,Itapara OC Patch,,,False,MISSING_OR_INVALID
+CM-152,J. K. Nagar Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,j k nagar,ecl,west bengal,bardhaman,j k nagar,j k nagar,100,EXACT,J. K. Nagar Colliery,,,False,MISSING_OR_INVALID
+CM-153,Jaganathpur,Chhattisgarh,SURGUJA,SECL,OPENCAST,PUBLIC,WORKING,jaganathpur,secl,chhattisgarh,surguja,jaganathpur,jaganathpur,100,EXACT,Jaganathpur,,,False,MISSING_OR_INVALID
+CM-154,Jagannath Re-org OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,jagannath re org ocp,mcl,odisha,angul,jagannath re org ocp,jagannath re org ocp,100,EXACT,Jagannath Re-org OCP,,,False,MISSING_OR_INVALID
+CM-155,Jalagam Vengala Rao OC-2,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,jalagam vengala rao oc 2,sccl,telangana,khammam,jalagam vengala rao oc 2,jalagam vengala rao oc 2,100,EXACT,Jalagam Vengala Rao OC-2,,,False,MISSING_OR_INVALID
+CM-156,Jalipa,Chhattisgarh,RAIGARH,HIL,OPENCAST,PRIVATE,WORKING,jalipa,hil,chhattisgarh,raigarh,jalipa,jalipa,100,EXACT,Jalipa,,,False,MISSING_OR_INVALID
+CM-157,Jamadoba Colliery,Jharkhand,DHANBAD,TSL,MIXED,PRIVATE,WORKING,jamadoba,tsl,jharkhand,dhanbad,jamadoba,jamadoba,100,EXACT,Jamadoba Colliery,,,False,MISSING_OR_INVALID
+CM-158,Jambad OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,jambad ocp,ecl,west bengal,bardhaman,jambad ocp,jambad ocp,100,EXACT,Jambad OCP,,,False,MISSING_OR_INVALID
+CM-159,Jambad UG Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,jambad ug,ecl,west bengal,bardhaman,jambad ug,jambad ug,100,EXACT,Jambad UG Colliery,,,False,MISSING_OR_INVALID
+CM-160,Jamkhani Coal Mine,Odisha,SUNDARGARH,Vedanta,OPENCAST,PRIVATE,WORKING,jamkhani,vedanta,odisha,sundargarh,jamkhani,jamkhani,100,EXACT,Jamkhani Coal Mine,,,False,MISSING_OR_INVALID
+CM-161,Jampali,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,jampali,secl,chhattisgarh,raigarh,jampali,jampali,100,EXACT,Jampali,,,False,MISSING_OR_INVALID
+CM-162,Jamuna 9 & 10 Jamuna RO,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,jamuna 9 10 jamuna ro,secl,madhya pradesh,shahdol,jamuna 9 10 jamuna ro,jamuna 9 10 jamuna ro,100,EXACT,Jamuna 9 & 10 Jamuna RO,,,False,MISSING_OR_INVALID
+CM-163,Jarangdih OC,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,jarangdih oc,ccl,jharkhand,bokaro,jarangdih oc,jarangdih oc,100,EXACT,Jarangdih OC,,,False,MISSING_OR_INVALID
+CM-164,"Jawahar Khani OC-5,",Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,jawahar khani oc 5,sccl,telangana,khammam,jawahar khani oc 5,jawahar khani oc 5,100,EXACT,"Jawahar Khani OC-5,",,,False,MISSING_OR_INVALID
+CM-165,Jayant Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,jayant,ncl,madhya pradesh,singrauli,jayant,jayant,100,EXACT,Jayant Project,,,False,MISSING_OR_INVALID
+CM-166,Jhanjra Project Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,jhanjra,ecl,west bengal,bardhaman,jhanjra,jhanjra,100,EXACT,Jhanjra Project Colliery,,,False,MISSING_OR_INVALID
+CM-167,Jharkhand OCP,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,jharkhand ocp,ccl,jharkhand,ramgarh,jharkhand ocp,jharkhand ocp,100,EXACT,Jharkhand OCP,,,False,MISSING_OR_INVALID
+CM-168,Jhilimili Colliery,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,jhilimili,secl,chhattisgarh,korea,jhilimili,jhilimili,100,EXACT,Jhilimili Colliery,,,False,MISSING_OR_INVALID
+CM-169,Jhingurda Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,jhingurda,ncl,madhya pradesh,singrauli,jhingurda,jhingurda,100,EXACT,Jhingurda Project,,,False,MISSING_OR_INVALID
+CM-170,Jhiria,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,jhiria,secl,madhya pradesh,shahdol,jhiria,jhiria,100,EXACT,Jhiria,,,False,MISSING_OR_INVALID
+CM-171,Jitpur Colliery,Jharkhand,DHANBAD,IISCO,UNDERGROUND,PUBLIC,WORKING,jitpur,iisco,jharkhand,dhanbad,jitpur,jitpur,100,EXACT,Jitpur Colliery,,,False,MISSING_OR_INVALID
+CM-172,Jogidih,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,jogidih,bccl,jharkhand,dhanbad,jogidih,jogidih,100,EXACT,Jogidih,,,False,MISSING_OR_INVALID
+CM-173,Joyrampur,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,joyrampur,bccl,jharkhand,dhanbad,joyrampur,joyrampur,100,EXACT,Joyrampur,,,False,MISSING_OR_INVALID
+CM-174,"Junad,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,junad,wcl,maharashtra,yavatmal,junad,junad,100,EXACT,"Junad,",,,False,MISSING_OR_INVALID
+CM-175,K. Dewarkhand,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,k dewarkhand,ccl,jharkhand,ranchi,k dewarkhand,k dewarkhand,100,EXACT,K. Dewarkhand,,,False,MISSING_OR_INVALID
+CM-176,Kabribad OC,Jharkhand,GIRIDIH,CCL,OPENCAST,PUBLIC,WORKING,kabribad oc,ccl,jharkhand,giridih,kabribad oc,kabribad oc,100,EXACT,Kabribad OC,,,False,MISSING_OR_INVALID
+CM-177,Kakatiya Khani-1 & 1A Incline,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 1 1a incline,sccl,telangana,jayashankar bhupalpally,kakatiya khani 1 1a incline,kakatiya khani 1 1a incline,100,EXACT,Kakatiya Khani-1 & 1A Incline,,,False,MISSING_OR_INVALID
+CM-178,Kakatiya Khani-5 Incline,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 5 incline,sccl,telangana,jayashankar bhupalpally,kakatiya khani 5 incline,kakatiya khani 5 incline,100,EXACT,Kakatiya Khani-5 Incline,,,False,MISSING_OR_INVALID
+CM-179,"Kakatiya Khani-6, Incline",Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 6 incline,sccl,telangana,jayashankar bhupalpally,kakatiya khani 6 incline,kakatiya khani 6 incline,100,EXACT,"Kakatiya Khani-6, Incline",,,False,MISSING_OR_INVALID
+CM-180,Kakatiya Khani-8 & 8A Incline,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 8 8a incline,sccl,telangana,jayashankar bhupalpally,kakatiya khani 8 8a incline,kakatiya khani 8 8a incline,100,EXACT,Kakatiya Khani-8 & 8A Incline,,,False,MISSING_OR_INVALID
+CM-181,Kakatiya Khani-OC II,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,OPENCAST,PUBLIC,WORKING,kakatiya khani oc ii,sccl,telangana,jayashankar bhupalpally,kakatiya khani oc ii,kakatiya khani oc ii,100,EXACT,Kakatiya Khani-OC II,,,False,MISSING_OR_INVALID
+CM-182,Kakatiya Khani-OC-III,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,OPENCAST,PUBLIC,WORKING,kakatiya khani oc iii,sccl,telangana,jayashankar bhupalpally,kakatiya khani oc iii,kakatiya khani oc iii,100,EXACT,Kakatiya Khani-OC-III,,,False,MISSING_OR_INVALID
+CM-183,Kakri Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,kakri,ncl,madhya pradesh,singrauli,kakri,kakri,100,EXACT,Kakri Project,,,False,MISSING_OR_INVALID
+CM-184,Kalidaspur Project,West Bengal,BANKURA,ECL,UNDERGROUND,PUBLIC,WORKING,kalidaspur,ecl,west bengal,bankura,kalidaspur,kalidaspur,100,EXACT,Kalidaspur Project,,,False,MISSING_OR_INVALID
+CM-185,Kalyan Khani OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,kalyan khani oc,sccl,telangana,mancherial,kalyan khani oc,kalyan khani oc,100,EXACT,Kalyan Khani OC,,,False,MISSING_OR_INVALID
+CM-186,Kalyan Khani-1 & 5 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,kalyan khani 1 5 incline,sccl,telangana,mancherial,kalyan khani 1 5 incline,kalyan khani 1 5 incline,100,EXACT,Kalyan Khani-1 & 5 Incline,,,False,MISSING_OR_INVALID
+CM-187,Kanchan OC,Madhya Pradesh,UMARIA,SECL,OPENCAST,PUBLIC,WORKING,kanchan oc,secl,madhya pradesh,umaria,kanchan oc,kanchan oc,100,EXACT,Kanchan OC,,,False,MISSING_OR_INVALID
+CM-188,Kaniha OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,kaniha ocp,mcl,odisha,angul,kaniha ocp,kaniha ocp,100,EXACT,Kaniha OCP,,,False,MISSING_OR_INVALID
+CM-189,Kankanee,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,kankanee,bccl,jharkhand,dhanbad,kankanee,kankanee,100,EXACT,Kankanee,,,False,MISSING_OR_INVALID
+CM-190,Kapasara,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,kapasara,ecl,jharkhand,dhanbad,kapasara,kapasara,100,EXACT,Kapasara,,,False,MISSING_OR_INVALID
+CM-191,Kapurdi,Chhattisgarh,RAIGARH,HIL,UNDERGROUND,PRIVATE,NON_WORKING,kapurdi,hil,chhattisgarh,raigarh,kapurdi,kapurdi,100,EXACT,Kapurdi,,,False,MISSING_OR_INVALID
+CM-192,Kargali OC,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,NON_WORKING,kargali oc,ccl,jharkhand,bokaro,kargali oc,kargali oc,100,EXACT,Kargali OC,,,False,MISSING_OR_INVALID
+CM-193,Karma,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,karma,ccl,jharkhand,ramgarh,karma,karma,100,EXACT,Karma,,,False,MISSING_OR_INVALID
+CM-194,KARO SPL.UG,Jharkhand,BOKARO,CCL,UNDERGROUND,PUBLIC,NON_WORKING,karo spl ug,ccl,jharkhand,bokaro,karo spl ug,karo spl ug,100,EXACT,KARO SPL.UG,,,False,MISSING_OR_INVALID
+CM-195,Karo-I OC,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,karo i oc,ccl,jharkhand,bokaro,karo i oc,karo i oc,100,EXACT,Karo-I OC,,,False,MISSING_OR_INVALID
+CM-196,Kasipet 1 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,kasipet 1 incline,sccl,telangana,mancherial,kasipet 1 incline,kasipet 1 incline,100,EXACT,Kasipet 1 Incline,,,False,MISSING_OR_INVALID
+CM-197,Kasipet 2 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,kasipet 2 incline,sccl,telangana,mancherial,kasipet 2 incline,kasipet 2 incline,100,EXACT,Kasipet 2 Incline,,,False,MISSING_OR_INVALID
+CM-198,Kathara Colly,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,kathara colly,ccl,jharkhand,bokaro,kathara colly,kathara colly,100,EXACT,Kathara Colly,,,False,MISSING_OR_INVALID
+CM-199,Kathautia Open Cast Coal Mine,Jharkhand,PALAMU,HIL,OPENCAST,PRIVATE,WORKING,kathautia open cast,hil,jharkhand,palamu,kathautia open cast,kathautia open cast,100,EXACT,Kathautia Open Cast Coal Mine,,,False,MISSING_OR_INVALID
+CM-200,Katkona 1 & 2,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,katkona 1 2,secl,chhattisgarh,korea,katkona 1 2,katkona 1 2,100,EXACT,Katkona 1 & 2,,,False,MISSING_OR_INVALID
+CM-201,Kedla (OC),Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,kedla oc,ccl,jharkhand,ramgarh,kedla oc,kedla oc,100,EXACT,Kedla (OC),,,False,MISSING_OR_INVALID
+CM-202,Kedla UG,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,kedla ug,ccl,jharkhand,ramgarh,kedla ug,kedla ug,100,EXACT,Kedla UG,,,False,MISSING_OR_INVALID
+CM-203,Kerandari,Jharkhand,HAZARIBAGH,NTPC,OPENCAST,PUBLIC,WORKING,kerandari,ntpc,jharkhand,hazaribagh,kerandari,kerandari,100,EXACT,Kerandari,,,False,MISSING_OR_INVALID
+CM-204,Ketki,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,ketki,secl,chhattisgarh,surguja,ketki,ketki,100,EXACT,Ketki,,,False,MISSING_OR_INVALID
+CM-205,Khadia Project,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,khadia,ncl,uttar pradesh,sonbhadra,khadia,khadia,100,EXACT,Khadia Project,,,False,MISSING_OR_INVALID
+CM-206,Khairagura OC,Telangana,Komaram Bheem,SCCL,OPENCAST,PUBLIC,WORKING,khairagura oc,sccl,telangana,komaram bheem,khairagura oc,khairagura oc,100,EXACT,Khairagura OC,,,False,MISSING_OR_INVALID
+CM-207,Khairaha,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,khairaha,secl,madhya pradesh,shahdol,khairaha,khairaha,100,EXACT,Khairaha,,,False,MISSING_OR_INVALID
+CM-208,Khandra Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,khandra,ecl,west bengal,bardhaman,khandra,khandra,100,EXACT,Khandra Colliery,,,False,MISSING_OR_INVALID
+CM-209,Kharkharee,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,kharkharee,bccl,jharkhand,dhanbad,kharkharee,kharkharee,100,EXACT,Kharkharee,,,False,MISSING_OR_INVALID
+CM-210,Khas Kajora Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,khas kajora,ecl,west bengal,bardhaman,khas kajora,khas kajora,100,EXACT,Khas Kajora Colliery,,,False,MISSING_OR_INVALID
+CM-211,Khoodia,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,khoodia,ecl,jharkhand,dhanbad,khoodia,khoodia,100,EXACT,Khoodia,,,False,MISSING_OR_INVALID
+CM-212,Khottadih OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,khottadih ocp,ecl,west bengal,bardhaman,khottadih ocp,khottadih ocp,100,EXACT,Khottadih OCP,,,False,MISSING_OR_INVALID
+CM-213,Khottadih UG,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,khottadih ug,ecl,west bengal,bardhaman,khottadih ug,khottadih ug,100,EXACT,Khottadih UG,,,False,MISSING_OR_INVALID
+CM-214,Kistaram OC,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,kistaram oc,sccl,telangana,khammam,kistaram oc,kistaram oc,100,EXACT,Kistaram OC,,,False,MISSING_OR_INVALID
+CM-215,"Kolarpimpri,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,kolarpimpri,wcl,maharashtra,yavatmal,kolarpimpri,kolarpimpri,100,EXACT,"Kolarpimpri,",,,False,MISSING_OR_INVALID
+CM-216,Kolgaon OC,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,kolgaon oc,wcl,maharashtra,yavatmal,kolgaon oc,kolgaon oc,100,EXACT,Kolgaon OC,,,False,MISSING_OR_INVALID
+CM-217,Kondapuram UG,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,kondapuram ug,sccl,telangana,khammam,kondapuram ug,kondapuram ug,100,EXACT,Kondapuram UG,,,False,MISSING_OR_INVALID
+CM-218,Koya Gundem OC II,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,koya gundem oc ii,sccl,telangana,khammam,koya gundem oc ii,koya gundem oc ii,100,EXACT,Koya Gundem OC II,,,False,MISSING_OR_INVALID
+CM-219,Krishnshila OCP,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,krishnshila ocp,ncl,uttar pradesh,sonbhadra,krishnshila ocp,krishnshila ocp,100,EXACT,Krishnshila OCP,,,False,MISSING_OR_INVALID
+CM-220,Kujama,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,kujama,bccl,jharkhand,dhanbad,kujama,kujama,100,EXACT,Kujama,,,False,MISSING_OR_INVALID
+CM-221,Kuju Colliery,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,kuju,ccl,jharkhand,ramgarh,kuju,kuju,100,EXACT,Kuju Colliery,,,False,MISSING_OR_INVALID
+CM-222,Kulda OCP Balinga,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,kulda ocp balinga,mcl,odisha,sundargarh,kulda ocp balinga,kulda ocp balinga,100,EXACT,Kulda OCP Balinga,,,False,MISSING_OR_INVALID
+CM-223,Kumardhubi Colliery,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,kumardhubi,ecl,jharkhand,dhanbad,kumardhubi,kumardhubi,100,EXACT,Kumardhubi Colliery,,,False,MISSING_OR_INVALID
+CM-224,Kumardihi-A Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,kumardihi a,ecl,west bengal,bardhaman,kumardihi a,kumardihi a,100,EXACT,Kumardihi-A Colliery,,,False,MISSING_OR_INVALID
+CM-225,Kumda 7 & 8,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,kumda 7 8,secl,chhattisgarh,surguja,kumda 7 8,kumda 7 8,100,EXACT,Kumda 7 & 8,,,False,MISSING_OR_INVALID
+CM-226,Kunustoria Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,kunustoria,ecl,west bengal,bardhaman,kunustoria,kunustoria,100,EXACT,Kunustoria Colliery,,,False,MISSING_OR_INVALID
+CM-227,Kurasia UG,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,kurasia ug,secl,chhattisgarh,korea,kurasia ug,kurasia ug,100,EXACT,Kurasia UG,,,False,MISSING_OR_INVALID
+CM-228,Kurja/Sheetaldhara/Kapildhara,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,kurja sheetaldhara kapildhara,secl,madhya pradesh,shahdol,kurja sheetaldhara kapildhara,kurja sheetaldhara kapildhara,100,EXACT,Kurja/Sheetaldhara/Kapildhara,,,False,MISSING_OR_INVALID
+CM-229,Kusmunda Project,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,kusmunda,secl,chhattisgarh,korba,kusmunda,kusmunda,100,EXACT,Kusmunda Project,22.332635,82.666666,True,VALID
+CM-230,Kuya,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,kuya,bccl,jharkhand,dhanbad,kuya,kuya,100,EXACT,Kuya,,,False,MISSING_OR_INVALID
+CM-231,Laiyo UGP,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,laiyo ugp,ccl,jharkhand,ramgarh,laiyo ugp,laiyo ugp,100,EXACT,Laiyo UGP,,,False,MISSING_OR_INVALID
+CM-232,Lajkura OCP,Odisha,JHARSUGUDA,MCL,OPENCAST,PUBLIC,WORKING,lajkura ocp,mcl,odisha,jharsuguda,lajkura ocp,lajkura ocp,100,EXACT,Lajkura OCP,,,False,MISSING_OR_INVALID
+CM-233,Lakhimata,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,lakhimata,ecl,jharkhand,dhanbad,lakhimata,lakhimata,100,EXACT,Lakhimata,,,False,MISSING_OR_INVALID
+CM-234,Lingaraj OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,lingaraj ocp,mcl,odisha,angul,lingaraj ocp,lingaraj ocp,100,EXACT,Lingaraj OCP,20.960432,85.200747,True,VALID
+CM-235,Lower Kenda Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,lower kenda,ecl,west bengal,bardhaman,lower kenda,lower kenda,100,EXACT,Lower Kenda Colliery,,,False,MISSING_OR_INVALID
+CM-236,Madhaipur,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,madhaipur,ecl,west bengal,bardhaman,madhaipur,madhaipur,100,EXACT,Madhaipur,,,False,MISSING_OR_INVALID
+CM-237,Madhaipur Mixed,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,madhaipur mixed,ecl,west bengal,bardhaman,madhaipur mixed,madhaipur mixed,100,EXACT,Madhaipur Mixed,,,False,MISSING_OR_INVALID
+CM-238,Madhusudanpur 7 Pit & Incline,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,madhusudanpur 7 pit incline,ecl,west bengal,bardhaman,madhusudanpur 7 pit incline,madhusudanpur 7 pit incline,100,EXACT,Madhusudanpur 7 Pit & Incline,,,False,MISSING_OR_INVALID
+CM-239,Magadh OCP,Jharkhand,CHATRA,CCL,OPENCAST,PUBLIC,WORKING,magadh ocp,ccl,jharkhand,chatra,magadh ocp,magadh ocp,100,EXACT,Magadh OCP,23.889479,85.00171,True,VALID
+CM-240,Mahadeopuri,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,mahadeopuri,wcl,madhya pradesh,chhindwara,mahadeopuri,mahadeopuri,100,EXACT,Mahadeopuri,,,False,MISSING_OR_INVALID
+CM-241,Mahakali Colliery,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,mahakali,wcl,maharashtra,chandrapur,mahakali,mahakali,100,EXACT,Mahakali Colliery,,,False,MISSING_OR_INVALID
+CM-242,Maheshpur,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,maheshpur,bccl,jharkhand,dhanbad,maheshpur,maheshpur,100,EXACT,Maheshpur,,,False,MISSING_OR_INVALID
+CM-243,Makardhokra-I OC Expansion Mine,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,makardhokra i oc expansion,wcl,maharashtra,nagpur,makardhokra i oc expansion,makardhokra i oc expansion,100,EXACT,Makardhokra-I OC Expansion Mine,,,False,MISSING_OR_INVALID
+CM-244,Makardhokra-III OC MINE,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,makardhokra iii oc,wcl,maharashtra,nagpur,makardhokra iii oc,makardhokra iii oc,100,EXACT,Makardhokra-III OC MINE,,,False,MISSING_OR_INVALID
+CM-245,Mandarboni,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,mandarboni,ecl,west bengal,bardhaman,mandarboni,mandarboni,100,EXACT,Mandarboni,,,False,MISSING_OR_INVALID
+CM-246,Manikpur,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,manikpur,secl,chhattisgarh,korba,manikpur,manikpur,100,EXACT,Manikpur,22.32047888,82.71690602,True,VALID
+CM-247,Manki/Churi,Jharkhand,RANCHI,CCL,UNDERGROUND,PUBLIC,WORKING,manki churi,ccl,jharkhand,ranchi,manki churi,manki churi,100,EXACT,Manki/Churi,,,False,MISSING_OR_INVALID
+CM-248,Manna Incline,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,manna incline,wcl,maharashtra,chandrapur,manna incline,manna incline,100,EXACT,Manna Incline,,,False,MISSING_OR_INVALID
+CM-249,Manoharpur Coal Mine,Odisha,SUNDARGARH,OCPL,OPENCAST,PUBLIC,WORKING,manoharpur,ocpl,odisha,sundargarh,manoharpur,manoharpur,100,EXACT,Manoharpur Coal Mine,,,False,MISSING_OR_INVALID
+CM-250,Manuguru Opencast,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,manuguru opencast,sccl,telangana,khammam,manuguru opencast,manuguru opencast,100,EXACT,Manuguru Opencast,,,False,MISSING_OR_INVALID
+CM-251,Marki Mangli - I Coal Mine,Maharashtra,YAVATMAL,TUML,OPENCAST,PRIVATE,WORKING,marki mangli i,tuml,maharashtra,yavatmal,marki mangli i,marki mangli i,100,EXACT,Marki Mangli - I Coal Mine,,,False,MISSING_OR_INVALID
+CM-252,Marki Mangli III,Maharashtra,YAVATMAL,BSIL,OPENCAST,PRIVATE,WORKING,marki mangli iii,bsil,maharashtra,yavatmal,marki mangli iii,marki mangli iii,100,EXACT,Marki Mangli III,,,False,MISSING_OR_INVALID
+CM-253,Mathani,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,mathani,wcl,madhya pradesh,chhindwara,mathani,mathani,100,EXACT,Mathani,,,False,MISSING_OR_INVALID
+CM-254,Meera,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,meera,secl,madhya pradesh,shahdol,meera,meera,100,EXACT,Meera,,,False,MISSING_OR_INVALID
+CM-255,Methani Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,methani,ecl,west bengal,bardhaman,methani,methani,100,EXACT,Methani Colliery,,,False,MISSING_OR_INVALID
+CM-256,Metica Coal Mine,Jammu & Kashmir,Rajouri,JKML,UNDERGROUND,PUBLIC,WORKING,metica,jkml,jammu kashmir,rajouri,metica,metica,100,EXACT,Metica Coal Mine,,,False,MISSING_OR_INVALID
+CM-257,Mohan (Mohan UG),Madhya Pradesh,CHHINDWARA,WCL,MIXED,PUBLIC,WORKING,mohan mohan ug,wcl,madhya pradesh,chhindwara,mohan mohan ug,mohan mohan ug,100,EXACT,Mohan (Mohan UG),,,False,MISSING_OR_INVALID
+CM-258,Mohanpur (Expn),West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,mohanpur expn,ecl,west bengal,bardhaman,mohanpur expn,mohanpur expn,100,EXACT,Mohanpur (Expn),,,False,MISSING_OR_INVALID
+CM-259,Moher & Moher Amlohri Extn,West Bengal,BIRBHUM,WBPDCL,OPENCAST,PUBLIC,WORKING,moher moher amlohri extn,wbpdcl,west bengal,birbhum,moher moher amlohri extn,moher moher amlohri extn,100,EXACT,Moher & Moher Amlohri Extn,,,False,MISSING_OR_INVALID
+CM-260,Moher & Moher Amlohri Extn,Madhya Pradesh,SINGRAULI,Sasan Power Limited,OPENCAST,PRIVATE,WORKING,moher moher amlohri extn,sasan power,madhya pradesh,singrauli,moher moher amlohri extn,moher moher amlohri extn,100,EXACT,Moher & Moher Amlohri Extn,,,False,MISSING_OR_INVALID
+CM-261,Moonidih,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,moonidih,bccl,jharkhand,dhanbad,moonidih,moonidih,100,EXACT,Moonidih,,,False,MISSING_OR_INVALID
+CM-262,Mudidih,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,mudidih,bccl,jharkhand,dhanbad,mudidih,mudidih,100,EXACT,Mudidih,,,False,MISSING_OR_INVALID
+CM-263,Mungoli OCM,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,mungoli ocm,wcl,maharashtra,yavatmal,mungoli ocm,mungoli ocm,100,EXACT,Mungoli OCM,,,False,MISSING_OR_INVALID
+CM-264,N.C.P.H. Colliery (NEW),Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,n c p h new,secl,chhattisgarh,korea,n c p h new,n c p h new,100,EXACT,N.C.P.H. Colliery (NEW),,,False,MISSING_OR_INVALID
+CM-265,Nabakajora Colliery,Jharkhand,RAMGARH,ECL,UNDERGROUND,PUBLIC,NON_WORKING,nabakajora,ecl,jharkhand,ramgarh,nabakajora,nabakajora,100,EXACT,Nabakajora Colliery,,,False,MISSING_OR_INVALID
+CM-266,Naigaon OCM,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,naigaon ocm,wcl,maharashtra,yavatmal,naigaon ocm,naigaon ocm,100,EXACT,Naigaon OCM,,,False,MISSING_OR_INVALID
+CM-267,NAKC,Jharkhand,DHANBAD,BCCL,MIXED,PUBLIC,WORKING,nakc,bccl,jharkhand,dhanbad,nakc,nakc,100,EXACT,NAKC,,,False,MISSING_OR_INVALID
+CM-268,Nakrakonda -Kumardihi 'B' UG,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,nakrakonda kumardihi b ug,ecl,west bengal,bardhaman,nakrakonda kumardihi b ug,nakrakonda kumardihi b ug,100,EXACT,Nakrakonda -Kumardihi 'B' UG,,,False,MISSING_OR_INVALID
+CM-269,Nandgaon Incline,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,WORKING,nandgaon incline,wcl,maharashtra,chandrapur,nandgaon incline,nandgaon incline,100,EXACT,Nandgaon Incline,,,False,MISSING_OR_INVALID
+CM-270,Nandira Colliery,Odisha,Angul,MCL,UNDERGROUND,PUBLIC,WORKING,nandira,mcl,odisha,angul,nandira,nandira,100,EXACT,Nandira Colliery,,,False,MISSING_OR_INVALID
+CM-271,Narsamuda Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,narsamuda,ecl,west bengal,bardhaman,narsamuda,narsamuda,100,EXACT,Narsamuda Colliery,,,False,MISSING_OR_INVALID
+CM-272,Navapara,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,navapara,secl,chhattisgarh,surguja,navapara,navapara,100,EXACT,Navapara,,,False,MISSING_OR_INVALID
+CM-273,Neelijay OCM,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,neelijay ocm,wcl,maharashtra,yavatmal,neelijay ocm,neelijay ocm,100,EXACT,Neelijay OCM,,,False,MISSING_OR_INVALID
+CM-274,Nehariya,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,nehariya,wcl,madhya pradesh,chhindwara,nehariya,nehariya,100,EXACT,Nehariya,,,False,MISSING_OR_INVALID
+CM-275,New Godhur-Kusunda-Alkusa,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,new godhur kusunda alkusa,bccl,jharkhand,dhanbad,new godhur kusunda alkusa,new godhur kusunda alkusa,100,EXACT,New Godhur-Kusunda-Alkusa,,,False,MISSING_OR_INVALID
+CM-276,New Kenda Colliery,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,new kenda,ecl,west bengal,bardhaman,new kenda,new kenda,100,EXACT,New Kenda Colliery,,,False,MISSING_OR_INVALID
+CM-277,New Majri - I(A) & II Extn. (A) OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,new majri i a ii extn a oc,wcl,maharashtra,chandrapur,new majri i a ii extn a oc,new majri i a ii extn a oc,100,EXACT,New Majri - I(A) & II Extn. (A) OC,,,False,MISSING_OR_INVALID
+CM-278,New Majri UG to OC Expn.,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,new majri ug to oc expn,wcl,maharashtra,chandrapur,new majri ug to oc expn,new majri ug to oc expn,100,EXACT,New Majri UG to OC Expn.,,,False,MISSING_OR_INVALID
+CM-279,New Moghla Coal Mine,Jammu & Kashmir,Rajouri,JKML,UNDERGROUND,PUBLIC,WORKING,new moghla,jkml,jammu kashmir,rajouri,new moghla,new moghla,100,EXACT,New Moghla Coal Mine,,,False,MISSING_OR_INVALID
+CM-280,New Sethia,Madhya Pradesh,CHHINDWARA,WCL,OPENCAST,PUBLIC,NON_WORKING,new sethia,wcl,madhya pradesh,chhindwara,new sethia,new sethia,100,EXACT,New Sethia,,,False,MISSING_OR_INVALID
+CM-281,Nichitpur,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,nichitpur,bccl,jharkhand,dhanbad,nichitpur,nichitpur,100,EXACT,Nichitpur,,,False,MISSING_OR_INVALID
+CM-282,Nigahi Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,nigahi,ncl,madhya pradesh,singrauli,nigahi,nigahi,100,EXACT,Nigahi Project,,,False,MISSING_OR_INVALID
+CM-283,"Nimcha Colliery , Nimcha OC (Amkola) & Nimcha Highwall",West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,nimcha nimcha oc amkola nimcha highwall,ecl,west bengal,bardhaman,nimcha nimcha oc amkola nimcha highwall,nimcha nimcha oc amkola nimcha highwall,100,EXACT,"Nimcha Colliery , Nimcha OC (Amkola) & Nimcha Highwall",,,False,MISSING_OR_INVALID
+CM-284,Ningah Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,ningah,ecl,west bengal,bardhaman,ningah,ningah,100,EXACT,Ningah Colliery,,,False,MISSING_OR_INVALID
+CM-285,Ningha (SSI) OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,ningha ssi oc,ecl,west bengal,bardhaman,ningha ssi oc,ningha ssi oc,100,EXACT,Ningha (SSI) OC,,,False,MISSING_OR_INVALID
+CM-286,Nirsha,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,nirsha,ecl,jharkhand,dhanbad,nirsha,nirsha,100,EXACT,Nirsha,,,False,MISSING_OR_INVALID
+CM-287,North Searsole OC Colliery,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,north searsole oc,ecl,west bengal,bardhaman,north searsole oc,north searsole oc,100,EXACT,North Searsole OC Colliery,,,False,MISSING_OR_INVALID
+CM-288,North Urimari/Birsa-OC,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,north urimari birsa oc,ccl,jharkhand,hazaribagh,north urimari birsa oc,north urimari birsa oc,100,EXACT,North Urimari/Birsa-OC,,,False,MISSING_OR_INVALID
+CM-289,Nowrozabad (W),Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,nowrozabad w,secl,madhya pradesh,umaria,nowrozabad w,nowrozabad w,100,EXACT,Nowrozabad (W),,,False,MISSING_OR_INVALID
+CM-290,NTST-Jeenagora,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,ntst jeenagora,bccl,jharkhand,dhanbad,ntst jeenagora,ntst jeenagora,100,EXACT,NTST-Jeenagora,,,False,MISSING_OR_INVALID
+CM-291,Orient Mine No. 1 & 2,Odisha,JHARSUGUDA,MCL,UNDERGROUND,PUBLIC,WORKING,orient no 1 2,mcl,odisha,jharsuguda,orient no 1 2,orient no 1 2,100,EXACT,Orient Mine No. 1 & 2,,,False,MISSING_OR_INVALID
+CM-292,Pacchwara North Coal Mine,Jharkhand,PAKUR,WBPDCL,OPENCAST,PUBLIC,WORKING,pacchwara north,wbpdcl,jharkhand,pakur,pacchwara north,pacchwara north,100,EXACT,Pacchwara North Coal Mine,,,False,MISSING_OR_INVALID
+CM-293,Pachhwara Central Coal Mine,Jharkhand,PAKUR,PSPCL,OPENCAST,PUBLIC,WORKING,pachhwara central,pspcl,jharkhand,pakur,pachhwara central,pachhwara central,100,EXACT,Pachhwara Central Coal Mine,,,False,MISSING_OR_INVALID
+CM-294,Padampur OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,NON_WORKING,padampur oc,wcl,maharashtra,chandrapur,padampur oc,padampur oc,100,EXACT,Padampur OC,,,False,MISSING_OR_INVALID
+CM-295,Padmavathi Khani No.5 Incline,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,padmavathi khani no 5 incline,sccl,telangana,khammam,padmavathi khani no 5 incline,padmavathi khani no 5 incline,100,EXACT,Padmavathi Khani No.5 Incline,,,False,MISSING_OR_INVALID
+CM-296,Pakri Barwadih,Jharkhand,HAZARIBAGH,NTPC,OPENCAST,PUBLIC,WORKING,pakri barwadih,ntpc,jharkhand,hazaribagh,pakri barwadih,pakri barwadih,100,EXACT,Pakri Barwadih,,,False,MISSING_OR_INVALID
+CM-297,Pali,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,pali,secl,madhya pradesh,umaria,pali,pali,100,EXACT,Pali,23.889479,85.00171,True,VALID
+CM-298,Pandaveswar UG,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,pandaveswar ug,ecl,west bengal,bardhaman,pandaveswar ug,pandaveswar ug,100,EXACT,Pandaveswar UG,,,False,MISSING_OR_INVALID
+CM-299,Pandavpara Colliery,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,pandavpara,secl,chhattisgarh,korea,pandavpara,pandavpara,100,EXACT,Pandavpara Colliery,,,False,MISSING_OR_INVALID
+CM-300,Paoni II OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,paoni ii ocm,wcl,maharashtra,chandrapur,paoni ii ocm,paoni ii ocm,100,EXACT,Paoni II OCM,,,False,MISSING_OR_INVALID
+CM-301,Parasea Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,parasea,ecl,west bengal,bardhaman,parasea,parasea,100,EXACT,Parasea Colliery,,,False,MISSING_OR_INVALID
+CM-302,Parbelia Colliery,West Bengal,PURULIA,ECL,UNDERGROUND,PUBLIC,WORKING,parbelia,ecl,west bengal,purulia,parbelia,parbelia,100,EXACT,Parbelia Colliery,,,False,MISSING_OR_INVALID
+CM-303,Parej East OCP,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,parej east ocp,ccl,jharkhand,ramgarh,parej east ocp,parej east ocp,100,EXACT,Parej East OCP,,,False,MISSING_OR_INVALID
+CM-304,Parsa East and Kanta Basan OCM,Chhattisgarh,SURGUJA,RRVUNL,OPENCAST,PUBLIC,WORKING,parsa east and kanta basan ocm,rrvunl,chhattisgarh,surguja,parsa east and kanta basan ocm,parsa east and kanta basan ocm,100,EXACT,Parsa East and Kanta Basan OCM,,,False,MISSING_OR_INVALID
+CM-305,Patansaongi Colliery,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,patansaongi,wcl,maharashtra,nagpur,patansaongi,patansaongi,100,EXACT,Patansaongi Colliery,,,False,MISSING_OR_INVALID
+CM-306,Patmohana Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,patmohana,ecl,west bengal,bardhaman,patmohana,patmohana,100,EXACT,Patmohana Colliery,,,False,MISSING_OR_INVALID
+CM-307,Penganga OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,penganga oc,wcl,maharashtra,chandrapur,penganga oc,penganga oc,100,EXACT,Penganga OC,,,False,MISSING_OR_INVALID
+CM-308,"Pimpalgaon,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,NON_WORKING,pimpalgaon,wcl,maharashtra,yavatmal,pimpalgaon,pimpalgaon,100,EXACT,"Pimpalgaon,",,,False,MISSING_OR_INVALID
+CM-309,Pindra Colliery,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,pindra,ccl,jharkhand,ramgarh,pindra,pindra,100,EXACT,Pindra Colliery,,,False,MISSING_OR_INVALID
+CM-310,Piparia,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,piparia,secl,madhya pradesh,umaria,piparia,piparia,100,EXACT,Piparia,,,False,MISSING_OR_INVALID
+CM-311,Porascol East Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,porascol east,ecl,west bengal,bardhaman,porascol east,porascol east,100,EXACT,Porascol East Colliery,,,False,MISSING_OR_INVALID
+CM-312,Porascol West Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,porascol west,ecl,west bengal,bardhaman,porascol west,porascol west,100,EXACT,Porascol West Colliery,,,False,MISSING_OR_INVALID
+CM-313,Prakasham Khani OC,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,prakasham khani oc,sccl,telangana,khammam,prakasham khani oc,prakasham khani oc,100,EXACT,Prakasham Khani OC,,,False,MISSING_OR_INVALID
+CM-314,Pundi,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,pundi,ccl,jharkhand,ramgarh,pundi,pundi,100,EXACT,Pundi,,,False,MISSING_OR_INVALID
+CM-315,Pure Searsole Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,pure searsole,ecl,west bengal,bardhaman,pure searsole,pure searsole,100,EXACT,Pure Searsole Colliery,,,False,MISSING_OR_INVALID
+CM-316,Purnadih,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,purnadih,ccl,jharkhand,ranchi,purnadih,purnadih,100,EXACT,Purnadih,,,False,MISSING_OR_INVALID
+CM-317,Rajendra,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,rajendra,secl,madhya pradesh,shahdol,rajendra,rajendra,100,EXACT,Rajendra,,,False,MISSING_OR_INVALID
+CM-318,Rajhara,Jharkhand,PALAMU,CCL,OPENCAST,PUBLIC,NON_WORKING,rajhara,ccl,jharkhand,palamu,rajhara,rajhara,100,EXACT,Rajhara,,,False,MISSING_OR_INVALID
+CM-319,Rajmahal OCP,Jharkhand,GODDA,ECL,OPENCAST,PUBLIC,WORKING,rajmahal ocp,ecl,jharkhand,godda,rajmahal ocp,rajmahal ocp,100,EXACT,Rajmahal OCP,,,False,MISSING_OR_INVALID
+CM-320,Rajnagar RO,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,rajnagar ro,secl,madhya pradesh,shahdol,rajnagar ro,rajnagar ro,100,EXACT,Rajnagar RO,,,False,MISSING_OR_INVALID
+CM-321,Rajpura,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,rajpura,ecl,jharkhand,dhanbad,rajpura,rajpura,100,EXACT,Rajpura,,,False,MISSING_OR_INVALID
+CM-322,Rajrappa Project,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,rajrappa,ccl,jharkhand,ramgarh,rajrappa,rajrappa,100,EXACT,Rajrappa Project,,,False,MISSING_OR_INVALID
+CM-323,Rajur UG,Maharashtra,YAVATMAL,WCL,UNDERGROUND,PUBLIC,WORKING,rajur ug,wcl,maharashtra,yavatmal,rajur ug,rajur ug,100,EXACT,Rajur UG,,,False,MISSING_OR_INVALID
+CM-324,Ramagundam OC-I Extn. Ph-II,Telangana,PEDDAPALLI,SCCL,OPENCAST,PUBLIC,WORKING,ramagundam oc i extn ph ii,sccl,telangana,peddapalli,ramagundam oc i extn ph ii,ramagundam oc i extn ph ii,100,EXACT,Ramagundam OC-I Extn. Ph-II,,,False,MISSING_OR_INVALID
+CM-325,Ramagundam-OC 3 & OC III,Telangana,PEDDAPALLI,SCCL,OPENCAST,PUBLIC,WORKING,ramagundam oc 3 oc iii,sccl,telangana,peddapalli,ramagundam oc 3 oc iii,ramagundam oc 3 oc iii,100,EXACT,Ramagundam-OC 3 & OC III,,,False,MISSING_OR_INVALID
+CM-326,Ramakrishnapur OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,ramakrishnapur oc,sccl,telangana,mancherial,ramakrishnapur oc,ramakrishnapur oc,100,EXACT,Ramakrishnapur OC,,,False,MISSING_OR_INVALID
+CM-327,Ramnagar Colliery,West Bengal,PASCHIM BARDHAMAN,IISCO,UNDERGROUND,PUBLIC,NON_WORKING,ramnagar,iisco,west bengal,paschim bardhaman,ramnagar,ramnagar,100,EXACT,Ramnagar Colliery,,,False,MISSING_OR_INVALID
+CM-328,Ramnagar Colliery,West Bengal,PASCHIM BARDHAMAN,IISCO,OPENCAST,PUBLIC,WORKING,ramnagar,iisco,west bengal,paschim bardhaman,ramnagar,ramnagar,100,EXACT,Ramnagar Colliery,,,False,MISSING_OR_INVALID
+CM-329,Rampur Batura,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,rampur batura,secl,madhya pradesh,shahdol,rampur batura,rampur batura,100,EXACT,Rampur Batura,,,False,MISSING_OR_INVALID
+CM-330,Raniatari,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,raniatari,secl,chhattisgarh,korea,raniatari,raniatari,100,EXACT,Raniatari,,,False,MISSING_OR_INVALID
+CM-331,Ravindra Khani-5 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani 5 incline,sccl,telangana,mancherial,ravindra khani 5 incline,ravindra khani 5 incline,100,EXACT,Ravindra Khani-5 Incline,,,False,MISSING_OR_INVALID
+CM-332,Ravindra Khani-6 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani 6 incline,sccl,telangana,mancherial,ravindra khani 6 incline,ravindra khani 6 incline,100,EXACT,Ravindra Khani-6 Incline,,,False,MISSING_OR_INVALID
+CM-333,"Ravindra Khani-7,Incline",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani 7 incline,sccl,telangana,mancherial,ravindra khani 7 incline,ravindra khani 7 incline,100,EXACT,"Ravindra Khani-7,Incline",,,False,MISSING_OR_INVALID
+CM-334,"Ravindra Khani-New Tech,",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani new tech,sccl,telangana,mancherial,ravindra khani new tech,ravindra khani new tech,100,EXACT,"Ravindra Khani-New Tech,",,,False,MISSING_OR_INVALID
+CM-335,Rehar,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,rehar,secl,chhattisgarh,surguja,rehar,rehar,100,EXACT,Rehar,,,False,MISSING_OR_INVALID
+CM-336,Religara,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,religara,ccl,jharkhand,hazaribagh,religara,religara,100,EXACT,Religara,,,False,MISSING_OR_INVALID
+CM-337,ROCP/S. Jharia,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,rocp s jharia,bccl,jharkhand,dhanbad,rocp s jharia,rocp s jharia,100,EXACT,ROCP/S. Jharia,,,False,MISSING_OR_INVALID
+CM-338,Rohini,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,rohini,ccl,jharkhand,ranchi,rohini,rohini,100,EXACT,Rohini,23.685074,84.989074,True,VALID
+CM-339,Samleswari OCP,Odisha,JHARSUGUDA,MCL,OPENCAST,PUBLIC,WORKING,samleswari ocp,mcl,odisha,jharsuguda,samleswari ocp,samleswari ocp,100,EXACT,Samleswari OCP,,,False,MISSING_OR_INVALID
+CM-340,Sankarpur Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,sankarpur,ecl,west bengal,bardhaman,sankarpur,sankarpur,100,EXACT,Sankarpur Colliery,,,False,MISSING_OR_INVALID
+CM-341,Saoner Mine - II,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,saoner ii,wcl,maharashtra,nagpur,saoner ii,saoner ii,100,EXACT,Saoner Mine - II,,,False,MISSING_OR_INVALID
+CM-342,Saoner Mine - III,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,saoner iii,wcl,maharashtra,nagpur,saoner iii,saoner iii,100,EXACT,Saoner Mine - III,,,False,MISSING_OR_INVALID
+CM-343,Saoner Mine-I,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,saoner i,wcl,maharashtra,nagpur,saoner i,saoner i,100,EXACT,Saoner Mine-I,,,False,MISSING_OR_INVALID
+CM-344,Saraipali,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,saraipali,secl,chhattisgarh,korba,saraipali,saraipali,100,EXACT,Saraipali,,,False,MISSING_OR_INVALID
+CM-345,Sarisatolli Coal Mine,West Bengal,PASCHIM BARDHAMAN,CESC,OPENCAST,PRIVATE,WORKING,sarisatolli,cesc,west bengal,paschim bardhaman,sarisatolli,sarisatolli,100,EXACT,Sarisatolli Coal Mine,,,False,MISSING_OR_INVALID
+CM-346,Sarni Mine,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,NON_WORKING,sarni,wcl,madhya pradesh,betul,sarni,sarni,100,EXACT,Sarni Mine,,,False,MISSING_OR_INVALID
+CM-347,Sarubera,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,sarubera,ccl,jharkhand,ramgarh,sarubera,sarubera,100,EXACT,Sarubera,,,False,MISSING_OR_INVALID
+CM-348,Sasti Expn. OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,sasti expn ocm,wcl,maharashtra,chandrapur,sasti expn ocm,sasti expn ocm,100,EXACT,Sasti Expn. OCM,,,False,MISSING_OR_INVALID
+CM-349,Satgram Incline,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,satgram incline,ecl,west bengal,bardhaman,satgram incline,satgram incline,100,EXACT,Satgram Incline,,,False,MISSING_OR_INVALID
+CM-350,Satgram Project,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,satgram,ecl,west bengal,bardhaman,satgram,satgram,100,EXACT,Satgram Project,,,False,MISSING_OR_INVALID
+CM-351,Saunda (Ncdc),Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,saunda ncdc,ccl,jharkhand,ramgarh,saunda ncdc,saunda ncdc,100,EXACT,Saunda (Ncdc),,,False,MISSING_OR_INVALID
+CM-352,Sayal `D',Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,sayal d,ccl,jharkhand,ramgarh,sayal d,sayal d,100,EXACT,Sayal `D',,,False,MISSING_OR_INVALID
+CM-353,SD OC Mine,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,sd oc,ccl,jharkhand,bokaro,sd oc,sd oc,100,EXACT,SD OC Mine,,,False,MISSING_OR_INVALID
+CM-354,Sendra Bansjora,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,sendra bansjora,bccl,jharkhand,dhanbad,sendra bansjora,sendra bansjora,100,EXACT,Sendra Bansjora,,,False,MISSING_OR_INVALID
+CM-355,Shampur B,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,shampur b,ecl,jharkhand,dhanbad,shampur b,shampur b,100,EXACT,Shampur B,,,False,MISSING_OR_INVALID
+CM-356,Shanthi Khani,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,shanthi khani,sccl,telangana,mancherial,shanthi khani,shanthi khani,100,EXACT,Shanthi Khani,,,False,MISSING_OR_INVALID
+CM-357,Sharda Highwall,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,sharda highwall,secl,madhya pradesh,shahdol,sharda highwall,sharda highwall,100,EXACT,Sharda Highwall,,,False,MISSING_OR_INVALID
+CM-358,Sharda UG,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,sharda ug,wcl,madhya pradesh,chhindwara,sharda ug,sharda ug,100,EXACT,Sharda UG,,,False,MISSING_OR_INVALID
+CM-359,Shivani,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,shivani,secl,chhattisgarh,surguja,shivani,shivani,100,EXACT,Shivani,,,False,MISSING_OR_INVALID
+CM-360,Shyam Sundarpur Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,shyam sundarpur,ecl,west bengal,bardhaman,shyam sundarpur,shyam sundarpur,100,EXACT,Shyam Sundarpur Colliery,,,False,MISSING_OR_INVALID
+CM-361,Sial Ghogri Coal Mine,Madhya Pradesh,CHHINDWARA,RCCPL,UNDERGROUND,PRIVATE,WORKING,sial ghogri,rccpl,madhya pradesh,chhindwara,sial ghogri,sial ghogri,100,EXACT,Sial Ghogri Coal Mine,,,False,MISSING_OR_INVALID
+CM-362,Siarmal OCP,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,siarmal ocp,mcl,odisha,sundargarh,siarmal ocp,siarmal ocp,100,EXACT,Siarmal OCP,,,False,MISSING_OR_INVALID
+CM-363,Siduli Colliery,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,siduli,ecl,west bengal,bardhaman,siduli,siduli,100,EXACT,Siduli Colliery,,,False,MISSING_OR_INVALID
+CM-364,Sijua Colliery,Jharkhand,DHANBAD,TSL,UNDERGROUND,PRIVATE,WORKING,sijua,tsl,jharkhand,dhanbad,sijua,sijua,100,EXACT,Sijua Colliery,,,False,MISSING_OR_INVALID
+CM-365,Sikni OC Mine,Jharkhand,LATEHAR,JSMDCL,OPENCAST,PUBLIC,WORKING,sikni oc,jsmdcl,jharkhand,latehar,sikni oc,sikni oc,100,EXACT,Sikni OC Mine,,,False,MISSING_OR_INVALID
+CM-366,Silewara Colliery,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,silewara,wcl,maharashtra,nagpur,silewara,silewara,100,EXACT,Silewara Colliery,,,False,MISSING_OR_INVALID
+CM-367,Singhali Colliery,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,singhali,secl,chhattisgarh,korba,singhali,singhali,100,EXACT,Singhali Colliery,,,False,MISSING_OR_INVALID
+CM-368,Singori OC,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,singori oc,wcl,maharashtra,nagpur,singori oc,singori oc,100,EXACT,Singori OC,,,False,MISSING_OR_INVALID
+CM-369,Sirka,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,sirka,ccl,jharkhand,ramgarh,sirka,sirka,100,EXACT,Sirka,,,False,MISSING_OR_INVALID
+CM-370,Sonepur Bazari Project OCM,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,sonepur bazari ocm,ecl,west bengal,bardhaman,sonepur bazari ocm,sonepur bazari ocm,100,EXACT,Sonepur Bazari Project OCM,,,False,MISSING_OR_INVALID
+CM-371,South Samla,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,south samla,ecl,west bengal,bardhaman,south samla,south samla,100,EXACT,South Samla,,,False,MISSING_OR_INVALID
+CM-372,Srirampur OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,srirampur oc,sccl,telangana,mancherial,srirampur oc,srirampur oc,100,EXACT,Srirampur OC,,,False,MISSING_OR_INVALID
+CM-373,"Srirampur-1, Incline",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,srirampur 1 incline,sccl,telangana,mancherial,srirampur 1 incline,srirampur 1 incline,100,EXACT,"Srirampur-1, Incline",,,False,MISSING_OR_INVALID
+CM-374,Srirampur-3 & 3A Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,srirampur 3 3a incline,sccl,telangana,mancherial,srirampur 3 3a incline,srirampur 3 3a incline,100,EXACT,Srirampur-3 & 3A Incline,,,False,MISSING_OR_INVALID
+CM-375,Suliyari,Madhya Pradesh,SINGRAULI,APMDCL,OPENCAST,PUBLIC,WORKING,suliyari,apmdcl,madhya pradesh,singrauli,suliyari,suliyari,100,EXACT,Suliyari,,,False,MISSING_OR_INVALID
+CM-376,Tadicherla 1 OCM,Telangana,JAYASHANKAR BHUPALPALLY,TGGENCO,OPENCAST,PUBLIC,WORKING,tadicherla 1 ocm,tggenco,telangana,jayashankar bhupalpally,tadicherla 1 ocm,tadicherla 1 ocm,100,EXACT,Tadicherla 1 OCM,,,False,MISSING_OR_INVALID
+CM-377,Takli Jena Bellora,Maharashtra,CHANDRAPUR,AIPL,OPENCAST,PRIVATE,WORKING,takli jena bellora,aipl,maharashtra,chandrapur,takli jena bellora,takli jena bellora,100,EXACT,Takli Jena Bellora,,,False,MISSING_OR_INVALID
+CM-378,Talabira II & III,Odisha,SAMBALPUR,NLCIL,OPENCAST,PUBLIC,WORKING,talabira ii iii,nlcil,odisha,sambalpur,talabira ii iii,talabira ii iii,100,EXACT,Talabira II & III,,,False,MISSING_OR_INVALID
+CM-379,Talaipalli Coal Mine,Chhattisgarh,RAIGARH,NTPC,OPENCAST,PUBLIC,WORKING,talaipalli,ntpc,chhattisgarh,raigarh,talaipalli,talaipalli,100,EXACT,Talaipalli Coal Mine,,,False,MISSING_OR_INVALID
+CM-380,Tandsi,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,tandsi,wcl,madhya pradesh,chhindwara,tandsi,tandsi,100,EXACT,Tandsi,,,False,MISSING_OR_INVALID
+CM-381,Tapin North,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,tapin north,ccl,jharkhand,ramgarh,tapin north,tapin north,100,EXACT,Tapin North,,,False,MISSING_OR_INVALID
+CM-382,Tapin South,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,tapin south,ccl,jharkhand,hazaribagh,tapin south,tapin south,100,EXACT,Tapin South,,,False,MISSING_OR_INVALID
+CM-383,Tara(E&W),West Bengal,BIRBHUM,WBPDCL,OPENCAST,PUBLIC,WORKING,tara e w,wbpdcl,west bengal,birbhum,tara e w,tara e w,100,EXACT,Tara(E&W),,,False,MISSING_OR_INVALID
+CM-384,Tarmi,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,tarmi,ccl,jharkhand,bokaro,tarmi,tarmi,100,EXACT,Tarmi,,,False,MISSING_OR_INVALID
+CM-385,Tasra Colliery,Jharkhand,DHANBAD,SAIL,OPENCAST,PUBLIC,WORKING,tasra,sail,jharkhand,dhanbad,tasra,tasra,100,EXACT,Tasra Colliery,,,False,MISSING_OR_INVALID
+CM-386,Tawa Mine,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,tawa,wcl,madhya pradesh,betul,tawa,tawa,100,EXACT,Tawa Mine,,,False,MISSING_OR_INVALID
+CM-387,Tawa-II,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,tawa ii,wcl,madhya pradesh,betul,tawa ii,tawa ii,100,EXACT,Tawa-II,,,False,MISSING_OR_INVALID
+CM-388,Tetaria Khar,Jharkhand,LATEHAR,CCL,OPENCAST,PUBLIC,WORKING,tetaria khar,ccl,jharkhand,latehar,tetaria khar,tetaria khar,100,EXACT,Tetaria Khar,,,False,MISSING_OR_INVALID
+CM-389,Tetulmari,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,tetulmari,bccl,jharkhand,dhanbad,tetulmari,tetulmari,100,EXACT,Tetulmari,,,False,MISSING_OR_INVALID
+CM-390,Tikak Colliery,Assam,TINSUKIA,NEC,OPENCAST,PUBLIC,WORKING,tikak,nec,assam,tinsukia,tikak,tikak,100,EXACT,Tikak Colliery,,,False,MISSING_OR_INVALID
+CM-391,Tilaboni Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,tilaboni,ecl,west bengal,bardhaman,tilaboni,tilaboni,100,EXACT,Tilaboni Colliery,,,False,MISSING_OR_INVALID
+CM-392,Topa Marginal Scheme,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,topa marginal scheme,ccl,jharkhand,ramgarh,topa marginal scheme,topa marginal scheme,100,EXACT,Topa Marginal Scheme,,,False,MISSING_OR_INVALID
+CM-393,Trans Damodar Coal Mine,West Bengal,PASCHIM BARDHAMAN,DPL,OPENCAST,PUBLIC,WORKING,trans damodar,dpl,west bengal,paschim bardhaman,trans damodar,trans damodar,100,EXACT,Trans Damodar Coal Mine,,,False,MISSING_OR_INVALID
+CM-394,Ukni OC,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,ukni oc,wcl,maharashtra,yavatmal,ukni oc,ukni oc,100,EXACT,Ukni OC,,,False,MISSING_OR_INVALID
+CM-395,Umaria,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,umaria,secl,madhya pradesh,umaria,umaria,umaria,100,EXACT,Umaria,,,False,MISSING_OR_INVALID
+CM-396,Umrer OC Mine,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,umrer oc,wcl,maharashtra,nagpur,umrer oc,umrer oc,100,EXACT,Umrer OC Mine,,,False,MISSING_OR_INVALID
+CM-397,Urdhan,Madhya Pradesh,CHHINDWARA,WCL,OPENCAST,PUBLIC,WORKING,urdhan,wcl,madhya pradesh,chhindwara,urdhan,urdhan,100,EXACT,Urdhan,,,False,MISSING_OR_INVALID
+CM-398,Urimari,Jharkhand,HAZARIBAGH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,urimari,ccl,jharkhand,hazaribagh,urimari,urimari,100,EXACT,Urimari,,,False,MISSING_OR_INVALID
+CM-399,Urimari,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,urimari,ccl,jharkhand,hazaribagh,urimari,urimari,100,EXACT,Urimari,,,False,MISSING_OR_INVALID
+CM-400,Utkal C Coal Mine,Odisha,Angul,JSPL,OPENCAST,PRIVATE,WORKING,utkal c,jspl,odisha,angul,utkal c,utkal c,100,EXACT,Utkal C Coal Mine,,,False,MISSING_OR_INVALID
+CM-401,Utkal D,Odisha,Angul,NALCO,OPENCAST,PUBLIC,WORKING,utkal d,nalco,odisha,angul,utkal d,utkal d,100,EXACT,Utkal D,,,False,MISSING_OR_INVALID
+CM-402,Vakilpalli,Telangana,PEDDAPALLI,SCCL,UNDERGROUND,PUBLIC,WORKING,vakilpalli,sccl,telangana,peddapalli,vakilpalli,vakilpalli,100,EXACT,Vakilpalli,,,False,MISSING_OR_INVALID
+CM-403,Vijay West,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,vijay west,secl,chhattisgarh,korba,vijay west,vijay west,100,EXACT,Vijay West,,,False,MISSING_OR_INVALID
+CM-404,Vindhya,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,vindhya,secl,madhya pradesh,umaria,vindhya,vindhya,100,EXACT,Vindhya,,,False,MISSING_OR_INVALID
+CM-405,Vishnupuri-II,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,vishnupuri ii,wcl,madhya pradesh,chhindwara,vishnupuri ii,vishnupuri ii,100,EXACT,Vishnupuri-II,,,False,MISSING_OR_INVALID
+CM-406,West Bokaro OC (Quarry-E & SE),Jharkhand,HAZARIBAGH,TSL,OPENCAST,PRIVATE,WORKING,west bokaro oc quarry e se,tsl,jharkhand,hazaribagh,west bokaro oc quarry e se,west bokaro oc quarry e se,100,EXACT,West Bokaro OC (Quarry-E & SE),,,False,MISSING_OR_INVALID
+CM-407,West Bokaro OC Quarry-AB,Jharkhand,HAZARIBAGH,TSL,OPENCAST,PRIVATE,WORKING,west bokaro oc quarry ab,tsl,jharkhand,hazaribagh,west bokaro oc quarry ab,west bokaro oc quarry ab,100,EXACT,West Bokaro OC Quarry-AB,,,False,MISSING_OR_INVALID
+CM-408,West Jhagrakhand,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,west jhagrakhand,secl,chhattisgarh,korea,west jhagrakhand,west jhagrakhand,100,EXACT,West Jhagrakhand,,,False,MISSING_OR_INVALID
