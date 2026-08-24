@@ -1,0 +1,23 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [82.6134, 23.8142]
+  },
+  "properties": {
+    "mine_id": "MG-0001",
+    "name": "Example Coal Mine",
+    "state": "Jharkhand",
+    "district": "Dhanbad",
+    "company": "Example Mining Company",
+    "mine_type": "OPENCAST",
+    "ownership": "PUBLIC",
+    "status": "WORKING",
+    "risk_level": "MEDIUM",
+    "risk_score": 62,
+    "compliance": 78,"coordinate_source": "reference_dataset",
+    "coordinate_status": "VALID",
+    "coordinate_match_method": "EXACT",
+    "coordinate_match_score": "100"
+  }
+}

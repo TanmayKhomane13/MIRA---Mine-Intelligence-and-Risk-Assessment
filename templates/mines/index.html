@@ -19,20 +19,57 @@
             </tr>
         </thead>
         <tbody class="divide-y divide-brand-border text-sm">
-            <tr class="hover:bg-brand-light transition">
-                <td class="p-4 font-semibold text-brand-black">M-001 - North Pit Alpha</td>
-                <td class="p-4 text-gray-600">Western Sector B</td>
-                <td class="p-4">{% set level = 'HIGH' %}{% include 'components/risk_badge.html' %}</td>
-                <td class="p-4 text-gray-700">71%</td>
-                <td class="p-4"><a href="{{ url_for('mine_detail', mine_id='M-001') }}" class="text-black font-semibold underline text-xs">View Detail</a></td>
-            </tr>
-            <tr class="hover:bg-brand-light transition">
-                <td class="p-4 font-semibold text-brand-black">M-008 - Deep Excavation Gamma</td>
-                <td class="p-4 text-gray-600">Southern Basin</td>
-                <td class="p-4">{% set level = 'HIGH' %}{% include 'components/risk_badge.html' %}</td>
-                <td class="p-4 text-gray-700">65%</td>
-                <td class="p-4"><a href="{{ url_for('mine_detail', mine_id='M-008') }}" class="text-black font-semibold underline text-xs">View Detail</a></td>
-            </tr>
+
+        {% for mine in mines %}
+
+        <tr class="hover:bg-brand-light transition">
+
+            <td class="p-4">
+                <div class="font-semibold text-brand-black">
+                    {{ mine.mine_id }} - {{ mine.name or 'Unnamed Mine' }}
+                </div>
+                {% if mine.company %}
+                <div class="text-xs text-gray-500 mt-1">
+                    {{ mine.company }}
+                </div>
+                {% endif %}
+            </td>
+
+            <td class="p-4 text-gray-600">
+                {% if mine.district %}
+                    {{ mine.district }},
+                {% endif %}
+                {{ mine.state or 'Unknown' }}
+            </td>
+            <td class="p-4">
+                {% set level = mine.risk_level or 'LOW' %}
+                {% include 'components/risk_badge.html' %}
+            </td>
+            <td class="p-4 text-gray-700">
+                {{ mine.compliance or 0 }}%
+            </td>
+            <td class="p-4">
+                <a
+                    href="{{ url_for(
+                        'mine_detail',
+                        mine_id=mine.mine_id
+                    ) }}"
+                    class="text-black font-semibold underline text-xs"
+                >
+                    View Detail
+                </a>
+            </td>
+        </tr>
+        {% else %}
+        <tr>
+            <td
+                colspan="5"
+                class="p-8 text-center text-gray-500"
+            >
+                No mines available.
+            </td>
+        </tr>
+        {% endfor %}
         </tbody>
     </table>
 </div>

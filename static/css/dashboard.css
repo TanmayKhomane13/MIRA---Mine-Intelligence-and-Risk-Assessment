@@ -1,0 +1,13 @@
+/* Dashboard Specific Styles */
+.dashboard-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.metric-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}

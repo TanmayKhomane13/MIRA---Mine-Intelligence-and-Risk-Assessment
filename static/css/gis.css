@@ -1,0 +1,27 @@
+/* GIS Map Specific Styles */
+.gis-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+.gis-marker {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.gis-marker:hover {
+    transform: scale(1.25);
+}
+
+.gis-marker.high { background-color: #dc2626; }
+.gis-marker.medium { background-color: #d97706; }
+.gis-marker.low { background-color: #059669; }

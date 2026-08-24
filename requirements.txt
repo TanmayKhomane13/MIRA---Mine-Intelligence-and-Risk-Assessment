@@ -2,3 +2,9 @@ flask
 flask-requests
 requests
 flask-session
+pandas
+openpyxl
+geopandas
+shapely
+rapidfuzz
+requests

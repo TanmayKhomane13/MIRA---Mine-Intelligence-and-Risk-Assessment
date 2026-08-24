@@ -1,8 +1,17 @@
-from flask import Flask, render_template, session, request, redirect, url_for, flash
+from flask import Flask, render_template, session, request, redirect, url_for, flash, jsonify
 from flask_session import Session
 from helper import login_required
+import os
+import json
+from pathlib import Path
 
 app = Flask(__name__)
+
+def get_database():
+    conn = sqlite3.connect('ledger.db')
+    conn.row_factory = sqlite3.Row
+    return conn
+
 
 @app.route("/login", methods=['POST','GET'])
 def login():
@@ -43,6 +52,40 @@ def alerts():
     return render_template("alert.html")
 
 @app.route("/map")
-@login_required
 def gis_map():
     return render_template("map.html")
+
+@app.route("/api/v1/gis/mines")
+def gis_mines():
+
+    geojson_path = (
+        Path(app.root_path)
+        / "data"
+        / "mines.geojson"
+    )
+
+    if not geojson_path.exists():
+        return jsonify({
+            "type": "FeatureCollection",
+            "features": [],
+            "error": "GIS dataset not generated"
+        }), 404
+
+    try:
+        with open(
+            geojson_path,
+            "r",
+            encoding="utf-8"
+        ) as file:
+            data = json.load(file)
+        return jsonify(data)
+
+    except Exception as e:
+        return jsonify({
+            "type": "FeatureCollection",
+            "features": [],
+            "error": str(e)
+        }), 500
+
+if __name__ == "__main__":
+    app.run(debug=True)
