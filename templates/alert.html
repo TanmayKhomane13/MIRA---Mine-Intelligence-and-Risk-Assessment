@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Alerts - MineGuard AI{% endblock %}
+{% block header_title %}System Alerts & Notifications{% endblock %}
+
+{% block content %}
+<div class="space-y-3 max-w-3xl">
+    {% set title = 'M-001 High Risk Threshold Exceeded' %}{% set timestamp = '10 mins ago' %}{% include 'components/alert_card.html' %}
+    {% set title = 'M-004 Overdue Safety Audit' %}{% set timestamp = '1 hour ago' %}{% include 'components/alert_card.html' %}
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Mines Directory - MineGuard AI{% endblock %}
+{% block header_title %}Mines Management{% endblock %}
+
+{% block content %}
+<div class="bg-white border border-brand-border rounded-xl shadow-sm overflow-hidden">
+    <div class="p-5 border-b border-brand-border flex justify-between items-center">
+        <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700">Registered Mines</h2>
+        <a href="#" class="px-4 py-2 bg-black text-white text-xs font-semibold rounded-lg hover:bg-zinc-800 transition">+ Add Mine</a>
+    </div>
+    <table class="w-full text-left border-collapse">
+        <thead>
+            <tr class="bg-brand-light border-b border-brand-border text-xs uppercase text-gray-500 font-semibold">
+                <th class="p-4">Mine ID & Name</th>
+                <th class="p-4">Location</th>
+                <th class="p-4">Risk Status</th>
+                <th class="p-4">Compliance</th>
+                <th class="p-4">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="divide-y divide-brand-border text-sm">
+            <tr class="hover:bg-brand-light transition">
+                <td class="p-4 font-semibold text-brand-black">M-001 - North Pit Alpha</td>
+                <td class="p-4 text-gray-600">Western Sector B</td>
+                <td class="p-4">{% set level = 'HIGH' %}{% include 'components/risk_badge.html' %}</td>
+                <td class="p-4 text-gray-700">71%</td>
+                <td class="p-4"><a href="{{ url_for('mine_detail', mine_id='M-001') }}" class="text-black font-semibold underline text-xs">View Detail</a></td>
+            </tr>
+            <tr class="hover:bg-brand-light transition">
+                <td class="p-4 font-semibold text-brand-black">M-008 - Deep Excavation Gamma</td>
+                <td class="p-4 text-gray-600">Southern Basin</td>
+                <td class="p-4">{% set level = 'HIGH' %}{% include 'components/risk_badge.html' %}</td>
+                <td class="p-4 text-gray-700">65%</td>
+                <td class="p-4"><a href="{{ url_for('mine_detail', mine_id='M-008') }}" class="text-black font-semibold underline text-xs">View Detail</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+<aside class="w-64 bg-white border-r border-brand-border flex flex-col justify-between hidden md:flex">
+    <div>
+        <div class="h-16 flex items-center px-6 border-b border-brand-border">
+            <span class="text-lg font-bold tracking-tight text-brand-black">MIRA</span>
+        </div>
+        <nav class="p-4 space-y-1">
+            <a href="{{ url_for('dashboard') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-brand-black hover:bg-brand-light transition">Dashboard</a>
+            <a href="{{ url_for('mines') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Mines</a>
+            <a href="{{ url_for('inspections') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Inspections</a>
+            <a href="{{ url_for('risk') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Risk Analytics</a>
+            <a href="{{ url_for('alerts') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Alerts</a>
+            <a href="{{ url_for('gis_map') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">GIS Map</a>
+        </nav>
+    </div>
+    <div class="p-4 border-t border-brand-border">
+        <a href="{{ url_for('login') }}" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-red-600 hover:bg-red-50 transition">Log out</a>
+    </div>
+</aside>

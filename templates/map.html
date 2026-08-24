@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}GIS Map - MineGuard AI{% endblock %}
+{% block header_title %}GIS Satellite & Telemetry Map{% endblock %}
+
+{% block extra_css %}
+<!-- Leaflet CSS CDN -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<style>
+    #map {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.75rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="h-[calc(100vh-10rem)] bg-white border border-brand-border rounded-xl p-2 shadow-sm relative">
+    <div id="map"></div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<!-- Leaflet JS CDN -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="{{ url_for('static', filename='js/gis.js') }}"></script>
+{% endblock %}

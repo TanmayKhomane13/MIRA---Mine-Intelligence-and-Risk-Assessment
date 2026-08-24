@@ -1,58 +1,9 @@
-{% extends "base.html" %}
-
-{% block content %}
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm">
-    <div class="container-fluid">
-        <a class="navbar-brand fw-bold fs-3" href="/">
-            <span class="text-primary">MIRA</span>
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            {% if session.get("user_id") %}
-                <!-- Logged In User Navigation -->
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pages">Pages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/dashboard">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/history">History</a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            {{ session.get("user_name", "Account") }}
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="/change-password">Change Password</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item text-danger" href="/logout">Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-            {% else %}
-                <!-- Guest Navigation -->
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
-                </ul>
-            {% endif %}
-        </div>
+<header class="h-16 bg-white border-b border-brand-border flex items-center justify-between px-6 lg:px-8">
+    <div class="flex items-center space-x-3">
+        <h1 class="text-base font-semibold text-brand-black">{% block header_title %}Overview{% endblock %}</h1>
     </div>
-</nav>
-
-{% endblock %}
+    <div class="flex items-center space-x-4">
+        <span class="text-sm font-medium text-gray-700">Welcome, Admin</span>
+        <div class="h-8 w-8 rounded-full bg-brand-black text-white flex items-center justify-center font-bold text-xs">AD</div>
+    </div>
+</header>

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard - MineGuard AI{% endblock %}
+{% block header_title %}Dashboard Overview{% endblock %}
+
+{% block content %}
+<div class="space-y-6">
+    <!-- Stat Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {% include 'components/stat_card.html' with context %} <!-- Mocked inline values below -->
+        <div class="bg-white border border-brand-border rounded-xl p-5 shadow-sm">
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">Total Mines</p>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-brand-black">24</p>
+        </div>
+        <div class="bg-white border border-brand-border rounded-xl p-5 shadow-sm">
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">High Risk Mines</p>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-red-600">5</p>
+        </div>
+        <div class="bg-white border border-brand-border rounded-xl p-5 shadow-sm">
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">Compliance Rate</p>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-brand-black">82%</p>
+        </div>
+        <div class="bg-white border border-brand-border rounded-xl p-5 shadow-sm">
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-500">Active Alerts</p>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-amber-600">12</p>
+        </div>
+    </div>
+
+    <!-- Content Sections -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="lg:col-span-2 bg-white border border-brand-border rounded-xl p-5 shadow-sm">
+            <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700 mb-4">GIS Risk Map Overview</h2>
+            <div class="h-64 bg-brand-light rounded-lg flex items-center justify-center border border-brand-border text-gray-500 font-medium">
+                [Interactive GIS Vector Map Preview]
+            </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-xl p-5 shadow-sm">
+            <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700 mb-4">Risk Distribution</h2>
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between text-xs font-semibold mb-1"><span>HIGH RISK</span><span>5 Mines</span></div>
+                    <div class="w-full bg-brand-light h-2 rounded-full overflow-hidden"><div class="bg-red-600 h-full w-[25%]"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-xs font-semibold mb-1"><span>MEDIUM RISK</span><span>11 Mines</span></div>
+                    <div class="w-full bg-brand-light h-2 rounded-full overflow-hidden"><div class="bg-amber-500 h-full w-[55%]"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-xs font-semibold mb-1"><span>LOW RISK</span><span>8 Mines</span></div>
+                    <div class="w-full bg-brand-light h-2 rounded-full overflow-hidden"><div class="bg-emerald-500 h-full w-[40%]"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

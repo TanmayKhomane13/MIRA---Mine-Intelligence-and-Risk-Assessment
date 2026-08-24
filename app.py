@@ -9,58 +9,40 @@ def login():
     return render_template("login.html")
 
 @app.route("/")
-@login_required
 def dashboard():
     return render_template("dashboard.html")
 
-@app.route("/logout")
-def logout():
-    ...
+# @app.route("/logout")
+# def logout():
+#     ...
 
 
 @app.route("/mines")
-@login_required
 def mines():
-    ...
+    return render_template("./mines/index.html")
 
 
 @app.route("/mines/<mine_id>")
-@login_required
 def mine_detail(mine_id):
-    ...
-
+    return render_template("./mines/detail.html")
 
 @app.route("/inspections")
-@login_required
 def inspections():
-    ...
-
-
-@app.route("/inspections/create", methods=["GET", "POST"])
-@login_required
-def create_inspection():
-    ...
-
+    return render_template("./inspections/index.html")
 
 @app.route("/inspections/<inspection_id>")
-@login_required
 def inspection_detail(inspection_id):
-    ...
-
+    return render_template("./inspections/detail.html")
 
 @app.route("/risk")
-@login_required
 def risk():
-    ...
-
+    return render_template("risk.html")
 
 @app.route("/alerts")
-@login_required
 def alerts():
-    ...
+    return render_template("alert.html")
 
-
-@app.route("/gis")
+@app.route("/map")
 @login_required
 def gis_map():
-    ...
+    return render_template("map.html")
