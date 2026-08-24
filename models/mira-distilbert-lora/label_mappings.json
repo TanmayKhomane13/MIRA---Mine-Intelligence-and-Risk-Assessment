@@ -1,0 +1,33 @@
+{
+    "issue": [
+        "Dust Suppression",
+        "Electrical Safety",
+        "Emergency Preparedness",
+        "Equipment Maintenance",
+        "Fire Safety",
+        "Haul Road",
+        "Personal Protective Equipment",
+        "Roof Support",
+        "Ventilation",
+        "Water Drainage"
+    ],
+    "category": [
+        "Electrical",
+        "Emergency Safety",
+        "Environment",
+        "Equipment Safety",
+        "Ground Control",
+        "Mine Safety",
+        "Safety"
+    ],
+    "severity": [
+        "Critical",
+        "High",
+        "Low",
+        "Medium"
+    ],
+    "recurring": [
+        "No",
+        "Yes"
+    ]
+}
