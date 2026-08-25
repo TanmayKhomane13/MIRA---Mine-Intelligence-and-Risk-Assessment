@@ -1,409 +1,409 @@
 mine_id,name,state,district,company,mine_type,ownership,status,name_normalized,company_normalized,state_normalized,district_normalized,_match_name,match_name,match_score,match_method,coordinate_source_name,latitude,longitude
-CM-001,Aadocm,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,aadocm,ccl,jharkhand,bokaro,aadocm,aadocm,100,EXACT,Aadocm,,
-CM-002,ABGC,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,abgc,bccl,jharkhand,dhanbad,abgc,abgc,100,EXACT,ABGC,,
-CM-003,Adasa (UG to OC),Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,adasa ug to oc,wcl,maharashtra,nagpur,adasa ug to oc,adasa ug to oc,100,EXACT,Adasa (UG to OC),,
-CM-004,Adriyala Saft Project,Telangana,PEDDAPALLI,SCCL,UNDERGROUND,PUBLIC,WORKING,adriyala saft,sccl,telangana,peddapalli,adriyala saft,adriyala saft,100,EXACT,Adriyala Saft Project,,
-CM-005,AGKCC,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,agkcc,bccl,jharkhand,dhanbad,agkcc,agkcc,100,EXACT,AGKCC,,
-CM-006,AKK OCP,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,akk ocp,ccl,jharkhand,bokaro,akk ocp,akk ocp,100,EXACT,AKK OCP,,
-CM-007,AKWMC,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,akwmc,bccl,jharkhand,dhanbad,akwmc,akwmc,100,EXACT,AKWMC,,
-CM-008,Amadand,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,amadand,secl,madhya pradesh,shahdol,amadand,amadand,100,EXACT,Amadand,,
-CM-009,Amagamated Dhansar-Industry,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,amagamated dhansar industry,bccl,jharkhand,dhanbad,amagamated dhansar industry,amagamated dhansar industry,100,EXACT,Amagamated Dhansar-Industry,,
-CM-010,Amalgamated BOCP,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,amalgamated bocp,bccl,jharkhand,dhanbad,amalgamated bocp,amalgamated bocp,100,EXACT,Amalgamated BOCP,,
-CM-011,Amalgamated Gondegaon Ghatrohana,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,amalgamated gondegaon ghatrohana,wcl,maharashtra,nagpur,amalgamated gondegaon ghatrohana,amalgamated gondegaon ghatrohana,100,EXACT,Amalgamated Gondegaon Ghatrohana,,
-CM-012,Amalgamated Inder Kamptee OCM,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,amalgamated inder kamptee ocm,wcl,maharashtra,nagpur,amalgamated inder kamptee ocm,amalgamated inder kamptee ocm,100,EXACT,Amalgamated Inder Kamptee OCM,,
-CM-013,Amalgamated Yekona I & II,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,amalgamated yekona i ii,wcl,maharashtra,chandrapur,amalgamated yekona i ii,amalgamated yekona i ii,100,EXACT,Amalgamated Yekona I & II,,
-CM-014,Amalgameted Sudamdih-Patherdih,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,amalgameted sudamdih patherdih,bccl,jharkhand,dhanbad,amalgameted sudamdih patherdih,amalgameted sudamdih patherdih,100,EXACT,Amalgameted Sudamdih-Patherdih,,
-CM-015,Amelia (North ) Coal Mine,Madhya Pradesh,SINGRAULI,JPVL,OPENCAST,PRIVATE,WORKING,amelia north,jpvl,madhya pradesh,singrauli,amelia north,amelia north,100,EXACT,Amelia (North ) Coal Mine,,
-CM-016,Amelia Coal Block,Madhya Pradesh,SINGRAULI,THDC,OPENCAST,PUBLIC,WORKING,amelia block,thdc,madhya pradesh,singrauli,amelia block,amelia block,100,EXACT,Amelia Coal Block,,
-CM-017,Amera,Chhattisgarh,SURGUJA,SECL,OPENCAST,PUBLIC,WORKING,amera,secl,chhattisgarh,surguja,amera,amera,100,EXACT,Amera,,
-CM-018,Amgaon,Chhattisgarh,SURGUJA,SECL,OPENCAST,PUBLIC,WORKING,amgaon,secl,chhattisgarh,surguja,amgaon,amgaon,100,EXACT,Amgaon,,
-CM-019,Amlai OC,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,amlai oc,secl,madhya pradesh,shahdol,amlai oc,amlai oc,100,EXACT,Amlai OC,,
-CM-020,Amlohri,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,amlohri,ncl,madhya pradesh,singrauli,amlohri,amlohri,100,EXACT,Amlohri,,
-CM-021,AMP Colliery,Jharkhand,DHANBAD,BCCL,MIXED,PUBLIC,WORKING,amp,bccl,jharkhand,dhanbad,amp,amp,100,EXACT,AMP Colliery,,
-CM-022,Amrapali OCP,Jharkhand,CHATRA,CCL,OPENCAST,PUBLIC,WORKING,amrapali ocp,ccl,jharkhand,chatra,amrapali ocp,amrapali ocp,100,EXACT,Amrapali OCP,23.889479,85.00171
-CM-023,Amritnagar Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,amritnagar,ecl,west bengal,bardhaman,amritnagar,amritnagar,100,EXACT,Amritnagar Colliery,,
-CM-024,Ananta OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,ananta ocp,mcl,odisha,angul,ananta ocp,ananta ocp,100,EXACT,Ananta OCP,,
-CM-025,ARA Reorganisation,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,ara reorganisation,ccl,jharkhand,ramgarh,ara reorganisation,ara reorganisation,100,EXACT,ARA Reorganisation,,
-CM-026,Ashoka,Jharkhand,CHATRA,CCL,OPENCAST,PUBLIC,WORKING,ashoka,ccl,jharkhand,chatra,ashoka,ashoka,100,EXACT,Ashoka,23.724268,85.037525
-CM-027,Badjna Colliery,Jharkhand,DHANBAD,ECL,MIXED,PUBLIC,WORKING,badjna,ecl,jharkhand,dhanbad,badjna,badjna,100,EXACT,Badjna Colliery,,
-CM-028,Bagdeva,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,bagdeva,secl,chhattisgarh,korba,bagdeva,bagdeva,100,EXACT,Bagdeva,,
-CM-029,Bahula Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,bahula,ecl,west bengal,bardhaman,bahula,bahula,100,EXACT,Bahula Colliery,,
-CM-030,Ballarpur 3 & 4 Pits,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,WORKING,ballarpur 3 4 pits,wcl,maharashtra,chandrapur,ballarpur 3 4 pits,ballarpur 3 4 pits,100,EXACT,Ballarpur 3 & 4 Pits,,
-CM-031,Ballarpur OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,ballarpur ocm,wcl,maharashtra,chandrapur,ballarpur ocm,ballarpur ocm,100,EXACT,Ballarpur OCM,,
-CM-032,Balram OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,balram ocp,mcl,odisha,angul,balram ocp,balram ocp,100,EXACT,Balram OCP,,
-CM-033,Balrampur,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,balrampur,secl,chhattisgarh,surguja,balrampur,balrampur,100,EXACT,Balrampur,,
-CM-034,Bangwar,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bangwar,secl,madhya pradesh,shahdol,bangwar,bangwar,100,EXACT,Bangwar,,
-CM-035,Bankola Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,bankola,ecl,west bengal,bardhaman,bankola,bankola,100,EXACT,Bankola Colliery,,
-CM-036,Bansra Colliery,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,bansra,ecl,west bengal,bardhaman,bansra,bansra,100,EXACT,Bansra Colliery,,
-CM-037,Baranj,Maharashtra,CHANDRAPUR,KPCL,OPENCAST,PUBLIC,WORKING,baranj,kpcl,maharashtra,chandrapur,baranj,baranj,100,EXACT,Baranj,,
-CM-038,Barjora (North) Coal Mine,West Bengal,BANKURA,WBPDCL,OPENCAST,PUBLIC,WORKING,barjora north,wbpdcl,west bengal,bankura,barjora north,barjora north,100,EXACT,Barjora (North) Coal Mine,,
-CM-039,Barmuri,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,barmuri,ecl,jharkhand,dhanbad,barmuri,barmuri,100,EXACT,Barmuri,,
-CM-040,Baroud OC,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,baroud oc,secl,chhattisgarh,raigarh,baroud oc,baroud oc,100,EXACT,Baroud OC,,
-CM-041,Bartarai,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bartarai,secl,madhya pradesh,shahdol,bartarai,bartarai,100,EXACT,Bartarai,,
-CM-042,Basantimata -Dahibari,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,basantimata dahibari,bccl,jharkhand,dhanbad,basantimata dahibari,basantimata dahibari,100,EXACT,Basantimata -Dahibari,,
-CM-043,Basdeopur,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,basdeopur,bccl,jharkhand,dhanbad,basdeopur,basdeopur,100,EXACT,Basdeopur,,
-CM-044,Bastacolla,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,bastacolla,bccl,jharkhand,dhanbad,bastacolla,bastacolla,100,EXACT,Bastacolla,,
-CM-045,Basundhara (West) OCP,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,basundhara west ocp,mcl,odisha,sundargarh,basundhara west ocp,basundhara west ocp,100,EXACT,Basundhara (West) OCP,,
-CM-046,Behraband,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,behraband,secl,madhya pradesh,shahdol,behraband,behraband,100,EXACT,Behraband,,
-CM-047,Bejdih Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,bejdih,ecl,west bengal,bardhaman,bejdih,bejdih,100,EXACT,Bejdih Colliery,,
-CM-048,Belbaid Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,belbaid,ecl,west bengal,bardhaman,belbaid,belbaid,100,EXACT,Belbaid Colliery,,
-CM-049,Belgaon Coal Mine,Maharashtra,CHANDRAPUR,SISCO,UNDERGROUND,PRIVATE,WORKING,belgaon,sisco,maharashtra,chandrapur,belgaon,belgaon,100,EXACT,Belgaon Coal Mine,,
-CM-050,Bhadra,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bhadra,secl,madhya pradesh,shahdol,bhadra,bhadra,100,EXACT,Bhadra,,
-CM-051,Bhanegaon OCM,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,bhanegaon ocm,wcl,maharashtra,nagpur,bhanegaon ocm,bhanegaon ocm,100,EXACT,Bhanegaon OCM,,
-CM-052,Bhanora West Block colliery & Bhanora OC patch (H),West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,bhanora west block bhanora oc patch h,ecl,west bengal,bardhaman,bhanora west block bhanora oc patch h,bhanora west block bhanora oc patch h,100,EXACT,Bhanora West Block colliery & Bhanora OC patch (H),,
-CM-053,Bharatpur OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,bharatpur ocp,mcl,odisha,angul,bharatpur ocp,bharatpur ocp,100,EXACT,Bharatpur OCP,,
-CM-054,Bhatadi OC Mine,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,bhatadi oc,wcl,maharashtra,chandrapur,bhatadi oc,bhatadi oc,100,EXACT,Bhatadi OC Mine,,
-CM-055,Bhatgaon,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,bhatgaon,secl,chhattisgarh,surguja,bhatgaon,bhatgaon,100,EXACT,Bhatgaon,,
-CM-056,Bhelatand Colliery,Jharkhand,DHANBAD,TSL,UNDERGROUND,PRIVATE,WORKING,bhelatand,tsl,jharkhand,dhanbad,bhelatand,bhelatand,100,EXACT,Bhelatand Colliery,,
-CM-057,Bhowra(S),Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,bhowra s,bccl,jharkhand,dhanbad,bhowra s,bhowra s,100,EXACT,Bhowra(S),,
-CM-058,Bhubaneswari OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,bhubaneswari ocp,mcl,odisha,angul,bhubaneswari ocp,bhubaneswari ocp,100,EXACT,Bhubaneswari OCP,,
-CM-059,Bhurkunda,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,bhurkunda,ccl,jharkhand,ramgarh,bhurkunda,bhurkunda,100,EXACT,Bhurkunda,,
-CM-060,Bhurkunda (Sangum),Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,bhurkunda sangum,ccl,jharkhand,ramgarh,bhurkunda sangum,bhurkunda sangum,100,EXACT,Bhurkunda (Sangum),,
-CM-061,Bicharpur,Madhya Pradesh,SHAHDOL,UTCL,UNDERGROUND,PRIVATE,WORKING,bicharpur,utcl,madhya pradesh,shahdol,bicharpur,bicharpur,100,EXACT,Bicharpur,,
-CM-062,Bijari OC,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,bijari oc,secl,chhattisgarh,raigarh,bijari oc,bijari oc,100,EXACT,Bijari OC,,
-CM-063,Bijuri,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bijuri,secl,madhya pradesh,shahdol,bijuri,bijuri,100,EXACT,Bijuri,,
-CM-064,Bina Extn,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,bina extn,ncl,uttar pradesh,sonbhadra,bina extn,bina extn,100,EXACT,Bina Extn,,
-CM-065,Block-B Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,block b,ncl,madhya pradesh,singrauli,block b,block b,100,EXACT,Block-B Project,,
-CM-066,Bokaro OC (Bermo),Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,bokaro oc bermo,ccl,jharkhand,bokaro,bokaro oc bermo,bokaro oc bermo,100,EXACT,Bokaro OC (Bermo),,
-CM-067,Bonjemehari OC (Extn),West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,bonjemehari oc extn,ecl,west bengal,bardhaman,bonjemehari oc extn,bonjemehari oc extn,100,EXACT,Bonjemehari OC (Extn),,
-CM-068,C L Jambad OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,c l jambad ocp,ecl,west bengal,bardhaman,c l jambad ocp,c l jambad ocp,100,EXACT,C L Jambad OCP,,
-CM-069,Central Kajora Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,central kajora,ecl,west bengal,bardhaman,central kajora,central kajora,100,EXACT,Central Kajora Colliery,,
-CM-070,Central Saunda,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,central saunda,ccl,jharkhand,ramgarh,central saunda,central saunda,100,EXACT,Central Saunda,,
-CM-071,Chainpur(Sarubera) Colly.,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,chainpur sarubera colly,ccl,jharkhand,ramgarh,chainpur sarubera colly,chainpur sarubera colly,100,EXACT,Chainpur(Sarubera) Colly.,,
-CM-072,Chanda Rayatwari Colliery,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,chanda rayatwari,wcl,maharashtra,chandrapur,chanda rayatwari,chanda rayatwari,100,EXACT,Chanda Rayatwari Colliery,,
-CM-073,Chapapur-II & Chappapur 10 Quarry (OC),Jharkhand,DHANBAD,ECL,MIXED,PUBLIC,WORKING,chapapur ii chappapur 10 quarry oc,ecl,jharkhand,dhanbad,chapapur ii chappapur 10 quarry oc,chapapur ii chappapur 10 quarry oc,100,EXACT,Chapapur-II & Chappapur 10 Quarry (OC),,
-CM-074,Chapuikhas Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chapuikhas,ecl,west bengal,bardhaman,chapuikhas,chapuikhas,100,EXACT,Chapuikhas Colliery,,
-CM-075,Chasnalla Colliery,Jharkhand,DHANBAD,IISCO,UNDERGROUND,PUBLIC,WORKING,chasnalla,iisco,jharkhand,dhanbad,chasnalla,chasnalla,100,EXACT,Chasnalla Colliery,,
-CM-076,Chatti Bariatu Coal Mining Project,Jharkhand,HAZARIBAGH,NTPC,OPENCAST,PUBLIC,WORKING,chatti bariatu mining,ntpc,jharkhand,hazaribagh,chatti bariatu mining,chatti bariatu mining,100,EXACT,Chatti Bariatu Coal Mining Project,,
-CM-077,Chhal OC,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,chhal oc,secl,chhattisgarh,raigarh,chhal oc,chhal oc,100,EXACT,Chhal OC,,
-CM-078,Chhatarpur -II,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,chhatarpur ii,wcl,madhya pradesh,betul,chhatarpur ii,chhatarpur ii,100,EXACT,Chhatarpur -II,,
-CM-079,Chhatarpur 1,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,chhatarpur 1,wcl,madhya pradesh,betul,chhatarpur 1,chhatarpur 1,100,EXACT,Chhatarpur 1,,
-CM-080,Chhinda,Madhya Pradesh,CHHINDWARA,WCL,OPENCAST,PUBLIC,NON_WORKING,chhinda,wcl,madhya pradesh,chhindwara,chhinda,chhinda,100,EXACT,Chhinda,,
-CM-081,Chinakuri Mine III,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chinakuri iii,ecl,west bengal,bardhaman,chinakuri iii,chinakuri iii,100,EXACT,Chinakuri Mine III,,
-CM-082,Chirimiri,Chhattisgarh,KOREA,SECL,OPENCAST,PUBLIC,WORKING,chirimiri,secl,chhattisgarh,korea,chirimiri,chirimiri,100,EXACT,Chirimiri,,
-CM-083,Chitra East OCP,Jharkhand,DEOGHAR,ECL,OPENCAST,PUBLIC,WORKING,chitra east ocp,ecl,jharkhand,deoghar,chitra east ocp,chitra east ocp,100,EXACT,Chitra East OCP,,
-CM-084,Chora 10 Pit Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chora 10 pit,ecl,west bengal,bardhaman,chora 10 pit,chora 10 pit,100,EXACT,Chora 10 Pit Colliery,,
-CM-085,Chora 7&9 Pits Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chora 7 9 pits,ecl,west bengal,bardhaman,chora 7 9 pits,chora 7 9 pits,100,EXACT,Chora 7&9 Pits Colliery,,
-CM-086,Chora Block Incline UG & Shankarpur OC & Banbahal OC,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,chora block incline ug shankarpur oc banbahal oc,ecl,west bengal,bardhaman,chora block incline ug shankarpur oc banbahal oc,chora block incline ug shankarpur oc banbahal oc,100,EXACT,Chora Block Incline UG & Shankarpur OC & Banbahal OC,,
-CM-087,Churcha RO,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,churcha ro,secl,chhattisgarh,korea,churcha ro,churcha ro,100,EXACT,Churcha RO,,
-CM-088,Dabor Ph-II & III OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,dabor ph ii iii oc,ecl,west bengal,bardhaman,dabor ph ii iii oc,dabor ph ii iii oc,100,EXACT,Dabor Ph-II & III OC,,
-CM-089,Dakra Bukbuka OC,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,dakra bukbuka oc,ccl,jharkhand,ranchi,dakra bukbuka oc,dakra bukbuka oc,100,EXACT,Dakra Bukbuka OC,,
-CM-090,Dalurband OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,dalurband oc,ecl,west bengal,bardhaman,dalurband oc,dalurband oc,100,EXACT,Dalurband OC,,
-CM-091,Damini,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,damini,secl,madhya pradesh,shahdol,damini,damini,100,EXACT,Damini,,
-CM-092,Damoda,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,damoda,bccl,jharkhand,dhanbad,damoda,damoda,100,EXACT,Damoda,,
-CM-093,Dhankasa & Jamunia,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,NON_WORKING,dhankasa jamunia,wcl,madhya pradesh,chhindwara,dhankasa jamunia,dhankasa jamunia,100,EXACT,Dhankasa & Jamunia,,
-CM-094,Dhanpuri,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,dhanpuri,secl,madhya pradesh,shahdol,dhanpuri,dhanpuri,100,EXACT,Dhanpuri,,
-CM-095,Dhelwadih Colliery,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,dhelwadih,secl,chhattisgarh,korba,dhelwadih,dhelwadih,100,EXACT,Dhelwadih Colliery,,
-CM-096,Dhemomain Incl Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,dhemomain incl,ecl,west bengal,bardhaman,dhemomain incl,dhemomain incl,100,EXACT,Dhemomain Incl Colliery,,
-CM-097,Dhemomain Pit Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,dhemomain pit,ecl,west bengal,bardhaman,dhemomain pit,dhemomain pit,100,EXACT,Dhemomain Pit Colliery,,
-CM-098,Dhoptala OC (Sasti Colliery),Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,dhoptala oc sasti,wcl,maharashtra,chandrapur,dhoptala oc sasti,dhoptala oc sasti,100,EXACT,Dhoptala OC (Sasti Colliery),,
-CM-099,Dhori Khas(UG),Jharkhand,BOKARO,CCL,UNDERGROUND,PUBLIC,WORKING,dhori khas ug,ccl,jharkhand,bokaro,dhori khas ug,dhori khas ug,100,EXACT,Dhori Khas(UG),,
-CM-100,Dipka,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,dipka,secl,chhattisgarh,korba,dipka,dipka,100,EXACT,Dipka,22.35,82.55
-CM-101,Dubeswari Colliery,West Bengal,PURULIA,ECL,UNDERGROUND,PUBLIC,WORKING,dubeswari,ecl,west bengal,purulia,dubeswari,dubeswari,100,EXACT,Dubeswari Colliery,,
-CM-102,Dudhichua Project,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,dudhichua,ncl,uttar pradesh,sonbhadra,dudhichua,dudhichua,100,EXACT,Dudhichua Project,,
-CM-103,Dulanga Coal Mining Project,Odisha,SUNDARGARH,NTPC,OPENCAST,PUBLIC,WORKING,dulanga mining,ntpc,odisha,sundargarh,dulanga mining,dulanga mining,100,EXACT,Dulanga Coal Mining Project,,
-CM-104,Durgapur Open Cast,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,durgapur open cast,wcl,maharashtra,chandrapur,durgapur open cast,durgapur open cast,100,EXACT,Durgapur Open Cast,,
-CM-105,Durgapur Rayatwari Colly,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,WORKING,durgapur rayatwari colly,wcl,maharashtra,chandrapur,durgapur rayatwari colly,durgapur rayatwari colly,100,EXACT,Durgapur Rayatwari Colly,,
-CM-106,DVC Tubed Mines,Jharkhand,LATEHAR,DVC,OPENCAST,PUBLIC,WORKING,dvc tubed mines,dvc,jharkhand,latehar,dvc tubed mines,dvc tubed mines,100,EXACT,DVC Tubed Mines,,
-CM-107,E.Basuria,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,e basuria,bccl,jharkhand,dhanbad,e basuria,e basuria,100,EXACT,E.Basuria,,
-CM-108,Ena,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,ena,bccl,jharkhand,dhanbad,ena,ena,100,EXACT,Ena,,
-CM-109,G & G B Coal Mine,West Bengal,BIRBHUM,WBPDCL,OPENCAST,PUBLIC,WORKING,g g b,wbpdcl,west bengal,birbhum,g g b,g g b,100,EXACT,G & G B Coal Mine,,
-CM-110,Gare Palma IV 6,Chhattisgarh,RAIGARH,JSPL,OPENCAST,PRIVATE,WORKING,gare palma iv 6,jspl,chhattisgarh,raigarh,gare palma iv 6,gare palma iv 6,100,EXACT,Gare Palma IV 6,,
-CM-111,Gare Palma IV-2&3,Chhattisgarh,KORBA,BALCO,OPENCAST,PRIVATE,WORKING,gare palma iv 2 3,balco,chhattisgarh,korba,gare palma iv 2 3,gare palma iv 2 3,100,EXACT,Gare Palma IV-2&3,,
-CM-112,Gare Palma IV/1,Chhattisgarh,RAIGARH,JPL,OPENCAST,PRIVATE,WORKING,gare palma iv 1,jpl,chhattisgarh,raigarh,gare palma iv 1,gare palma iv 1,100,EXACT,Gare Palma IV/1,,
-CM-113,Gare Palma IV/2&3,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,gare palma iv 2 3,secl,chhattisgarh,raigarh,gare palma iv 2 3,gare palma iv 2 3,100,EXACT,Gare Palma IV-2&3,,
-CM-114,Gare Palma IV/2&3,Chhattisgarh,RAIGARH,JPL,OPENCAST,PRIVATE,WORKING,gare palma iv 2 3,jpl,chhattisgarh,raigarh,gare palma iv 2 3,gare palma iv 2 3,100,EXACT,Gare Palma IV-2&3,,
-CM-115,Gare Palma IV/7,Chhattisgarh,RAIGARH,SEML,OPENCAST,PRIVATE,WORKING,gare palma iv 7,seml,chhattisgarh,raigarh,gare palma iv 7,gare palma iv 7,100,EXACT,Gare Palma IV/7,,
-CM-116,Gare Palma Sector III,Chhattisgarh,RAIGARH,CSPGCL,OPENCAST,PUBLIC,WORKING,gare palma sector iii,cspgcl,chhattisgarh,raigarh,gare palma sector iii,gare palma sector iii,100,EXACT,Gare Palma Sector III,,
-CM-117,Garjanbahal OCP,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,garjanbahal ocp,mcl,odisha,sundargarh,garjanbahal ocp,garjanbahal ocp,100,EXACT,Garjanbahal OCP,,
-CM-118,Gayatri,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,gayatri,secl,chhattisgarh,surguja,gayatri,gayatri,100,EXACT,Gayatri,,
-CM-119,Gevra,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,gevra,secl,chhattisgarh,korba,gevra,gevra,100,EXACT,Gevra,22.35,82.55
-CM-120,"Ghonsa,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,ghonsa,wcl,maharashtra,yavatmal,ghonsa,ghonsa,100,EXACT,"Ghonsa,",,
-CM-121,Gidi `A',Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,gidi a,ccl,jharkhand,hazaribagh,gidi a,gidi a,100,EXACT,Gidi `A',,
-CM-122,Gidi `C',Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,gidi c,ccl,jharkhand,hazaribagh,gidi c,gidi c,100,EXACT,Gidi `C',,
-CM-123,Giridih OC,Jharkhand,GIRIDIH,CCL,OPENCAST,PUBLIC,NON_WORKING,giridih oc,ccl,jharkhand,giridih,giridih oc,giridih oc,100,EXACT,Giridih OC,,
-CM-124,Godavari Khani 1 & 3,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,godavari khani 1 3,sccl,telangana,khammam,godavari khani 1 3,godavari khani 1 3,100,EXACT,Godavari Khani 1 & 3,,
-CM-125,Godavari Khani-11 Incline,Telangana,PEDDAPALLI,SCCL,UNDERGROUND,PUBLIC,WORKING,godavari khani 11 incline,sccl,telangana,peddapalli,godavari khani 11 incline,godavari khani 11 incline,100,EXACT,Godavari Khani-11 Incline,,
-CM-126,Godavari Khani-2 & 2A,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,godavari khani 2 2a,sccl,telangana,khammam,godavari khani 2 2a,godavari khani 2 2a,100,EXACT,Godavari Khani-2 & 2A,,
-CM-127,Godavarikhani V OC,Telangana,PEDDAPALLI,SCCL,OPENCAST,PUBLIC,WORKING,godavarikhani v oc,sccl,telangana,peddapalli,godavarikhani v oc,godavarikhani v oc,100,EXACT,Godavarikhani V OC,,
-CM-128,Gokul OC Mine + Gokul Extn.,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,gokul oc gokul extn,wcl,maharashtra,nagpur,gokul oc gokul extn,gokul oc gokul extn,100,EXACT,Gokul OC Mine + Gokul Extn.,,
-CM-129,Gondudih/Khas Kusunda,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,gondudih khas kusunda,bccl,jharkhand,dhanbad,gondudih khas kusunda,gondudih khas kusunda,100,EXACT,Gondudih/Khas Kusunda,,
-CM-130,Gopalichuck,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,gopalichuck,bccl,jharkhand,dhanbad,gopalichuck,gopalichuck,100,EXACT,Gopalichuck,,
-CM-131,Gopinathpur,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,NON_WORKING,gopinathpur,ecl,jharkhand,dhanbad,gopinathpur,gopinathpur,100,EXACT,Gopinathpur,,
-CM-132,Gotitoria E & W,Madhya Pradesh,Narsinghpur,BSMPL,OPENCAST,PRIVATE,WORKING,gotitoria e w,bsmpl,madhya pradesh,narsinghpur,gotitoria e w,gotitoria e w,100,EXACT,Gotitoria E & W,,
-CM-133,Gourangdi-A OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,gourangdi a ocp,ecl,west bengal,bardhaman,gourangdi a ocp,gourangdi a ocp,100,EXACT,Gourangdi-A OCP,,
-CM-134,Gourangdih Extn OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,gourangdih extn oc,ecl,west bengal,bardhaman,gourangdih extn oc,gourangdih extn oc,100,EXACT,Gourangdih Extn OC,,
-CM-135,Gouri -Pauni(A) OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,gouri pauni a ocm,wcl,maharashtra,chandrapur,gouri pauni a ocm,gouri pauni a ocm,100,EXACT,Gouri -Pauni(A) OCM,,
-CM-136,Gouri Deep,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,gouri deep,wcl,maharashtra,chandrapur,gouri deep,gouri deep,100,EXACT,Gouri Deep,,
-CM-137,Gouthampur Khani OCP,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,gouthampur khani ocp,sccl,telangana,khammam,gouthampur khani ocp,gouthampur khani ocp,100,EXACT,Gouthampur Khani OCP,,
-CM-138,Govindpur,Jharkhand,BOKARO,CCL,UNDERGROUND,PUBLIC,WORKING,govindpur,ccl,jharkhand,bokaro,govindpur,govindpur,100,EXACT,Govindpur,,
-CM-139,Govindpur Ph-II OCP,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,govindpur ph ii ocp,ccl,jharkhand,bokaro,govindpur ph ii ocp,govindpur ph ii ocp,100,EXACT,Govindpur Ph-II OCP,,
-CM-140,GP-IV-8 Coal Mine,Chhattisgarh,RAIGARH,AMBUJA,UNDERGROUND,PRIVATE,WORKING,gp iv 8,ambuja,chhattisgarh,raigarh,gp iv 8,gp iv 8,100,EXACT,GP-IV-8 Coal Mine,,
-CM-141,Haldibari,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,haldibari,secl,chhattisgarh,korea,haldibari,haldibari,100,EXACT,Haldibari,,
-CM-142,Hariajam,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,hariajam,ecl,jharkhand,dhanbad,hariajam,hariajam,100,EXACT,Hariajam,,
-CM-143,Hindustan Lalpeth Colliery No.1,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,hindustan lalpeth no 1,wcl,maharashtra,chandrapur,hindustan lalpeth no 1,hindustan lalpeth no 1,100,EXACT,Hindustan Lalpeth Colliery No.1,,
-CM-144,Hindustan Lalpeth OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,hindustan lalpeth oc,wcl,maharashtra,chandrapur,hindustan lalpeth oc,hindustan lalpeth oc,100,EXACT,Hindustan Lalpeth OC,,
-CM-145,Hingula OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,hingula ocp,mcl,odisha,angul,hingula ocp,hingula ocp,100,EXACT,Hingula OCP,,
-CM-146,Hirakhand Bundia Mine,Odisha,JHARSUGUDA,MCL,UNDERGROUND,PUBLIC,WORKING,hirakhand bundia,mcl,odisha,jharsuguda,hirakhand bundia,hirakhand bundia,100,EXACT,Hirakhand Bundia Mine,,
-CM-147,Hurra C,Jharkhand,GODDA,ECL,OPENCAST,PUBLIC,WORKING,hurra c,ecl,jharkhand,godda,hurra c,hurra c,100,EXACT,Hurra C,,
-CM-148,"Indaram Khani-1A, Incline",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,indaram khani 1a incline,sccl,telangana,mancherial,indaram khani 1a incline,indaram khani 1a incline,100,EXACT,"Indaram Khani-1A, Incline",,
-CM-149,Indaram Khani-OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,indaram khani oc,sccl,telangana,mancherial,indaram khani oc,indaram khani oc,100,EXACT,Indaram Khani-OC,,
-CM-150,Int. Lakhanpur-Belpahar-Lilari OCP,Odisha,JHARSUGUDA,MCL,OPENCAST,PUBLIC,WORKING,int lakhanpur belpahar lilari ocp,mcl,odisha,jharsuguda,int lakhanpur belpahar lilari ocp,int lakhanpur belpahar lilari ocp,100,EXACT,Int. Lakhanpur-Belpahar-Lilari OCP,,
-CM-151,Itapara OC Patch,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,itapara oc patch,ecl,west bengal,bardhaman,itapara oc patch,itapara oc patch,100,EXACT,Itapara OC Patch,,
-CM-152,J. K. Nagar Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,j k nagar,ecl,west bengal,bardhaman,j k nagar,j k nagar,100,EXACT,J. K. Nagar Colliery,,
-CM-153,Jaganathpur,Chhattisgarh,SURGUJA,SECL,OPENCAST,PUBLIC,WORKING,jaganathpur,secl,chhattisgarh,surguja,jaganathpur,jaganathpur,100,EXACT,Jaganathpur,,
-CM-154,Jagannath Re-org OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,jagannath re org ocp,mcl,odisha,angul,jagannath re org ocp,jagannath re org ocp,100,EXACT,Jagannath Re-org OCP,,
-CM-155,Jalagam Vengala Rao OC-2,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,jalagam vengala rao oc 2,sccl,telangana,khammam,jalagam vengala rao oc 2,jalagam vengala rao oc 2,100,EXACT,Jalagam Vengala Rao OC-2,,
-CM-156,Jalipa,Chhattisgarh,RAIGARH,HIL,OPENCAST,PRIVATE,WORKING,jalipa,hil,chhattisgarh,raigarh,jalipa,jalipa,100,EXACT,Jalipa,,
-CM-157,Jamadoba Colliery,Jharkhand,DHANBAD,TSL,MIXED,PRIVATE,WORKING,jamadoba,tsl,jharkhand,dhanbad,jamadoba,jamadoba,100,EXACT,Jamadoba Colliery,,
-CM-158,Jambad OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,jambad ocp,ecl,west bengal,bardhaman,jambad ocp,jambad ocp,100,EXACT,Jambad OCP,,
-CM-159,Jambad UG Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,jambad ug,ecl,west bengal,bardhaman,jambad ug,jambad ug,100,EXACT,Jambad UG Colliery,,
-CM-160,Jamkhani Coal Mine,Odisha,SUNDARGARH,Vedanta,OPENCAST,PRIVATE,WORKING,jamkhani,vedanta,odisha,sundargarh,jamkhani,jamkhani,100,EXACT,Jamkhani Coal Mine,,
-CM-161,Jampali,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,jampali,secl,chhattisgarh,raigarh,jampali,jampali,100,EXACT,Jampali,,
-CM-162,Jamuna 9 & 10 Jamuna RO,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,jamuna 9 10 jamuna ro,secl,madhya pradesh,shahdol,jamuna 9 10 jamuna ro,jamuna 9 10 jamuna ro,100,EXACT,Jamuna 9 & 10 Jamuna RO,,
-CM-163,Jarangdih OC,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,jarangdih oc,ccl,jharkhand,bokaro,jarangdih oc,jarangdih oc,100,EXACT,Jarangdih OC,,
-CM-164,"Jawahar Khani OC-5,",Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,jawahar khani oc 5,sccl,telangana,khammam,jawahar khani oc 5,jawahar khani oc 5,100,EXACT,"Jawahar Khani OC-5,",,
-CM-165,Jayant Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,jayant,ncl,madhya pradesh,singrauli,jayant,jayant,100,EXACT,Jayant Project,,
-CM-166,Jhanjra Project Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,jhanjra,ecl,west bengal,bardhaman,jhanjra,jhanjra,100,EXACT,Jhanjra Project Colliery,,
-CM-167,Jharkhand OCP,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,jharkhand ocp,ccl,jharkhand,ramgarh,jharkhand ocp,jharkhand ocp,100,EXACT,Jharkhand OCP,,
-CM-168,Jhilimili Colliery,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,jhilimili,secl,chhattisgarh,korea,jhilimili,jhilimili,100,EXACT,Jhilimili Colliery,,
-CM-169,Jhingurda Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,jhingurda,ncl,madhya pradesh,singrauli,jhingurda,jhingurda,100,EXACT,Jhingurda Project,,
-CM-170,Jhiria,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,jhiria,secl,madhya pradesh,shahdol,jhiria,jhiria,100,EXACT,Jhiria,,
-CM-171,Jitpur Colliery,Jharkhand,DHANBAD,IISCO,UNDERGROUND,PUBLIC,WORKING,jitpur,iisco,jharkhand,dhanbad,jitpur,jitpur,100,EXACT,Jitpur Colliery,,
-CM-172,Jogidih,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,jogidih,bccl,jharkhand,dhanbad,jogidih,jogidih,100,EXACT,Jogidih,,
-CM-173,Joyrampur,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,joyrampur,bccl,jharkhand,dhanbad,joyrampur,joyrampur,100,EXACT,Joyrampur,,
-CM-174,"Junad,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,junad,wcl,maharashtra,yavatmal,junad,junad,100,EXACT,"Junad,",,
-CM-175,K. Dewarkhand,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,k dewarkhand,ccl,jharkhand,ranchi,k dewarkhand,k dewarkhand,100,EXACT,K. Dewarkhand,,
-CM-176,Kabribad OC,Jharkhand,GIRIDIH,CCL,OPENCAST,PUBLIC,WORKING,kabribad oc,ccl,jharkhand,giridih,kabribad oc,kabribad oc,100,EXACT,Kabribad OC,,
-CM-177,Kakatiya Khani-1 & 1A Incline,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 1 1a incline,sccl,telangana,jayashankar bhupalpally,kakatiya khani 1 1a incline,kakatiya khani 1 1a incline,100,EXACT,Kakatiya Khani-1 & 1A Incline,,
-CM-178,Kakatiya Khani-5 Incline,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 5 incline,sccl,telangana,jayashankar bhupalpally,kakatiya khani 5 incline,kakatiya khani 5 incline,100,EXACT,Kakatiya Khani-5 Incline,,
-CM-179,"Kakatiya Khani-6, Incline",Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 6 incline,sccl,telangana,jayashankar bhupalpally,kakatiya khani 6 incline,kakatiya khani 6 incline,100,EXACT,"Kakatiya Khani-6, Incline",,
-CM-180,Kakatiya Khani-8 & 8A Incline,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 8 8a incline,sccl,telangana,jayashankar bhupalpally,kakatiya khani 8 8a incline,kakatiya khani 8 8a incline,100,EXACT,Kakatiya Khani-8 & 8A Incline,,
-CM-181,Kakatiya Khani-OC II,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,OPENCAST,PUBLIC,WORKING,kakatiya khani oc ii,sccl,telangana,jayashankar bhupalpally,kakatiya khani oc ii,kakatiya khani oc ii,100,EXACT,Kakatiya Khani-OC II,,
-CM-182,Kakatiya Khani-OC-III,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,OPENCAST,PUBLIC,WORKING,kakatiya khani oc iii,sccl,telangana,jayashankar bhupalpally,kakatiya khani oc iii,kakatiya khani oc iii,100,EXACT,Kakatiya Khani-OC-III,,
-CM-183,Kakri Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,kakri,ncl,madhya pradesh,singrauli,kakri,kakri,100,EXACT,Kakri Project,,
-CM-184,Kalidaspur Project,West Bengal,BANKURA,ECL,UNDERGROUND,PUBLIC,WORKING,kalidaspur,ecl,west bengal,bankura,kalidaspur,kalidaspur,100,EXACT,Kalidaspur Project,,
-CM-185,Kalyan Khani OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,kalyan khani oc,sccl,telangana,mancherial,kalyan khani oc,kalyan khani oc,100,EXACT,Kalyan Khani OC,,
-CM-186,Kalyan Khani-1 & 5 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,kalyan khani 1 5 incline,sccl,telangana,mancherial,kalyan khani 1 5 incline,kalyan khani 1 5 incline,100,EXACT,Kalyan Khani-1 & 5 Incline,,
-CM-187,Kanchan OC,Madhya Pradesh,UMARIA,SECL,OPENCAST,PUBLIC,WORKING,kanchan oc,secl,madhya pradesh,umaria,kanchan oc,kanchan oc,100,EXACT,Kanchan OC,,
-CM-188,Kaniha OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,kaniha ocp,mcl,odisha,angul,kaniha ocp,kaniha ocp,100,EXACT,Kaniha OCP,,
-CM-189,Kankanee,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,kankanee,bccl,jharkhand,dhanbad,kankanee,kankanee,100,EXACT,Kankanee,,
-CM-190,Kapasara,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,kapasara,ecl,jharkhand,dhanbad,kapasara,kapasara,100,EXACT,Kapasara,,
-CM-191,Kapurdi,Chhattisgarh,RAIGARH,HIL,UNDERGROUND,PRIVATE,NON_WORKING,kapurdi,hil,chhattisgarh,raigarh,kapurdi,kapurdi,100,EXACT,Kapurdi,,
-CM-192,Kargali OC,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,NON_WORKING,kargali oc,ccl,jharkhand,bokaro,kargali oc,kargali oc,100,EXACT,Kargali OC,,
-CM-193,Karma,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,karma,ccl,jharkhand,ramgarh,karma,karma,100,EXACT,Karma,,
-CM-194,KARO SPL.UG,Jharkhand,BOKARO,CCL,UNDERGROUND,PUBLIC,NON_WORKING,karo spl ug,ccl,jharkhand,bokaro,karo spl ug,karo spl ug,100,EXACT,KARO SPL.UG,,
-CM-195,Karo-I OC,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,karo i oc,ccl,jharkhand,bokaro,karo i oc,karo i oc,100,EXACT,Karo-I OC,,
-CM-196,Kasipet 1 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,kasipet 1 incline,sccl,telangana,mancherial,kasipet 1 incline,kasipet 1 incline,100,EXACT,Kasipet 1 Incline,,
-CM-197,Kasipet 2 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,kasipet 2 incline,sccl,telangana,mancherial,kasipet 2 incline,kasipet 2 incline,100,EXACT,Kasipet 2 Incline,,
-CM-198,Kathara Colly,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,kathara colly,ccl,jharkhand,bokaro,kathara colly,kathara colly,100,EXACT,Kathara Colly,,
-CM-199,Kathautia Open Cast Coal Mine,Jharkhand,PALAMU,HIL,OPENCAST,PRIVATE,WORKING,kathautia open cast,hil,jharkhand,palamu,kathautia open cast,kathautia open cast,100,EXACT,Kathautia Open Cast Coal Mine,,
-CM-200,Katkona 1 & 2,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,katkona 1 2,secl,chhattisgarh,korea,katkona 1 2,katkona 1 2,100,EXACT,Katkona 1 & 2,,
-CM-201,Kedla (OC),Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,kedla oc,ccl,jharkhand,ramgarh,kedla oc,kedla oc,100,EXACT,Kedla (OC),,
-CM-202,Kedla UG,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,kedla ug,ccl,jharkhand,ramgarh,kedla ug,kedla ug,100,EXACT,Kedla UG,,
-CM-203,Kerandari,Jharkhand,HAZARIBAGH,NTPC,OPENCAST,PUBLIC,WORKING,kerandari,ntpc,jharkhand,hazaribagh,kerandari,kerandari,100,EXACT,Kerandari,,
-CM-204,Ketki,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,ketki,secl,chhattisgarh,surguja,ketki,ketki,100,EXACT,Ketki,,
-CM-205,Khadia Project,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,khadia,ncl,uttar pradesh,sonbhadra,khadia,khadia,100,EXACT,Khadia Project,,
-CM-206,Khairagura OC,Telangana,Komaram Bheem,SCCL,OPENCAST,PUBLIC,WORKING,khairagura oc,sccl,telangana,komaram bheem,khairagura oc,khairagura oc,100,EXACT,Khairagura OC,,
-CM-207,Khairaha,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,khairaha,secl,madhya pradesh,shahdol,khairaha,khairaha,100,EXACT,Khairaha,,
-CM-208,Khandra Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,khandra,ecl,west bengal,bardhaman,khandra,khandra,100,EXACT,Khandra Colliery,,
-CM-209,Kharkharee,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,kharkharee,bccl,jharkhand,dhanbad,kharkharee,kharkharee,100,EXACT,Kharkharee,,
-CM-210,Khas Kajora Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,khas kajora,ecl,west bengal,bardhaman,khas kajora,khas kajora,100,EXACT,Khas Kajora Colliery,,
-CM-211,Khoodia,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,khoodia,ecl,jharkhand,dhanbad,khoodia,khoodia,100,EXACT,Khoodia,,
-CM-212,Khottadih OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,khottadih ocp,ecl,west bengal,bardhaman,khottadih ocp,khottadih ocp,100,EXACT,Khottadih OCP,,
-CM-213,Khottadih UG,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,khottadih ug,ecl,west bengal,bardhaman,khottadih ug,khottadih ug,100,EXACT,Khottadih UG,,
-CM-214,Kistaram OC,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,kistaram oc,sccl,telangana,khammam,kistaram oc,kistaram oc,100,EXACT,Kistaram OC,,
-CM-215,"Kolarpimpri,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,kolarpimpri,wcl,maharashtra,yavatmal,kolarpimpri,kolarpimpri,100,EXACT,"Kolarpimpri,",,
-CM-216,Kolgaon OC,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,kolgaon oc,wcl,maharashtra,yavatmal,kolgaon oc,kolgaon oc,100,EXACT,Kolgaon OC,,
-CM-217,Kondapuram UG,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,kondapuram ug,sccl,telangana,khammam,kondapuram ug,kondapuram ug,100,EXACT,Kondapuram UG,,
-CM-218,Koya Gundem OC II,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,koya gundem oc ii,sccl,telangana,khammam,koya gundem oc ii,koya gundem oc ii,100,EXACT,Koya Gundem OC II,,
-CM-219,Krishnshila OCP,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,krishnshila ocp,ncl,uttar pradesh,sonbhadra,krishnshila ocp,krishnshila ocp,100,EXACT,Krishnshila OCP,,
-CM-220,Kujama,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,kujama,bccl,jharkhand,dhanbad,kujama,kujama,100,EXACT,Kujama,,
-CM-221,Kuju Colliery,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,kuju,ccl,jharkhand,ramgarh,kuju,kuju,100,EXACT,Kuju Colliery,,
-CM-222,Kulda OCP Balinga,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,kulda ocp balinga,mcl,odisha,sundargarh,kulda ocp balinga,kulda ocp balinga,100,EXACT,Kulda OCP Balinga,,
-CM-223,Kumardhubi Colliery,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,kumardhubi,ecl,jharkhand,dhanbad,kumardhubi,kumardhubi,100,EXACT,Kumardhubi Colliery,,
-CM-224,Kumardihi-A Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,kumardihi a,ecl,west bengal,bardhaman,kumardihi a,kumardihi a,100,EXACT,Kumardihi-A Colliery,,
-CM-225,Kumda 7 & 8,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,kumda 7 8,secl,chhattisgarh,surguja,kumda 7 8,kumda 7 8,100,EXACT,Kumda 7 & 8,,
-CM-226,Kunustoria Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,kunustoria,ecl,west bengal,bardhaman,kunustoria,kunustoria,100,EXACT,Kunustoria Colliery,,
-CM-227,Kurasia UG,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,kurasia ug,secl,chhattisgarh,korea,kurasia ug,kurasia ug,100,EXACT,Kurasia UG,,
-CM-228,Kurja/Sheetaldhara/Kapildhara,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,kurja sheetaldhara kapildhara,secl,madhya pradesh,shahdol,kurja sheetaldhara kapildhara,kurja sheetaldhara kapildhara,100,EXACT,Kurja/Sheetaldhara/Kapildhara,,
-CM-229,Kusmunda Project,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,kusmunda,secl,chhattisgarh,korba,kusmunda,kusmunda,100,EXACT,Kusmunda Project,22.332635,82.666666
-CM-230,Kuya,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,kuya,bccl,jharkhand,dhanbad,kuya,kuya,100,EXACT,Kuya,,
-CM-231,Laiyo UGP,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,laiyo ugp,ccl,jharkhand,ramgarh,laiyo ugp,laiyo ugp,100,EXACT,Laiyo UGP,,
-CM-232,Lajkura OCP,Odisha,JHARSUGUDA,MCL,OPENCAST,PUBLIC,WORKING,lajkura ocp,mcl,odisha,jharsuguda,lajkura ocp,lajkura ocp,100,EXACT,Lajkura OCP,,
-CM-233,Lakhimata,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,lakhimata,ecl,jharkhand,dhanbad,lakhimata,lakhimata,100,EXACT,Lakhimata,,
-CM-234,Lingaraj OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,lingaraj ocp,mcl,odisha,angul,lingaraj ocp,lingaraj ocp,100,EXACT,Lingaraj OCP,20.960432,85.200747
-CM-235,Lower Kenda Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,lower kenda,ecl,west bengal,bardhaman,lower kenda,lower kenda,100,EXACT,Lower Kenda Colliery,,
-CM-236,Madhaipur,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,madhaipur,ecl,west bengal,bardhaman,madhaipur,madhaipur,100,EXACT,Madhaipur,,
-CM-237,Madhaipur Mixed,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,madhaipur mixed,ecl,west bengal,bardhaman,madhaipur mixed,madhaipur mixed,100,EXACT,Madhaipur Mixed,,
-CM-238,Madhusudanpur 7 Pit & Incline,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,madhusudanpur 7 pit incline,ecl,west bengal,bardhaman,madhusudanpur 7 pit incline,madhusudanpur 7 pit incline,100,EXACT,Madhusudanpur 7 Pit & Incline,,
-CM-239,Magadh OCP,Jharkhand,CHATRA,CCL,OPENCAST,PUBLIC,WORKING,magadh ocp,ccl,jharkhand,chatra,magadh ocp,magadh ocp,100,EXACT,Magadh OCP,23.889479,85.00171
-CM-240,Mahadeopuri,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,mahadeopuri,wcl,madhya pradesh,chhindwara,mahadeopuri,mahadeopuri,100,EXACT,Mahadeopuri,,
-CM-241,Mahakali Colliery,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,mahakali,wcl,maharashtra,chandrapur,mahakali,mahakali,100,EXACT,Mahakali Colliery,,
-CM-242,Maheshpur,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,maheshpur,bccl,jharkhand,dhanbad,maheshpur,maheshpur,100,EXACT,Maheshpur,,
-CM-243,Makardhokra-I OC Expansion Mine,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,makardhokra i oc expansion,wcl,maharashtra,nagpur,makardhokra i oc expansion,makardhokra i oc expansion,100,EXACT,Makardhokra-I OC Expansion Mine,,
-CM-244,Makardhokra-III OC MINE,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,makardhokra iii oc,wcl,maharashtra,nagpur,makardhokra iii oc,makardhokra iii oc,100,EXACT,Makardhokra-III OC MINE,,
-CM-245,Mandarboni,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,mandarboni,ecl,west bengal,bardhaman,mandarboni,mandarboni,100,EXACT,Mandarboni,,
-CM-246,Manikpur,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,manikpur,secl,chhattisgarh,korba,manikpur,manikpur,100,EXACT,Manikpur,22.32047888,82.71690602
-CM-247,Manki/Churi,Jharkhand,RANCHI,CCL,UNDERGROUND,PUBLIC,WORKING,manki churi,ccl,jharkhand,ranchi,manki churi,manki churi,100,EXACT,Manki/Churi,,
-CM-248,Manna Incline,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,manna incline,wcl,maharashtra,chandrapur,manna incline,manna incline,100,EXACT,Manna Incline,,
-CM-249,Manoharpur Coal Mine,Odisha,SUNDARGARH,OCPL,OPENCAST,PUBLIC,WORKING,manoharpur,ocpl,odisha,sundargarh,manoharpur,manoharpur,100,EXACT,Manoharpur Coal Mine,,
-CM-250,Manuguru Opencast,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,manuguru opencast,sccl,telangana,khammam,manuguru opencast,manuguru opencast,100,EXACT,Manuguru Opencast,,
-CM-251,Marki Mangli - I Coal Mine,Maharashtra,YAVATMAL,TUML,OPENCAST,PRIVATE,WORKING,marki mangli i,tuml,maharashtra,yavatmal,marki mangli i,marki mangli i,100,EXACT,Marki Mangli - I Coal Mine,,
-CM-252,Marki Mangli III,Maharashtra,YAVATMAL,BSIL,OPENCAST,PRIVATE,WORKING,marki mangli iii,bsil,maharashtra,yavatmal,marki mangli iii,marki mangli iii,100,EXACT,Marki Mangli III,,
-CM-253,Mathani,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,mathani,wcl,madhya pradesh,chhindwara,mathani,mathani,100,EXACT,Mathani,,
-CM-254,Meera,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,meera,secl,madhya pradesh,shahdol,meera,meera,100,EXACT,Meera,,
-CM-255,Methani Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,methani,ecl,west bengal,bardhaman,methani,methani,100,EXACT,Methani Colliery,,
-CM-256,Metica Coal Mine,Jammu & Kashmir,Rajouri,JKML,UNDERGROUND,PUBLIC,WORKING,metica,jkml,jammu kashmir,rajouri,metica,metica,100,EXACT,Metica Coal Mine,,
-CM-257,Mohan (Mohan UG),Madhya Pradesh,CHHINDWARA,WCL,MIXED,PUBLIC,WORKING,mohan mohan ug,wcl,madhya pradesh,chhindwara,mohan mohan ug,mohan mohan ug,100,EXACT,Mohan (Mohan UG),,
-CM-258,Mohanpur (Expn),West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,mohanpur expn,ecl,west bengal,bardhaman,mohanpur expn,mohanpur expn,100,EXACT,Mohanpur (Expn),,
-CM-259,Moher & Moher Amlohri Extn,West Bengal,BIRBHUM,WBPDCL,OPENCAST,PUBLIC,WORKING,moher moher amlohri extn,wbpdcl,west bengal,birbhum,moher moher amlohri extn,moher moher amlohri extn,100,EXACT,Moher & Moher Amlohri Extn,,
-CM-260,Moher & Moher Amlohri Extn,Madhya Pradesh,SINGRAULI,Sasan Power Limited,OPENCAST,PRIVATE,WORKING,moher moher amlohri extn,sasan power,madhya pradesh,singrauli,moher moher amlohri extn,moher moher amlohri extn,100,EXACT,Moher & Moher Amlohri Extn,,
-CM-261,Moonidih,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,moonidih,bccl,jharkhand,dhanbad,moonidih,moonidih,100,EXACT,Moonidih,,
-CM-262,Mudidih,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,mudidih,bccl,jharkhand,dhanbad,mudidih,mudidih,100,EXACT,Mudidih,,
-CM-263,Mungoli OCM,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,mungoli ocm,wcl,maharashtra,yavatmal,mungoli ocm,mungoli ocm,100,EXACT,Mungoli OCM,,
-CM-264,N.C.P.H. Colliery (NEW),Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,n c p h new,secl,chhattisgarh,korea,n c p h new,n c p h new,100,EXACT,N.C.P.H. Colliery (NEW),,
-CM-265,Nabakajora Colliery,Jharkhand,RAMGARH,ECL,UNDERGROUND,PUBLIC,NON_WORKING,nabakajora,ecl,jharkhand,ramgarh,nabakajora,nabakajora,100,EXACT,Nabakajora Colliery,,
-CM-266,Naigaon OCM,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,naigaon ocm,wcl,maharashtra,yavatmal,naigaon ocm,naigaon ocm,100,EXACT,Naigaon OCM,,
-CM-267,NAKC,Jharkhand,DHANBAD,BCCL,MIXED,PUBLIC,WORKING,nakc,bccl,jharkhand,dhanbad,nakc,nakc,100,EXACT,NAKC,,
-CM-268,Nakrakonda -Kumardihi 'B' UG,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,nakrakonda kumardihi b ug,ecl,west bengal,bardhaman,nakrakonda kumardihi b ug,nakrakonda kumardihi b ug,100,EXACT,Nakrakonda -Kumardihi 'B' UG,,
-CM-269,Nandgaon Incline,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,WORKING,nandgaon incline,wcl,maharashtra,chandrapur,nandgaon incline,nandgaon incline,100,EXACT,Nandgaon Incline,,
-CM-270,Nandira Colliery,Odisha,Angul,MCL,UNDERGROUND,PUBLIC,WORKING,nandira,mcl,odisha,angul,nandira,nandira,100,EXACT,Nandira Colliery,,
-CM-271,Narsamuda Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,narsamuda,ecl,west bengal,bardhaman,narsamuda,narsamuda,100,EXACT,Narsamuda Colliery,,
-CM-272,Navapara,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,navapara,secl,chhattisgarh,surguja,navapara,navapara,100,EXACT,Navapara,,
-CM-273,Neelijay OCM,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,neelijay ocm,wcl,maharashtra,yavatmal,neelijay ocm,neelijay ocm,100,EXACT,Neelijay OCM,,
-CM-274,Nehariya,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,nehariya,wcl,madhya pradesh,chhindwara,nehariya,nehariya,100,EXACT,Nehariya,,
-CM-275,New Godhur-Kusunda-Alkusa,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,new godhur kusunda alkusa,bccl,jharkhand,dhanbad,new godhur kusunda alkusa,new godhur kusunda alkusa,100,EXACT,New Godhur-Kusunda-Alkusa,,
-CM-276,New Kenda Colliery,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,new kenda,ecl,west bengal,bardhaman,new kenda,new kenda,100,EXACT,New Kenda Colliery,,
-CM-277,New Majri - I(A) & II Extn. (A) OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,new majri i a ii extn a oc,wcl,maharashtra,chandrapur,new majri i a ii extn a oc,new majri i a ii extn a oc,100,EXACT,New Majri - I(A) & II Extn. (A) OC,,
-CM-278,New Majri UG to OC Expn.,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,new majri ug to oc expn,wcl,maharashtra,chandrapur,new majri ug to oc expn,new majri ug to oc expn,100,EXACT,New Majri UG to OC Expn.,,
-CM-279,New Moghla Coal Mine,Jammu & Kashmir,Rajouri,JKML,UNDERGROUND,PUBLIC,WORKING,new moghla,jkml,jammu kashmir,rajouri,new moghla,new moghla,100,EXACT,New Moghla Coal Mine,,
-CM-280,New Sethia,Madhya Pradesh,CHHINDWARA,WCL,OPENCAST,PUBLIC,NON_WORKING,new sethia,wcl,madhya pradesh,chhindwara,new sethia,new sethia,100,EXACT,New Sethia,,
-CM-281,Nichitpur,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,nichitpur,bccl,jharkhand,dhanbad,nichitpur,nichitpur,100,EXACT,Nichitpur,,
-CM-282,Nigahi Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,nigahi,ncl,madhya pradesh,singrauli,nigahi,nigahi,100,EXACT,Nigahi Project,,
-CM-283,"Nimcha Colliery , Nimcha OC (Amkola) & Nimcha Highwall",West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,nimcha nimcha oc amkola nimcha highwall,ecl,west bengal,bardhaman,nimcha nimcha oc amkola nimcha highwall,nimcha nimcha oc amkola nimcha highwall,100,EXACT,"Nimcha Colliery , Nimcha OC (Amkola) & Nimcha Highwall",,
-CM-284,Ningah Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,ningah,ecl,west bengal,bardhaman,ningah,ningah,100,EXACT,Ningah Colliery,,
-CM-285,Ningha (SSI) OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,ningha ssi oc,ecl,west bengal,bardhaman,ningha ssi oc,ningha ssi oc,100,EXACT,Ningha (SSI) OC,,
-CM-286,Nirsha,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,nirsha,ecl,jharkhand,dhanbad,nirsha,nirsha,100,EXACT,Nirsha,,
-CM-287,North Searsole OC Colliery,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,north searsole oc,ecl,west bengal,bardhaman,north searsole oc,north searsole oc,100,EXACT,North Searsole OC Colliery,,
-CM-288,North Urimari/Birsa-OC,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,north urimari birsa oc,ccl,jharkhand,hazaribagh,north urimari birsa oc,north urimari birsa oc,100,EXACT,North Urimari/Birsa-OC,,
-CM-289,Nowrozabad (W),Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,nowrozabad w,secl,madhya pradesh,umaria,nowrozabad w,nowrozabad w,100,EXACT,Nowrozabad (W),,
-CM-290,NTST-Jeenagora,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,ntst jeenagora,bccl,jharkhand,dhanbad,ntst jeenagora,ntst jeenagora,100,EXACT,NTST-Jeenagora,,
-CM-291,Orient Mine No. 1 & 2,Odisha,JHARSUGUDA,MCL,UNDERGROUND,PUBLIC,WORKING,orient no 1 2,mcl,odisha,jharsuguda,orient no 1 2,orient no 1 2,100,EXACT,Orient Mine No. 1 & 2,,
-CM-292,Pacchwara North Coal Mine,Jharkhand,PAKUR,WBPDCL,OPENCAST,PUBLIC,WORKING,pacchwara north,wbpdcl,jharkhand,pakur,pacchwara north,pacchwara north,100,EXACT,Pacchwara North Coal Mine,,
-CM-293,Pachhwara Central Coal Mine,Jharkhand,PAKUR,PSPCL,OPENCAST,PUBLIC,WORKING,pachhwara central,pspcl,jharkhand,pakur,pachhwara central,pachhwara central,100,EXACT,Pachhwara Central Coal Mine,,
-CM-294,Padampur OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,NON_WORKING,padampur oc,wcl,maharashtra,chandrapur,padampur oc,padampur oc,100,EXACT,Padampur OC,,
-CM-295,Padmavathi Khani No.5 Incline,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,padmavathi khani no 5 incline,sccl,telangana,khammam,padmavathi khani no 5 incline,padmavathi khani no 5 incline,100,EXACT,Padmavathi Khani No.5 Incline,,
-CM-296,Pakri Barwadih,Jharkhand,HAZARIBAGH,NTPC,OPENCAST,PUBLIC,WORKING,pakri barwadih,ntpc,jharkhand,hazaribagh,pakri barwadih,pakri barwadih,100,EXACT,Pakri Barwadih,,
-CM-297,Pali,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,pali,secl,madhya pradesh,umaria,pali,pali,100,EXACT,Pali,23.889479,85.00171
-CM-298,Pandaveswar UG,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,pandaveswar ug,ecl,west bengal,bardhaman,pandaveswar ug,pandaveswar ug,100,EXACT,Pandaveswar UG,,
-CM-299,Pandavpara Colliery,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,pandavpara,secl,chhattisgarh,korea,pandavpara,pandavpara,100,EXACT,Pandavpara Colliery,,
-CM-300,Paoni II OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,paoni ii ocm,wcl,maharashtra,chandrapur,paoni ii ocm,paoni ii ocm,100,EXACT,Paoni II OCM,,
-CM-301,Parasea Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,parasea,ecl,west bengal,bardhaman,parasea,parasea,100,EXACT,Parasea Colliery,,
-CM-302,Parbelia Colliery,West Bengal,PURULIA,ECL,UNDERGROUND,PUBLIC,WORKING,parbelia,ecl,west bengal,purulia,parbelia,parbelia,100,EXACT,Parbelia Colliery,,
-CM-303,Parej East OCP,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,parej east ocp,ccl,jharkhand,ramgarh,parej east ocp,parej east ocp,100,EXACT,Parej East OCP,,
-CM-304,Parsa East and Kanta Basan OCM,Chhattisgarh,SURGUJA,RRVUNL,OPENCAST,PUBLIC,WORKING,parsa east and kanta basan ocm,rrvunl,chhattisgarh,surguja,parsa east and kanta basan ocm,parsa east and kanta basan ocm,100,EXACT,Parsa East and Kanta Basan OCM,,
-CM-305,Patansaongi Colliery,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,patansaongi,wcl,maharashtra,nagpur,patansaongi,patansaongi,100,EXACT,Patansaongi Colliery,,
-CM-306,Patmohana Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,patmohana,ecl,west bengal,bardhaman,patmohana,patmohana,100,EXACT,Patmohana Colliery,,
-CM-307,Penganga OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,penganga oc,wcl,maharashtra,chandrapur,penganga oc,penganga oc,100,EXACT,Penganga OC,,
-CM-308,"Pimpalgaon,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,NON_WORKING,pimpalgaon,wcl,maharashtra,yavatmal,pimpalgaon,pimpalgaon,100,EXACT,"Pimpalgaon,",,
-CM-309,Pindra Colliery,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,pindra,ccl,jharkhand,ramgarh,pindra,pindra,100,EXACT,Pindra Colliery,,
-CM-310,Piparia,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,piparia,secl,madhya pradesh,umaria,piparia,piparia,100,EXACT,Piparia,,
-CM-311,Porascol East Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,porascol east,ecl,west bengal,bardhaman,porascol east,porascol east,100,EXACT,Porascol East Colliery,,
-CM-312,Porascol West Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,porascol west,ecl,west bengal,bardhaman,porascol west,porascol west,100,EXACT,Porascol West Colliery,,
-CM-313,Prakasham Khani OC,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,prakasham khani oc,sccl,telangana,khammam,prakasham khani oc,prakasham khani oc,100,EXACT,Prakasham Khani OC,,
-CM-314,Pundi,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,pundi,ccl,jharkhand,ramgarh,pundi,pundi,100,EXACT,Pundi,,
-CM-315,Pure Searsole Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,pure searsole,ecl,west bengal,bardhaman,pure searsole,pure searsole,100,EXACT,Pure Searsole Colliery,,
-CM-316,Purnadih,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,purnadih,ccl,jharkhand,ranchi,purnadih,purnadih,100,EXACT,Purnadih,,
-CM-317,Rajendra,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,rajendra,secl,madhya pradesh,shahdol,rajendra,rajendra,100,EXACT,Rajendra,,
-CM-318,Rajhara,Jharkhand,PALAMU,CCL,OPENCAST,PUBLIC,NON_WORKING,rajhara,ccl,jharkhand,palamu,rajhara,rajhara,100,EXACT,Rajhara,,
-CM-319,Rajmahal OCP,Jharkhand,GODDA,ECL,OPENCAST,PUBLIC,WORKING,rajmahal ocp,ecl,jharkhand,godda,rajmahal ocp,rajmahal ocp,100,EXACT,Rajmahal OCP,,
-CM-320,Rajnagar RO,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,rajnagar ro,secl,madhya pradesh,shahdol,rajnagar ro,rajnagar ro,100,EXACT,Rajnagar RO,,
-CM-321,Rajpura,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,rajpura,ecl,jharkhand,dhanbad,rajpura,rajpura,100,EXACT,Rajpura,,
-CM-322,Rajrappa Project,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,rajrappa,ccl,jharkhand,ramgarh,rajrappa,rajrappa,100,EXACT,Rajrappa Project,,
-CM-323,Rajur UG,Maharashtra,YAVATMAL,WCL,UNDERGROUND,PUBLIC,WORKING,rajur ug,wcl,maharashtra,yavatmal,rajur ug,rajur ug,100,EXACT,Rajur UG,,
-CM-324,Ramagundam OC-I Extn. Ph-II,Telangana,PEDDAPALLI,SCCL,OPENCAST,PUBLIC,WORKING,ramagundam oc i extn ph ii,sccl,telangana,peddapalli,ramagundam oc i extn ph ii,ramagundam oc i extn ph ii,100,EXACT,Ramagundam OC-I Extn. Ph-II,,
-CM-325,Ramagundam-OC 3 & OC III,Telangana,PEDDAPALLI,SCCL,OPENCAST,PUBLIC,WORKING,ramagundam oc 3 oc iii,sccl,telangana,peddapalli,ramagundam oc 3 oc iii,ramagundam oc 3 oc iii,100,EXACT,Ramagundam-OC 3 & OC III,,
-CM-326,Ramakrishnapur OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,ramakrishnapur oc,sccl,telangana,mancherial,ramakrishnapur oc,ramakrishnapur oc,100,EXACT,Ramakrishnapur OC,,
-CM-327,Ramnagar Colliery,West Bengal,PASCHIM BARDHAMAN,IISCO,UNDERGROUND,PUBLIC,NON_WORKING,ramnagar,iisco,west bengal,paschim bardhaman,ramnagar,ramnagar,100,EXACT,Ramnagar Colliery,,
-CM-328,Ramnagar Colliery,West Bengal,PASCHIM BARDHAMAN,IISCO,OPENCAST,PUBLIC,WORKING,ramnagar,iisco,west bengal,paschim bardhaman,ramnagar,ramnagar,100,EXACT,Ramnagar Colliery,,
-CM-329,Rampur Batura,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,rampur batura,secl,madhya pradesh,shahdol,rampur batura,rampur batura,100,EXACT,Rampur Batura,,
-CM-330,Raniatari,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,raniatari,secl,chhattisgarh,korea,raniatari,raniatari,100,EXACT,Raniatari,,
-CM-331,Ravindra Khani-5 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani 5 incline,sccl,telangana,mancherial,ravindra khani 5 incline,ravindra khani 5 incline,100,EXACT,Ravindra Khani-5 Incline,,
-CM-332,Ravindra Khani-6 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani 6 incline,sccl,telangana,mancherial,ravindra khani 6 incline,ravindra khani 6 incline,100,EXACT,Ravindra Khani-6 Incline,,
-CM-333,"Ravindra Khani-7,Incline",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani 7 incline,sccl,telangana,mancherial,ravindra khani 7 incline,ravindra khani 7 incline,100,EXACT,"Ravindra Khani-7,Incline",,
-CM-334,"Ravindra Khani-New Tech,",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani new tech,sccl,telangana,mancherial,ravindra khani new tech,ravindra khani new tech,100,EXACT,"Ravindra Khani-New Tech,",,
-CM-335,Rehar,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,rehar,secl,chhattisgarh,surguja,rehar,rehar,100,EXACT,Rehar,,
-CM-336,Religara,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,religara,ccl,jharkhand,hazaribagh,religara,religara,100,EXACT,Religara,,
-CM-337,ROCP/S. Jharia,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,rocp s jharia,bccl,jharkhand,dhanbad,rocp s jharia,rocp s jharia,100,EXACT,ROCP/S. Jharia,,
-CM-338,Rohini,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,rohini,ccl,jharkhand,ranchi,rohini,rohini,100,EXACT,Rohini,23.685074,84.989074
-CM-339,Samleswari OCP,Odisha,JHARSUGUDA,MCL,OPENCAST,PUBLIC,WORKING,samleswari ocp,mcl,odisha,jharsuguda,samleswari ocp,samleswari ocp,100,EXACT,Samleswari OCP,,
-CM-340,Sankarpur Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,sankarpur,ecl,west bengal,bardhaman,sankarpur,sankarpur,100,EXACT,Sankarpur Colliery,,
-CM-341,Saoner Mine - II,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,saoner ii,wcl,maharashtra,nagpur,saoner ii,saoner ii,100,EXACT,Saoner Mine - II,,
-CM-342,Saoner Mine - III,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,saoner iii,wcl,maharashtra,nagpur,saoner iii,saoner iii,100,EXACT,Saoner Mine - III,,
-CM-343,Saoner Mine-I,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,saoner i,wcl,maharashtra,nagpur,saoner i,saoner i,100,EXACT,Saoner Mine-I,,
-CM-344,Saraipali,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,saraipali,secl,chhattisgarh,korba,saraipali,saraipali,100,EXACT,Saraipali,,
-CM-345,Sarisatolli Coal Mine,West Bengal,PASCHIM BARDHAMAN,CESC,OPENCAST,PRIVATE,WORKING,sarisatolli,cesc,west bengal,paschim bardhaman,sarisatolli,sarisatolli,100,EXACT,Sarisatolli Coal Mine,,
-CM-346,Sarni Mine,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,NON_WORKING,sarni,wcl,madhya pradesh,betul,sarni,sarni,100,EXACT,Sarni Mine,,
-CM-347,Sarubera,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,sarubera,ccl,jharkhand,ramgarh,sarubera,sarubera,100,EXACT,Sarubera,,
-CM-348,Sasti Expn. OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,sasti expn ocm,wcl,maharashtra,chandrapur,sasti expn ocm,sasti expn ocm,100,EXACT,Sasti Expn. OCM,,
-CM-349,Satgram Incline,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,satgram incline,ecl,west bengal,bardhaman,satgram incline,satgram incline,100,EXACT,Satgram Incline,,
-CM-350,Satgram Project,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,satgram,ecl,west bengal,bardhaman,satgram,satgram,100,EXACT,Satgram Project,,
-CM-351,Saunda (Ncdc),Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,saunda ncdc,ccl,jharkhand,ramgarh,saunda ncdc,saunda ncdc,100,EXACT,Saunda (Ncdc),,
-CM-352,Sayal `D',Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,sayal d,ccl,jharkhand,ramgarh,sayal d,sayal d,100,EXACT,Sayal `D',,
-CM-353,SD OC Mine,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,sd oc,ccl,jharkhand,bokaro,sd oc,sd oc,100,EXACT,SD OC Mine,,
-CM-354,Sendra Bansjora,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,sendra bansjora,bccl,jharkhand,dhanbad,sendra bansjora,sendra bansjora,100,EXACT,Sendra Bansjora,,
-CM-355,Shampur B,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,shampur b,ecl,jharkhand,dhanbad,shampur b,shampur b,100,EXACT,Shampur B,,
-CM-356,Shanthi Khani,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,shanthi khani,sccl,telangana,mancherial,shanthi khani,shanthi khani,100,EXACT,Shanthi Khani,,
-CM-357,Sharda Highwall,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,sharda highwall,secl,madhya pradesh,shahdol,sharda highwall,sharda highwall,100,EXACT,Sharda Highwall,,
-CM-358,Sharda UG,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,sharda ug,wcl,madhya pradesh,chhindwara,sharda ug,sharda ug,100,EXACT,Sharda UG,,
-CM-359,Shivani,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,shivani,secl,chhattisgarh,surguja,shivani,shivani,100,EXACT,Shivani,,
-CM-360,Shyam Sundarpur Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,shyam sundarpur,ecl,west bengal,bardhaman,shyam sundarpur,shyam sundarpur,100,EXACT,Shyam Sundarpur Colliery,,
-CM-361,Sial Ghogri Coal Mine,Madhya Pradesh,CHHINDWARA,RCCPL,UNDERGROUND,PRIVATE,WORKING,sial ghogri,rccpl,madhya pradesh,chhindwara,sial ghogri,sial ghogri,100,EXACT,Sial Ghogri Coal Mine,,
-CM-362,Siarmal OCP,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,siarmal ocp,mcl,odisha,sundargarh,siarmal ocp,siarmal ocp,100,EXACT,Siarmal OCP,,
-CM-363,Siduli Colliery,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,siduli,ecl,west bengal,bardhaman,siduli,siduli,100,EXACT,Siduli Colliery,,
-CM-364,Sijua Colliery,Jharkhand,DHANBAD,TSL,UNDERGROUND,PRIVATE,WORKING,sijua,tsl,jharkhand,dhanbad,sijua,sijua,100,EXACT,Sijua Colliery,,
-CM-365,Sikni OC Mine,Jharkhand,LATEHAR,JSMDCL,OPENCAST,PUBLIC,WORKING,sikni oc,jsmdcl,jharkhand,latehar,sikni oc,sikni oc,100,EXACT,Sikni OC Mine,,
-CM-366,Silewara Colliery,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,silewara,wcl,maharashtra,nagpur,silewara,silewara,100,EXACT,Silewara Colliery,,
-CM-367,Singhali Colliery,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,singhali,secl,chhattisgarh,korba,singhali,singhali,100,EXACT,Singhali Colliery,,
-CM-368,Singori OC,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,singori oc,wcl,maharashtra,nagpur,singori oc,singori oc,100,EXACT,Singori OC,,
-CM-369,Sirka,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,sirka,ccl,jharkhand,ramgarh,sirka,sirka,100,EXACT,Sirka,,
-CM-370,Sonepur Bazari Project OCM,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,sonepur bazari ocm,ecl,west bengal,bardhaman,sonepur bazari ocm,sonepur bazari ocm,100,EXACT,Sonepur Bazari Project OCM,,
-CM-371,South Samla,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,south samla,ecl,west bengal,bardhaman,south samla,south samla,100,EXACT,South Samla,,
-CM-372,Srirampur OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,srirampur oc,sccl,telangana,mancherial,srirampur oc,srirampur oc,100,EXACT,Srirampur OC,,
-CM-373,"Srirampur-1, Incline",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,srirampur 1 incline,sccl,telangana,mancherial,srirampur 1 incline,srirampur 1 incline,100,EXACT,"Srirampur-1, Incline",,
-CM-374,Srirampur-3 & 3A Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,srirampur 3 3a incline,sccl,telangana,mancherial,srirampur 3 3a incline,srirampur 3 3a incline,100,EXACT,Srirampur-3 & 3A Incline,,
-CM-375,Suliyari,Madhya Pradesh,SINGRAULI,APMDCL,OPENCAST,PUBLIC,WORKING,suliyari,apmdcl,madhya pradesh,singrauli,suliyari,suliyari,100,EXACT,Suliyari,,
-CM-376,Tadicherla 1 OCM,Telangana,JAYASHANKAR BHUPALPALLY,TGGENCO,OPENCAST,PUBLIC,WORKING,tadicherla 1 ocm,tggenco,telangana,jayashankar bhupalpally,tadicherla 1 ocm,tadicherla 1 ocm,100,EXACT,Tadicherla 1 OCM,,
-CM-377,Takli Jena Bellora,Maharashtra,CHANDRAPUR,AIPL,OPENCAST,PRIVATE,WORKING,takli jena bellora,aipl,maharashtra,chandrapur,takli jena bellora,takli jena bellora,100,EXACT,Takli Jena Bellora,,
-CM-378,Talabira II & III,Odisha,SAMBALPUR,NLCIL,OPENCAST,PUBLIC,WORKING,talabira ii iii,nlcil,odisha,sambalpur,talabira ii iii,talabira ii iii,100,EXACT,Talabira II & III,,
-CM-379,Talaipalli Coal Mine,Chhattisgarh,RAIGARH,NTPC,OPENCAST,PUBLIC,WORKING,talaipalli,ntpc,chhattisgarh,raigarh,talaipalli,talaipalli,100,EXACT,Talaipalli Coal Mine,,
-CM-380,Tandsi,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,tandsi,wcl,madhya pradesh,chhindwara,tandsi,tandsi,100,EXACT,Tandsi,,
-CM-381,Tapin North,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,tapin north,ccl,jharkhand,ramgarh,tapin north,tapin north,100,EXACT,Tapin North,,
-CM-382,Tapin South,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,tapin south,ccl,jharkhand,hazaribagh,tapin south,tapin south,100,EXACT,Tapin South,,
-CM-383,Tara(E&W),West Bengal,BIRBHUM,WBPDCL,OPENCAST,PUBLIC,WORKING,tara e w,wbpdcl,west bengal,birbhum,tara e w,tara e w,100,EXACT,Tara(E&W),,
-CM-384,Tarmi,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,tarmi,ccl,jharkhand,bokaro,tarmi,tarmi,100,EXACT,Tarmi,,
-CM-385,Tasra Colliery,Jharkhand,DHANBAD,SAIL,OPENCAST,PUBLIC,WORKING,tasra,sail,jharkhand,dhanbad,tasra,tasra,100,EXACT,Tasra Colliery,,
-CM-386,Tawa Mine,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,tawa,wcl,madhya pradesh,betul,tawa,tawa,100,EXACT,Tawa Mine,,
-CM-387,Tawa-II,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,tawa ii,wcl,madhya pradesh,betul,tawa ii,tawa ii,100,EXACT,Tawa-II,,
-CM-388,Tetaria Khar,Jharkhand,LATEHAR,CCL,OPENCAST,PUBLIC,WORKING,tetaria khar,ccl,jharkhand,latehar,tetaria khar,tetaria khar,100,EXACT,Tetaria Khar,,
-CM-389,Tetulmari,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,tetulmari,bccl,jharkhand,dhanbad,tetulmari,tetulmari,100,EXACT,Tetulmari,,
-CM-390,Tikak Colliery,Assam,TINSUKIA,NEC,OPENCAST,PUBLIC,WORKING,tikak,nec,assam,tinsukia,tikak,tikak,100,EXACT,Tikak Colliery,,
-CM-391,Tilaboni Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,tilaboni,ecl,west bengal,bardhaman,tilaboni,tilaboni,100,EXACT,Tilaboni Colliery,,
-CM-392,Topa Marginal Scheme,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,topa marginal scheme,ccl,jharkhand,ramgarh,topa marginal scheme,topa marginal scheme,100,EXACT,Topa Marginal Scheme,,
-CM-393,Trans Damodar Coal Mine,West Bengal,PASCHIM BARDHAMAN,DPL,OPENCAST,PUBLIC,WORKING,trans damodar,dpl,west bengal,paschim bardhaman,trans damodar,trans damodar,100,EXACT,Trans Damodar Coal Mine,,
-CM-394,Ukni OC,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,ukni oc,wcl,maharashtra,yavatmal,ukni oc,ukni oc,100,EXACT,Ukni OC,,
-CM-395,Umaria,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,umaria,secl,madhya pradesh,umaria,umaria,umaria,100,EXACT,Umaria,,
-CM-396,Umrer OC Mine,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,umrer oc,wcl,maharashtra,nagpur,umrer oc,umrer oc,100,EXACT,Umrer OC Mine,,
-CM-397,Urdhan,Madhya Pradesh,CHHINDWARA,WCL,OPENCAST,PUBLIC,WORKING,urdhan,wcl,madhya pradesh,chhindwara,urdhan,urdhan,100,EXACT,Urdhan,,
-CM-398,Urimari,Jharkhand,HAZARIBAGH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,urimari,ccl,jharkhand,hazaribagh,urimari,urimari,100,EXACT,Urimari,,
-CM-399,Urimari,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,urimari,ccl,jharkhand,hazaribagh,urimari,urimari,100,EXACT,Urimari,,
-CM-400,Utkal C Coal Mine,Odisha,Angul,JSPL,OPENCAST,PRIVATE,WORKING,utkal c,jspl,odisha,angul,utkal c,utkal c,100,EXACT,Utkal C Coal Mine,,
-CM-401,Utkal D,Odisha,Angul,NALCO,OPENCAST,PUBLIC,WORKING,utkal d,nalco,odisha,angul,utkal d,utkal d,100,EXACT,Utkal D,,
-CM-402,Vakilpalli,Telangana,PEDDAPALLI,SCCL,UNDERGROUND,PUBLIC,WORKING,vakilpalli,sccl,telangana,peddapalli,vakilpalli,vakilpalli,100,EXACT,Vakilpalli,,
-CM-403,Vijay West,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,vijay west,secl,chhattisgarh,korba,vijay west,vijay west,100,EXACT,Vijay West,,
-CM-404,Vindhya,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,vindhya,secl,madhya pradesh,umaria,vindhya,vindhya,100,EXACT,Vindhya,,
-CM-405,Vishnupuri-II,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,vishnupuri ii,wcl,madhya pradesh,chhindwara,vishnupuri ii,vishnupuri ii,100,EXACT,Vishnupuri-II,,
-CM-406,West Bokaro OC (Quarry-E & SE),Jharkhand,HAZARIBAGH,TSL,OPENCAST,PRIVATE,WORKING,west bokaro oc quarry e se,tsl,jharkhand,hazaribagh,west bokaro oc quarry e se,west bokaro oc quarry e se,100,EXACT,West Bokaro OC (Quarry-E & SE),,
-CM-407,West Bokaro OC Quarry-AB,Jharkhand,HAZARIBAGH,TSL,OPENCAST,PRIVATE,WORKING,west bokaro oc quarry ab,tsl,jharkhand,hazaribagh,west bokaro oc quarry ab,west bokaro oc quarry ab,100,EXACT,West Bokaro OC Quarry-AB,,
-CM-408,West Jhagrakhand,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,west jhagrakhand,secl,chhattisgarh,korea,west jhagrakhand,west jhagrakhand,100,EXACT,West Jhagrakhand,,
+CM-001,Aadocm,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,aadocm,ccl,jharkhand,bokaro,aadocm,badam,54.54545454545454,NO_MATCH,Badam Coal Mine,23.6102,85.2799
+CM-002,ABGC,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,abgc,bccl,jharkhand,dhanbad,abgc,balgi,44.44444444444444,NO_MATCH,Balgi Coal Mine,22.35,82.68
+CM-003,Adasa (UG to OC),Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,adasa ug to oc,wcl,maharashtra,nagpur,adasa ug to oc,bhanora ug and oc,64.51612903225806,NO_MATCH,Bhanora UG and OC Mine,22.9868,87.855
+CM-004,Adriyala Saft Project,Telangana,PEDDAPALLI,SCCL,UNDERGROUND,PUBLIC,WORKING,adriyala saft,sccl,telangana,peddapalli,adriyala saft,adriyala,76.19047619047619,FUZZY_REVIEW,Adriyala Coal Mine,18.87,79.45
+CM-005,AGKCC,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,agkcc,bccl,jharkhand,dhanbad,agkcc,akk,50.0,NO_MATCH,AKK Coal Mine,23.79,85.95
+CM-006,AKK OCP,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,akk ocp,ccl,jharkhand,bokaro,akk ocp,akk,60.0,NO_MATCH,AKK Coal Mine,23.79,85.95
+CM-007,AKWMC,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,akwmc,bccl,jharkhand,dhanbad,akwmc,akk,50.0,NO_MATCH,AKK Coal Mine,23.79,85.95
+CM-008,Amadand,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,amadand,secl,madhya pradesh,shahdol,amadand,amadand,100.0,EXACT,Amadand Coal Mine,23.1,81.4
+CM-009,Amagamated Dhansar-Industry,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,amagamated dhansar industry,bccl,jharkhand,dhanbad,amagamated dhansar industry,amalgamated yekona i and ii mines,60.0,NO_MATCH,Amalgamated Yekona I and II Coal Mines,20.0,79.0
+CM-010,Amalgamated BOCP,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,amalgamated bocp,bccl,jharkhand,dhanbad,amalgamated bocp,amalgamated joyrampur,75.67567567567568,FUZZY_REVIEW,Amalgamated Joyrampur Colliery,23.74,86.42
+CM-011,Amalgamated Gondegaon Ghatrohana,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,amalgamated gondegaon ghatrohana,wcl,maharashtra,nagpur,amalgamated gondegaon ghatrohana,gondegaon ghatrohana,76.92307692307692,FUZZY_REVIEW,Gondegaon-Ghatrohana Coal Mine,21.15,79.09
+CM-012,Amalgamated Inder Kamptee OCM,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,amalgamated inder kamptee ocm,wcl,maharashtra,nagpur,amalgamated inder kamptee ocm,amalgamated inder kamptee,92.5925925925926,FUZZY_HIGH,Amalgamated Inder Kamptee Coal Mine,21.23,79.2
+CM-013,Amalgamated Yekona I & II,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,amalgamated yekona i ii,wcl,maharashtra,chandrapur,amalgamated yekona i ii,amalgamated yekona i and ii mines,82.14285714285714,FUZZY_REVIEW,Amalgamated Yekona I and II Coal Mines,20.0,79.0
+CM-014,Amalgameted Sudamdih-Patherdih,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,amalgameted sudamdih patherdih,bccl,jharkhand,dhanbad,amalgameted sudamdih patherdih,amalgamated inder kamptee,58.18181818181818,NO_MATCH,Amalgamated Inder Kamptee Coal Mine,21.23,79.2
+CM-015,Amelia (North ) Coal Mine,Madhya Pradesh,SINGRAULI,JPVL,OPENCAST,PRIVATE,WORKING,amelia north,jpvl,madhya pradesh,singrauli,amelia north,amelia north,100.0,EXACT,Amelia North Coal Mine,24.2,82.67
+CM-016,Amelia Coal Block,Madhya Pradesh,SINGRAULI,THDC,OPENCAST,PUBLIC,WORKING,amelia block,thdc,madhya pradesh,singrauli,amelia block,amelia,66.66666666666667,NO_MATCH,Amelia Coal Mine,24.2,82.67
+CM-017,Amera,Chhattisgarh,SURGUJA,SECL,OPENCAST,PUBLIC,WORKING,amera,secl,chhattisgarh,surguja,amera,amera,100.0,EXACT,Amera Coal Mine,23.3,83.2
+CM-018,Amgaon,Chhattisgarh,SURGUJA,SECL,OPENCAST,PUBLIC,WORKING,amgaon,secl,chhattisgarh,surguja,amgaon,amgaon,100.0,EXACT,Amgaon Coal Mine,23.3,83.2
+CM-019,Amlai OC,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,amlai oc,secl,madhya pradesh,shahdol,amlai oc,amlai,76.92307692307692,FUZZY_REVIEW,Amlai Coal Mine,23.1,81.4
+CM-020,Amlohri,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,amlohri,ncl,madhya pradesh,singrauli,amlohri,amlohri,100.0,EXACT,Amlohri Coal Mine,24.2,82.67
+CM-021,AMP Colliery,Jharkhand,DHANBAD,BCCL,MIXED,PUBLIC,WORKING,amp,bccl,jharkhand,dhanbad,amp,asp,66.66666666666667,NO_MATCH,ASP Coal Mine,,
+CM-022,Amrapali OCP,Jharkhand,CHATRA,CCL,OPENCAST,PUBLIC,WORKING,amrapali ocp,ccl,jharkhand,chatra,amrapali ocp,amrapali,80.0,FUZZY_REVIEW,Amrapali Coal Mine,23.75,84.85
+CM-023,Amritnagar Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,amritnagar,ecl,west bengal,bardhaman,amritnagar,amritnaga,94.73684210526316,FUZZY_HIGH,Amritnaga Coal Mine,23.62,87.13
+CM-024,Ananta OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,ananta ocp,mcl,odisha,angul,ananta ocp,ananta,75.0,FUZZY_REVIEW,Ananta Coal Mine,20.9517,85.0985
+CM-025,ARA Reorganisation,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,ara reorganisation,ccl,jharkhand,ramgarh,ara reorganisation,bellora naigaon,54.54545454545454,NO_MATCH,Bellora-Naigaon Coal Mine,20.0,79.0
+CM-026,Ashoka,Jharkhand,CHATRA,CCL,OPENCAST,PUBLIC,WORKING,ashoka,ccl,jharkhand,chatra,ashoka,ashoka,100.0,EXACT,Ashoka Coal Mine,23.78,85.16
+CM-027,Badjna Colliery,Jharkhand,DHANBAD,ECL,MIXED,PUBLIC,WORKING,badjna,ecl,jharkhand,dhanbad,badjna,badjna,100.0,EXACT,Badjna Coal Mine,23.6102,85.2799
+CM-028,Bagdeva,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,bagdeva,secl,chhattisgarh,korba,bagdeva,bagdeva,100.0,EXACT,Bagdeva Coal Mine,22.35,82.68
+CM-029,Bahula Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,bahula,ecl,west bengal,bardhaman,bahula,bahula,100.0,EXACT,Bahula Coal Mine,22.9868,87.855
+CM-030,Ballarpur 3 & 4 Pits,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,WORKING,ballarpur 3 4 pits,wcl,maharashtra,chandrapur,ballarpur 3 4 pits,ballarpur oc,66.66666666666667,NO_MATCH,Ballarpur OC Coal Mine,20.0,79.0
+CM-031,Ballarpur OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,ballarpur ocm,wcl,maharashtra,chandrapur,ballarpur ocm,ballarpur oc,96.0,FUZZY_HIGH,Ballarpur OC Coal Mine,20.0,79.0
+CM-032,Balram OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,balram ocp,mcl,odisha,angul,balram ocp,balrampur,73.6842105263158,NO_MATCH,Balrampur Coal Mine,23.2,82.85
+CM-033,Balrampur,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,balrampur,secl,chhattisgarh,surguja,balrampur,balrampur,100.0,EXACT,Balrampur Coal Mine,23.2,82.85
+CM-034,Bangwar,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bangwar,secl,madhya pradesh,shahdol,bangwar,bangwar,100.0,EXACT,Bangwar Coal Mine,23.1,81.4
+CM-035,Bankola Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,bankola,ecl,west bengal,bardhaman,bankola,bankola,100.0,EXACT,Bankola Coal Mine,23.62,87.13
+CM-036,Bansra Colliery,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,bansra,ecl,west bengal,bardhaman,bansra,bansra,100.0,EXACT,Bansra Coal Mine,23.62,87.13
+CM-037,Baranj,Maharashtra,CHANDRAPUR,KPCL,OPENCAST,PUBLIC,WORKING,baranj,kpcl,maharashtra,chandrapur,baranj,barra,72.72727272727273,NO_MATCH,Barra Coal Mine,21.2787,81.8661
+CM-038,Barjora (North) Coal Mine,West Bengal,BANKURA,WBPDCL,OPENCAST,PUBLIC,WORKING,barjora north,wbpdcl,west bengal,bankura,barjora north,bajora north,96.0,FUZZY_HIGH,Bajora North Coal Mine,22.9868,87.855
+CM-039,Barmuri,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,barmuri,ecl,jharkhand,dhanbad,barmuri,barmuri,100.0,EXACT,Barmuri Coal Mine,23.6102,85.2799
+CM-040,Baroud OC,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,baroud oc,secl,chhattisgarh,raigarh,baroud oc,baroud,80.0,FUZZY_REVIEW,Baroud Coal Mine,21.9,83.4
+CM-041,Bartarai,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bartarai,secl,madhya pradesh,shahdol,bartarai,bartarai,100.0,EXACT,Bartarai Coal Mine,23.1,81.4
+CM-042,Basantimata -Dahibari,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,basantimata dahibari,bccl,jharkhand,dhanbad,basantimata dahibari,basantimata,70.96774193548387,NO_MATCH,Basantimata Coal Mine,23.74,86.42
+CM-043,Basdeopur,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,basdeopur,bccl,jharkhand,dhanbad,basdeopur,bansdeopur,94.73684210526316,FUZZY_HIGH,Bansdeopur Coal Mine,23.74,86.42
+CM-044,Bastacolla,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,bastacolla,bccl,jharkhand,dhanbad,bastacolla,bastacola,94.73684210526316,FUZZY_HIGH,Bastacola Coal Mine,23.74,86.42
+CM-045,Basundhara (West) OCP,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,basundhara west ocp,mcl,odisha,sundargarh,basundhara west ocp,basundhara west,88.23529411764706,FUZZY_REVIEW,Basundhara (West) Coal Mine,20.9517,85.0985
+CM-046,Behraband,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,behraband,secl,madhya pradesh,shahdol,behraband,behraband,100.0,EXACT,Behraband Coal Mine,23.1,81.4
+CM-047,Bejdih Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,bejdih,ecl,west bengal,bardhaman,bejdih,bejdih,100.0,EXACT,Bejdih Coal Mine,22.9868,87.855
+CM-048,Belbaid Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,belbaid,ecl,west bengal,bardhaman,belbaid,belbadi,85.71428571428572,FUZZY_REVIEW,Belbadi Coal Mine,,
+CM-049,Belgaon Coal Mine,Maharashtra,CHANDRAPUR,SISCO,UNDERGROUND,PRIVATE,WORKING,belgaon,sisco,maharashtra,chandrapur,belgaon,belgaon,100.0,EXACT,Belgaon Coal Mine,20.0,79.0
+CM-050,Bhadra,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bhadra,secl,madhya pradesh,shahdol,bhadra,bhadra,100.0,EXACT,Bhadra Coal Mine,23.1,81.4
+CM-051,Bhanegaon OCM,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,bhanegaon ocm,wcl,maharashtra,nagpur,bhanegaon ocm,bhanegaon,81.81818181818181,FUZZY_REVIEW,Bhanegaon Coal Mine,19.7515,75.7139
+CM-052,Bhanora West Block colliery & Bhanora OC patch (H),West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,bhanora west block bhanora oc patch h,ecl,west bengal,bardhaman,bhanora west block bhanora oc patch h,bhanora west oc,57.692307692307686,NO_MATCH,Bhanora West OC Coal Mine,22.9868,87.855
+CM-053,Bharatpur OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,bharatpur ocp,mcl,odisha,angul,bharatpur ocp,bharatpur,81.81818181818181,FUZZY_REVIEW,Bharatpur Coal Mine,20.9517,85.0985
+CM-054,Bhatadi OC Mine,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,bhatadi oc,wcl,maharashtra,chandrapur,bhatadi oc,bhatadi,82.35294117647058,FUZZY_REVIEW,Bhatadi Coal Mine,20.0,79.0
+CM-055,Bhatgaon,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,bhatgaon,secl,chhattisgarh,surguja,bhatgaon,bhatgaon,100.0,EXACT,Bhatgaon Coal Mine,23.2,82.85
+CM-056,Bhelatand Colliery,Jharkhand,DHANBAD,TSL,UNDERGROUND,PRIVATE,WORKING,bhelatand,tsl,jharkhand,dhanbad,bhelatand,bhatadi,75.0,FUZZY_REVIEW,Bhatadi Coal Mine,20.0,79.0
+CM-057,Bhowra(S),Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,bhowra s,bccl,jharkhand,dhanbad,bhowra s,bhowrah south,76.19047619047619,FUZZY_REVIEW,Bhowrah (South) Coal Mine,23.74,86.42
+CM-058,Bhubaneswari OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,bhubaneswari ocp,mcl,odisha,angul,bhubaneswari ocp,bhubaneswari,85.71428571428572,FUZZY_REVIEW,Bhubaneswari Coal Mine,20.9517,85.0985
+CM-059,Bhurkunda,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,bhurkunda,ccl,jharkhand,ramgarh,bhurkunda,bhurkunda,100.0,EXACT,Bhurkunda Coal Mine,23.65,85.3
+CM-060,Bhurkunda (Sangum),Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,bhurkunda sangum,ccl,jharkhand,ramgarh,bhurkunda sangum,bhurkunda,72.0,NO_MATCH,Bhurkunda Coal Mine,23.65,85.3
+CM-061,Bicharpur,Madhya Pradesh,SHAHDOL,UTCL,UNDERGROUND,PRIVATE,WORKING,bicharpur,utcl,madhya pradesh,shahdol,bicharpur,bicharpur,100.0,EXACT,Bicharpur Coal Mine,23.1,81.4
+CM-062,Bijari OC,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,bijari oc,secl,chhattisgarh,raigarh,bijari oc,bijari,80.0,FUZZY_REVIEW,Bijari Coal Mine,21.9,83.4
+CM-063,Bijuri,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,bijuri,secl,madhya pradesh,shahdol,bijuri,bijuri,100.0,EXACT,Bijuri Coal Mine,23.1,81.4
+CM-064,Bina Extn,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,bina extn,ncl,uttar pradesh,sonbhadra,bina extn,bina,61.53846153846154,NO_MATCH,Bina Coal Mine,24.2,82.67
+CM-065,Block-B Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,block b,ncl,madhya pradesh,singrauli,block b,block b,100.0,EXACT,Block-B Coal Mine,24.2,82.67
+CM-066,Bokaro OC (Bermo),Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,bokaro oc bermo,ccl,jharkhand,bokaro,bokaro oc bermo,bokaro opencast,60.0,NO_MATCH,Bokaro Opencast Coal Mine,,
+CM-067,Bonjemehari OC (Extn),West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,bonjemehari oc extn,ecl,west bengal,bardhaman,bonjemehari oc extn,bonjemehari,73.33333333333334,NO_MATCH,Bonjemehari Coal Mine,23.62,87.13
+CM-068,C L Jambad OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,c l jambad ocp,ecl,west bengal,bardhaman,c l jambad ocp,cl jambad,69.56521739130434,NO_MATCH,CL Jambad Coal Mine,22.9868,87.855
+CM-069,Central Kajora Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,central kajora,ecl,west bengal,bardhaman,central kajora,central kajora,100.0,EXACT,Central Kajora Coal Mine,23.62,87.13
+CM-070,Central Saunda,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,central saunda,ccl,jharkhand,ramgarh,central saunda,central kajora,71.42857142857143,NO_MATCH,Central Kajora Coal Mine,23.62,87.13
+CM-071,Chainpur(Sarubera) Colly.,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,chainpur sarubera colly,ccl,jharkhand,ramgarh,chainpur sarubera colly,gopinathpur shampur a ug oc,52.0,NO_MATCH,Gopinathpur–Shampur A UG & OC Mine,23.6102,85.2799
+CM-072,Chanda Rayatwari Colliery,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,chanda rayatwari,wcl,maharashtra,chandrapur,chanda rayatwari,d rayatwari,81.4814814814815,FUZZY_REVIEW,D. Rayatwari Coal Mine,19.7515,75.7139
+CM-073,Chapapur-II & Chappapur 10 Quarry (OC),Jharkhand,DHANBAD,ECL,MIXED,PUBLIC,WORKING,chapapur ii chappapur 10 quarry oc,ecl,jharkhand,dhanbad,chapapur ii chappapur 10 quarry oc,gopinathpur shampur a ug oc,49.18032786885246,NO_MATCH,Gopinathpur–Shampur A UG & OC Mine,23.6102,85.2799
+CM-074,Chapuikhas Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chapuikhas,ecl,west bengal,bardhaman,chapuikhas,chapuikhas,100.0,EXACT,Chapuikhas Colliery,22.9868,87.855
+CM-075,Chasnalla Colliery,Jharkhand,DHANBAD,IISCO,UNDERGROUND,PUBLIC,WORKING,chasnalla,iisco,jharkhand,dhanbad,chasnalla,chasnala,94.11764705882352,FUZZY_HIGH,Chasnala Coal Mine,23.6102,85.2799
+CM-076,Chatti Bariatu Coal Mining Project,Jharkhand,HAZARIBAGH,NTPC,OPENCAST,PUBLIC,WORKING,chatti bariatu mining,ntpc,jharkhand,hazaribagh,chatti bariatu mining,chatti bariatu,80.0,FUZZY_REVIEW,Chatti-Bariatu Coal Mine,,
+CM-077,Chhal OC,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,chhal oc,secl,chhattisgarh,raigarh,chhal oc,chhal,76.92307692307692,FUZZY_REVIEW,Chhal Coal Mine,21.9,83.4
+CM-078,Chhatarpur -II,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,chhatarpur ii,wcl,madhya pradesh,betul,chhatarpur ii,chhatarpur ii,100.0,EXACT,Chhatarpur-II Coal Mine,23.4733,77.947
+CM-079,Chhatarpur 1,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,chhatarpur 1,wcl,madhya pradesh,betul,chhatarpur 1,chhatarpur i,83.33333333333334,FUZZY_REVIEW,Chhatarpur-I Coal Mine,23.4733,77.947
+CM-080,Chhinda,Madhya Pradesh,CHHINDWARA,WCL,OPENCAST,PUBLIC,NON_WORKING,chhinda,wcl,madhya pradesh,chhindwara,chhinda,chhinda,100.0,EXACT,Chhinda Coal Mine,23.4733,77.947
+CM-081,Chinakuri Mine III,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chinakuri iii,ecl,west bengal,bardhaman,chinakuri iii,chinakuri iii,100.0,EXACT,Chinakuri III Coal Mine,22.9868,87.855
+CM-082,Chirimiri,Chhattisgarh,KOREA,SECL,OPENCAST,PUBLIC,WORKING,chirimiri,secl,chhattisgarh,korea,chirimiri,chirimiri,100.0,EXACT,Chirimiri Coal Mine,23.19,82.35
+CM-083,Chitra East OCP,Jharkhand,DEOGHAR,ECL,OPENCAST,PUBLIC,WORKING,chitra east ocp,ecl,jharkhand,deoghar,chitra east ocp,chitra east,84.61538461538461,FUZZY_REVIEW,Chitra East Coal Mine,24.48,86.69
+CM-084,Chora 10 Pit Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chora 10 pit,ecl,west bengal,bardhaman,chora 10 pit,chora 7 9 10,66.66666666666667,NO_MATCH,"Chora 7,9&10 Coal Mine",22.9868,87.855
+CM-085,Chora 7&9 Pits Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,chora 7 9 pits,ecl,west bengal,bardhaman,chora 7 9 pits,chora 7 9 10,69.23076923076923,NO_MATCH,"Chora 7,9&10 Coal Mine",22.9868,87.855
+CM-086,Chora Block Incline UG & Shankarpur OC & Banbahal OC,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,chora block incline ug shankarpur oc banbahal oc,ecl,west bengal,bardhaman,chora block incline ug shankarpur oc banbahal oc,gopinathpur shampur a ug oc,48.0,NO_MATCH,Gopinathpur–Shampur A UG & OC Mine,23.6102,85.2799
+CM-087,Churcha RO,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,churcha ro,secl,chhattisgarh,korea,churcha ro,churcha ro,100.0,EXACT,Churcha RO Coal Mine,23.19,82.35
+CM-088,Dabor Ph-II & III OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,dabor ph ii iii oc,ecl,west bengal,bardhaman,dabor ph ii iii oc,srirampur iii iii a,54.054054054054056,NO_MATCH,Srirampur-III & III A Coal Mine,18.75,79.45
+CM-089,Dakra Bukbuka OC,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,dakra bukbuka oc,ccl,jharkhand,ranchi,dakra bukbuka oc,dakra bukbuka,89.65517241379311,FUZZY_REVIEW,Dakra Bukbuka Coal Mine,23.75,84.85
+CM-090,Dalurband OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,dalurband oc,ecl,west bengal,bardhaman,dalurband oc,pandaveswar dalurband,60.60606060606061,NO_MATCH,Pandaveswar Dalurband Coal Mine,,
+CM-091,Damini,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,damini,secl,madhya pradesh,shahdol,damini,damini,100.0,EXACT,Damini Coal Mine,23.1,81.4
+CM-092,Damoda,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,damoda,bccl,jharkhand,dhanbad,damoda,damoda,100.0,EXACT,Damoda Coal Mine,23.6102,85.2799
+CM-093,Dhankasa & Jamunia,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,NON_WORKING,dhankasa jamunia,wcl,madhya pradesh,chhindwara,dhankasa jamunia,dhankasa,66.66666666666667,NO_MATCH,Dhankasa Coal Mine,23.4733,77.947
+CM-094,Dhanpuri,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,dhanpuri,secl,madhya pradesh,shahdol,dhanpuri,dhanpuri,100.0,EXACT,Dhanpuri Coal Mine,23.4733,77.947
+CM-095,Dhelwadih Colliery,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,dhelwadih,secl,chhattisgarh,korba,dhelwadih,dhelwadih,100.0,EXACT,Dhelwadih Coal Mine,22.35,82.68
+CM-096,Dhemomain Incl Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,dhemomain incl,ecl,west bengal,bardhaman,dhemomain incl,dhemonmain,75.0,FUZZY_REVIEW,Dhemonmain Coal Mine,22.9868,87.855
+CM-097,Dhemomain Pit Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,dhemomain pit,ecl,west bengal,bardhaman,dhemomain pit,dhemonmain,78.26086956521739,FUZZY_REVIEW,Dhemonmain Coal Mine,22.9868,87.855
+CM-098,Dhoptala OC (Sasti Colliery),Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,dhoptala oc sasti,wcl,maharashtra,chandrapur,dhoptala oc sasti,sasti oc,64.0,NO_MATCH,Sasti OC Coal Mine,20.0,79.0
+CM-099,Dhori Khas(UG),Jharkhand,BOKARO,CCL,UNDERGROUND,PUBLIC,WORKING,dhori khas ug,ccl,jharkhand,bokaro,dhori khas ug,dhori khas,86.95652173913044,FUZZY_REVIEW,Dhori- Khas Coal Mine,,
+CM-100,Dipka,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,dipka,secl,chhattisgarh,korba,dipka,dipka,100.0,EXACT,Dipka Coal Mine,22.35,82.68
+CM-101,Dubeswari Colliery,West Bengal,PURULIA,ECL,UNDERGROUND,PUBLIC,WORKING,dubeswari,ecl,west bengal,purulia,dubeswari,dubeshwari oc,81.81818181818181,FUZZY_REVIEW,Dubeshwari OC Coal Mine,22.9868,87.855
+CM-102,Dudhichua Project,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,dudhichua,ncl,uttar pradesh,sonbhadra,dudhichua,dudhichua,100.0,EXACT,Dudhichua Coal Mine,24.2,82.67
+CM-103,Dulanga Coal Mining Project,Odisha,SUNDARGARH,NTPC,OPENCAST,PUBLIC,WORKING,dulanga mining,ntpc,odisha,sundargarh,dulanga mining,dulanga,66.66666666666667,NO_MATCH,Dulanga Coal Mine,20.95,85.23
+CM-104,Durgapur Open Cast,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,durgapur open cast,wcl,maharashtra,chandrapur,durgapur open cast,kargali open cast,74.28571428571429,NO_MATCH,Kargali Open Cast Coal Mine,23.6102,85.2799
+CM-105,Durgapur Rayatwari Colly,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,WORKING,durgapur rayatwari colly,wcl,maharashtra,chandrapur,durgapur rayatwari colly,d rayatwari,62.857142857142854,NO_MATCH,D. Rayatwari Coal Mine,19.7515,75.7139
+CM-106,DVC Tubed Mines,Jharkhand,LATEHAR,DVC,OPENCAST,PUBLIC,WORKING,dvc tubed mines,dvc,jharkhand,latehar,dvc tubed mines,muraidih mines,55.172413793103445,NO_MATCH,Muraidih mines,,
+CM-107,E.Basuria,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,e basuria,bccl,jharkhand,dhanbad,e basuria,east bassuriya,78.26086956521739,FUZZY_REVIEW,East Bassuriya Coal Mine,23.74,86.42
+CM-108,Ena,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,ena,bccl,jharkhand,dhanbad,ena,ena,100.0,EXACT,Ena Coal Mine,23.6102,85.2799
+CM-109,G & G B Coal Mine,West Bengal,BIRBHUM,WBPDCL,OPENCAST,PUBLIC,WORKING,g g b,wbpdcl,west bengal,birbhum,g g b,p b ug,72.72727272727273,NO_MATCH,P. B. UG Coal Mine,23.74,86.42
+CM-110,Gare Palma IV 6,Chhattisgarh,RAIGARH,JSPL,OPENCAST,PRIVATE,WORKING,gare palma iv 6,jspl,chhattisgarh,raigarh,gare palma iv 6,gare palma iv 6,100.0,EXACT,Gare Palma IV 6 Coal Mine,21.2787,81.8661
+CM-111,Gare Palma IV-2&3,Chhattisgarh,KORBA,BALCO,OPENCAST,PRIVATE,WORKING,gare palma iv 2 3,balco,chhattisgarh,korba,gare palma iv 2 3,gare palma iv 2 3,100.0,EXACT,Gare Palma IV 2 & 3 Coal Mine,21.2787,81.8661
+CM-112,Gare Palma IV/1,Chhattisgarh,RAIGARH,JPL,OPENCAST,PRIVATE,WORKING,gare palma iv 1,jpl,chhattisgarh,raigarh,gare palma iv 1,gare palma iv 1,100.0,EXACT,Gare Palma IV 1 Coal Mine,21.9,83.4
+CM-113,Gare Palma IV/2&3,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,gare palma iv 2 3,secl,chhattisgarh,raigarh,gare palma iv 2 3,gare palma iv 2 3,100.0,EXACT,Gare Palma IV 2 & 3 Coal Mine,21.2787,81.8661
+CM-114,Gare Palma IV/2&3,Chhattisgarh,RAIGARH,JPL,OPENCAST,PRIVATE,WORKING,gare palma iv 2 3,jpl,chhattisgarh,raigarh,gare palma iv 2 3,gare palma iv 2 3,100.0,EXACT,Gare Palma IV 2 & 3 Coal Mine,21.2787,81.8661
+CM-115,Gare Palma IV/7,Chhattisgarh,RAIGARH,SEML,OPENCAST,PRIVATE,WORKING,gare palma iv 7,seml,chhattisgarh,raigarh,gare palma iv 7,gare palma iv 7,100.0,EXACT,Gare Palma IV 7 Coal Mine,21.9,83.4
+CM-116,Gare Palma Sector III,Chhattisgarh,RAIGARH,CSPGCL,OPENCAST,PUBLIC,WORKING,gare palma sector iii,cspgcl,chhattisgarh,raigarh,gare palma sector iii,gare palma iii,80.0,FUZZY_REVIEW,Gare Palma III Coal Mine,21.2787,81.8661
+CM-117,Garjanbahal OCP,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,garjanbahal ocp,mcl,odisha,sundargarh,garjanbahal ocp,garjanbahal,84.61538461538461,FUZZY_REVIEW,Garjanbahal Coal Mine,21.6,83.9
+CM-118,Gayatri,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,gayatri,secl,chhattisgarh,surguja,gayatri,gayatri,100.0,EXACT,Gayatri Coal Mine,21.2787,81.8661
+CM-119,Gevra,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,gevra,secl,chhattisgarh,korba,gevra,gevra,100.0,EXACT,Gevra Coal Mine,22.35,82.68
+CM-120,"Ghonsa,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,ghonsa,wcl,maharashtra,yavatmal,ghonsa,ghonsa,100.0,EXACT,Ghonsa Coal Mine,19.7515,75.7139
+CM-121,Gidi `A',Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,gidi a,ccl,jharkhand,hazaribagh,gidi a,jogidih,61.53846153846154,NO_MATCH,Jogidih Coal Mine,23.74,86.42
+CM-122,Gidi `C',Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,gidi c,ccl,jharkhand,hazaribagh,gidi c,jogidih,61.53846153846154,NO_MATCH,Jogidih Coal Mine,23.74,86.42
+CM-123,Giridih OC,Jharkhand,GIRIDIH,CCL,OPENCAST,PUBLIC,NON_WORKING,giridih oc,ccl,jharkhand,giridih,giridih oc,giridih,82.35294117647058,FUZZY_REVIEW,Giridih Coal Mine,,
+CM-124,Godavari Khani 1 & 3,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,godavari khani 1 3,sccl,telangana,khammam,godavari khani 1 3,godavarikhani 7,84.84848484848484,FUZZY_REVIEW,Godavarikhani - 7 Coal Mine,18.75,79.45
+CM-125,Godavari Khani-11 Incline,Telangana,PEDDAPALLI,SCCL,UNDERGROUND,PUBLIC,WORKING,godavari khani 11 incline,sccl,telangana,peddapalli,godavari khani 11 incline,godavarikhani 11a incline,76.0,FUZZY_REVIEW,Godavarikhani-11A Incline Coal Mine,18.75,79.45
+CM-126,Godavari Khani-2 & 2A,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,godavari khani 2 2a,sccl,telangana,khammam,godavari khani 2 2a,godavarikhani 7,82.35294117647058,FUZZY_REVIEW,Godavarikhani - 7 Coal Mine,18.75,79.45
+CM-127,Godavarikhani V OC,Telangana,PEDDAPALLI,SCCL,OPENCAST,PUBLIC,WORKING,godavarikhani v oc,sccl,telangana,peddapalli,godavarikhani v oc,godavarikhani 7,78.78787878787878,FUZZY_REVIEW,Godavarikhani - 7 Coal Mine,18.75,79.45
+CM-128,Gokul OC Mine + Gokul Extn.,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,gokul oc gokul extn,wcl,maharashtra,nagpur,gokul oc gokul extn,gouranoih expansion,47.36842105263158,NO_MATCH,Gouranoih Expansion Mine,22.9868,87.855
+CM-129,Gondudih/Khas Kusunda,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,gondudih khas kusunda,bccl,jharkhand,dhanbad,gondudih khas kusunda,gondudih khas kusunda,100.0,EXACT,Gondudih Khas Kusunda Coal Mine,23.74,86.42
+CM-130,Gopalichuck,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,gopalichuck,bccl,jharkhand,dhanbad,gopalichuck,gopalichak,85.71428571428572,FUZZY_REVIEW,Gopalichak Coal Mine,23.74,86.42
+CM-131,Gopinathpur,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,NON_WORKING,gopinathpur,ecl,jharkhand,dhanbad,gopinathpur,gopinathpur ug oc,78.57142857142857,FUZZY_REVIEW,Gopinathpur UG & OC Mine,,
+CM-132,Gotitoria E & W,Madhya Pradesh,Narsinghpur,BSMPL,OPENCAST,PRIVATE,WORKING,gotitoria e w,bsmpl,madhya pradesh,narsinghpur,gotitoria e w,gotitoria east gotitoria west,61.904761904761905,NO_MATCH,Gotitoria East & Gotitoria West Coal Mine,22.6,78.6
+CM-133,Gourangdi-A OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,gourangdi a ocp,ecl,west bengal,bardhaman,gourangdi a ocp,gourangdih abc,75.86206896551724,FUZZY_REVIEW,Gourangdih ABC Coal Mine,23.62,87.13
+CM-134,Gourangdih Extn OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,gourangdih extn oc,ecl,west bengal,bardhaman,gourangdih extn oc,gourangdih abc,68.75,NO_MATCH,Gourangdih ABC Coal Mine,23.62,87.13
+CM-135,Gouri -Pauni(A) OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,gouri pauni a ocm,wcl,maharashtra,chandrapur,gouri pauni a ocm,gourangdih abc,58.06451612903225,NO_MATCH,Gourangdih ABC Coal Mine,23.62,87.13
+CM-136,Gouri Deep,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,gouri deep,wcl,maharashtra,chandrapur,gouri deep,gouri deep,100.0,EXACT,Gouri Deep Coal Mine,19.7515,75.7139
+CM-137,Gouthampur Khani OCP,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,gouthampur khani ocp,sccl,telangana,khammam,gouthampur khani ocp,gouthamkhani,75.0,FUZZY_REVIEW,Gouthamkhani Coal Mine,17.55,80.62
+CM-138,Govindpur,Jharkhand,BOKARO,CCL,UNDERGROUND,PUBLIC,WORKING,govindpur,ccl,jharkhand,bokaro,govindpur,govindpur,100.0,EXACT,Govindpur Coal Mine,23.85,86.15
+CM-139,Govindpur Ph-II OCP,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,govindpur ph ii ocp,ccl,jharkhand,bokaro,govindpur ph ii ocp,govindpur,64.28571428571428,NO_MATCH,Govindpur Coal Mine,23.85,86.15
+CM-140,GP-IV-8 Coal Mine,Chhattisgarh,RAIGARH,AMBUJA,UNDERGROUND,PRIVATE,WORKING,gp iv 8,ambuja,chhattisgarh,raigarh,gp iv 8,gare palma iv 8,54.54545454545454,NO_MATCH,Gare Palma IV 8 Coal Mine,21.9,83.4
+CM-141,Haldibari,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,haldibari,secl,chhattisgarh,korea,haldibari,haldibari,100.0,EXACT,Haldibari Coal Mine,23.3,82.9
+CM-142,Hariajam,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,hariajam,ecl,jharkhand,dhanbad,hariajam,hariajam,100.0,EXACT,Hariajam Coal Mine,23.6102,85.2799
+CM-143,Hindustan Lalpeth Colliery No.1,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,hindustan lalpeth no 1,wcl,maharashtra,chandrapur,hindustan lalpeth no 1,cluster no 1 ecl,52.63157894736843,NO_MATCH,Cluster No. 1 (ECL),23.6102,85.2799
+CM-144,Hindustan Lalpeth OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,hindustan lalpeth oc,wcl,maharashtra,chandrapur,hindustan lalpeth oc,ningah oc,48.275862068965516,NO_MATCH,Ningah OC Coal Mine,22.9868,87.855
+CM-145,Hingula OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,hingula ocp,mcl,odisha,angul,hingula ocp,hingula ii,76.19047619047619,FUZZY_REVIEW,Hingula-II Coal Mine,20.9517,85.0985
+CM-146,Hirakhand Bundia Mine,Odisha,JHARSUGUDA,MCL,UNDERGROUND,PUBLIC,WORKING,hirakhand bundia,mcl,odisha,jharsuguda,hirakhand bundia,hirakhand bundia incline,80.0,FUZZY_REVIEW,Hirakhand Bundia Incline Mine,20.9517,85.0985
+CM-147,Hurra C,Jharkhand,GODDA,ECL,OPENCAST,PUBLIC,WORKING,hurra c,ecl,jharkhand,godda,hurra c,hura c,92.3076923076923,FUZZY_HIGH,Hura C Coal Mine,24.75,87.5
+CM-148,"Indaram Khani-1A, Incline",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,indaram khani 1a incline,sccl,telangana,mancherial,indaram khani 1a incline,kakatiya khani 6 6a incline,70.58823529411764,NO_MATCH,Kakatiya Khani-6 & 6A Incline,18.75,79.45
+CM-149,Indaram Khani-OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,indaram khani oc,sccl,telangana,mancherial,indaram khani oc,ravindrakhani,68.96551724137932,NO_MATCH,Ravindrakhani Coal Mine,18.87,79.45
+CM-150,Int. Lakhanpur-Belpahar-Lilari OCP,Odisha,JHARSUGUDA,MCL,OPENCAST,PUBLIC,WORKING,int lakhanpur belpahar lilari ocp,mcl,odisha,jharsuguda,int lakhanpur belpahar lilari ocp,integrated belpahar lakhanpur lilari,84.05797101449275,FUZZY_REVIEW,"Integrated Belpahar, Lakhanpur, Lilari Coal Mine",20.9517,85.0985
+CM-151,Itapara OC Patch,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,itapara oc patch,ecl,west bengal,bardhaman,itapara oc patch,nirsha oc patch,77.41935483870968,FUZZY_REVIEW,Nirsha OC Patch Coal Mine,23.6102,85.2799
+CM-152,J. K. Nagar Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,j k nagar,ecl,west bengal,bardhaman,j k nagar,jk nagar,94.11764705882352,FUZZY_HIGH,JK Nagar Coal Mine,22.9868,87.855
+CM-153,Jaganathpur,Chhattisgarh,SURGUJA,SECL,OPENCAST,PUBLIC,WORKING,jaganathpur,secl,chhattisgarh,surguja,jaganathpur,jagannathpur,95.65217391304348,FUZZY_HIGH,Jagannathpur Coal Mine,23.2,82.85
+CM-154,Jagannath Re-org OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,jagannath re org ocp,mcl,odisha,angul,jagannath re org ocp,jagannathpur,68.75,NO_MATCH,Jagannathpur Coal Mine,23.2,82.85
+CM-155,Jalagam Vengala Rao OC-2,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,jalagam vengala rao oc 2,sccl,telangana,khammam,jalagam vengala rao oc 2,gare palma iv 2 3 oc,50.0,NO_MATCH,Gare Palma IV 2 & 3 OC Mine,21.2787,81.8661
+CM-156,Jalipa,Chhattisgarh,RAIGARH,HIL,OPENCAST,PRIVATE,WORKING,jalipa,hil,chhattisgarh,raigarh,jalipa,amelia,66.66666666666667,NO_MATCH,Amelia Coal Mine,24.2,82.67
+CM-157,Jamadoba Colliery,Jharkhand,DHANBAD,TSL,MIXED,PRIVATE,WORKING,jamadoba,tsl,jharkhand,dhanbad,jamadoba,naba jambad,73.6842105263158,NO_MATCH,Naba Jambad Project,22.9868,87.855
+CM-158,Jambad OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,jambad ocp,ecl,west bengal,bardhaman,jambad ocp,naba jambad,66.66666666666667,NO_MATCH,Naba Jambad Project,22.9868,87.855
+CM-159,Jambad UG Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,jambad ug,ecl,west bengal,bardhaman,jambad ug,jamuna ug,77.77777777777779,FUZZY_REVIEW,Jamuna UG Coal Mine,23.1,81.4
+CM-160,Jamkhani Coal Mine,Odisha,SUNDARGARH,Vedanta,OPENCAST,PRIVATE,WORKING,jamkhani,vedanta,odisha,sundargarh,jamkhani,jamkhani,100.0,EXACT,Jamkhani Coal Mine,21.6,83.9
+CM-161,Jampali,Chhattisgarh,RAIGARH,SECL,OPENCAST,PUBLIC,WORKING,jampali,secl,chhattisgarh,raigarh,jampali,jampali,100.0,EXACT,Jampali Coal Mine,21.9,83.4
+CM-162,Jamuna 9 & 10 Jamuna RO,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,jamuna 9 10 jamuna ro,secl,madhya pradesh,shahdol,jamuna 9 10 jamuna ro,jamuna ug,53.333333333333336,NO_MATCH,Jamuna UG Coal Mine,23.1,81.4
+CM-163,Jarangdih OC,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,jarangdih oc,ccl,jharkhand,bokaro,jarangdih oc,jarangdih,85.71428571428572,FUZZY_REVIEW,Jarangdih Coal Mine,23.6102,85.2799
+CM-164,"Jawahar Khani OC-5,",Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,jawahar khani oc 5,sccl,telangana,khammam,jawahar khani oc 5,jawaharkhani 5,87.5,FUZZY_REVIEW,Jawaharkhani 5 Coal Mine,17.55,80.62
+CM-165,Jayant Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,jayant,ncl,madhya pradesh,singrauli,jayant,jayant,100.0,EXACT,Jayant Coal Mine,24.2,82.67
+CM-166,Jhanjra Project Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,jhanjra,ecl,west bengal,bardhaman,jhanjra,jhanjra,100.0,EXACT,Jhanjra Coal Mine,23.5,87.2
+CM-167,Jharkhand OCP,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,jharkhand ocp,ccl,jharkhand,ramgarh,jharkhand ocp,jharkhand,81.81818181818181,FUZZY_REVIEW,Jharkhand Coal Mine,23.6102,85.2799
+CM-168,Jhilimili Colliery,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,jhilimili,secl,chhattisgarh,korea,jhilimili,jhilmili,94.11764705882352,FUZZY_HIGH,Jhilmili Coal Mine,23.3,82.9
+CM-169,Jhingurda Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,jhingurda,ncl,madhya pradesh,singrauli,jhingurda,jhingurda,100.0,EXACT,Jhingurda Coal Mine,24.2,82.67
+CM-170,Jhiria,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,jhiria,secl,madhya pradesh,shahdol,jhiria,jharia,83.33333333333334,FUZZY_REVIEW,Jharia Coal Mine,23.75,86.4
+CM-171,Jitpur Colliery,Jharkhand,DHANBAD,IISCO,UNDERGROUND,PUBLIC,WORKING,jitpur,iisco,jharkhand,dhanbad,jitpur,jitpur,100.0,EXACT,Jitpur Coal Mine,24.75,87.5
+CM-172,Jogidih,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,jogidih,bccl,jharkhand,dhanbad,jogidih,jogidih,100.0,EXACT,Jogidih Coal Mine,23.74,86.42
+CM-173,Joyrampur,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,joyrampur,bccl,jharkhand,dhanbad,joyrampur,balrampur,66.66666666666667,NO_MATCH,Balrampur Coal Mine,23.2,82.85
+CM-174,"Junad,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,junad,wcl,maharashtra,yavatmal,junad,junad,100.0,EXACT,Junad Coal Mine,20.0,79.0
+CM-175,K. Dewarkhand,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,k dewarkhand,ccl,jharkhand,ranchi,k dewarkhand,jharkhand,66.66666666666667,NO_MATCH,Jharkhand Coal Mine,23.6102,85.2799
+CM-176,Kabribad OC,Jharkhand,GIRIDIH,CCL,OPENCAST,PUBLIC,WORKING,kabribad oc,ccl,jharkhand,giridih,kabribad oc,kabribad,84.21052631578947,FUZZY_REVIEW,Kabribad Coal Mine,23.6102,85.2799
+CM-177,Kakatiya Khani-1 & 1A Incline,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 1 1a incline,sccl,telangana,jayashankar bhupalpally,kakatiya khani 1 1a incline,kakatiya khani 6 6a incline,92.5925925925926,FUZZY_HIGH,Kakatiya Khani-6 & 6A Incline,18.75,79.45
+CM-178,Kakatiya Khani-5 Incline,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 5 incline,sccl,telangana,jayashankar bhupalpally,kakatiya khani 5 incline,kakatiya khani 6 6a incline,90.19607843137256,FUZZY_HIGH,Kakatiya Khani-6 & 6A Incline,18.75,79.45
+CM-179,"Kakatiya Khani-6, Incline",Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 6 incline,sccl,telangana,jayashankar bhupalpally,kakatiya khani 6 incline,kakatiya khani 6 6a incline,94.11764705882352,FUZZY_HIGH,Kakatiya Khani-6 & 6A Incline,18.75,79.45
+CM-180,Kakatiya Khani-8 & 8A Incline,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,UNDERGROUND,PUBLIC,WORKING,kakatiya khani 8 8a incline,sccl,telangana,jayashankar bhupalpally,kakatiya khani 8 8a incline,kakatiya khani 6 6a incline,92.5925925925926,FUZZY_HIGH,Kakatiya Khani-6 & 6A Incline,18.75,79.45
+CM-181,Kakatiya Khani-OC II,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,OPENCAST,PUBLIC,WORKING,kakatiya khani oc ii,sccl,telangana,jayashankar bhupalpally,kakatiya khani oc ii,kakatiya khani 3,83.33333333333334,FUZZY_REVIEW,Kakatiya Khani-3 Coal Mine,18.75,79.45
+CM-182,Kakatiya Khani-OC-III,Telangana,JAYASHANKAR BHUPALPALLY,SCCL,OPENCAST,PUBLIC,WORKING,kakatiya khani oc iii,sccl,telangana,jayashankar bhupalpally,kakatiya khani oc iii,kakatiya khani 3,81.08108108108108,FUZZY_REVIEW,Kakatiya Khani-3 Coal Mine,18.75,79.45
+CM-183,Kakri Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,kakri,ncl,madhya pradesh,singrauli,kakri,kakri,100.0,EXACT,Kakri Coal Mine,26.8467,80.9462
+CM-184,Kalidaspur Project,West Bengal,BANKURA,ECL,UNDERGROUND,PUBLIC,WORKING,kalidaspur,ecl,west bengal,bankura,kalidaspur,kalidaspur,100.0,EXACT,Kalidaspur Coal Mine,22.9868,87.855
+CM-185,Kalyan Khani OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,kalyan khani oc,sccl,telangana,mancherial,kalyan khani oc,kalyani khani,85.71428571428572,FUZZY_REVIEW,Kalyani Khani Coal Mine,18.87,79.45
+CM-186,Kalyan Khani-1 & 5 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,kalyan khani 1 5 incline,sccl,telangana,mancherial,kalyan khani 1 5 incline,kakatiya khani 6 6a incline,78.43137254901961,FUZZY_REVIEW,Kakatiya Khani-6 & 6A Incline,18.75,79.45
+CM-187,Kanchan OC,Madhya Pradesh,UMARIA,SECL,OPENCAST,PUBLIC,WORKING,kanchan oc,secl,madhya pradesh,umaria,kanchan oc,kanchan,82.35294117647058,FUZZY_REVIEW,Kanchan Coal Mine,23.2,81.3
+CM-188,Kaniha OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,kaniha ocp,mcl,odisha,angul,kaniha ocp,nirsha oc patch,64.0,NO_MATCH,Nirsha OC Patch Coal Mine,23.6102,85.2799
+CM-189,Kankanee,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,kankanee,bccl,jharkhand,dhanbad,kankanee,kankanee,100.0,EXACT,Kankanee Coal Mine,23.74,86.42
+CM-190,Kapasara,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,kapasara,ecl,jharkhand,dhanbad,kapasara,kapasara,100.0,EXACT,Kapasara Coal Mine,23.6102,85.2799
+CM-191,Kapurdi,Chhattisgarh,RAIGARH,HIL,UNDERGROUND,PRIVATE,NON_WORKING,kapurdi,hil,chhattisgarh,raigarh,kapurdi,kapurdi,100.0,EXACT,Kapurdi Coal Mine,25.75,71.4
+CM-192,Kargali OC,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,NON_WORKING,kargali oc,ccl,jharkhand,bokaro,kargali oc,khargaon,66.66666666666667,NO_MATCH,Khargaon Coal Mine,21.2787,81.8661
+CM-193,Karma,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,karma,ccl,jharkhand,ramgarh,karma,karma,100.0,EXACT,Karma Coal Mine,,
+CM-194,KARO SPL.UG,Jharkhand,BOKARO,CCL,UNDERGROUND,PUBLIC,NON_WORKING,karo spl ug,ccl,jharkhand,bokaro,karo spl ug,kasipet 1 ug,60.86956521739131,NO_MATCH,Kasipet-1 UG Coal Mine,18.75,79.45
+CM-195,Karo-I OC,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,karo i oc,ccl,jharkhand,bokaro,karo i oc,karo,61.53846153846154,NO_MATCH,Karo Coal Mine,23.85,86.15
+CM-196,Kasipet 1 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,kasipet 1 incline,sccl,telangana,mancherial,kasipet 1 incline,kasipet 2 incline,94.11764705882352,FUZZY_HIGH,Kasipet-2 Incline Mine,18.75,79.45
+CM-197,Kasipet 2 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,kasipet 2 incline,sccl,telangana,mancherial,kasipet 2 incline,kasipet 2 incline,100.0,EXACT,Kasipet-2 Incline Mine,18.75,79.45
+CM-198,Kathara Colly,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,kathara colly,ccl,jharkhand,bokaro,kathara colly,kathara,70.0,NO_MATCH,Kathara Coal Mine,,
+CM-199,Kathautia Open Cast Coal Mine,Jharkhand,PALAMU,HIL,OPENCAST,PRIVATE,WORKING,kathautia open cast,hil,jharkhand,palamu,kathautia open cast,kargali open cast,77.77777777777779,FUZZY_REVIEW,Kargali Open Cast Coal Mine,23.6102,85.2799
+CM-200,Katkona 1 & 2,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,katkona 1 2,secl,chhattisgarh,korea,katkona 1 2,katkona,77.77777777777779,FUZZY_REVIEW,Katkona Coal Mine,23.3,82.9
+CM-201,Kedla (OC),Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,kedla oc,ccl,jharkhand,ramgarh,kedla oc,kedla,76.92307692307692,FUZZY_REVIEW,Kedla Coal Mine,23.85,85.75
+CM-202,Kedla UG,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,kedla ug,ccl,jharkhand,ramgarh,kedla ug,kedla,76.92307692307692,FUZZY_REVIEW,Kedla Coal Mine,23.85,85.75
+CM-203,Kerandari,Jharkhand,HAZARIBAGH,NTPC,OPENCAST,PUBLIC,WORKING,kerandari,ntpc,jharkhand,hazaribagh,kerandari,kerendari,88.88888888888889,FUZZY_REVIEW,Kerendari Coal Mine,23.75,84.85
+CM-204,Ketki,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,ketki,secl,chhattisgarh,surguja,ketki,ketki,100.0,EXACT,Ketki Coal Mine,23.3,83.2
+CM-205,Khadia Project,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,khadia,ncl,uttar pradesh,sonbhadra,khadia,khadia,100.0,EXACT,Khadia Coal Mine,24.2,82.67
+CM-206,Khairagura OC,Telangana,Komaram Bheem,SCCL,OPENCAST,PUBLIC,WORKING,khairagura oc,sccl,telangana,komaram bheem,khairagura oc,khairagura,86.95652173913044,FUZZY_REVIEW,Khairagura Coal Mine,18.75,79.45
+CM-207,Khairaha,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,khairaha,secl,madhya pradesh,shahdol,khairaha,khairaha,100.0,EXACT,Khairaha Coal Mine,23.1,81.4
+CM-208,Khandra Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,khandra,ecl,west bengal,bardhaman,khandra,khandra,100.0,EXACT,Khandra Coal Mine,22.9868,87.855
+CM-209,Kharkharee,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,kharkharee,bccl,jharkhand,dhanbad,kharkharee,kharkharee,100.0,EXACT,Kharkharee Colliery,23.74,86.42
+CM-210,Khas Kajora Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,khas kajora,ecl,west bengal,bardhaman,khas kajora,khas kajora,100.0,EXACT,Khas Kajora Coal Mine,23.62,87.13
+CM-211,Khoodia,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,khoodia,ecl,jharkhand,dhanbad,khoodia,khoodia,100.0,EXACT,Khoodia Coal Mine,23.6102,85.2799
+CM-212,Khottadih OCP,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,khottadih ocp,ecl,west bengal,bardhaman,khottadih ocp,khottadih ug oc,85.71428571428572,FUZZY_REVIEW,Khottadih UG & OC Mine,22.9868,87.855
+CM-213,Khottadih UG,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,khottadih ug,ecl,west bengal,bardhaman,khottadih ug,khottadih ug,100.0,EXACT,Khottadih UG Coal Mine,22.9868,87.855
+CM-214,Kistaram OC,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,kistaram oc,sccl,telangana,khammam,kistaram oc,kistaram,84.21052631578947,FUZZY_REVIEW,Kistaram Coal Mine,18.75,79.45
+CM-215,"Kolarpimpri,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,kolarpimpri,wcl,maharashtra,yavatmal,kolarpimpri,kolarpimpri,100.0,EXACT,Kolarpimpri Coal Mine,19.7515,75.7139
+CM-216,Kolgaon OC,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,kolgaon oc,wcl,maharashtra,yavatmal,kolgaon oc,kolgaon,82.35294117647058,FUZZY_REVIEW,Kolgaon Coal Mine,19.7515,75.7139
+CM-217,Kondapuram UG,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,kondapuram ug,sccl,telangana,khammam,kondapuram ug,kondapuram,86.95652173913044,FUZZY_REVIEW,Kondapuram Coal Mine,18.75,79.45
+CM-218,Koya Gundem OC II,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,koya gundem oc ii,sccl,telangana,khammam,koya gundem oc ii,nakrakonda kumardih b oc,48.78048780487805,NO_MATCH,Nakrakonda Kumardih B OC Mine,23.62,87.13
+CM-219,Krishnshila OCP,Uttar Pradesh,SONBHADRA,NCL,OPENCAST,PUBLIC,WORKING,krishnshila ocp,ncl,uttar pradesh,sonbhadra,krishnshila ocp,krishnashila,81.4814814814815,FUZZY_REVIEW,Krishnashila Coal Mine,24.2,82.67
+CM-220,Kujama,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,kujama,bccl,jharkhand,dhanbad,kujama,kujama,100.0,EXACT,Kujama Coal Mine,23.6102,85.2799
+CM-221,Kuju Colliery,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,kuju,ccl,jharkhand,ramgarh,kuju,kujama,60.0,NO_MATCH,Kujama Coal Mine,23.6102,85.2799
+CM-222,Kulda OCP Balinga,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,kulda ocp balinga,mcl,odisha,sundargarh,kulda ocp balinga,ballarpur oc,55.172413793103445,NO_MATCH,Ballarpur OC Coal Mine,20.0,79.0
+CM-223,Kumardhubi Colliery,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,kumardhubi,ecl,jharkhand,dhanbad,kumardhubi,kumardhubi,100.0,EXACT,Kumardhubi Coal Mine,23.6102,85.2799
+CM-224,Kumardihi-A Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,kumardihi a,ecl,west bengal,bardhaman,kumardihi a,kumardihi a,100.0,EXACT,Kumardihi A Coal Mine,22.9868,87.855
+CM-225,Kumda 7 & 8,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,kumda 7 8,secl,chhattisgarh,surguja,kumda 7 8,kumda 7 8,100.0,EXACT,Kumda 7&8 Coal Mine,21.2787,81.8661
+CM-226,Kunustoria Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,kunustoria,ecl,west bengal,bardhaman,kunustoria,kunustoria,100.0,EXACT,Kunustoria Coal Mine,23.62,87.13
+CM-227,Kurasia UG,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,kurasia ug,secl,chhattisgarh,korea,kurasia ug,kurasia,82.35294117647058,FUZZY_REVIEW,Kurasia Coal Mine,23.19,82.35
+CM-228,Kurja/Sheetaldhara/Kapildhara,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,kurja sheetaldhara kapildhara,secl,madhya pradesh,shahdol,kurja sheetaldhara kapildhara,sheetaldhara kurja and kapidhara mines,83.5820895522388,FUZZY_REVIEW,Sheetaldhara-Kurja and Kapidhara Coal Mines,23.1,81.4
+CM-229,Kusmunda Project,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,kusmunda,secl,chhattisgarh,korba,kusmunda,kusmunda,100.0,EXACT,Kusmunda Coal Mine,22.35,82.68
+CM-230,Kuya,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,kuya,bccl,jharkhand,dhanbad,kuya,kuya,100.0,EXACT,Kuya Coal Mine,23.6102,85.2799
+CM-231,Laiyo UGP,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,laiyo ugp,ccl,jharkhand,ramgarh,laiyo ugp,sasti ug,58.82352941176471,NO_MATCH,Sasti UG Coal Mine,20.0,79.0
+CM-232,Lajkura OCP,Odisha,JHARSUGUDA,MCL,OPENCAST,PUBLIC,WORKING,lajkura ocp,mcl,odisha,jharsuguda,lajkura ocp,lajkura,77.77777777777779,FUZZY_REVIEW,Lajkura Coal Mine,21.6,83.9
+CM-233,Lakhimata,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,lakhimata,ecl,jharkhand,dhanbad,lakhimata,basantimata,60.0,NO_MATCH,Basantimata Coal Mine,23.74,86.42
+CM-234,Lingaraj OCP,Odisha,Angul,MCL,OPENCAST,PUBLIC,WORKING,lingaraj ocp,mcl,odisha,angul,lingaraj ocp,lingaraj,80.0,FUZZY_REVIEW,Lingaraj Coal Mine,20.95,85.23
+CM-235,Lower Kenda Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,lower kenda,ecl,west bengal,bardhaman,lower kenda,lower kenda,100.0,EXACT,Lower Kenda Coal Mine,22.9868,87.855
+CM-236,Madhaipur,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,madhaipur,ecl,west bengal,bardhaman,madhaipur,madhaipur,100.0,EXACT,Madhaipur Coal Mine,22.9868,87.855
+CM-237,Madhaipur Mixed,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,madhaipur mixed,ecl,west bengal,bardhaman,madhaipur mixed,madhaipur,75.0,FUZZY_REVIEW,Madhaipur Coal Mine,22.9868,87.855
+CM-238,Madhusudanpur 7 Pit & Incline,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,madhusudanpur 7 pit incline,ecl,west bengal,bardhaman,madhusudanpur 7 pit incline,maohusudanpur 7 pit incline,96.2962962962963,FUZZY_HIGH,Maohusudanpur 7 Pit & Incline Coal Mine,22.9868,87.855
+CM-239,Magadh OCP,Jharkhand,CHATRA,CCL,OPENCAST,PUBLIC,WORKING,magadh ocp,ccl,jharkhand,chatra,magadh ocp,magadh,75.0,FUZZY_REVIEW,Magadh Coal Mine,23.75,84.85
+CM-240,Mahadeopuri,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,mahadeopuri,wcl,madhya pradesh,chhindwara,mahadeopuri,mahadevpuri,90.9090909090909,FUZZY_HIGH,Mahadevpuri Coal Mine,23.4733,77.947
+CM-241,Mahakali Colliery,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,mahakali,wcl,maharashtra,chandrapur,mahakali,mahakali,100.0,EXACT,Mahakali Coal Mine,19.7515,75.7139
+CM-242,Maheshpur,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,maheshpur,bccl,jharkhand,dhanbad,maheshpur,maheshpur,100.0,EXACT,Maheshpur Coal Mine,23.74,86.42
+CM-243,Makardhokra-I OC Expansion Mine,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,makardhokra i oc expansion,wcl,maharashtra,nagpur,makardhokra i oc expansion,dahegoan makardhoka iv,66.66666666666667,NO_MATCH,Dahegoan - Makardhoka IV Coal Mine,20.85,79.33
+CM-244,Makardhokra-III OC MINE,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,makardhokra iii oc,wcl,maharashtra,nagpur,makardhokra iii oc,makardhokra i,83.87096774193549,FUZZY_REVIEW,Makardhokra I Coal Mine,20.85,79.33
+CM-245,Mandarboni,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,mandarboni,ecl,west bengal,bardhaman,mandarboni,mandakini b,66.66666666666667,NO_MATCH,Mandakini–B Coal Mine,20.95,85.23
+CM-246,Manikpur,Chhattisgarh,KORBA,SECL,OPENCAST,PUBLIC,WORKING,manikpur,secl,chhattisgarh,korba,manikpur,manikpur,100.0,EXACT,Manikpur Coal Mine,22.35,82.68
+CM-247,Manki/Churi,Jharkhand,RANCHI,CCL,UNDERGROUND,PUBLIC,WORKING,manki churi,ccl,jharkhand,ranchi,manki churi,churi,62.5,NO_MATCH,Churi Coal Mine,23.75,84.85
+CM-248,Manna Incline,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,NON_WORKING,manna incline,wcl,maharashtra,chandrapur,manna incline,manna incline,100.0,EXACT,Manna Incline Coal Mine,19.7515,75.7139
+CM-249,Manoharpur Coal Mine,Odisha,SUNDARGARH,OCPL,OPENCAST,PUBLIC,WORKING,manoharpur,ocpl,odisha,sundargarh,manoharpur,manoharpur,100.0,EXACT,Manoharpur Coal Mine,21.6,83.9
+CM-250,Manuguru Opencast,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,manuguru opencast,sccl,telangana,khammam,manuguru opencast,manuguru opencast,100.0,EXACT,Manuguru Opencast Coal Mine,17.9784,79.5941
+CM-251,Marki Mangli - I Coal Mine,Maharashtra,YAVATMAL,TUML,OPENCAST,PRIVATE,WORKING,marki mangli i,tuml,maharashtra,yavatmal,marki mangli i,marki mangli i,100.0,EXACT,Marki Mangli I Coal Mine,19.7515,75.7139
+CM-252,Marki Mangli III,Maharashtra,YAVATMAL,BSIL,OPENCAST,PRIVATE,WORKING,marki mangli iii,bsil,maharashtra,yavatmal,marki mangli iii,marki mangli iii,100.0,EXACT,Marki Mangli III Coal Mine,20.0,79.0
+CM-253,Mathani,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,mathani,wcl,madhya pradesh,chhindwara,mathani,methani,85.71428571428572,FUZZY_REVIEW,Methani Coal Mine,,
+CM-254,Meera,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,meera,secl,madhya pradesh,shahdol,meera,meera,100.0,EXACT,Meera Coal Mine,23.1,81.4
+CM-255,Methani Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,methani,ecl,west bengal,bardhaman,methani,methani,100.0,EXACT,Methani Coal Mine,,
+CM-256,Metica Coal Mine,Jammu & Kashmir,Rajouri,JKML,UNDERGROUND,PUBLIC,WORKING,metica,jkml,jammu kashmir,rajouri,metica,amelia,66.66666666666667,NO_MATCH,Amelia Coal Mine,24.2,82.67
+CM-257,Mohan (Mohan UG),Madhya Pradesh,CHHINDWARA,WCL,MIXED,PUBLIC,WORKING,mohan mohan ug,wcl,madhya pradesh,chhindwara,mohan mohan ug,manoharpur,58.33333333333333,NO_MATCH,Manoharpur Coal Mine,21.6,83.9
+CM-258,Mohanpur (Expn),West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,mohanpur expn,ecl,west bengal,bardhaman,mohanpur expn,mohanpur,76.19047619047619,FUZZY_REVIEW,Mohanpur Coal Mine,23.62,87.13
+CM-259,Moher & Moher Amlohri Extn,West Bengal,BIRBHUM,WBPDCL,OPENCAST,PUBLIC,WORKING,moher moher amlohri extn,wbpdcl,west bengal,birbhum,moher moher amlohri extn,moher amlohri,70.27027027027026,NO_MATCH,Moher Amlohri Coal Mine,24.2,82.67
+CM-260,Moher & Moher Amlohri Extn,Madhya Pradesh,SINGRAULI,Sasan Power Limited,OPENCAST,PRIVATE,WORKING,moher moher amlohri extn,sasan power,madhya pradesh,singrauli,moher moher amlohri extn,moher amlohri,70.27027027027026,NO_MATCH,Moher Amlohri Coal Mine,24.2,82.67
+CM-261,Moonidih,Jharkhand,DHANBAD,BCCL,UNDERGROUND,PUBLIC,WORKING,moonidih,bccl,jharkhand,dhanbad,moonidih,moonidih,100.0,EXACT,Moonidih Coal Mine,23.74,86.42
+CM-262,Mudidih,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,mudidih,bccl,jharkhand,dhanbad,mudidih,mudidih,100.0,EXACT,Mudidih Coal Mine,23.6102,85.2799
+CM-263,Mungoli OCM,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,mungoli ocm,wcl,maharashtra,yavatmal,mungoli ocm,mungoli nirguda,61.53846153846154,NO_MATCH,Mungoli Nirguda Coal Mine,20.0,79.0
+CM-264,N.C.P.H. Colliery (NEW),Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,n c p h new,secl,chhattisgarh,korea,n c p h new,new kenda,50.0,NO_MATCH,New Kenda Coal Mine,22.9868,87.855
+CM-265,Nabakajora Colliery,Jharkhand,RAMGARH,ECL,UNDERGROUND,PUBLIC,NON_WORKING,nabakajora,ecl,jharkhand,ramgarh,nabakajora,nawapara,66.66666666666667,NO_MATCH,Nawapara Coal Mine,23.2,82.85
+CM-266,Naigaon OCM,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,naigaon ocm,wcl,maharashtra,yavatmal,naigaon ocm,ningah oc,70.0,NO_MATCH,Ningah OC Coal Mine,22.9868,87.855
+CM-267,NAKC,Jharkhand,DHANBAD,BCCL,MIXED,PUBLIC,WORKING,nakc,bccl,jharkhand,dhanbad,nakc,ena,57.14285714285714,NO_MATCH,Ena Coal Mine,23.6102,85.2799
+CM-268,Nakrakonda -Kumardihi 'B' UG,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,nakrakonda kumardihi b ug,ecl,west bengal,bardhaman,nakrakonda kumardihi b ug,nakrakonda kumardih b oc,89.79591836734694,FUZZY_REVIEW,Nakrakonda Kumardih B OC Mine,23.62,87.13
+CM-269,Nandgaon Incline,Maharashtra,CHANDRAPUR,WCL,UNDERGROUND,PUBLIC,WORKING,nandgaon incline,wcl,maharashtra,chandrapur,nandgaon incline,nandgaon incline,100.0,EXACT,Nandgaon Incline Coal Mine,19.7515,75.7139
+CM-270,Nandira Colliery,Odisha,Angul,MCL,UNDERGROUND,PUBLIC,WORKING,nandira,mcl,odisha,angul,nandira,nandira,100.0,EXACT,Nandira Coal Mine,20.95,85.2
+CM-271,Narsamuda Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,narsamuda,ecl,west bengal,bardhaman,narsamuda,narsamunda,94.73684210526316,FUZZY_HIGH,Narsamunda Coal Mine,23.6,87.2
+CM-272,Navapara,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,navapara,secl,chhattisgarh,surguja,navapara,nawapara,87.5,FUZZY_REVIEW,Nawapara Coal Mine,23.2,82.85
+CM-273,Neelijay OCM,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,neelijay ocm,wcl,maharashtra,yavatmal,neelijay ocm,ningah oc,57.14285714285714,NO_MATCH,Ningah OC Coal Mine,22.9868,87.855
+CM-274,Nehariya,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,nehariya,wcl,madhya pradesh,chhindwara,nehariya,naheriya,75.0,FUZZY_REVIEW,Naheriya Coal Mine,21.6,79.2
+CM-275,New Godhur-Kusunda-Alkusa,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,new godhur kusunda alkusa,bccl,jharkhand,dhanbad,new godhur kusunda alkusa,new godhur kusunda alkusa,100.0,EXACT,New Godhur Kusunda Alkusa Colliery,23.74,86.42
+CM-276,New Kenda Colliery,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,new kenda,ecl,west bengal,bardhaman,new kenda,new kenda,100.0,EXACT,New Kenda Coal Mine,22.9868,87.855
+CM-277,New Majri - I(A) & II Extn. (A) OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,new majri i a ii extn a oc,wcl,maharashtra,chandrapur,new majri i a ii extn a oc,new majri ii a,70.0,NO_MATCH,New Majri II A Coal Mine,20.0,79.0
+CM-278,New Majri UG to OC Expn.,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,new majri ug to oc expn,wcl,maharashtra,chandrapur,new majri ug to oc expn,new majri,56.25,NO_MATCH,New Majri Coal Mine,20.0,79.0
+CM-279,New Moghla Coal Mine,Jammu & Kashmir,Rajouri,JKML,UNDERGROUND,PUBLIC,WORKING,new moghla,jkml,jammu kashmir,rajouri,new moghla,mohan,66.66666666666667,NO_MATCH,Mohan Coal Mine,21.6,79.2
+CM-280,New Sethia,Madhya Pradesh,CHHINDWARA,WCL,OPENCAST,PUBLIC,NON_WORKING,new sethia,wcl,madhya pradesh,chhindwara,new sethia,new sethia,100.0,EXACT,New Sethia Coal Mine,23.4733,77.947
+CM-281,Nichitpur,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,nichitpur,bccl,jharkhand,dhanbad,nichitpur,nichitpur,100.0,EXACT,Nichitpur Coal Mine,23.74,86.42
+CM-282,Nigahi Project,Madhya Pradesh,SINGRAULI,NCL,OPENCAST,PUBLIC,WORKING,nigahi,ncl,madhya pradesh,singrauli,nigahi,nigahi,100.0,EXACT,Nigahi Coal Mine,24.2,82.67
+CM-283,"Nimcha Colliery , Nimcha OC (Amkola) & Nimcha Highwall",West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,nimcha nimcha oc amkola nimcha highwall,ecl,west bengal,bardhaman,nimcha nimcha oc amkola nimcha highwall,gangaramchak gangaramchak bhadulia,49.31506849315068,NO_MATCH,Gangaramchak & Gangaramchak-Bhadulia Coal Mine,23.62,87.13
+CM-284,Ningah Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,ningah,ecl,west bengal,bardhaman,ningah,ningah,100.0,EXACT,Ningah Coal Mine,22.9868,87.855
+CM-285,Ningha (SSI) OC,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,ningha ssi oc,ecl,west bengal,bardhaman,ningha ssi oc,ningah oc,72.72727272727273,NO_MATCH,Ningah OC Coal Mine,22.9868,87.855
+CM-286,Nirsha,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,nirsha,ecl,jharkhand,dhanbad,nirsha,nimcha,66.66666666666667,NO_MATCH,Nimcha Coal Mine,22.9868,87.855
+CM-287,North Searsole OC Colliery,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,north searsole oc,ecl,west bengal,bardhaman,north searsole oc,north searsole east,77.77777777777779,FUZZY_REVIEW,North Searsole (East) Coal Mine,23.62,87.13
+CM-288,North Urimari/Birsa-OC,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,north urimari birsa oc,ccl,jharkhand,hazaribagh,north urimari birsa oc,north urimari birsa,92.6829268292683,FUZZY_HIGH,North Urimari Birsa Coal Mine,23.99,85.36
+CM-289,Nowrozabad (W),Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,nowrozabad w,secl,madhya pradesh,umaria,nowrozabad w,nawrozabad,81.81818181818181,FUZZY_REVIEW,Nawrozabad Coal Mine,23.2,81.3
+CM-290,NTST-Jeenagora,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,ntst jeenagora,bccl,jharkhand,dhanbad,ntst jeenagora,n t s t jeenagora,83.87096774193549,FUZZY_REVIEW,N.T.S.T. Jeenagora Coal Mine,23.6102,85.2799
+CM-291,Orient Mine No. 1 & 2,Odisha,JHARSUGUDA,MCL,UNDERGROUND,PUBLIC,WORKING,orient no 1 2,mcl,odisha,jharsuguda,orient no 1 2,orient 1 2,86.95652173913044,FUZZY_REVIEW,Orient Mine 1 & 2,20.9517,85.0985
+CM-292,Pacchwara North Coal Mine,Jharkhand,PAKUR,WBPDCL,OPENCAST,PUBLIC,WORKING,pacchwara north,wbpdcl,jharkhand,pakur,pacchwara north,pachhwara north,93.33333333333333,FUZZY_HIGH,Pachhwara (North) Coal Mine,24.75,87.5
+CM-293,Pachhwara Central Coal Mine,Jharkhand,PAKUR,PSPCL,OPENCAST,PUBLIC,WORKING,pachhwara central,pspcl,jharkhand,pakur,pachhwara central,pachhwara central,100.0,EXACT,Pachhwara Central Coal Mine,23.6102,85.2799
+CM-294,Padampur OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,NON_WORKING,padampur oc,wcl,maharashtra,chandrapur,padampur oc,padmapur,73.6842105263158,NO_MATCH,Padmapur Coal Mine,20.0,79.0
+CM-295,Padmavathi Khani No.5 Incline,Telangana,KHAMMAM,SCCL,UNDERGROUND,PUBLIC,WORKING,padmavathi khani no 5 incline,sccl,telangana,khammam,padmavathi khani no 5 incline,kasipet 2 incline,60.86956521739131,NO_MATCH,Kasipet-2 Incline Mine,18.75,79.45
+CM-296,Pakri Barwadih,Jharkhand,HAZARIBAGH,NTPC,OPENCAST,PUBLIC,WORKING,pakri barwadih,ntpc,jharkhand,hazaribagh,pakri barwadih,pakri barwadih,100.0,EXACT,Pakri Barwadih Coal Mine,23.6102,85.2799
+CM-297,Pali,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,pali,secl,madhya pradesh,umaria,pali,pali,100.0,EXACT,Pali Coal Mine,23.2,81.3
+CM-298,Pandaveswar UG,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,pandaveswar ug,ecl,west bengal,bardhaman,pandaveswar ug,pandavpara,66.66666666666667,NO_MATCH,Pandavpara Coal Mine,23.3,82.9
+CM-299,Pandavpara Colliery,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,pandavpara,secl,chhattisgarh,korea,pandavpara,pandavpara,100.0,EXACT,Pandavpara Coal Mine,23.3,82.9
+CM-300,Paoni II OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,paoni ii ocm,wcl,maharashtra,chandrapur,paoni ii ocm,paoni il,70.0,NO_MATCH,Paoni-Il Coal Mine,20.0,79.0
+CM-301,Parasea Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,parasea,ecl,west bengal,bardhaman,parasea,adasa,66.66666666666667,NO_MATCH,Adasa Coal Mine,21.23,79.2
+CM-302,Parbelia Colliery,West Bengal,PURULIA,ECL,UNDERGROUND,PUBLIC,WORKING,parbelia,ecl,west bengal,purulia,parbelia,parbelia,100.0,EXACT,Parbelia Coal Mine,22.9868,87.855
+CM-303,Parej East OCP,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,parej east ocp,ccl,jharkhand,ramgarh,parej east ocp,parej east,83.33333333333334,FUZZY_REVIEW,Parej East Coal Mine,,
+CM-304,Parsa East and Kanta Basan OCM,Chhattisgarh,SURGUJA,RRVUNL,OPENCAST,PUBLIC,WORKING,parsa east and kanta basan ocm,rrvunl,chhattisgarh,surguja,parsa east and kanta basan ocm,parsa east and kanta basan,92.85714285714286,FUZZY_HIGH,Parsa East And Kanta Basan Coal Mine,22.35,82.68
+CM-305,Patansaongi Colliery,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,patansaongi,wcl,maharashtra,nagpur,patansaongi,patansaongi,100.0,EXACT,Patansaongi Coal Mine,21.23,79.2
+CM-306,Patmohana Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,patmohana,ecl,west bengal,bardhaman,patmohana,patmohana,100.0,EXACT,Patmohana Coal Mine,,
+CM-307,Penganga OC,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,penganga oc,wcl,maharashtra,chandrapur,penganga oc,penganga,84.21052631578947,FUZZY_REVIEW,Penganga Coal Mine,20.0,79.0
+CM-308,"Pimpalgaon,",Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,NON_WORKING,pimpalgaon,wcl,maharashtra,yavatmal,pimpalgaon,amgaon,62.5,NO_MATCH,Amgaon Coal Mine,23.3,83.2
+CM-309,Pindra Colliery,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,pindra,ccl,jharkhand,ramgarh,pindra,indaram,76.92307692307692,FUZZY_REVIEW,Indaram Coal Mine Project,18.75,79.45
+CM-310,Piparia,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,piparia,secl,madhya pradesh,umaria,piparia,piparia,100.0,EXACT,Piparia Coal Mine,23.53,80.83
+CM-311,Porascol East Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,porascol east,ecl,west bengal,bardhaman,porascol east,parascole east west,75.0,FUZZY_REVIEW,Parascole East & West Coal Mine,23.62,87.13
+CM-312,Porascol West Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,porascol west,ecl,west bengal,bardhaman,porascol west,parascole east west,75.0,FUZZY_REVIEW,Parascole East & West Coal Mine,23.62,87.13
+CM-313,Prakasham Khani OC,Telangana,KHAMMAM,SCCL,OPENCAST,PUBLIC,WORKING,prakasham khani oc,sccl,telangana,khammam,prakasham khani oc,prakasham khani oc,100.0,EXACT,Prakasham Khani OC Coal Mine,,
+CM-314,Pundi,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,NON_WORKING,pundi,ccl,jharkhand,ramgarh,pundi,pundi,100.0,EXACT,Pundi Coal Mine,,
+CM-315,Pure Searsole Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,pure searsole,ecl,west bengal,bardhaman,pure searsole,pure searsole,100.0,EXACT,Pure Searsole Coal Mine,22.9868,87.855
+CM-316,Purnadih,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,purnadih,ccl,jharkhand,ranchi,purnadih,purnadih,100.0,EXACT,Purnadih Coal Mine,24.21,84.87
+CM-317,Rajendra,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,rajendra,secl,madhya pradesh,shahdol,rajendra,rajpura,66.66666666666667,NO_MATCH,Rajpura Coal Mine,23.62,87.13
+CM-318,Rajhara,Jharkhand,PALAMU,CCL,OPENCAST,PUBLIC,NON_WORKING,rajhara,ccl,jharkhand,palamu,rajhara,rajhara,100.0,EXACT,Rajhara Coal Mine,,
+CM-319,Rajmahal OCP,Jharkhand,GODDA,ECL,OPENCAST,PUBLIC,WORKING,rajmahal ocp,ecl,jharkhand,godda,rajmahal ocp,rajmahal,80.0,FUZZY_REVIEW,Rajmahal Coal Mine,23.6102,85.2799
+CM-320,Rajnagar RO,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,rajnagar ro,secl,madhya pradesh,shahdol,rajnagar ro,rajnagar,84.21052631578947,FUZZY_REVIEW,Rajnagar Coal Mine,23.1,81.4
+CM-321,Rajpura,Jharkhand,DHANBAD,ECL,OPENCAST,PUBLIC,WORKING,rajpura,ecl,jharkhand,dhanbad,rajpura,rajpura,100.0,EXACT,Rajpura Coal Mine,23.62,87.13
+CM-322,Rajrappa Project,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,rajrappa,ccl,jharkhand,ramgarh,rajrappa,rajrappa,100.0,EXACT,Rajrappa Coal Mine,23.63,85.52
+CM-323,Rajur UG,Maharashtra,YAVATMAL,WCL,UNDERGROUND,PUBLIC,WORKING,rajur ug,wcl,maharashtra,yavatmal,rajur ug,rajpura,66.66666666666667,NO_MATCH,Rajpura Coal Mine,23.62,87.13
+CM-324,Ramagundam OC-I Extn. Ph-II,Telangana,PEDDAPALLI,SCCL,OPENCAST,PUBLIC,WORKING,ramagundam oc i extn ph ii,sccl,telangana,peddapalli,ramagundam oc i extn ph ii,ramagundam iii,70.0,NO_MATCH,Ramagundam III Coal Mine,18.61,79.37
+CM-325,Ramagundam-OC 3 & OC III,Telangana,PEDDAPALLI,SCCL,OPENCAST,PUBLIC,WORKING,ramagundam oc 3 oc iii,sccl,telangana,peddapalli,ramagundam oc 3 oc iii,ramagundam iii,77.77777777777779,FUZZY_REVIEW,Ramagundam III Coal Mine,18.61,79.37
+CM-326,Ramakrishnapur OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,ramakrishnapur oc,sccl,telangana,mancherial,ramakrishnapur oc,ramkrishnapur,86.66666666666667,FUZZY_REVIEW,Ramkrishnapur Coal Mine,18.75,79.45
+CM-327,Ramnagar Colliery,West Bengal,PASCHIM BARDHAMAN,IISCO,UNDERGROUND,PUBLIC,NON_WORKING,ramnagar,iisco,west bengal,paschim bardhaman,ramnagar,ramnagar,100.0,EXACT,Ramnagar Coal Mine,23.62,87.13
+CM-328,Ramnagar Colliery,West Bengal,PASCHIM BARDHAMAN,IISCO,OPENCAST,PUBLIC,WORKING,ramnagar,iisco,west bengal,paschim bardhaman,ramnagar,ramnagar,100.0,EXACT,Ramnagar Coal Mine,23.62,87.13
+CM-329,Rampur Batura,Madhya Pradesh,SHAHDOL,SECL,OPENCAST,PUBLIC,WORKING,rampur batura,secl,madhya pradesh,shahdol,rampur batura,balrampur,72.72727272727273,NO_MATCH,Balrampur Coal Mine,23.2,82.85
+CM-330,Raniatari,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,raniatari,secl,chhattisgarh,korea,raniatari,rajnagar,70.58823529411764,NO_MATCH,Rajnagar Coal Mine,23.1,81.4
+CM-331,Ravindra Khani-5 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani 5 incline,sccl,telangana,mancherial,ravindra khani 5 incline,nandgaon incline,65.0,NO_MATCH,Nandgaon Incline Coal Mine,19.7515,75.7139
+CM-332,Ravindra Khani-6 Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani 6 incline,sccl,telangana,mancherial,ravindra khani 6 incline,nandgaon incline,65.0,NO_MATCH,Nandgaon Incline Coal Mine,19.7515,75.7139
+CM-333,"Ravindra Khani-7,Incline",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani 7 incline,sccl,telangana,mancherial,ravindra khani 7 incline,nandgaon incline,65.0,NO_MATCH,Nandgaon Incline Coal Mine,19.7515,75.7139
+CM-334,"Ravindra Khani-New Tech,",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,ravindra khani new tech,sccl,telangana,mancherial,ravindra khani new tech,venkatesh khani,63.1578947368421,NO_MATCH,Venkatesh Khani Coal mine,17.9784,79.5941
+CM-335,Rehar,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,rehar,secl,chhattisgarh,surguja,rehar,rehar,100.0,EXACT,Rehar Coal Mine,23.3,83.2
+CM-336,Religara,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,religara,ccl,jharkhand,hazaribagh,religara,religara,100.0,EXACT,Religara Coal Mine,23.99,85.36
+CM-337,ROCP/S. Jharia,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,rocp s jharia,bccl,jharkhand,dhanbad,rocp s jharia,rajapur south jharia,66.66666666666667,NO_MATCH,Rajapur-South Jharia Coal Mine,23.74,86.42
+CM-338,Rohini,Jharkhand,RANCHI,CCL,OPENCAST,PUBLIC,WORKING,rohini,ccl,jharkhand,ranchi,rohini,rohini,100.0,EXACT,Rohini Coal Mine,23.75,84.85
+CM-339,Samleswari OCP,Odisha,JHARSUGUDA,MCL,OPENCAST,PUBLIC,WORKING,samleswari ocp,mcl,odisha,jharsuguda,samleswari ocp,samleswari,83.33333333333334,FUZZY_REVIEW,Samleswari Coal Mine,21.6,83.9
+CM-340,Sankarpur Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,sankarpur,ecl,west bengal,bardhaman,sankarpur,shankarpur,94.73684210526316,FUZZY_HIGH,Shankarpur Coal Mine,23.62,87.13
+CM-341,Saoner Mine - II,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,saoner ii,wcl,maharashtra,nagpur,saoner ii,saoner,80.0,FUZZY_REVIEW,Saoner Coal Mine,21.23,79.2
+CM-342,Saoner Mine - III,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,saoner iii,wcl,maharashtra,nagpur,saoner iii,saoner,75.0,FUZZY_REVIEW,Saoner Coal Mine,21.23,79.2
+CM-343,Saoner Mine-I,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,saoner i,wcl,maharashtra,nagpur,saoner i,saoner,85.71428571428572,FUZZY_REVIEW,Saoner Coal Mine,21.23,79.2
+CM-344,Saraipali,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,saraipali,secl,chhattisgarh,korba,saraipali,saraipali,100.0,EXACT,Saraipali Coal Mine,22.35,82.68
+CM-345,Sarisatolli Coal Mine,West Bengal,PASCHIM BARDHAMAN,CESC,OPENCAST,PRIVATE,WORKING,sarisatolli,cesc,west bengal,paschim bardhaman,sarisatolli,sarisatolli,100.0,EXACT,Sarisatolli Coal Mine,23.62,87.13
+CM-346,Sarni Mine,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,NON_WORKING,sarni,wcl,madhya pradesh,betul,sarni,sarni,100.0,EXACT,Sarni Coal Mine,22.15,78.15
+CM-347,Sarubera,Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,sarubera,ccl,jharkhand,ramgarh,sarubera,sarubera,100.0,EXACT,Sarubera Coal Mine,,
+CM-348,Sasti Expn. OCM,Maharashtra,CHANDRAPUR,WCL,OPENCAST,PUBLIC,WORKING,sasti expn ocm,wcl,maharashtra,chandrapur,sasti expn ocm,sasti oc,72.72727272727273,NO_MATCH,Sasti OC Coal Mine,20.0,79.0
+CM-349,Satgram Incline,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,satgram incline,ecl,west bengal,bardhaman,satgram incline,manna incline,71.42857142857143,NO_MATCH,Manna Incline Coal Mine,19.7515,75.7139
+CM-350,Satgram Project,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,satgram,ecl,west bengal,bardhaman,satgram,satgram,100.0,EXACT,Satgram Coal Mine,22.9868,87.855
+CM-351,Saunda (Ncdc),Jharkhand,RAMGARH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,saunda ncdc,ccl,jharkhand,ramgarh,saunda ncdc,saunda d,84.21052631578947,FUZZY_REVIEW,Saunda-D Coal Mine,23.65,85.3
+CM-352,Sayal `D',Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,sayal d,ccl,jharkhand,ramgarh,sayal d,saunda d,66.66666666666667,NO_MATCH,Saunda-D Coal Mine,23.65,85.3
+CM-353,SD OC Mine,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,sd oc,ccl,jharkhand,bokaro,sd oc,sasti oc,61.53846153846154,NO_MATCH,Sasti OC Coal Mine,20.0,79.0
+CM-354,Sendra Bansjora,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,sendra bansjora,bccl,jharkhand,dhanbad,sendra bansjora,sendra bansjora,100.0,EXACT,Sendra Bansjora Coal Mine,23.74,86.42
+CM-355,Shampur B,Jharkhand,DHANBAD,ECL,UNDERGROUND,PUBLIC,WORKING,shampur b,ecl,jharkhand,dhanbad,shampur b,brahampuri,73.6842105263158,NO_MATCH,Brahampuri Coal Mine,23.4733,77.947
+CM-356,Shanthi Khani,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,shanthi khani,sccl,telangana,mancherial,shanthi khani,kalyani khani,69.23076923076923,NO_MATCH,Kalyani Khani Coal Mine,18.87,79.45
+CM-357,Sharda Highwall,Madhya Pradesh,SHAHDOL,SECL,UNDERGROUND,PUBLIC,WORKING,sharda highwall,secl,madhya pradesh,shahdol,sharda highwall,sharda,57.14285714285714,NO_MATCH,Sharda Coal Mine,23.1,81.4
+CM-358,Sharda UG,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,sharda ug,wcl,madhya pradesh,chhindwara,sharda ug,sharda,80.0,FUZZY_REVIEW,Sharda Coal Mine,23.1,81.4
+CM-359,Shivani,Chhattisgarh,SURGUJA,SECL,UNDERGROUND,PUBLIC,WORKING,shivani,secl,chhattisgarh,surguja,shivani,shiwani,85.71428571428572,FUZZY_REVIEW,Shiwani Coal Mine,21.2787,81.8661
+CM-360,Shyam Sundarpur Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,shyam sundarpur,ecl,west bengal,bardhaman,shyam sundarpur,shyamsundarpur,96.55172413793103,FUZZY_HIGH,Shyamsundarpur Coal Mine,22.9868,87.855
+CM-361,Sial Ghogri Coal Mine,Madhya Pradesh,CHHINDWARA,RCCPL,UNDERGROUND,PRIVATE,WORKING,sial ghogri,rccpl,madhya pradesh,chhindwara,sial ghogri,sial gjogri,90.9090909090909,FUZZY_HIGH,Sial Gjogri Coal Mine,23.4733,77.947
+CM-362,Siarmal OCP,Odisha,SUNDARGARH,MCL,OPENCAST,PUBLIC,WORKING,siarmal ocp,mcl,odisha,sundargarh,siarmal ocp,siarmal,77.77777777777779,FUZZY_REVIEW,Siarmal Coal Mine,21.6,83.9
+CM-363,Siduli Colliery,West Bengal,Bardhaman,ECL,MIXED,PUBLIC,WORKING,siduli,ecl,west bengal,bardhaman,siduli,siduli,100.0,EXACT,Siduli Coal Mine,22.9868,87.855
+CM-364,Sijua Colliery,Jharkhand,DHANBAD,TSL,UNDERGROUND,PRIVATE,WORKING,sijua,tsl,jharkhand,dhanbad,sijua,vijay,60.0,NO_MATCH,Vijay Coal Mine,23.2,82.9
+CM-365,Sikni OC Mine,Jharkhand,LATEHAR,JSMDCL,OPENCAST,PUBLIC,WORKING,sikni oc,jsmdcl,jharkhand,latehar,sikni oc,sikni,76.92307692307692,FUZZY_REVIEW,Sikni Coal Mine,23.9,84.0
+CM-366,Silewara Colliery,Maharashtra,NAGPUR,WCL,UNDERGROUND,PUBLIC,WORKING,silewara,wcl,maharashtra,nagpur,silewara,silewara,100.0,EXACT,Silewara Colliery,21.15,79.09
+CM-367,Singhali Colliery,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,singhali,secl,chhattisgarh,korba,singhali,singhali,100.0,EXACT,Singhali Coal Mine,22.35,82.68
+CM-368,Singori OC,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,singori oc,wcl,maharashtra,nagpur,singori oc,singhori,77.77777777777779,FUZZY_REVIEW,Singhori Coal Mine,19.7515,75.7139
+CM-369,Sirka,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,sirka,ccl,jharkhand,ramgarh,sirka,sirka,100.0,EXACT,Sirka Coal Mine,23.65,85.3
+CM-370,Sonepur Bazari Project OCM,West Bengal,Bardhaman,ECL,OPENCAST,PUBLIC,WORKING,sonepur bazari ocm,ecl,west bengal,bardhaman,sonepur bazari ocm,sonepur bazari,87.5,FUZZY_REVIEW,Sonepur Bazari Coal Mine,23.62,87.13
+CM-371,South Samla,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,south samla,ecl,west bengal,bardhaman,south samla,amelia north,69.56521739130434,NO_MATCH,Amelia North Coal Mine,24.2,82.67
+CM-372,Srirampur OC,Telangana,MANCHERIAL,SCCL,OPENCAST,PUBLIC,WORKING,srirampur oc,sccl,telangana,mancherial,srirampur oc,srirampur i,86.95652173913044,FUZZY_REVIEW,Srirampur-I Coal Mine,18.75,79.45
+CM-373,"Srirampur-1, Incline",Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,srirampur 1 incline,sccl,telangana,mancherial,srirampur 1 incline,srirampur ii,77.41935483870968,FUZZY_REVIEW,Srirampur-II Coal Mine,18.75,79.45
+CM-374,Srirampur-3 & 3A Incline,Telangana,MANCHERIAL,SCCL,UNDERGROUND,PUBLIC,WORKING,srirampur 3 3a incline,sccl,telangana,mancherial,srirampur 3 3a incline,srirampur ii,70.58823529411764,NO_MATCH,Srirampur-II Coal Mine,18.75,79.45
+CM-375,Suliyari,Madhya Pradesh,SINGRAULI,APMDCL,OPENCAST,PUBLIC,WORKING,suliyari,apmdcl,madhya pradesh,singrauli,suliyari,suliyari,100.0,EXACT,Suliyari Coal Mine,23.4733,77.947
+CM-376,Tadicherla 1 OCM,Telangana,JAYASHANKAR BHUPALPALLY,TGGENCO,OPENCAST,PUBLIC,WORKING,tadicherla 1 ocm,tggenco,telangana,jayashankar bhupalpally,tadicherla 1 ocm,tadicherla,76.92307692307692,FUZZY_REVIEW,Tadicherla Coal Mine,18.75,79.45
+CM-377,Takli Jena Bellora,Maharashtra,CHANDRAPUR,AIPL,OPENCAST,PRIVATE,WORKING,takli jena bellora,aipl,maharashtra,chandrapur,takli jena bellora,takli jena bellora north south mines,66.66666666666667,NO_MATCH,Takli-Jena-Bellora (North & South) Coal Mines,20.0,79.0
+CM-378,Talabira II & III,Odisha,SAMBALPUR,NLCIL,OPENCAST,PUBLIC,WORKING,talabira ii iii,nlcil,odisha,sambalpur,talabira ii iii,talabira ii iii mines,83.33333333333334,FUZZY_REVIEW,Talabira II & III Coal Mines,20.9517,85.0985
+CM-379,Talaipalli Coal Mine,Chhattisgarh,RAIGARH,NTPC,OPENCAST,PUBLIC,WORKING,talaipalli,ntpc,chhattisgarh,raigarh,talaipalli,talaipalli,100.0,EXACT,Talaipalli Coal Mine,21.9,83.4
+CM-380,Tandsi,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,tandsi,wcl,madhya pradesh,chhindwara,tandsi,tandsi,100.0,EXACT,Tandsi Coal Mine,21.6,79.2
+CM-381,Tapin North,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,tapin north,ccl,jharkhand,ramgarh,tapin north,tapin south,81.81818181818181,FUZZY_REVIEW,Tapin South Coal Mine,23.85,85.75
+CM-382,Tapin South,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,tapin south,ccl,jharkhand,hazaribagh,tapin south,tapin south,100.0,EXACT,Tapin South Coal Mine,23.85,85.75
+CM-383,Tara(E&W),West Bengal,BIRBHUM,WBPDCL,OPENCAST,PUBLIC,WORKING,tara e w,wbpdcl,west bengal,birbhum,tara e w,tara east west,72.72727272727273,NO_MATCH,Tara (East & West) Coal Mine,23.62,87.13
+CM-384,Tarmi,Jharkhand,BOKARO,CCL,OPENCAST,PUBLIC,WORKING,tarmi,ccl,jharkhand,bokaro,tarmi,barmuri,66.66666666666667,NO_MATCH,Barmuri Coal Mine,23.6102,85.2799
+CM-385,Tasra Colliery,Jharkhand,DHANBAD,SAIL,OPENCAST,PUBLIC,WORKING,tasra,sail,jharkhand,dhanbad,tasra,tasra,100.0,EXACT,Tasra Coal Mine,23.6102,85.2799
+CM-386,Tawa Mine,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,tawa,wcl,madhya pradesh,betul,tawa,tawa,100.0,EXACT,Tawa Coal Mine,22.4,78.0
+CM-387,Tawa-II,Madhya Pradesh,BETUL,WCL,UNDERGROUND,PUBLIC,WORKING,tawa ii,wcl,madhya pradesh,betul,tawa ii,tawa,72.72727272727273,NO_MATCH,Tawa Coal Mine,22.4,78.0
+CM-388,Tetaria Khar,Jharkhand,LATEHAR,CCL,OPENCAST,PUBLIC,WORKING,tetaria khar,ccl,jharkhand,latehar,tetaria khar,khairagura,63.63636363636363,NO_MATCH,Khairagura Coal Mine,18.75,79.45
+CM-389,Tetulmari,Jharkhand,DHANBAD,BCCL,OPENCAST,PUBLIC,WORKING,tetulmari,bccl,jharkhand,dhanbad,tetulmari,tetulmari,100.0,EXACT,Tetulmari Coal Mine,23.6102,85.2799
+CM-390,Tikak Colliery,Assam,TINSUKIA,NEC,OPENCAST,PUBLIC,WORKING,tikak,nec,assam,tinsukia,tikak,tikak,100.0,EXACT,Tikak Colliery,26.2006,92.9376
+CM-391,Tilaboni Colliery,West Bengal,Bardhaman,ECL,UNDERGROUND,PUBLIC,WORKING,tilaboni,ecl,west bengal,bardhaman,tilaboni,tilaboni,100.0,EXACT,Tilaboni Coal Mine,22.9868,87.855
+CM-392,Topa Marginal Scheme,Jharkhand,RAMGARH,CCL,OPENCAST,PUBLIC,WORKING,topa marginal scheme,ccl,jharkhand,ramgarh,topa marginal scheme,chatti bariatu,47.05882352941176,NO_MATCH,Chatti-Bariatu Coal Mine,,
+CM-393,Trans Damodar Coal Mine,West Bengal,PASCHIM BARDHAMAN,DPL,OPENCAST,PUBLIC,WORKING,trans damodar,dpl,west bengal,paschim bardhaman,trans damodar,trans damodar,100.0,EXACT,Trans Damodar Coal Mine,22.9868,87.855
+CM-394,Ukni OC,Maharashtra,YAVATMAL,WCL,OPENCAST,PUBLIC,WORKING,ukni oc,wcl,maharashtra,yavatmal,ukni oc,ukni deep,62.5,NO_MATCH,Ukni Deep Coal Mine,20.0,79.0
+CM-395,Umaria,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,umaria,secl,madhya pradesh,umaria,umaria,umaria,100.0,EXACT,Umaria Coal Mine,23.53,80.83
+CM-396,Umrer OC Mine,Maharashtra,NAGPUR,WCL,OPENCAST,PUBLIC,WORKING,umrer oc,wcl,maharashtra,nagpur,umrer oc,umrer,76.92307692307692,FUZZY_REVIEW,Umrer Coal Mine,21.15,79.09
+CM-397,Urdhan,Madhya Pradesh,CHHINDWARA,WCL,OPENCAST,PUBLIC,WORKING,urdhan,wcl,madhya pradesh,chhindwara,urdhan,urdhan,100.0,EXACT,Urdhan Coal Mine,21.6,79.2
+CM-398,Urimari,Jharkhand,HAZARIBAGH,CCL,UNDERGROUND,PUBLIC,NON_WORKING,urimari,ccl,jharkhand,hazaribagh,urimari,umaria,76.92307692307692,FUZZY_REVIEW,Umaria Coal Mine,23.53,80.83
+CM-399,Urimari,Jharkhand,HAZARIBAGH,CCL,OPENCAST,PUBLIC,WORKING,urimari,ccl,jharkhand,hazaribagh,urimari,umaria,76.92307692307692,FUZZY_REVIEW,Umaria Coal Mine,23.53,80.83
+CM-400,Utkal C Coal Mine,Odisha,Angul,JSPL,OPENCAST,PRIVATE,WORKING,utkal c,jspl,odisha,angul,utkal c,utkal c,100.0,EXACT,Utkal C Coal Mine,20.9517,85.0985
+CM-401,Utkal D,Odisha,Angul,NALCO,OPENCAST,PUBLIC,WORKING,utkal d,nalco,odisha,angul,utkal d,utkal a,85.71428571428572,FUZZY_REVIEW,Utkal A Coal Mine,20.9517,85.0985
+CM-402,Vakilpalli,Telangana,PEDDAPALLI,SCCL,UNDERGROUND,PUBLIC,WORKING,vakilpalli,sccl,telangana,peddapalli,vakilpalli,vakilpalli,100.0,EXACT,Vakilpalli Coal Mine,18.75,79.45
+CM-403,Vijay West,Chhattisgarh,KORBA,SECL,UNDERGROUND,PUBLIC,WORKING,vijay west,secl,chhattisgarh,korba,vijay west,vijay,66.66666666666667,NO_MATCH,Vijay Coal Mine,23.2,82.9
+CM-404,Vindhya,Madhya Pradesh,UMARIA,SECL,UNDERGROUND,PUBLIC,WORKING,vindhya,secl,madhya pradesh,umaria,vindhya,vindhya,100.0,EXACT,Vindhya Coal Mine,23.2,81.3
+CM-405,Vishnupuri-II,Madhya Pradesh,CHHINDWARA,WCL,UNDERGROUND,PUBLIC,WORKING,vishnupuri ii,wcl,madhya pradesh,chhindwara,vishnupuri ii,vishnupuri,86.95652173913044,FUZZY_REVIEW,Vishnupuri Coal Mine,21.6,79.2
+CM-406,West Bokaro OC (Quarry-E & SE),Jharkhand,HAZARIBAGH,TSL,OPENCAST,PRIVATE,WORKING,west bokaro oc quarry e se,tsl,jharkhand,hazaribagh,west bokaro oc quarry e se,west bokaro,59.45945945945945,NO_MATCH,West Bokaro Coal Mine,23.6102,85.2799
+CM-407,West Bokaro OC Quarry-AB,Jharkhand,HAZARIBAGH,TSL,OPENCAST,PRIVATE,WORKING,west bokaro oc quarry ab,tsl,jharkhand,hazaribagh,west bokaro oc quarry ab,west bokaro,62.857142857142854,NO_MATCH,West Bokaro Coal Mine,23.6102,85.2799
+CM-408,West Jhagrakhand,Chhattisgarh,KOREA,SECL,UNDERGROUND,PUBLIC,WORKING,west jhagrakhand,secl,chhattisgarh,korea,west jhagrakhand,west jhagrakhand,100.0,EXACT,West Jhagrakhand Coal Mine,23.3,82.9

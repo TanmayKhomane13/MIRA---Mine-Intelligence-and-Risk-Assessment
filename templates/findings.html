@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MIRA - Inspection Findings</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .summary {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .summary strong {
+            font-size: 24px;
+        }
+
+        .finding {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .finding-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .finding-id {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .finding-text {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .predictions {
+            display: grid;
+            grid-template-columns:
+                repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .prediction {
+            padding: 15px;
+            border-radius: 8px;
+            background: #f1f3f5;
+        }
+
+        .prediction-label {
+            display: block;
+            font-size: 12px;
+            color: #777;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+        }
+
+        .prediction-value {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        @media (max-width: 800px) {
+
+            .predictions {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 500px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .predictions {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <h1>MIRA Inspection Findings</h1>
+
+    <div class="subtitle">
+        Coal Mine Inspection Report Analysis
+    </div>
+
+
+    <div class="summary">
+
+        <div>
+            Total Findings
+        </div>
+
+        <strong>
+            {{ count }}
+        </strong>
+
+    </div>
+
+
+    {% if results %}
+
+        {% for result in results %}
+
+            <div class="finding">
+
+                <div class="finding-header">
+
+                    <div class="finding-id">
+                        {{ result.finding_id }}
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Finding Text
+                </h3>
+
+                <div class="finding-text">
+                    {{ result.finding_text }}
+                </div>
+
+
+                <div class="predictions">
+
+                    <div class="prediction">
+
+                        <span class="prediction-label">
+                            Issue
+                        </span>
+
+                        <span class="prediction-value">
+                            {{ result.issue }}
+                        </span>
+
+                    </div>
+
+
+                    <div class="prediction">
+
+                        <span class="prediction-label">
+                            Category
+                        </span>
+
+                        <span class="prediction-value">
+                            {{ result.category }}
+                        </span>
+
+                    </div>
+
+
+                    <div class="prediction">
+
+                        <span class="prediction-label">
+                            Severity
+                        </span>
+
+                        <span class="prediction-value">
+                            {{ result.severity }}
+                        </span>
+
+                    </div>
+
+
+                    <div class="prediction">
+
+                        <span class="prediction-label">
+                            Recurring
+                        </span>
+
+                        <span class="prediction-value">
+                            {{ result.recurring }}
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        {% endfor %}
+
+    {% else %}
+
+        <div class="finding">
+            No findings were found in the PDF.
+        </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+
+</html>

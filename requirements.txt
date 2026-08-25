@@ -8,3 +8,9 @@ geopandas
 shapely
 rapidfuzz
 requests
+torch
+transformers
+peft
+PyMuPDF
+dotenv
+flask_jwt_extended
