@@ -1,26 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><title>Login - MineGuard AI</title>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Login - MIRA</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white flex items-center justify-center h-screen">
-    <div class="w-full max-w-sm p-8 border border-gray-200 rounded-2xl shadow-sm">
-        <div class="text-center mb-6">
-            <h1 class="text-2xl font-bold text-black tracking-tight">MIRA </h1>
-            <p class="text-sm text-gray-500 mt-1">Sign in to your administration panel</p>
+<body class="bg-white flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-sm">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="mb-4 space-y-2">
+                    {% for category, message in messages %}
+                        <div
+                            class="px-3 py-2.5 rounded-lg text-xs
+                            {% if category == 'danger' %}
+                                bg-red-50 text-red-700 border border-red-200
+                            {% elif category == 'success' %}
+                                bg-green-50 text-green-700 border border-green-200
+                            {% elif category == 'warning' %}
+                                bg-yellow-50 text-yellow-700 border border-yellow-200
+                            {% else %}
+                                bg-gray-50 text-gray-700 border border-gray-200
+                            {% endif %}"
+                        >
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+        <div
+            class="p-8 border border-gray-200 rounded-2xl shadow-sm"
+        >
+            <div class="text-center mb-6">
+                <h1
+                    class="text-2xl font-bold text-black tracking-tight"
+                >
+                    MIRA
+                </h1>
+                <p class="text-sm text-gray-500 mt-1">
+                    Sign in to your administration panel
+                </p>
+            </div>
+            <form
+                action="{{ url_for('login') }}"
+                method="POST"
+                class="space-y-4"
+            >
+                <div>
+                    <label
+                        for="name"
+                        class="block text-xs font-semibold uppercase text-gray-600 mb-1"
+                    >
+                        Username
+                    </label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        autocomplete="username"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-black"
+                        placeholder="Enter Username"
+                    >
+                </div>
+                <div>
+                    <label
+                        for="password"
+                        class="block text-xs font-semibold uppercase text-gray-600 mb-1"
+                    >
+                        Password
+                    </label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                        autocomplete="current-password"
+                        class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-black"
+                        placeholder="Enter Password"
+                    >
+                </div>
+                <button
+                    type="submit"
+                    class="w-full py-2.5 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-800 transition"
+                >
+                    Sign In
+            </button>
+            </form>
         </div>
-        <form action="{{ url_for('dashboard') }}" method="GET" class="space-y-4">
-            <div>
-                <label class="block text-xs font-semibold uppercase text-gray-600 mb-1">Username</label>
-                <input type="text" required class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-black" placeholder="Enter Username">
-            </div>
-            <div>
-                <label class="block text-xs font-semibold uppercase text-gray-600 mb-1">Password</label>
-                <input type="password" required class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-black" placeholder="Enter passwords">
-            </div>
-            <button type="submit" class="w-full py-2.5 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-800 transition">Sign In</button>
-        </form>
     </div>
 </body>
 </html>

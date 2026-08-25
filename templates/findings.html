@@ -12,101 +12,474 @@
 
     <title>MIRA - Inspection Findings</title>
 
+
     <style>
 
         * {
             box-sizing: border-box;
         }
 
+
         body {
             margin: 0;
             padding: 30px;
+
             font-family: Arial, sans-serif;
+
             background: #f4f6f8;
+
             color: #222;
         }
 
+
         .container {
-            max-width: 1200px;
+            max-width: 1250px;
+
             margin: auto;
         }
 
-        h1 {
-            margin-bottom: 5px;
+
+        /* ==================================================
+           HEADER
+        ================================================== */
+
+        .header {
+            margin-bottom: 25px;
         }
+
+
+        h1 {
+            margin: 0 0 6px 0;
+
+            font-size: 30px;
+        }
+
 
         .subtitle {
             color: #666;
+
+            font-size: 15px;
+        }
+
+
+        /* ==================================================
+           SUMMARY CARDS
+        ================================================== */
+
+        .summary-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 15px;
+
             margin-bottom: 25px;
         }
 
-        .summary {
+
+        .summary-card {
             background: white;
+
             padding: 20px;
+
             border-radius: 10px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+            box-shadow:
+                0 2px 8px rgba(0, 0, 0, 0.08);
         }
 
-        .summary strong {
-            font-size: 24px;
+
+        .summary-label {
+            color: #777;
+
+            font-size: 12px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 8px;
         }
+
+
+        .summary-value {
+            font-size: 26px;
+
+            font-weight: bold;
+        }
+
+
+        /* ==================================================
+           FINDING CARD
+        ================================================== */
 
         .finding {
             background: white;
-            border-radius: 10px;
+
+            border-radius: 12px;
+
             margin-bottom: 20px;
+
             padding: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+            box-shadow:
+                0 2px 8px rgba(0, 0, 0, 0.08);
         }
+
 
         .finding-header {
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
-            margin-bottom: 15px;
+
+            margin-bottom: 18px;
         }
 
+
         .finding-id {
-            font-size: 22px;
+            font-size: 21px;
+
             font-weight: bold;
         }
+
+
+        /* ==================================================
+           SECTION TITLE
+        ================================================== */
+
+        .section-title {
+            font-size: 14px;
+
+            font-weight: bold;
+
+            margin-bottom: 8px;
+        }
+
+
+        /* ==================================================
+           FINDING TEXT
+        ================================================== */
 
         .finding-text {
             background: #f8f9fa;
+
             padding: 15px;
-            border-radius: 6px;
+
+            border-radius: 7px;
+
             line-height: 1.6;
+
             margin-bottom: 20px;
         }
 
+
+        /* ==================================================
+           MIRA CLASSIFICATION
+        ================================================== */
+
         .predictions {
             display: grid;
+
             grid-template-columns:
                 repeat(4, 1fr);
+
             gap: 15px;
+
+            margin-bottom: 20px;
         }
+
 
         .prediction {
             padding: 15px;
+
             border-radius: 8px;
+
             background: #f1f3f5;
+
+            border: 1px solid #e5e7e9;
         }
+
 
         .prediction-label {
             display: block;
-            font-size: 12px;
+
+            font-size: 11px;
+
             color: #777;
+
             text-transform: uppercase;
+
             margin-bottom: 7px;
         }
 
+
         .prediction-value {
             font-weight: bold;
+
             font-size: 16px;
         }
 
-        @media (max-width: 800px) {
+
+        /* ==================================================
+           AI RISK PANEL
+        ================================================== */
+
+        .risk-panel {
+            margin-top: 22px;
+
+            padding: 20px;
+
+            border-radius: 12px;
+
+            border: 1px solid #e5e7eb;
+
+            background: #fafafa;
+        }
+
+
+        /* ==================================================
+           CONFIDENCE LEVEL STYLES
+        ================================================== */
+
+        .confidence-high {
+            border: 2px solid #d32f2f;
+
+            background: #fff7f7;
+        }
+
+
+        .confidence-medium {
+            border: 2px solid #e0a100;
+
+            background: #fffaf0;
+        }
+
+
+        .confidence-low {
+            border: 2px solid #78909c;
+
+            background: #f8fafb;
+        }
+
+
+        /* ==================================================
+           RISK HEADER
+        ================================================== */
+
+        .risk-header {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            margin-bottom: 20px;
+        }
+
+
+        .risk-title {
+            font-size: 16px;
+
+            font-weight: bold;
+
+            margin-bottom: 4px;
+        }
+
+
+        .risk-subtitle {
+            font-size: 12px;
+
+            color: #777;
+        }
+
+
+        /* ==================================================
+           RISK BADGES
+        ================================================== */
+
+        .risk-badge {
+            padding: 8px 16px;
+
+            border-radius: 20px;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            letter-spacing: 0.5px;
+        }
+
+
+        .risk-high {
+            background: #d32f2f;
+
+            color: white;
+        }
+
+
+        .risk-medium {
+            background: #e0a100;
+
+            color: white;
+        }
+
+
+        .risk-low {
+            background: #2e7d32;
+
+            color: white;
+        }
+
+
+        /* ==================================================
+           RISK CONTENT
+        ================================================== */
+
+        .risk-content {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 20px;
+        }
+
+
+        .risk-metric {
+            background: white;
+
+            padding: 16px;
+
+            border-radius: 8px;
+
+            border: 1px solid #e5e7eb;
+        }
+
+
+        .metric-label {
+            display: block;
+
+            font-size: 11px;
+
+            text-transform: uppercase;
+
+            color: #777;
+
+            margin-bottom: 7px;
+        }
+
+
+        .metric-value {
+            display: block;
+
+            font-size: 22px;
+
+            font-weight: bold;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* ==================================================
+           CONFIDENCE BAR
+        ================================================== */
+
+        .confidence-bar {
+            width: 100%;
+
+            height: 10px;
+
+            background: #e5e7eb;
+
+            border-radius: 6px;
+
+            overflow: hidden;
+        }
+
+
+        .confidence-fill {
+            height: 100%;
+
+            border-radius: 6px;
+
+            background: #d32f2f;
+        }
+
+
+        .confidence-medium
+        .confidence-fill {
+            background: #e0a100;
+        }
+
+
+        .confidence-low
+        .confidence-fill {
+            background: #78909c;
+        }
+
+
+        .confidence-label {
+            margin-top: 7px;
+
+            font-size: 12px;
+
+            color: #666;
+        }
+
+
+        /* ==================================================
+           INTERPRETATION
+        ================================================== */
+
+        .risk-interpretation {
+            margin-top: 15px;
+
+            padding: 12px 15px;
+
+            background: white;
+
+            border-radius: 7px;
+
+            font-size: 13px;
+
+            line-height: 1.5;
+
+            color: #555;
+        }
+
+
+        /* ==================================================
+           EMPTY STATE
+        ================================================== */
+
+        .empty {
+            background: white;
+
+            padding: 30px;
+
+            text-align: center;
+
+            border-radius: 10px;
+
+            color: #777;
+
+            box-shadow:
+                0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+
+        /* ==================================================
+           RESPONSIVE
+        ================================================== */
+
+        @media (max-width: 900px) {
+
+            .summary-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
 
             .predictions {
                 grid-template-columns:
@@ -115,11 +488,36 @@
 
         }
 
-        @media (max-width: 500px) {
+
+        @media (max-width: 700px) {
+
+            .risk-content {
+                grid-template-columns: 1fr;
+            }
+
+
+            .risk-header {
+                align-items: flex-start;
+
+                gap: 10px;
+
+                flex-direction: column;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
 
             body {
                 padding: 15px;
             }
+
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+
 
             .predictions {
                 grid-template-columns: 1fr;
@@ -134,53 +532,206 @@
 
 <body>
 
+
 <div class="container">
 
-    <h1>MIRA Inspection Findings</h1>
 
-    <div class="subtitle">
-        Coal Mine Inspection Report Analysis
-    </div>
+    <!-- ==================================================
+         HEADER
+    ================================================== -->
 
+    <div class="header">
 
-    <div class="summary">
+        <h1>
+            MIRA Inspection Analysis
+        </h1>
 
-        <div>
-            Total Findings
+        <div class="subtitle">
+            AI-powered coal mine inspection findings and risk assessment
         </div>
 
-        <strong>
-            {{ count }}
-        </strong>
+    </div>
+
+
+    <!-- ==================================================
+         SUMMARY
+    ================================================== -->
+
+    <div class="summary-grid">
+
+
+        <!-- TOTAL FINDINGS -->
+
+        <div class="summary-card">
+
+            <div class="summary-label">
+                Total Findings
+            </div>
+
+            <div class="summary-value">
+                {{ count }}
+            </div>
+
+        </div>
+
+
+        <!-- HIGH SEVERITY -->
+
+        <div class="summary-card">
+
+            <div class="summary-label">
+                High Severity
+            </div>
+
+            <div class="summary-value">
+
+                {{
+                    results
+                    | selectattr("severity", "equalto", "High")
+                    | list
+                    | length
+                }}
+
+            </div>
+
+        </div>
+
+
+        <!-- RECURRING -->
+
+        <div class="summary-card">
+
+            <div class="summary-label">
+                Recurring Findings
+            </div>
+
+            <div class="summary-value">
+
+                {{
+                    results
+                    | selectattr("recurring", "equalto", "Yes")
+                    | list
+                    | length
+                }}
+
+            </div>
+
+        </div>
+
+
+        <!-- RISK ASSESSMENTS -->
+
+        <div class="summary-card">
+
+            <div class="summary-label">
+                Risk Assessments
+            </div>
+
+            <div class="summary-value">
+                {{ results | length }}
+            </div>
+
+        </div>
+
 
     </div>
 
+
+    <!-- ==================================================
+         FINDINGS
+    ================================================== -->
 
     {% if results %}
 
+
         {% for result in results %}
+
+
+            {% set confidence = result.risk_confidence|float %}
+
+
+            <!-- ==================================================
+                 FINDING CARD
+            ================================================== -->
 
             <div class="finding">
 
+
+                <!-- FINDING HEADER -->
+
                 <div class="finding-header">
 
+
                     <div class="finding-id">
+
                         {{ result.finding_id }}
+
                     </div>
+
+
+                    <!-- RISK BADGE -->
+
+                    {% if result.predicted_risk %}
+
+
+                        {% if result.predicted_risk|string|upper == "HIGH" %}
+
+                            <span class="risk-badge risk-high">
+                                HIGH RISK
+                            </span>
+
+
+                        {% elif result.predicted_risk|string|upper == "MEDIUM" %}
+
+                            <span class="risk-badge risk-medium">
+                                MEDIUM RISK
+                            </span>
+
+
+                        {% else %}
+
+                            <span class="risk-badge risk-low">
+                                LOW RISK
+                            </span>
+
+                        {% endif %}
+
+
+                    {% endif %}
+
 
                 </div>
 
 
-                <h3>
-                    Finding Text
-                </h3>
+                <!-- ==================================================
+                     FINDING TEXT
+                ================================================== -->
+
+                <div class="section-title">
+                    Inspection Finding
+                </div>
+
 
                 <div class="finding-text">
+
                     {{ result.finding_text }}
+
+                </div>
+
+
+                <!-- ==================================================
+                     MIRA CLASSIFICATION
+                ================================================== -->
+
+                <div class="section-title">
+                    MIRA Classification
                 </div>
 
 
                 <div class="predictions">
+
+
+                    <!-- ISSUE -->
 
                     <div class="prediction">
 
@@ -195,6 +746,8 @@
                     </div>
 
 
+                    <!-- CATEGORY -->
+
                     <div class="prediction">
 
                         <span class="prediction-label">
@@ -207,6 +760,8 @@
 
                     </div>
 
+
+                    <!-- SEVERITY -->
 
                     <div class="prediction">
 
@@ -221,6 +776,8 @@
                     </div>
 
 
+                    <!-- RECURRING -->
+
                     <div class="prediction">
 
                         <span class="prediction-label">
@@ -233,21 +790,262 @@
 
                     </div>
 
+
                 </div>
+
+
+                <!-- ==================================================
+                     AI RISK ASSESSMENT
+                ================================================== -->
+
+                {% if result.predicted_risk %}
+
+
+                    <div class="risk-panel
+
+                        {% if confidence >= 80 %}
+
+                            confidence-high
+
+                        {% elif confidence >= 60 %}
+
+                            confidence-medium
+
+                        {% else %}
+
+                            confidence-low
+
+                        {% endif %}
+
+                    ">
+
+
+                        <!-- RISK HEADER -->
+
+                        <div class="risk-header">
+
+
+                            <div>
+
+                                <div class="risk-title">
+
+                                    AI Risk Assessment
+
+                                </div>
+
+
+                                <div class="risk-subtitle">
+
+
+                                    {% if confidence >= 80 %}
+
+                                        High-confidence assessment
+
+                                    {% elif confidence >= 60 %}
+
+                                        Moderate-confidence assessment
+
+                                    {% else %}
+
+                                        Low-confidence assessment
+
+                                    {% endif %}
+
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- RISK BADGE -->
+
+                            {% if result.predicted_risk|string|upper == "HIGH" %}
+
+                                <span class="risk-badge risk-high">
+                                    HIGH RISK
+                                </span>
+
+
+                            {% elif result.predicted_risk|string|upper == "MEDIUM" %}
+
+                                <span class="risk-badge risk-medium">
+                                    MEDIUM RISK
+                                </span>
+
+
+                            {% else %}
+
+                                <span class="risk-badge risk-low">
+                                    LOW RISK
+                                </span>
+
+                            {% endif %}
+
+
+                        </div>
+
+
+                        <!-- ==================================================
+                             RISK METRICS
+                        ================================================== -->
+
+                        <div class="risk-content">
+
+
+                            <!-- PREDICTED RISK -->
+
+                            <div class="risk-metric">
+
+                                <span class="metric-label">
+                                    Predicted Risk
+                                </span>
+
+
+                                <span class="metric-value">
+
+                                    {{ result.predicted_risk }}
+
+                                </span>
+
+                            </div>
+
+
+                            <!-- CONFIDENCE -->
+
+                            <div class="risk-metric">
+
+                                <span class="metric-label">
+                                    Model Confidence
+                                </span>
+
+
+                                <span class="metric-value">
+
+                                    {{ result.risk_confidence }}%
+
+                                </span>
+
+
+                                <div class="confidence-bar">
+
+
+                                    <div
+                                        class="confidence-fill"
+                                        style="width: {{ confidence }}%;"
+                                    ></div>
+
+
+                                </div>
+
+
+                                <div class="confidence-label">
+
+
+                                    {% if confidence >= 80 %}
+
+                                        High confidence
+
+                                    {% elif confidence >= 60 %}
+
+                                        Moderate confidence
+
+                                    {% else %}
+
+                                        Low confidence
+
+                                    {% endif %}
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- ==================================================
+                             INTERPRETATION
+                        ================================================== -->
+
+                        <div class="risk-interpretation">
+
+
+                            {% if confidence >= 80 %}
+
+
+                                <strong>
+                                    High-confidence prediction:
+                                </strong>
+
+                                The AI model has strong confidence
+                                in this risk assessment. The finding
+                                should receive higher attention
+                                during review.
+
+
+                            {% elif confidence >= 60 %}
+
+
+                                <strong>
+                                    Moderate-confidence prediction:
+                                </strong>
+
+                                The AI model has moderate confidence
+                                in this assessment. Administrative
+                                review is recommended.
+
+
+                            {% else %}
+
+
+                                <strong>
+                                    Low-confidence prediction:
+                                </strong>
+
+                                The AI model is uncertain about this
+                                finding. Manual inspection should
+                                be considered.
+
+
+                            {% endif %}
+
+
+                        </div>
+
+
+                    </div>
+
+
+                {% endif %}
+
 
             </div>
 
+
         {% endfor %}
+
 
     {% else %}
 
-        <div class="finding">
+
+        <!-- ==================================================
+             EMPTY STATE
+        ================================================== -->
+
+        <div class="empty">
+
             No findings were found in the PDF.
+
         </div>
+
 
     {% endif %}
 
+
 </div>
+
 
 </body>
 

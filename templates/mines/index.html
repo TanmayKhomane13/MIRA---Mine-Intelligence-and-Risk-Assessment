@@ -1,76 +1,374 @@
 {% extends 'base.html' %}
-{% block title %}Mines Directory - MineGuard AI{% endblock %}
-{% block header_title %}Mines Management{% endblock %}
+
+{% block title %}
+Mines Directory - MIRA
+{% endblock %}
+
+{% block header_title %}
+Mines Management
+{% endblock %}
+
 
 {% block content %}
+
 <div class="bg-white border border-brand-border rounded-xl shadow-sm overflow-hidden">
+
+
+    <!-- ==================================================
+         HEADER
+    =================================================== -->
+
     <div class="p-5 border-b border-brand-border flex justify-between items-center">
-        <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700">Registered Mines</h2>
-        <a href="#" class="px-4 py-2 bg-black text-white text-xs font-semibold rounded-lg hover:bg-zinc-800 transition">+ Add Mine</a>
+
+        <div>
+
+            <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700">
+                Registered Mines
+            </h2>
+
+            <p class="text-xs text-gray-500 mt-1">
+                Mines registered in the MIRA monitoring system
+            </p>
+
+        </div>
+
+
+        <a
+            href="#"
+            class="px-4 py-2 bg-black text-white text-xs font-semibold rounded-lg hover:bg-zinc-800 transition"
+        >
+            + Add Mine
+        </a>
+
     </div>
-    <table class="w-full text-left border-collapse">
-        <thead>
-            <tr class="bg-brand-light border-b border-brand-border text-xs uppercase text-gray-500 font-semibold">
-                <th class="p-4">Mine ID & Name</th>
-                <th class="p-4">Location</th>
-                <th class="p-4">Risk Status</th>
-                <th class="p-4">Compliance</th>
-                <th class="p-4">Actions</th>
-            </tr>
-        </thead>
-        <tbody class="divide-y divide-brand-border text-sm">
 
-        {% for mine in mines %}
 
-        <tr class="hover:bg-brand-light transition">
 
-            <td class="p-4">
-                <div class="font-semibold text-brand-black">
-                    {{ mine.mine_id }} - {{ mine.name or 'Unnamed Mine' }}
-                </div>
-                {% if mine.company %}
-                <div class="text-xs text-gray-500 mt-1">
-                    {{ mine.company }}
-                </div>
-                {% endif %}
-            </td>
+    <!-- ==================================================
+         TABLE
+    =================================================== -->
 
-            <td class="p-4 text-gray-600">
-                {% if mine.district %}
-                    {{ mine.district }},
-                {% endif %}
-                {{ mine.state or 'Unknown' }}
-            </td>
-            <td class="p-4">
-                {% set level = mine.risk_level or 'LOW' %}
-                {% include 'components/risk_badge.html' %}
-            </td>
-            <td class="p-4 text-gray-700">
-                {{ mine.compliance or 0 }}%
-            </td>
-            <td class="p-4">
-                <a
-                    href="{{ url_for(
-                        'mine_detail',
-                        mine_id=mine.mine_id
-                    ) }}"
-                    class="text-black font-semibold underline text-xs"
+    <div class="overflow-x-auto">
+
+        <table class="w-full text-left border-collapse">
+
+            <thead>
+
+                <tr
+                    class="bg-brand-light border-b border-brand-border text-xs uppercase text-gray-500 font-semibold"
                 >
-                    View Detail
-                </a>
-            </td>
-        </tr>
-        {% else %}
-        <tr>
-            <td
-                colspan="5"
-                class="p-8 text-center text-gray-500"
-            >
-                No mines available.
-            </td>
-        </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+
+                    <th class="p-4">
+                        Mine ID & Name
+                    </th>
+
+                    <th class="p-4">
+                        Location
+                    </th>
+
+                    <th class="p-4">
+                        Operator
+                    </th>
+
+                    <th class="p-4">
+                        Status
+                    </th>
+
+                    <th class="p-4">
+                        Risk Status
+                    </th>
+
+                    <th class="p-4">
+                        Actions
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody class="divide-y divide-brand-border text-sm">
+
+
+                {% for mine in mines %}
+
+                <tr class="hover:bg-brand-light transition">
+
+
+                    <!-- =====================================
+                         MINE
+                    ====================================== -->
+
+                    <td class="p-4">
+
+                        <div class="font-semibold text-brand-black">
+
+                            {{ mine.code or ('M-' ~ mine.id) }}
+
+                            -
+
+                            {{ mine.name or 'Unnamed Mine' }}
+
+                        </div>
+
+
+                        <div class="text-xs text-gray-500 mt-1">
+
+                            ID: {{ mine.id }}
+
+                        </div>
+
+                    </td>
+
+
+
+                    <!-- =====================================
+                         LOCATION
+                    ====================================== -->
+
+                    <td class="p-4 text-gray-600">
+
+                        {% if mine.district %}
+
+                            {{ mine.district }},
+
+                        {% endif %}
+
+                        {{ mine.state or 'Unknown' }}
+
+                    </td>
+
+
+
+                    <!-- =====================================
+                         OPERATOR
+                    ====================================== -->
+
+                    <td class="p-4 text-gray-600">
+
+                        {{ mine.operator or 'Not specified' }}
+
+                    </td>
+
+
+
+                    <!-- =====================================
+                         STATUS
+                    ====================================== -->
+
+                    <td class="p-4">
+
+                        {% if mine.status == 'Active' %}
+
+                            <span
+                                class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-green-50 text-green-700 border border-green-200"
+                            >
+                                Active
+                            </span>
+
+                        {% elif mine.status == 'Suspended' %}
+
+                            <span
+                                class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-yellow-50 text-yellow-700 border border-yellow-200"
+                            >
+                                Suspended
+                            </span>
+
+                        {% elif mine.status == 'Closed' %}
+
+                            <span
+                                class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-red-50 text-red-700 border border-red-200"
+                            >
+                                Closed
+                            </span>
+
+                        {% elif mine.status == 'Under Development' %}
+
+                            <span
+                                class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200"
+                            >
+                                Under Development
+                            </span>
+
+                        {% else %}
+
+                            <span
+                                class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-gray-50 text-gray-600 border border-gray-200"
+                            >
+                                Unknown
+                            </span>
+
+                        {% endif %}
+
+                    </td>
+
+
+
+                    <!-- =====================================
+                         RISK
+                    ====================================== -->
+
+                    <td class="p-4">
+
+                        {% set level = mine.risk_level %}
+
+
+                        {% if level == 'CRITICAL' %}
+
+                            <div>
+
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-red-100 text-red-800 border border-red-200"
+                                >
+                                    CRITICAL
+                                </span>
+
+                                {% if mine.risk_score is not none %}
+
+                                <div class="text-xs text-gray-500 mt-1">
+
+                                    Score:
+                                    {{ mine.risk_score }}/100
+
+                                </div>
+
+                                {% endif %}
+
+                            </div>
+
+
+                        {% elif level == 'HIGH' %}
+
+                            <div>
+
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-red-50 text-red-700 border border-red-200"
+                                >
+                                    HIGH
+                                </span>
+
+                                {% if mine.risk_score is not none %}
+
+                                <div class="text-xs text-gray-500 mt-1">
+
+                                    Score:
+                                    {{ mine.risk_score }}/100
+
+                                </div>
+
+                                {% endif %}
+
+                            </div>
+
+
+                        {% elif level == 'MEDIUM' %}
+
+                            <div>
+
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-yellow-50 text-yellow-700 border border-yellow-200"
+                                >
+                                    MEDIUM
+                                </span>
+
+                                {% if mine.risk_score is not none %}
+
+                                <div class="text-xs text-gray-500 mt-1">
+
+                                    Score:
+                                    {{ mine.risk_score }}/100
+
+                                </div>
+
+                                {% endif %}
+
+                            </div>
+
+
+                        {% elif level == 'LOW' %}
+
+                            <div>
+
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-green-50 text-green-700 border border-green-200"
+                                >
+                                    LOW
+                                </span>
+
+                                {% if mine.risk_score is not none %}
+
+                                <div class="text-xs text-gray-500 mt-1">
+
+                                    Score:
+                                    {{ mine.risk_score }}/100
+
+                                </div>
+
+                                {% endif %}
+
+                            </div>
+
+
+                        {% else %}
+
+                            <span
+                                class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-gray-50 text-gray-600 border border-gray-200"
+                            >
+                                NOT ANALYSED
+                            </span>
+
+                        {% endif %}
+
+                    </td>
+
+
+
+                    <!-- =====================================
+                         ACTION
+                    ====================================== -->
+
+                    <td class="p-4">
+
+                        <a
+                            href="{{ url_for(
+                                'mine_detail',
+                                mine_id=mine.id
+                            ) }}"
+                            class="text-black font-semibold underline text-xs"
+                        >
+                            View Detail
+                        </a>
+
+                    </td>
+
+
+                </tr>
+
+
+                {% else %}
+
+                <tr>
+
+                    <td
+                        colspan="6"
+                        class="p-8 text-center text-gray-500"
+                    >
+
+                        No mines available.
+
+                    </td>
+
+                </tr>
+
+                {% endfor %}
+
+
+            </tbody>
+
+        </table>
+
+    </div>
+
 </div>
+
 {% endblock %}

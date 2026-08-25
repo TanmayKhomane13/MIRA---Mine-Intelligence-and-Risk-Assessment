@@ -10,6 +10,9 @@
             <a href="{{ url_for('risk') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Risk Analytics</a>
             <a href="{{ url_for('alerts') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Alerts</a>
             <a href="{{ url_for('gis_map') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">GIS Map</a>
+            {% if current_user_role == "admin" %}
+                <a href="{{ url_for('register') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Register New User</a>
+            {% endif %}
         </nav>
     </div>
     <div class="p-4 border-t border-brand-border">

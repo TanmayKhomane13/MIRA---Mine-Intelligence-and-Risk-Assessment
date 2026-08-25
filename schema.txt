@@ -1,0 +1,445 @@
+-- ============================================================
+-- MIRA - Final Schema (MariaDB)
+-- ============================================================
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ------------------------------------------------------------
+-- 1. gis_regions
+-- ------------------------------------------------------------
+CREATE TABLE gis_regions (
+    id              INT UNSIGNED        NOT NULL AUTO_INCREMENT,
+    code            VARCHAR(30)         NOT NULL,
+    name            VARCHAR(100)        NOT NULL,
+    level           ENUM('country','state','district','zone','village') NOT NULL,
+    state           VARCHAR(50)         NULL,
+    latitude        DECIMAL(10,7)       NULL,
+    longitude       DECIMAL(10,7)       NULL,
+    created_at      DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (id),
+    UNIQUE KEY uq_gis_code (code),
+    KEY idx_gis_level (level)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+-- ------------------------------------------------------------
+-- 2. users
+-- ------------------------------------------------------------
+CREATE TABLE users (
+    id              INT UNSIGNED        NOT NULL AUTO_INCREMENT,
+    name            VARCHAR(120)        NOT NULL,
+    role            ENUM('inspector','admin') NOT NULL DEFAULT 'inspector',
+    regional_office VARCHAR(100)        NULL,
+    password_hash   VARCHAR(255)        NOT NULL,
+    is_active       TINYINT(1)          NOT NULL DEFAULT 1,
+    created_at      DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at      DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+-- ------------------------------------------------------------
+-- 3. mines
+-- ------------------------------------------------------------
+CREATE TABLE mines (
+    id                  INT UNSIGNED        NOT NULL AUTO_INCREMENT,
+    name                VARCHAR(150)        NOT NULL,
+    code                VARCHAR(30)         NOT NULL,           -- mine_code
+    operator            VARCHAR(150)        NULL,
+    state               VARCHAR(50)         NOT NULL,
+    district            VARCHAR(50)         NOT NULL,
+    status              ENUM('Active','Closed','Suspended','Under Development') NOT NULL DEFAULT 'Active',
+    method              VARCHAR(50)         NULL,               -- mining method
+    risk_score          FLOAT               NULL,               -- risk_confidence → risk_score
+    risk_level          ENUM('LOW','MEDIUM','HIGH','CRITICAL') NULL,
+    region_id           INT UNSIGNED        NULL,               -- FK → gis_regions
+    latitude            DECIMAL(10,7)       NULL,
+    longitude           DECIMAL(10,7)       NULL,
+    created_at          DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at          DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (id),
+    UNIQUE KEY uq_mines_code (code),
+    KEY idx_mines_region (region_id),
+    KEY idx_mines_risk (risk_level),
+    KEY idx_mines_status (status),
+
+    CONSTRAINT fk_mines_region
+        FOREIGN KEY (region_id) REFERENCES gis_regions (id)
+        ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+-- ------------------------------------------------------------
+-- 4. inspections
+-- ------------------------------------------------------------
+CREATE TABLE inspections (
+    id              INT UNSIGNED        NOT NULL AUTO_INCREMENT,
+    report_no       VARCHAR(40)         NOT NULL,
+    mine_id         INT UNSIGNED        NOT NULL,
+    inspector_id    INT UNSIGNED        NOT NULL,
+    inspection_date DATE                NOT NULL,
+    duration        VARCHAR(50)         NULL,               -- e.g. "18 – 20 July 2026"
+    remarks         TEXT                NULL,
+    status          ENUM('draft','submitted','analysed','closed') NOT NULL DEFAULT 'draft',
+    pdf_path        VARCHAR(255)        NULL,
+    created_at      DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at      DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (id),
+    UNIQUE KEY uq_report_no (report_no),
+    KEY idx_insp_mine (mine_id),
+    KEY idx_insp_inspector (inspector_id),
+    KEY idx_insp_date (inspection_date),
+    KEY idx_insp_status (status),
+
+    CONSTRAINT fk_insp_mine
+        FOREIGN KEY (mine_id) REFERENCES mines (id)
+        ON DELETE RESTRICT ON UPDATE CASCADE,
+    CONSTRAINT fk_insp_inspector
+        FOREIGN KEY (inspector_id) REFERENCES users (id)
+        ON DELETE RESTRICT ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+-- ------------------------------------------------------------
+-- 5. inspection_findings
+-- ------------------------------------------------------------
+CREATE TABLE inspection_findings (
+    id              INT UNSIGNED        NOT NULL AUTO_INCREMENT,
+    inspection_id   INT UNSIGNED        NOT NULL,
+    issue           VARCHAR(255)        NULL,               -- short title
+    category        VARCHAR(50)         NULL,
+    severity        ENUM('LOW','MEDIUM','HIGH','CRITICAL') NOT NULL DEFAULT 'MEDIUM',
+    recurring       TINYINT(1)          NOT NULL DEFAULT 0,
+    finding_code    VARCHAR(20)         NULL,               -- F-01, F-02...
+    note            VARCHAR(150)        NULL,               -- location note
+    created_at      DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (id),
+    KEY idx_find_insp (inspection_id),
+    KEY idx_find_sev (severity),
+    KEY idx_find_cat (category),
+
+    CONSTRAINT fk_find_insp
+        FOREIGN KEY (inspection_id) REFERENCES inspections (id)
+        ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+-- ------------------------------------------------------------
+-- 6. finding_texts  (separate long text)
+-- ------------------------------------------------------------
+CREATE TABLE finding_texts (
+    id              INT UNSIGNED        NOT NULL AUTO_INCREMENT,
+    finding_id      INT UNSIGNED        NOT NULL,
+    text            TEXT                NOT NULL,           -- full finding description
+    created_at      DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (id),
+    UNIQUE KEY uq_finding_text (finding_id),                -- 1-to-1
+
+    CONSTRAINT fk_text_finding
+        FOREIGN KEY (finding_id) REFERENCES inspection_findings (id)
+        ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+-- ------------------------------------------------------------
+-- 7. corrective_actions
+-- ------------------------------------------------------------
+CREATE TABLE corrective_actions (
+    id              INT UNSIGNED        NOT NULL AUTO_INCREMENT,
+    finding_id      INT UNSIGNED        NOT NULL,
+    description     TEXT                NOT NULL,
+    due_date        DATE                NULL,
+    status          ENUM('open','in_progress','closed','overdue') NOT NULL DEFAULT 'open',
+    closed_at       DATETIME            NULL,
+    created_at      DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at      DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (id),
+    KEY idx_action_finding (finding_id),
+    KEY idx_action_status (status),
+
+    CONSTRAINT fk_action_finding
+        FOREIGN KEY (finding_id) REFERENCES inspection_findings (id)
+        ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+-- ------------------------------------------------------------
+-- 8. inspection_evidence
+-- ------------------------------------------------------------
+CREATE TABLE inspection_evidence (
+    id              INT UNSIGNED        NOT NULL AUTO_INCREMENT,
+    inspection_id   INT UNSIGNED        NOT NULL,
+    finding_id      INT UNSIGNED        NULL,
+    file_path       VARCHAR(255)        NOT NULL,
+    latitude        DECIMAL(10,7)       NULL,
+    longitude       DECIMAL(10,7)       NULL,
+    evidence_type   ENUM('photo','document','video') NOT NULL DEFAULT 'photo',
+    description     TEXT                NULL,
+    created_at      DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (id),
+    KEY idx_evid_insp (inspection_id),
+    KEY idx_evid_find (finding_id),
+
+    CONSTRAINT fk_evid_insp
+        FOREIGN KEY (inspection_id) REFERENCES inspections (id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT fk_evid_find
+        FOREIGN KEY (finding_id) REFERENCES inspection_findings (id)
+        ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+-- ------------------------------------------------------------
+-- 9. risk_scores
+-- ------------------------------------------------------------
+CREATE TABLE risk_scores (
+    id              INT UNSIGNED        NOT NULL AUTO_INCREMENT,
+    inspection_id   INT UNSIGNED        NOT NULL,
+    mine_id         INT UNSIGNED        NOT NULL,
+    risk_score      FLOAT               NOT NULL,           -- 0-100
+    risk_level      ENUM('LOW','MEDIUM','HIGH','CRITICAL') NOT NULL,
+    risk_factors    JSON                NULL,
+    model_version   VARCHAR(30)         NOT NULL DEFAULT 'risk-v1',
+    created_at      DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    PRIMARY KEY (id),
+    UNIQUE KEY uq_risk_insp (inspection_id),
+    KEY idx_risk_mine (mine_id),
+
+    CONSTRAINT fk_risk_insp
+        FOREIGN KEY (inspection_id) REFERENCES inspections (id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT fk_risk_mine
+        FOREIGN KEY (mine_id) REFERENCES mines (id)
+        ON DELETE RESTRICT ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+-- ------------------------------------------------------------
+-- 10. alerts
+-- ------------------------------------------------------------
+CREATE TABLE alerts (
+    id              INT UNSIGNED        NOT NULL AUTO_INCREMENT,
+    mine_id         INT UNSIGNED        NOT NULL,
+    risk_score_id   INT UNSIGNED        NULL,
+    inspection_id   INT UNSIGNED        NULL,
+    alert_type      VARCHAR(40)         NOT NULL,
+    message         TEXT                NOT NULL,
+    severity        ENUM('LOW','MEDIUM','HIGH','CRITICAL') NOT NULL DEFAULT 'HIGH',
+    status          ENUM('open','acknowledged','closed') NOT NULL DEFAULT 'open',
+    created_at      DATETIME            NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    acknowledged_at DATETIME            NULL,
+
+    PRIMARY KEY (id),
+    KEY idx_alert_mine (mine_id),
+    KEY idx_alert_status (status),
+
+    CONSTRAINT fk_alert_mine
+        FOREIGN KEY (mine_id) REFERENCES mines (id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT fk_alert_risk
+        FOREIGN KEY (risk_score_id) REFERENCES risk_scores (id)
+        ON DELETE SET NULL ON UPDATE CASCADE,
+    CONSTRAINT fk_alert_insp
+        FOREIGN KEY (inspection_id) REFERENCES inspections (id)
+        ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+SET FOREIGN_KEY_CHECKS = 1;
+
+-- ============================================================
+-- INDEXES for Rapid Retrieval
+-- ============================================================
+
+-- Mines
+CREATE INDEX idx_mines_risk_level_status ON mines (risk_level, status);
+CREATE INDEX idx_mines_state_district ON mines (state, district);
+CREATE INDEX idx_mines_region_id ON mines (region_id);
+
+-- Inspections
+CREATE INDEX idx_inspections_date_status ON inspections (inspection_date DESC, status);
+CREATE INDEX idx_inspections_mine_date ON inspections (mine_id, inspection_date DESC);
+
+-- Findings
+CREATE INDEX idx_findings_severity_recurring ON inspection_findings (severity, recurring);
+CREATE INDEX idx_findings_category ON inspection_findings (category);
+
+-- Corrective Actions
+CREATE INDEX idx_actions_status_due ON corrective_actions (status, due_date);
+CREATE INDEX idx_actions_finding ON corrective_actions (finding_id);
+
+-- Evidence
+CREATE INDEX idx_evidence_insp_finding ON inspection_evidence (inspection_id, finding_id);
+
+-- Risk Scores
+CREATE INDEX idx_risk_level_created ON risk_scores (risk_level, created_at DESC);
+CREATE INDEX idx_risk_mine_created ON risk_scores (mine_id, created_at DESC);
+
+-- Alerts
+CREATE INDEX idx_alerts_status_severity ON alerts (status, severity);
+CREATE INDEX idx_alerts_mine_status ON alerts (mine_id, status);
+
+
+-- ============================================================
+-- DASHBOARD VIEWS
+-- ============================================================
+
+-- 1. Main KPI Summary (Homepage cards)
+CREATE OR REPLACE VIEW v_dashboard_kpis AS
+SELECT
+    (SELECT COUNT(*) FROM mines WHERE status = 'Active')                         AS total_active_mines,
+    (SELECT COUNT(*) FROM mines WHERE risk_level = 'HIGH')                       AS high_risk_mines,
+    (SELECT COUNT(*) FROM mines WHERE risk_level = 'CRITICAL')                   AS critical_risk_mines,
+    (SELECT COUNT(*) FROM alerts WHERE status = 'open')                          AS open_alerts,
+    (SELECT COUNT(*) FROM inspections 
+     WHERE inspection_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY))              AS inspections_last_30_days,
+    (SELECT COUNT(*) FROM corrective_actions 
+     WHERE status IN ('open','in_progress') AND due_date < CURDATE())            AS overdue_actions,
+    (SELECT ROUND(AVG(risk_score), 1) FROM mines WHERE risk_score IS NOT NULL)   AS avg_risk_score;
+
+
+-- 2. Mines with latest risk + region (for GIS map + table)
+CREATE OR REPLACE VIEW v_mines_gis AS
+SELECT
+    m.id,
+    m.code,
+    m.name,
+    m.operator,
+    m.state,
+    m.district,
+    m.status,
+    m.method,
+    m.risk_score,
+    m.risk_level,
+    m.latitude,
+    m.longitude,
+    r.name          AS region_name,
+    r.level         AS region_level,
+    r.code          AS region_code
+FROM mines m
+LEFT JOIN gis_regions r ON r.id = m.region_id;
+
+
+-- 3. Recent Inspections (last 20)
+CREATE OR REPLACE VIEW v_recent_inspections AS
+SELECT
+    i.id,
+    i.report_no,
+    i.inspection_date,
+    i.status,
+    i.pdf_path,
+    m.code          AS mine_code,
+    m.name          AS mine_name,
+    m.state,
+    m.district,
+    u.name          AS inspector_name,
+    rs.risk_score,
+    rs.risk_level
+FROM inspections i
+JOIN mines m ON m.id = i.mine_id
+JOIN users u ON u.id = i.inspector_id
+LEFT JOIN risk_scores rs ON rs.inspection_id = i.id
+ORDER BY i.inspection_date DESC, i.id DESC
+LIMIT 20;
+
+
+-- 4. High Risk Mines
+CREATE OR REPLACE VIEW v_high_risk_mines AS
+SELECT
+    m.id,
+    m.code,
+    m.name,
+    m.state,
+    m.district,
+    m.risk_score,
+    m.risk_level,
+    m.latitude,
+    m.longitude,
+    (SELECT COUNT(*) FROM alerts a 
+     WHERE a.mine_id = m.id AND a.status = 'open') AS open_alerts_count
+FROM mines m
+WHERE m.risk_level IN ('HIGH', 'CRITICAL')
+ORDER BY m.risk_score DESC;
+
+
+-- 5. Overdue Corrective Actions
+CREATE OR REPLACE VIEW v_overdue_actions AS
+SELECT
+    ca.id               AS action_id,
+    ca.description,
+    ca.due_date,
+    ca.status,
+    f.finding_code,
+    f.issue,
+    f.severity,
+    f.category,
+    i.report_no,
+    i.inspection_date,
+    m.code              AS mine_code,
+    m.name              AS mine_name,
+    m.state,
+    m.district
+FROM corrective_actions ca
+JOIN inspection_findings f ON f.id = ca.finding_id
+JOIN inspections i ON i.id = f.inspection_id
+JOIN mines m ON m.id = i.mine_id
+WHERE ca.status IN ('open', 'in_progress')
+  AND ca.due_date < CURDATE()
+ORDER BY ca.due_date ASC;
+
+
+-- 6. Open Alerts
+CREATE OR REPLACE VIEW v_open_alerts AS
+SELECT
+    a.id,
+    a.alert_type,
+    a.message,
+    a.severity,
+    a.created_at,
+    m.code          AS mine_code,
+    m.name          AS mine_name,
+    m.state,
+    m.district,
+    m.risk_level    AS mine_risk_level
+FROM alerts a
+JOIN mines m ON m.id = a.mine_id
+WHERE a.status = 'open'
+ORDER BY 
+    FIELD(a.severity, 'CRITICAL', 'HIGH', 'MEDIUM', 'LOW'),
+    a.created_at DESC;
+
+
+-- 7. Findings Summary by Category & Severity (for charts)
+CREATE OR REPLACE VIEW v_findings_summary AS
+SELECT
+    category,
+    severity,
+    recurring,
+    COUNT(*) AS total_findings
+FROM inspection_findings
+GROUP BY category, severity, recurring;
+
+
+-- 8. Mines by State / District (for filters & charts)
+CREATE OR REPLACE VIEW v_mines_by_location AS
+SELECT
+    state,
+    district,
+    COUNT(*) AS total_mines,
+    SUM(CASE WHEN risk_level = 'HIGH' THEN 1 ELSE 0 END) AS high_risk,
+    SUM(CASE WHEN risk_level = 'CRITICAL' THEN 1 ELSE 0 END) AS critical_risk,
+    ROUND(AVG(risk_score), 1) AS avg_risk
+FROM mines
+WHERE status = 'Active'
+GROUP BY state, district
+ORDER BY total_mines DESC;
