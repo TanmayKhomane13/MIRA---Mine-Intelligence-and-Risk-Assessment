@@ -11,7 +11,7 @@ import torch
 import mariadb
 import pandas as pd
 import joblib
-from load_model import model, tokenizer, label_mappings, device
+from load_model import model_1,tokenizer_1,label_mappings,device_1,model_2,tokenizer_2,device_2,gen_pipeline
 from dotenv import load_dotenv
 from werkzeug.security import check_password_hash,generate_password_hash
 from flask_jwt_extended import create_access_token,get_jwt,get_jwt_identity,jwt_required,JWTManager,set_access_cookies,unset_jwt_cookies
@@ -459,6 +459,7 @@ def logout():
     unset_jwt_cookies(response)
     session.clear()
     return response
+
 @app.route("/")
 @jwt_required()
 def dashboard():
@@ -473,9 +474,10 @@ def dashboard():
     try:
         cursor = conn.cursor(dictionary=True)
 
-        # =========================================================
-        # 1. DASHBOARD KPI DATA
-        # =========================================================
+        # ====================================================
+        # 1. MAIN DASHBOARD KPIs
+        # Uses: v_dashboard_kpis
+        # ====================================================
 
         cursor.execute("""
             SELECT *
@@ -484,7 +486,7 @@ def dashboard():
 
         kpis = cursor.fetchone()
 
-        if kpis is None:
+        if not kpis:
             kpis = {
                 "total_active_mines": 0,
                 "high_risk_mines": 0,
@@ -495,9 +497,10 @@ def dashboard():
                 "avg_risk_score": 0
             }
 
-        # =========================================================
+        # ====================================================
         # 2. RISK DISTRIBUTION
-        # =========================================================
+        # Uses indexed mines(risk_level, status)
+        # ====================================================
 
         cursor.execute("""
             SELECT
@@ -518,130 +521,88 @@ def dashboard():
         }
 
         for row in risk_rows:
-            if row["risk_level"] in risk_distribution:
-                risk_distribution[row["risk_level"]] = row["total"]
+            level = row["risk_level"]
+
+            if level in risk_distribution:
+                risk_distribution[level] = row["total"]
 
         low_risk_mines = risk_distribution["LOW"]
         medium_risk_mines = risk_distribution["MEDIUM"]
         high_risk_mines = risk_distribution["HIGH"]
         critical_risk_mines = risk_distribution["CRITICAL"]
 
-        # =========================================================
-        # 3. HIGH RISK / CRITICAL MINES
-        # =========================================================
+        # ====================================================
+        # 3. HIGH / CRITICAL RISK MINES
+        # Uses: v_high_risk_mines
+        # ====================================================
 
         cursor.execute("""
-            SELECT
-                id,
-                name,
-                code,
-                state,
-                district,
-                risk_score,
-                risk_level
-            FROM mines
-            WHERE status = 'Active'
-              AND risk_level IN ('HIGH', 'CRITICAL')
-            ORDER BY risk_score DESC
+            SELECT *
+            FROM v_high_risk_mines
             LIMIT 10
         """)
 
         high_risk_mines_data = cursor.fetchall()
 
-        # =========================================================
+        # ====================================================
         # 4. OPEN ALERTS
-        # =========================================================
+        # Uses: v_open_alerts
+        # ====================================================
 
         cursor.execute("""
-            SELECT
-                a.id,
-                a.alert_type,
-                a.message,
-                a.severity,
-                a.status,
-                a.created_at,
-                m.name AS mine_name,
-                m.code AS mine_code
-            FROM alerts a
-            INNER JOIN mines m
-                ON a.mine_id = m.id
-            WHERE a.status = 'open'
-            ORDER BY
-                CASE a.severity
-                    WHEN 'CRITICAL' THEN 1
-                    WHEN 'HIGH' THEN 2
-                    WHEN 'MEDIUM' THEN 3
-                    WHEN 'LOW' THEN 4
-                END,
-                a.created_at DESC
+            SELECT *
+            FROM v_open_alerts
             LIMIT 10
         """)
 
         alerts_data = cursor.fetchall()
 
-        # =========================================================
+        # ====================================================
         # 5. RECENT INSPECTIONS
-        # =========================================================
+        # Uses: v_recent_inspections
+        # ====================================================
 
         cursor.execute("""
-            SELECT
-                i.id,
-                i.report_no,
-                i.inspection_date,
-                i.status,
-                m.name AS mine_name,
-                m.code AS mine_code,
-                rs.risk_score,
-                rs.risk_level
-            FROM inspections i
-            INNER JOIN mines m
-                ON i.mine_id = m.id
-            LEFT JOIN risk_scores rs
-                ON rs.inspection_id = i.id
-            ORDER BY i.inspection_date DESC, i.id DESC
+            SELECT *
+            FROM v_recent_inspections
             LIMIT 10
         """)
 
         recent_inspections = cursor.fetchall()
 
-        # =========================================================
+        # ====================================================
         # 6. MINES BY LOCATION
-        # =========================================================
+        # Uses: v_mines_by_location
+        # ====================================================
 
         cursor.execute("""
-            SELECT
-                state,
-                district,
-                COUNT(*) AS total_mines,
-                SUM(
-                    CASE
-                        WHEN risk_level = 'HIGH'
-                        THEN 1 ELSE 0
-                    END
-                ) AS high_risk,
-                SUM(
-                    CASE
-                        WHEN risk_level = 'CRITICAL'
-                        THEN 1 ELSE 0
-                    END
-                ) AS critical_risk,
-                ROUND(AVG(risk_score), 1) AS avg_risk
-            FROM mines
-            WHERE status = 'Active'
-            GROUP BY state, district
-            ORDER BY total_mines DESC
+            SELECT *
+            FROM v_mines_by_location
         """)
 
         mines_by_location = cursor.fetchall()
 
-        # =========================================================
-        # 7. SEND EVERYTHING TO DASHBOARD
-        # =========================================================
+        # ====================================================
+        # 7. OVERDUE ACTIONS
+        # Uses: v_overdue_actions
+        # ====================================================
+
+        cursor.execute("""
+            SELECT *
+            FROM v_overdue_actions
+            LIMIT 10
+        """)
+
+        overdue_actions = cursor.fetchall()
+
+        # ====================================================
+        # 8. SEND EVERYTHING TO DASHBOARD
+        # ====================================================
 
         return render_template(
             "dashboard.html",
 
-            # Main KPI object
+            # KPI
             kpis=kpis,
 
             # Risk distribution
@@ -650,11 +611,12 @@ def dashboard():
             high_risk_mines=high_risk_mines,
             critical_risk_mines=critical_risk_mines,
 
-            # Other dashboard data
+            # Dashboard sections
             high_risk_mines_data=high_risk_mines_data,
             alerts=alerts_data,
             recent_inspections=recent_inspections,
-            mines_by_location=mines_by_location
+            mines_by_location=mines_by_location,
+            overdue_actions=overdue_actions
         )
 
     except mariadb.Error as e:
@@ -672,46 +634,80 @@ def dashboard():
 
         conn.close()
 
+
+# ============================================================
+# MINES
+# ============================================================
+
 @app.route("/mines")
 @jwt_required()
 def mines():
+
     conn = get_db_connection()
+
     if conn is None:
         return "Database connection failed", 500
+
+    cursor = None
+
     try:
+
         cursor = conn.cursor(dictionary=True)
+
+        # Uses:
+        # v_mines_gis
+        # idx_mines_risk_level_status
+        # idx_mines_state_district
+        # idx_mines_region_id
+
         cursor.execute("""
             SELECT
-                m.id,
-                m.name,
-                m.code,
-                m.operator,
-                m.state,
-                m.district,
-                m.status,
-                m.method,
-                m.risk_score,
-                m.risk_level,
-                m.latitude,
-                m.longitude,
-                m.region_id
-            FROM mines m
-            ORDER BY m.id DESC
+                id,
+                name,
+                code,
+                operator,
+                state,
+                district,
+                status,
+                method,
+                risk_score,
+                risk_level,
+                latitude,
+                longitude,
+                region_id,
+                region_code,
+                region_name,
+                region_level
+            FROM v_mines_gis
+            ORDER BY id DESC
         """)
+
         mines_data = cursor.fetchall()
+
         return render_template(
-            "./mines/index.html",
+            "mines/index.html",
             mines=mines_data
         )
+
     except mariadb.Error as e:
-        print(f"Error fetching mines: {e}")
+
+        app.logger.exception(
+            "Error fetching mines"
+        )
+
         return "Unable to load mines", 500
+
     finally:
-        try:
+
+        if cursor:
             cursor.close()
-            conn.close()
-        except:
-            pass
+
+        conn.close()
+
+
+# ============================================================
+# MINE DETAIL
+# ============================================================
 
 @app.route("/mines/<mine_id>")
 @jwt_required()
@@ -726,199 +722,168 @@ def mine_detail(mine_id):
 
     try:
 
-        cursor = conn.cursor()
+        cursor = conn.cursor(dictionary=True)
 
-        query = """
-            SELECT
-                m.id,
-                m.name,
-                m.code,
-                m.operator,
-                m.state,
-                m.district,
-                m.status,
-                m.method,
-                m.risk_score,
-                m.risk_level,
-                m.region_id,
-                m.latitude,
-                m.longitude,
+        # Uses v_mines_gis instead of rebuilding
+        # the mines + gis_regions JOIN.
 
-                g.code AS region_code,
-                g.name AS region_name,
-                g.level AS region_level
-
-            FROM mines m
-
-            LEFT JOIN gis_regions g
-                ON m.region_id = g.id
-
-            WHERE m.id = ?
-
+        cursor.execute("""
+            SELECT *
+            FROM v_mines_gis
+            WHERE id = ?
             LIMIT 1
-        """
-
-        cursor.execute(query, (mine_id,))
+        """, (mine_id,))
 
         row = cursor.fetchone()
 
         if row is None:
             abort(404)
 
-
-        (
-            id,
-            name,
-            code,
-            operator,
-            state,
-            district,
-            status,
-            method,
-            risk_score,
-            risk_level,
-            region_id,
-            latitude,
-            longitude,
-            region_code,
-            region_name,
-            region_level
-        ) = row
-
-
         mine = {
-
-            "id": id,
-
-            "name": name,
-            "code": code,
-            "operator": operator,
-
-            "state": state,
-            "district": district,
-
-            "status": status,
-            "method": method,
+            "id": row["id"],
+            "name": row["name"],
+            "code": row["code"],
+            "operator": row["operator"],
+            "state": row["state"],
+            "district": row["district"],
+            "status": row["status"],
+            "method": row["method"],
 
             "risk_score": (
-                float(risk_score)
-                if risk_score is not None
+                float(row["risk_score"])
+                if row["risk_score"] is not None
                 else None
             ),
 
-            "risk_level": risk_level,
+            "risk_level": row["risk_level"],
 
-            "region_id": region_id,
-            "region_code": region_code,
-            "region_name": region_name,
-            "region_level": region_level,
+            "region_id": row.get("region_id"),
+            "region_code": row.get("region_code"),
+            "region_name": row.get("region_name"),
+            "region_level": row.get("region_level"),
 
             "latitude": (
-                float(latitude)
-                if latitude is not None
+                float(row["latitude"])
+                if row["latitude"] is not None
                 else None
             ),
+
             "longitude": (
-                float(longitude)
-                if longitude is not None
+                float(row["longitude"])
+                if row["longitude"] is not None
                 else None
             )
         }
+
         return render_template(
             "mines/detail.html",
             mine=mine
         )
+
     except mariadb.Error as e:
-        print(f"Error fetching mine details: {e}")
+
+        app.logger.exception(
+            "Error fetching mine details"
+        )
+
         abort(500)
+
     finally:
+
         if cursor:
             cursor.close()
+
         conn.close()
+
+
+# ============================================================
+# INSPECTIONS
+# ============================================================
 
 @app.route("/inspections")
 @jwt_required()
 def inspections():
+
     conn = get_db_connection()
+
     if conn is None:
         abort(500)
-    cursor = None
-    try:
-        cursor = conn.cursor()
-        query = """
-            SELECT
-                i.id,
-                i.report_no,
-                i.mine_id,
-                i.inspector_id,
-                i.inspection_date,
-                i.duration,
-                i.remarks,
-                i.status,
-                i.pdf_path,
-                i.created_at,
 
-                m.name AS mine_name,
-                m.code AS mine_code,
-                m.state AS mine_state,
-                m.district AS mine_district,
-                u.name AS inspector_name
-            FROM inspections i
-            INNER JOIN mines m
-                ON i.mine_id = m.id
-            INNER JOIN users u
-                ON i.inspector_id = u.id
-            ORDER BY i.inspection_date DESC, i.id DESC
-        """
-        cursor.execute(query)
+    cursor = None
+
+    try:
+
+        cursor = conn.cursor(dictionary=True)
+
+        # Uses v_recent_inspections.
+        #
+        # NOTE:
+        # This view currently contains LIMIT 20.
+        # Therefore this page will display the latest 20 inspections.
+
+        cursor.execute("""
+            SELECT *
+            FROM v_recent_inspections
+            ORDER BY inspection_date DESC, id DESC
+        """)
+
         rows = cursor.fetchall()
+
         inspections_data = []
+
         for row in rows:
-            (
-                inspection_id,
-                report_no,
-                mine_id,
-                inspector_id,
-                inspection_date,
-                duration,
-                remarks,
-                status,
-                pdf_path,
-                created_at,
-                mine_name,
-                mine_code,
-                mine_state,
-                mine_district,
-                inspector_name
-            ) = row
+
             inspections_data.append({
-                "id": inspection_id,
-                "report_no": report_no,
-                "mine_id": mine_id,
-                "mine_name": mine_name,
-                "mine_code": mine_code,
-                "mine_state": mine_state,
-                "mine_district": mine_district,
-                "inspector_id": inspector_id,
-                "inspector_name": inspector_name,
-                "inspection_date": inspection_date,
-                "duration": duration,
-                "remarks": remarks,
-                "status": status,
-                "pdf_path": pdf_path,
-                "created_at": created_at
+                "id": row["id"],
+                "report_no": row["report_no"],
+
+                "mine_id": None,
+
+                "mine_name": row["mine_name"],
+                "mine_code": row["mine_code"],
+                "mine_state": row["state"],
+                "mine_district": row["district"],
+
+                "inspector_id": None,
+                "inspector_name": row["inspector_name"],
+
+                "inspection_date": row["inspection_date"],
+                "duration": None,
+                "remarks": None,
+
+                "status": row["status"],
+                "pdf_path": row["pdf_path"],
+
+                "created_at": None,
+
+                "risk_score": row["risk_score"],
+                "risk_level": row["risk_level"]
             })
+
         return render_template(
             "inspections/index.html",
             inspections=inspections_data
         )
+
     except mariadb.Error as e:
-        print(f"Error fetching inspections: {e}")
+
+        app.logger.exception(
+            "Error fetching inspections"
+        )
+
         abort(500)
+
     finally:
+
         if cursor:
             cursor.close()
+
         conn.close()
+
+
+# ============================================================
+# INSPECTION DETAIL
+# ============================================================
 
 @app.route("/inspections/<inspection_id>")
 @jwt_required()
@@ -928,11 +893,18 @@ def inspection_detail(inspection_id):
 
     if conn is None:
         abort(500)
+
     cursor = None
+
     try:
 
-        cursor = conn.cursor()
-        query = """
+        cursor = conn.cursor(dictionary=True)
+
+        # ====================================================
+        # INSPECTION + MINE + INSPECTOR
+        # ====================================================
+
+        cursor.execute("""
             SELECT
                 i.id,
                 i.report_no,
@@ -957,79 +929,67 @@ def inspection_detail(inspection_id):
                 m.longitude AS mine_longitude,
 
                 u.name AS inspector_name
+
             FROM inspections i
+
             INNER JOIN mines m
                 ON i.mine_id = m.id
+
             INNER JOIN users u
                 ON i.inspector_id = u.id
+
             WHERE i.id = ?
+
             LIMIT 1
-        """
-        cursor.execute(
-            query,
-            (inspection_id,)
-        )
+        """, (inspection_id,))
+
         row = cursor.fetchone()
+
         if row is None:
             abort(404)
-        (
-            id,
-            report_no,
-            mine_id,
-            inspector_id,
-            inspection_date,
-            duration,
-            remarks,
-            status,
-            pdf_path,
-            created_at,
-            updated_at,
-
-            mine_name,
-            mine_code,
-            mine_operator,
-            mine_state,
-            mine_district,
-            mine_status,
-            mine_method,
-            mine_latitude,
-            mine_longitude,
-            inspector_name
-        ) = row
 
         inspection = {
-            "id": id,
-            "report_no": report_no,
-            "mine_id": mine_id,
-            "inspector_id": inspector_id,
-            "inspection_date": inspection_date,
-            "duration": duration,
-            "remarks": remarks,
-            "status": status,
-            "pdf_path": pdf_path,
-            "created_at": created_at,
-            "updated_at": updated_at,
+            "id": row["id"],
+            "report_no": row["report_no"],
+            "mine_id": row["mine_id"],
+            "inspector_id": row["inspector_id"],
+            "inspection_date": row["inspection_date"],
+            "duration": row["duration"],
+            "remarks": row["remarks"],
+            "status": row["status"],
+            "pdf_path": row["pdf_path"],
+            "created_at": row["created_at"],
+            "updated_at": row["updated_at"],
+
             "mine": {
-                "id": mine_id,
-                "name": mine_name,
-                "code": mine_code,
-                "operator": mine_operator,
-                "state": mine_state,
-                "district": mine_district,
-                "status": mine_status,
-                "method": mine_method,
-                "latitude": mine_latitude,
-                "longitude": mine_longitude
+                "id": row["mine_id"],
+                "name": row["mine_name"],
+                "code": row["mine_code"],
+                "operator": row["mine_operator"],
+                "state": row["mine_state"],
+                "district": row["mine_district"],
+                "status": row["mine_status"],
+                "method": row["mine_method"],
+                "latitude": row["mine_latitude"],
+                "longitude": row["mine_longitude"]
             },
+
             "inspector": {
-                "id": inspector_id,
-                "name": inspector_name
+                "id": row["inspector_id"],
+                "name": row["inspector_name"]
             },
+
             "findings": [],
             "evidence": []
         }
-        finding_query = """
 
+        # ====================================================
+        # FINDINGS
+        # Uses idx_findings_severity_recurring
+        # and idx_findings_category
+        # ====================================================
+
+        cursor.execute("""
             SELECT
                 f.id,
                 f.inspection_id,
@@ -1040,44 +1000,39 @@ def inspection_detail(inspection_id):
                 f.finding_code,
                 f.note,
                 ft.text AS finding_text
+
             FROM inspection_findings f
+
             LEFT JOIN finding_texts ft
                 ON f.id = ft.finding_id
-            WHERE f.inspection_id = ?
-            ORDER BY f.id ASC
-        """
 
-        cursor.execute(
-            finding_query,
-            (inspection_id,)
-        )
+            WHERE f.inspection_id = ?
+
+            ORDER BY f.id ASC
+        """, (inspection_id,))
+
         finding_rows = cursor.fetchall()
+
         for row in finding_rows:
-            (
-                finding_id,
-                finding_inspection_id,
-                issue,
-                category,
-                severity,
-                recurring,
-                finding_code,
-                note,
-                finding_text
-            ) = row
 
             inspection["findings"].append({
-                "id": finding_id,
-                "inspection_id":finding_inspection_id,
-                "issue": issue,
-                "category": category,
-                "severity": severity,
-                "recurring": bool(recurring),
-                "finding_code": finding_code,
-                "note": note,
-                "text": finding_text
+                "id": row["id"],
+                "inspection_id": row["inspection_id"],
+                "issue": row["issue"],
+                "category": row["category"],
+                "severity": row["severity"],
+                "recurring": bool(row["recurring"]),
+                "finding_code": row["finding_code"],
+                "note": row["note"],
+                "text": row["finding_text"]
             })
 
-        evidence_query = """
+        # ====================================================
+        # EVIDENCE
+        # Uses idx_evidence_insp_finding
+        # ====================================================
+
+        cursor.execute("""
             SELECT
                 id,
                 inspection_id,
@@ -1088,53 +1043,54 @@ def inspection_detail(inspection_id):
                 evidence_type,
                 description,
                 created_at
-            FROM inspection_evidence
-            WHERE inspection_id = ?
-            ORDER BY id ASC
-        """
 
-        cursor.execute(
-            evidence_query,
-            (inspection_id,)
-        )
+            FROM inspection_evidence
+
+            WHERE inspection_id = ?
+
+            ORDER BY id ASC
+        """, (inspection_id,))
+
         evidence_rows = cursor.fetchall()
+
         for row in evidence_rows:
-            (
-                evidence_id,
-                evidence_inspection_id,
-                finding_id,
-                file_path,
-                latitude,
-                longitude,
-                evidence_type,
-                description,
-                created_at
-            ) = row
+
             inspection["evidence"].append({
-                "id": evidence_id,
-                "inspection_id":evidence_inspection_id,
-                "finding_id": finding_id,
-                "file_path": file_path,
-                "latitude": latitude,
-                "longitude": longitude,
-                "evidence_type":evidence_type,
-                "description": description,
-                "created_at": created_at
+                "id": row["id"],
+                "inspection_id": row["inspection_id"],
+                "finding_id": row["finding_id"],
+                "file_path": row["file_path"],
+                "latitude": row["latitude"],
+                "longitude": row["longitude"],
+                "evidence_type": row["evidence_type"],
+                "description": row["description"],
+                "created_at": row["created_at"]
             })
 
         return render_template(
             "inspections/detail.html",
             inspection=inspection
         )
+
     except mariadb.Error as e:
-        print(
-            f"Error fetching inspection details: {e}"
+
+        app.logger.exception(
+            "Error fetching inspection details"
         )
+
         abort(500)
+
     finally:
+
         if cursor:
             cursor.close()
+
         conn.close()
+
+
+# ============================================================
+# RISK
+# ============================================================
 
 @app.route("/risk")
 @jwt_required()
@@ -1150,6 +1106,9 @@ def risk():
     try:
 
         cursor = conn.cursor(dictionary=True)
+
+        # Uses idx_risk_level_created
+        # and idx_risk_mine_created
 
         cursor.execute("""
             SELECT
@@ -1184,32 +1143,41 @@ def risk():
 
         risk_records = cursor.fetchall()
 
-        # Summary statistics
+        # ====================================================
+        # SUMMARY STATISTICS
+        # ====================================================
+
         total = len(risk_records)
 
         high_count = sum(
-            1 for r in risk_records
+            1
+            for r in risk_records
             if r["risk_level"] == "HIGH"
         )
 
         critical_count = sum(
-            1 for r in risk_records
+            1
+            for r in risk_records
             if r["risk_level"] == "CRITICAL"
         )
 
         medium_count = sum(
-            1 for r in risk_records
+            1
+            for r in risk_records
             if r["risk_level"] == "MEDIUM"
         )
 
         low_count = sum(
-            1 for r in risk_records
+            1
+            for r in risk_records
             if r["risk_level"] == "LOW"
         )
 
         return render_template(
             "risk.html",
+
             risk_records=risk_records,
+
             total=total,
             high_count=high_count,
             critical_count=critical_count,
@@ -1219,7 +1187,9 @@ def risk():
 
     except mariadb.Error as e:
 
-        print(f"Error fetching risk data: {e}")
+        app.logger.exception(
+            "Error fetching risk data"
+        )
 
         return "Unable to load risk analytics", 500
 
@@ -1229,6 +1199,11 @@ def risk():
             cursor.close()
 
         conn.close()
+
+
+# ============================================================
+# ALERTS
+# ============================================================
 
 @app.route("/alerts")
 @jwt_required()
@@ -1245,46 +1220,13 @@ def alerts():
 
         cursor = conn.cursor(dictionary=True)
 
+        # Uses v_open_alerts
+        # and idx_alerts_status_severity
+        # and idx_alerts_mine_status
+
         cursor.execute("""
-            SELECT
-                a.id,
-                a.mine_id,
-                a.risk_score_id,
-                a.inspection_id,
-                a.alert_type,
-                a.message,
-                a.severity,
-                a.status,
-                a.created_at,
-                a.acknowledged_at,
-
-                m.name AS mine_name,
-                m.code AS mine_code,
-
-                i.report_no,
-                i.inspection_date,
-
-                rs.risk_score,
-                rs.risk_level
-
-            FROM alerts a
-
-            INNER JOIN mines m
-                ON a.mine_id = m.id
-
-            LEFT JOIN inspections i
-                ON a.inspection_id = i.id
-
-            LEFT JOIN risk_scores rs
-                ON a.risk_score_id = rs.id
-
-            ORDER BY
-                CASE a.status
-                    WHEN 'open' THEN 1
-                    WHEN 'acknowledged' THEN 2
-                    WHEN 'closed' THEN 3
-                END,
-                a.created_at DESC
+            SELECT *
+            FROM v_open_alerts
         """)
 
         alert_records = cursor.fetchall()
@@ -1296,7 +1238,9 @@ def alerts():
 
     except mariadb.Error as e:
 
-        print(f"Error fetching alerts: {e}")
+        app.logger.exception(
+            "Error fetching alerts"
+        )
 
         return "Unable to load alerts", 500
 
@@ -1306,11 +1250,22 @@ def alerts():
             cursor.close()
 
         conn.close()
-        
+
+
+# ============================================================
+# GIS MAP PAGE
+# ============================================================
+
 @app.route("/map")
 @jwt_required()
 def gis_map():
+
     return render_template("map.html")
+
+
+# ============================================================
+# GIS MINES API
+# ============================================================
 
 @app.route("/api/v1/gis/mines")
 @jwt_required()
@@ -1319,6 +1274,7 @@ def gis_mines():
     conn = get_db_connection()
 
     if conn is None:
+
         return jsonify({
             "type": "FeatureCollection",
             "features": [],
@@ -1329,49 +1285,15 @@ def gis_mines():
 
     try:
 
-        cursor = conn.cursor()
+        cursor = conn.cursor(dictionary=True)
 
-        query = """
+        # ====================================================
+        # Uses v_mines_gis
+        # ====================================================
+
+        cursor.execute("""
             SELECT
-                m.id,
-                m.name,
-                m.code,
-                m.operator,
-                m.state,
-                m.district,
-                m.status,
-                m.method,
-                m.risk_score,
-                m.risk_level,
-                m.latitude,
-                m.longitude,
-
-                g.id AS region_id,
-                g.code AS region_code,
-                g.name AS region_name,
-                g.level AS region_level
-
-            FROM mines m
-
-            LEFT JOIN gis_regions g
-                ON m.region_id = g.id
-
-            WHERE m.latitude IS NOT NULL
-              AND m.longitude IS NOT NULL
-
-            ORDER BY m.id DESC
-        """
-
-        cursor.execute(query)
-
-        rows = cursor.fetchall()
-
-        features = []
-
-        for row in rows:
-
-            (
-                mine_id,
+                id,
                 name,
                 code,
                 operator,
@@ -1387,59 +1309,114 @@ def gis_mines():
                 region_code,
                 region_name,
                 region_level
-            ) = row
 
+            FROM v_mines_gis
+
+            WHERE latitude IS NOT NULL
+              AND longitude IS NOT NULL
+
+            ORDER BY id DESC
+        """)
+
+        rows = cursor.fetchall()
+
+        features = []
+
+        for row in rows:
 
             feature = {
                 "type": "Feature",
+
                 "geometry": {
                     "type": "Point",
                     "coordinates": [
-                        float(longitude),
-                        float(latitude)
+                        float(row["longitude"]),
+                        float(row["latitude"])
                     ]
                 },
 
                 "properties": {
-                    "id": mine_id,
-                    "name": name,
-                    "code": code,
-                    "operator": operator,
-                    "state": state,
-                    "district": district,
-                    "status": status,
-                    "method": method,
+                    "id": row["id"],
+                    "name": row["name"],
+                    "code": row["code"],
+                    "operator": row["operator"],
+                    "state": row["state"],
+                    "district": row["district"],
+                    "status": row["status"],
+                    "method": row["method"],
+
                     "risk_score": (
-                        float(risk_score)
-                        if risk_score is not None
+                        float(row["risk_score"])
+                        if row["risk_score"] is not None
                         else None
                     ),
-                    "risk_level": risk_level,
-                    "region": {
-                        "id": region_id,
-                        "code": region_code,
-                        "name": region_name,
-                        "level": region_level
 
+                    "risk_level": row["risk_level"],
+
+                    "region": {
+                        "id": row["region_id"],
+                        "code": row["region_code"],
+                        "name": row["region_name"],
+                        "level": row["region_level"]
                     }
                 }
             }
+
             features.append(feature)
+
         return jsonify({
             "type": "FeatureCollection",
             "features": features
         })
+
     except mariadb.Error as e:
+
+        app.logger.exception(
+            "GIS mines API error"
+        )
+
         return jsonify({
             "type": "FeatureCollection",
             "features": [],
             "error": str(e)
         }), 500
+
     finally:
+
         if cursor:
             cursor.close()
+
         conn.close()
-    
+
+
+# ============================================================
+# FINDINGS
+# ============================================================
+
+@app.route("/findings")
+@jwt_required()
+def findings():
+
+    try:
+
+        results = process_pdf()
+
+        risk_results = calculate_risk(results)
+
+        return render_template(
+            "findings.html",
+            results=risk_results,
+            count=len(risk_results)
+        )
+
+    except Exception as e:
+
+        app.logger.exception(
+            "Finding processing error"
+        )
+
+        return "Unable to process findings", 500
+
 def extract_pdf_text(pdf_path):
     document = pymupdf.open(pdf_path)
     text = ""
@@ -1447,7 +1424,7 @@ def extract_pdf_text(pdf_path):
         text += page.get_text()
     document.close()
     return text
-
+    
 def extract_findings(text):
 
     pattern = r'Finding\s+(F-\d+):\s*(.*?)(?=Finding\s+F-\d+:|(?:\n|\s)5\.\s*INSPECTOR[\'’]?S\s+REMARKS|$)'
@@ -1469,52 +1446,117 @@ def extract_findings(text):
 
     return findings
 
+def get_label(mapping, index):
+    """
+    Convert model prediction index into label.
+
+    label_mappings.json stores labels as lists:
+        ["label1", "label2", "label3"]
+
+    Therefore the prediction index is used directly.
+    """
+
+    if not isinstance(mapping, list):
+        raise TypeError(
+            f"Expected label mapping to be a list, "
+            f"got {type(mapping).__name__}"
+        )
+
+    if index < 0 or index >= len(mapping):
+        raise IndexError(
+            f"Label index {index} is outside "
+            f"the mapping range 0-{len(mapping)-1}"
+        )
+
+    return mapping[index]
+
+
 def classify_finding(text):
 
-    inputs = tokenizer(
+    # --------------------------------------------------------
+    # Tokenize using MODEL 1
+    # --------------------------------------------------------
+
+    inputs = tokenizer_1(
         text,
-        return_tensors='pt',
+        return_tensors="pt",
         truncation=True,
         padding=True
     )
 
     inputs = {
-        k: v.to(device)
-        for k, v in inputs.items()
+        key: value.to(device_1)
+        for key, value in inputs.items()
     }
+
+    # --------------------------------------------------------
+    # MODEL 1 prediction
+    # --------------------------------------------------------
 
     with torch.no_grad():
 
-        outputs = model(
-            input_ids=inputs['input_ids'],
-            attention_mask=inputs['attention_mask']
+        outputs = model_1(
+            input_ids=inputs["input_ids"],
+            attention_mask=inputs["attention_mask"]
         )
 
+    # --------------------------------------------------------
+    # Get prediction indexes
+    # --------------------------------------------------------
+
     issue_id = torch.argmax(
-        outputs['issue'],
+        outputs["issue"],
         dim=1
     ).item()
 
     category_id = torch.argmax(
-        outputs['category'],
+        outputs["category"],
         dim=1
     ).item()
 
     severity_id = torch.argmax(
-        outputs['severity'],
+        outputs["severity"],
         dim=1
     ).item()
 
     recurring_id = torch.argmax(
-        outputs['recurring'],
+        outputs["recurring"],
         dim=1
     ).item()
 
+    # --------------------------------------------------------
+    # Convert indexes -> actual labels
+    # --------------------------------------------------------
+
+    issue = get_label(
+        label_mappings["issue"],
+        issue_id
+    )
+
+    category = get_label(
+        label_mappings["category"],
+        category_id
+    )
+
+    severity = get_label(
+        label_mappings["severity"],
+        severity_id
+    )
+
+    recurring = get_label(
+        label_mappings["recurring"],
+        recurring_id
+    )
+
+    # --------------------------------------------------------
+    # Return classification
+    # --------------------------------------------------------
+
     return {
-        'issue': label_mappings['issue'][issue_id],
-        'category': label_mappings['category'][category_id],
-        'severity': label_mappings['severity'][severity_id],
-        'recurring': label_mappings['recurring'][recurring_id]
+        "issue": issue,
+        "category": category,
+        "severity": severity,
+        "recurring": recurring
     }
 
 def process_pdf():
@@ -1558,41 +1600,61 @@ def calculate_risk(results):
             "severity": result["severity"],
             "recurring": result["recurring"]
         }])
+
+        # ----------------------------------------------------
+        # Encode input
+        # ----------------------------------------------------
+
         risk_input_encoded = risk_encoder.transform(
             risk_input
         )
+
+        # ----------------------------------------------------
+        # Predict risk
+        # ----------------------------------------------------
+
         predicted_risk = risk_model.predict(
             risk_input_encoded
         )[0]
+
+        # ----------------------------------------------------
+        # Prediction probability
+        # ----------------------------------------------------
+
         probabilities = risk_model.predict_proba(
             risk_input_encoded
         )[0]
 
-        predicted_index = list(risk_model.classes_).index(predicted_risk)
+        predicted_index = list(
+            risk_model.classes_
+        ).index(predicted_risk)
+
         risk_confidence = (
             probabilities[predicted_index] * 100
         )
+
+        # ----------------------------------------------------
+        # Store result
+        # ----------------------------------------------------
+
         risk_results.append({
+
             **result,
+
             "predicted_risk":
                 predicted_risk,
+
             "risk_confidence":
-                round(risk_confidence,2)
+                round(
+                    float(risk_confidence),
+                    2
+                )
         })
 
-        risk_results_df = pd.DataFrame(risk_results)
-        risk_results_df
-    return risk_results_df
+    # IMPORTANT:
+    # Return a normal Python list, NOT a DataFrame
+    return risk_results
 
-@app.route("/findings")
-def findings():
-    results = process_pdf()
-    risk_results = calculate_risk(results)
-    return render_template(
-        "findings.html",
-        results=risk_results,
-        count=len(risk_results)
-    )
         
 if __name__ == "__main__":
     app.run(debug=True)
