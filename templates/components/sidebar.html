@@ -1,7 +1,17 @@
 <aside class="w-64 bg-white border-r border-brand-border flex flex-col justify-between hidden md:flex">
     <div>
         <div class="h-16 flex items-center px-6 border-b border-brand-border">
-            <span class="text-lg font-bold tracking-tight text-brand-black">MIRA</span>
+            <a href="{{ url_for('dashboard') }}" class="flex items-center">
+                <img
+                    src="{{ url_for('static', filename='images/logo.png') }}"
+                    alt="MIRA Logo"
+                        class="h-10 w-auto object-contain"
+                    >
+                    <span class="text-lg tracking-tight text-brand-black" 
+                        style="font-family: 'Orbit', sans-serif;">
+                    MIRA
+                    </span>           
+            </a>
         </div>
         <nav class="p-4 space-y-1">
             <a href="{{ url_for('dashboard') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-brand-black hover:bg-brand-light transition">Dashboard</a>
@@ -11,7 +21,100 @@
             <a href="{{ url_for('alerts') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Alerts</a>
             <a href="{{ url_for('gis_map') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">GIS Map</a>
             {% if current_user_role == "admin" %}
-                <a href="{{ url_for('register') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Register New User</a>
+                <a href="{{ url_for('register') }}"INSERT INTO alerts
+
+(
+
+    mine_id,
+
+    risk_score_id,
+
+    inspection_id,
+
+    alert_type,
+
+    message,
+
+    severity,
+
+    status
+
+)
+
+VALUES
+
+(
+
+    11,
+
+    1,
+
+    11,
+
+    'CRITICAL_RISK',
+
+    'Critical ground control concern detected. Approximately 12 of 60 inspected rock bolts show corrosion-induced loss of tensile strength.',
+
+    'CRITICAL',
+
+    'open'
+
+),
+
+(
+
+    11,
+
+    1,
+
+    11,
+
+    'VENTILATION',
+
+    'Inadequate air circulation detected in the eastern working panel at Level -2. Recorded airflow is 1.9 m/s against the required 2.5 m/s.',
+
+    'HIGH',
+
+    'open'
+
+),
+
+(
+
+    11,
+
+    1,
+
+    11,
+
+    'RECURRING_ISSUE',
+
+    'Recurring ventilation deficiency identified. Previous recommendations for ventilation duct replacement have not been implemented.',
+
+    'HIGH',
+
+    'acknowledged'
+
+),
+
+(
+
+    11,
+
+    1,
+
+    11,
+
+    'EQUIPMENT_MAINTENANCE',
+
+    'Incomplete maintenance records identified for three LHD machines. One vehicle exceeded its scheduled service interval.',
+
+    'MEDIUM',
+
+    'open'
+
+);
+ class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Register New User</a>
             {% endif %}
         </nav>
     </div>

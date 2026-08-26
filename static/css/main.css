@@ -1,5 +1,6 @@
 /* Core Global Styles - MineGuard AI Minimalist Black & White Theme */
-:root {
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jomhuria&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Orbit&display=swap');:root {
     --bg-primary: #ffffff;
     --bg-secondary: #f4f4f5;
     --text-main: #09090b;
