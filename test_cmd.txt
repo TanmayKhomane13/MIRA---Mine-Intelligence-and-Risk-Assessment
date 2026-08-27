@@ -1,0 +1,43 @@
+curl -X POST http://localhost:5000/api/mobile/inspection-raw \
+  -H "Content-Type: application/json" \
+  -d '{
+    "inspector_id": 1,
+    "mine_id": 11,
+    "report_no": "DMS/WR/2026/8347",
+    "inspection_date": "2026-07-18 09:00:00",
+    "duration": "3 days (18–20 July 2026)",
+
+    "areas_inspected": [
+      "Eastern working panel (Level -2)",
+      "Main haul road",
+      "Heavy equipment workshop",
+      "Primary electrical substation",
+      "Emergency assembly point",
+      "Ventilation infrastructure"
+    ],
+
+    "remarks": "The inspection has identified six observations spanning operational and safety domains. Two findings—ventilation deficiency and electrical installation concerns—represent recurring issues from the previous inspection cycle, indicating inadequate management follow-up. One finding—roof support corrosion—requires urgent remedial action due to its critical nature. The remaining observations pertain to equipment maintenance gaps, haul road conditions, and operational controls. Enhanced management focus on corrective action implementation and maintenance discipline is essential. A follow-up inspection is recommended within 60 days to verify closure of critical findings.",
+
+    "notes": [
+      {
+        "content": "F-01: Inadequate air circulation in eastern working panel at Level -2. Real-time airflow 1.9 m/s (minimum required 2.5 m/s). Ventilation ducting shows visible wear and multiple seams. Recurring issue from previous inspection; duct replacement not implemented."
+      },
+      {
+        "content": "F-02: Significant deterioration of installed rock bolts in active working panel. ~12 of 60 bolts show corrosion-induced loss of tensile strength. Critical stability concern requiring immediate remedial intervention. No roof falls to date."
+      },
+      {
+        "content": "F-03: Incomplete maintenance records for three LHD machines. One vehicle operated beyond scheduled service interval. Brake performance testing not documented for past three months. Risk of unexpected operational failure."
+      },
+      {
+        "content": "F-04: Moisture accumulation in several cable junction boxes at primary electrical substation. Insulation resistance on three main distribution circuits below acceptable standards. Recurring deficiency; corrective measures only partially implemented."
+      },
+      {
+        "content": "F-05: Main haul road surface deteriorated over ~200 m stretch with multiple potholes and uneven grading. Dust suppression systems inoperative. Traffic management controls inadequate. New observation."
+      },
+      {
+        "content": "F-06: Emergency preparedness satisfactory. Assembly points properly designated and accessible. First aid facilities available. 14 trained rescue personnel on roster (meets regulatory requirements). No critical gaps."
+      }
+    ],
+
+    "evidence": []
+  }'

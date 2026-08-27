@@ -1,124 +1,104 @@
 <aside class="w-64 bg-white border-r border-brand-border flex flex-col justify-between hidden md:flex">
     <div>
         <div class="h-16 flex items-center px-6 border-b border-brand-border">
-            <a href="{{ url_for('dashboard') }}" class="flex items-center">
+            <a href="{{ url_for('dashboard') }}" class="flex items-center gap-2">
                 <img
                     src="{{ url_for('static', filename='images/logo.png') }}"
                     alt="MIRA Logo"
-                        class="h-10 w-auto object-contain"
-                    >
-                    <span class="text-lg tracking-tight text-brand-black" 
-                        style="font-family: 'Orbit', sans-serif;">
+                    class="h-10 w-auto object-contain"
+                >
+                <span
+                    class="text-lg tracking-tight text-brand-black"
+                    style="font-family: 'Orbit', sans-serif;">
                     MIRA
-                    </span>           
+                </span>
             </a>
         </div>
+
         <nav class="p-4 space-y-1">
-            <a href="{{ url_for('dashboard') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-brand-black hover:bg-brand-light transition">Dashboard</a>
-            <a href="{{ url_for('mines') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Mines</a>
-            <a href="{{ url_for('inspections') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Inspections</a>
-            <a href="{{ url_for('risk') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Risk Analytics</a>
-            <a href="{{ url_for('alerts') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Alerts</a>
-            <a href="{{ url_for('gis_map') }}" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">GIS Map</a>
+
+            <a
+                href="{{ url_for('dashboard') }}"
+                class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-brand-black hover:bg-brand-light transition">
+                Dashboard
+            </a>
+
+            <a
+                href="{{ url_for('mines') }}"
+                class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">
+                Mines
+            </a>
+
+            <a
+                href="{{ url_for('inspections') }}"
+                class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">
+                Inspections
+            </a>
+
+            <a
+                href="{{ url_for('risk') }}"
+                class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">
+                Risk Analytics
+            </a>
+
+            <a
+                href="{{ url_for('alerts') }}"
+                class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">
+                Alerts
+            </a>
+
+            <a
+                href="{{ url_for('gis_map') }}"
+                class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">
+                GIS Map
+            </a>
+
             {% if current_user_role == "admin" %}
-                <a href="{{ url_for('register') }}"INSERT INTO alerts
 
-(
+                <a
+                    href="{{ url_for('validation_queue') }}"
+                    class="flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">
+                    <span>Verification Queue</span>
+                    {% if pending_inspection_count %}
+                        <span class="inline-flex items-center justify-center min-w-[1.25rem] h-5 px-1.5 rounded-full bg-red-600 text-white text-xs font-bold">
+                            {{ pending_inspection_count }}
+                        </span>
+                    {% endif %}
+                </a>
 
-    mine_id,
+                <a
+                    href="{{ url_for('register') }}"
+                    class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">
+                    Register New User
+                </a>
 
-    risk_score_id,
-
-    inspection_id,
-
-    alert_type,
-
-    message,
-
-    severity,
-
-    status
-
-)
-
-VALUES
-
-(
-
-    11,
-
-    1,
-
-    11,
-
-    'CRITICAL_RISK',
-
-    'Critical ground control concern detected. Approximately 12 of 60 inspected rock bolts show corrosion-induced loss of tensile strength.',
-
-    'CRITICAL',
-
-    'open'
-
-),
-
-(
-
-    11,
-
-    1,
-
-    11,
-
-    'VENTILATION',
-
-    'Inadequate air circulation detected in the eastern working panel at Level -2. Recorded airflow is 1.9 m/s against the required 2.5 m/s.',
-
-    'HIGH',
-
-    'open'
-
-),
-
-(
-
-    11,
-
-    1,
-
-    11,
-
-    'RECURRING_ISSUE',
-
-    'Recurring ventilation deficiency identified. Previous recommendations for ventilation duct replacement have not been implemented.',
-
-    'HIGH',
-
-    'acknowledged'
-
-),
-
-(
-
-    11,
-
-    1,
-
-    11,
-
-    'EQUIPMENT_MAINTENANCE',
-
-    'Incomplete maintenance records identified for three LHD machines. One vehicle exceeded its scheduled service interval.',
-
-    'MEDIUM',
-
-    'open'
-
-);
- class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-brand-light hover:text-brand-black transition">Register New User</a>
             {% endif %}
+
         </nav>
     </div>
+
     <div class="p-4 border-t border-brand-border">
-        <a href="{{ url_for('login') }}" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-red-600 hover:bg-red-50 transition">Log out</a>
+        <form method="post" action="{{ url_for('logout') }}" id="logout-form">
+            <button
+                type="submit"
+                class="w-full flex items-center px-3 py-2 rounded-lg text-sm font-medium text-red-600 hover:bg-red-50 transition">
+                Log out
+            </button>
+        </form>
     </div>
 </aside>
+
+<script>
+    // Logout is a POST endpoint (see app.py) that clears the JWT cookie -
+    // a plain <a> link to /login left the cookie intact.
+    document.getElementById("logout-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        fetch("{{ url_for('logout') }}", {
+            method: "POST",
+            credentials: "same-origin"
+        }).finally(function () {
+            window.location.href = "{{ url_for('login') }}";
+        });
+    });
+</script>

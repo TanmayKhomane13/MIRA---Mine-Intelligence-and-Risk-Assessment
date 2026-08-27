@@ -82,35 +82,54 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
-        <!-- GIS Risk Map -->
+        <!-- GIS Risk Map (live) -->
 
-        <a href="{{ url_for('gis_map') }}" class="lg:col-span-2 block">
+        <div class="lg:col-span-2 bg-white border border-brand-border rounded-xl p-5 shadow-sm">
 
-            <!-- GIS Risk Map -->
+            <div class="flex justify-between items-center mb-4">
 
-<a href="{{ url_for('gis_map') }}" class="lg:col-span-2 block">
+                <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700">
+                    GIS Risk Map Overview
+                </h2>
 
-    <div class="bg-white border border-brand-border rounded-xl p-5 shadow-sm hover:shadow-md transition cursor-pointer">
+                <a
+                    href="{{ url_for('gis_map') }}"
+                    class="text-xs font-semibold text-blue-600 hover:underline">
+                    View Full Map
+                </a>
 
-        <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700 mb-4">
-            GIS Risk Map Overview
-        </h2>
+            </div>
 
-        <div class="h-64 bg-brand-light rounded-lg overflow-hidden border border-brand-border">
+            <!-- Populated client-side from /api/v1/gis/mines - see script at
+                 the bottom of this template. -->
+            <div
+                id="dashboard-gis-map"
+                class="relative h-64 w-full bg-brand-light rounded-lg overflow-hidden border border-brand-border">
 
-            <img
-                src="{{ url_for('static', filename='images/gis_preview.jpeg') }}"
-                alt="MIRA GIS Risk Map"
-                class="w-full h-full object-cover"
-            >
+                <div
+                    id="dashboard-gis-map-status"
+                    class="absolute inset-0 flex items-center justify-center text-xs text-gray-500 pointer-events-none">
+                    Loading map...
+                </div>
+
+            </div>
+
+            <div class="flex flex-wrap gap-4 mt-3 text-xs text-gray-600">
+                <span class="flex items-center gap-1.5">
+                    <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Low
+                </span>
+                <span class="flex items-center gap-1.5">
+                    <span class="inline-block w-2.5 h-2.5 rounded-full bg-amber-500"></span> Medium
+                </span>
+                <span class="flex items-center gap-1.5">
+                    <span class="inline-block w-2.5 h-2.5 rounded-full bg-red-600"></span> High
+                </span>
+                <span class="flex items-center gap-1.5">
+                    <span class="inline-block w-2.5 h-2.5 rounded-full bg-red-900"></span> Critical
+                </span>
+            </div>
 
         </div>
-
-    </div>
-
-</a>
-
-        </a>
 
 
         <!-- Risk Distribution -->
@@ -509,5 +528,133 @@
     </div>
 
 </div>
+
+
+<!-- Leaflet (loaded here since this is the only place on the dashboard that
+     needs it - if base.html already loads Leaflet on every page, this is a
+     harmless duplicate load and can be removed). -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" />
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+
+<script>
+(function () {
+
+    var RISK_COLORS = {
+        LOW: "#10b981",
+        MEDIUM: "#f59e0b",
+        HIGH: "#dc2626",
+        CRITICAL: "#7f1d1d"
+    };
+    var DEFAULT_COLOR = "#6b7280";
+
+    function setStatus(message) {
+        var statusEl = document.getElementById("dashboard-gis-map-status");
+        if (!statusEl) return;
+
+        if (message) {
+            statusEl.textContent = message;
+            statusEl.style.display = "flex";
+        } else {
+            statusEl.style.display = "none";
+        }
+    }
+
+    function popupHtml(properties) {
+        var p = properties || {};
+        var score = (p.risk_score !== null && p.risk_score !== undefined)
+            ? Number(p.risk_score).toFixed(1)
+            : "N/A";
+
+        var locationLine = [p.district, p.state].filter(Boolean).join(", ");
+
+        return (
+            '<div class="text-xs leading-relaxed">' +
+                '<div class="font-semibold">' + (p.name || "Unknown mine") + "</div>" +
+                (p.code ? "<div>Code: " + p.code + "</div>" : "") +
+                (locationLine ? "<div>" + locationLine + "</div>" : "") +
+                '<div>Risk: <strong>' + (p.risk_level || "N/A") + "</strong> (" + score + ")</div>" +
+            "</div>"
+        );
+    }
+
+    function initDashboardMap() {
+        var mapEl = document.getElementById("dashboard-gis-map");
+
+        if (!mapEl || typeof L === "undefined") {
+            return;
+        }
+
+        var map = L.map(mapEl, {
+            zoomControl: true,
+            scrollWheelZoom: false
+        }).setView([22.9, 82.6], 6);
+
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            maxZoom: 19,
+            attribution: "&copy; OpenStreetMap contributors"
+        }).addTo(map);
+
+        fetch("{{ url_for('gis_mines') }}", {
+            headers: { "Accept": "application/json" },
+            credentials: "same-origin"
+        })
+            .then(function (response) {
+                if (!response.ok) {
+                    throw new Error("Request failed with status " + response.status);
+                }
+                return response.json();
+            })
+            .then(function (geojson) {
+                var features = (geojson && geojson.features) || [];
+
+                if (geojson && geojson.error) {
+                    throw new Error(geojson.error);
+                }
+
+                if (features.length === 0) {
+                    setStatus("No mine locations available yet.");
+                    return;
+                }
+
+                setStatus(null);
+
+                var markers = L.geoJSON(geojson, {
+                    pointToLayer: function (feature, latlng) {
+                        var level = ((feature.properties && feature.properties.risk_level) || "").toUpperCase();
+                        var color = RISK_COLORS[level] || DEFAULT_COLOR;
+
+                        return L.circleMarker(latlng, {
+                            radius: 7,
+                            weight: 1.5,
+                            color: "#1f2937",
+                            fillColor: color,
+                            fillOpacity: 0.85
+                        });
+                    },
+                    onEachFeature: function (feature, layer) {
+                        layer.bindPopup(popupHtml(feature.properties));
+                    }
+                }).addTo(map);
+
+                var bounds = markers.getBounds();
+
+                if (bounds.isValid()) {
+                    map.fitBounds(bounds.pad(0.15));
+                }
+            })
+            .catch(function (err) {
+                setStatus("Unable to load the risk map right now.");
+                console.error("Dashboard GIS map error:", err);
+            });
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initDashboardMap);
+    } else {
+        initDashboardMap();
+    }
+
+})();
+</script>
 
 {% endblock %}

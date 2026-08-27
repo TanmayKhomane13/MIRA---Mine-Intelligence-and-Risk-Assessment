@@ -158,7 +158,9 @@ else:
 
 model_2 = PeftModel.from_pretrained(
     base_model_2,
-    LORA_PATH_2
+    LORA_PATH_2,
+    device_map="auto",                
+    offload_folder=OFFLOAD_DIR
 )
 
 model_2.eval()
