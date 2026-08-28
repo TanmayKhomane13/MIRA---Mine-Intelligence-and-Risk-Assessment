@@ -117,6 +117,8 @@ model_1.recurring_classifier.load_state_dict(
 device_1 = torch.device(
     "cuda"
     if torch.cuda.is_available()
+    else "mps"
+    if torch.backends.mps.is_available()
     else "cpu"
 )
 
@@ -136,34 +138,60 @@ tokenizer_2 = AutoTokenizer.from_pretrained(
     LORA_PATH_2
 )
 
+# --------------------------------------------
+# Device
+# --------------------------------------------
+
 if torch.cuda.is_available():
-    device_2 = "cuda"
+
+    device_2 = torch.device("cuda")
     model_2_dtype = torch.float16
+
+elif torch.backends.mps.is_available():
+
+    device_2 = torch.device("mps")
+    model_2_dtype = torch.float16
+
 else:
-    device_2 = "cpu"
+
+    device_2 = torch.device("cpu")
     model_2_dtype = torch.float32
 
-if device_2 == "cuda":
-    base_model_2 = AutoModelForCausalLM.from_pretrained(
-        BASE_MODEL_2,
-        torch_dtype=model_2_dtype,
-        device_map="auto",
-        offload_folder=OFFLOAD_DIR
-    )
-else:
-    base_model_2 = AutoModelForCausalLM.from_pretrained(
-        BASE_MODEL_2,
-        torch_dtype=model_2_dtype
-    )
+
+print("Model 2 device:", device_2)
+print("Model 2 dtype:", model_2_dtype)
+
+
+# --------------------------------------------
+# Load base model on CPU
+# --------------------------------------------
+
+base_model_2 = AutoModelForCausalLM.from_pretrained(
+    BASE_MODEL_2,
+    torch_dtype=model_2_dtype
+)
+
+
+# --------------------------------------------
+# Load LoRA adapter
+# --------------------------------------------
 
 model_2 = PeftModel.from_pretrained(
     base_model_2,
-    LORA_PATH_2,
-    device_map="auto",                
-    offload_folder=OFFLOAD_DIR
+    LORA_PATH_2
 )
 
+
+# --------------------------------------------
+# Move COMPLETE model to device
+# --------------------------------------------
+
+model_2 = model_2.to(device_2)
+
 model_2.eval()
+
+print("Model device:", next(model_2.parameters()).device)
+print("Model dtype:", next(model_2.parameters()).dtype)
 
 gen_pipeline = pipeline(
     "text-generation",
@@ -172,7 +200,8 @@ gen_pipeline = pipeline(
     batch_size=1,
     truncation=True,
     padding=False,
-    return_full_text=False
+    return_full_text=False,
+    device = "mps"
 )
 
 print("==============================================")

@@ -103,8 +103,8 @@ UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 EVIDENCE_UPLOAD_DIR = UPLOAD_DIR / "evidence"
 EVIDENCE_UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
-RISK_MODEL_PATH = "./models/mira-risk-classifier.pkl"
-ENCODER_PATH = "./models/mira-risk-encoder.pkl"
+RISK_MODEL_PATH = "./models/mira_risk_engine/mira-risk-classifier.pkl"
+ENCODER_PATH = "./models/mira_risk_engine/mira-risk-encoder.pkl"
 
 risk_model = joblib.load(RISK_MODEL_PATH)
 risk_encoder = joblib.load(ENCODER_PATH)
@@ -4882,16 +4882,15 @@ def generate_response(user_prompt, max_new_tokens=300):
         return_tensors="pt"
     )
 
-    if torch.cuda.is_available():
-        try:
-            input_device = model_2.get_input_embeddings().weight.device
-        except Exception:
-            input_device = torch.device("cuda")
+    try:
+        input_device = model_2.get_input_embeddings().weight.device
+    except Exception:
+        input_device = device_2
 
-        inputs = {
-            key: value.to(input_device)
-            for key, value in inputs.items()
-        }
+    inputs = {
+        key: value.to(input_device)
+        for key, value in inputs.items()
+    }
 
     streamer = TextIteratorStreamer(
         tokenizer_2,
