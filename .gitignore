@@ -3,7 +3,6 @@
 __pycache__
 models
 AI/MIRA2_checkpoints/
-offload
 ./models
 ./models/mira-disilbert-lora
 ./data
@@ -11,3 +10,4 @@ offload
 ./data/raw_repots
 ./data/uploads
 *.pdf
+AI/models
