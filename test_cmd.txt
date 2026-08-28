@@ -1,11 +1,16 @@
 curl -X POST http://localhost:5000/api/mobile/inspection-raw \
   -H "Content-Type: application/json" \
   -d '{
-    "inspector_id": 1,
+    "inspector_id": 2,
     "mine_id": 11,
-    "report_no": "DMS/WR/2026/8347",
+    "report_no": "DMS/WR/2026/8350",
     "inspection_date": "2026-07-18 09:00:00",
     "duration": "3 days (18–20 July 2026)",
+
+    "location": {
+      "latitude": 19.7515000,
+      "longitude": 75.7139000
+    },
 
     "areas_inspected": [
       "Eastern working panel (Level -2)",
@@ -20,22 +25,22 @@ curl -X POST http://localhost:5000/api/mobile/inspection-raw \
 
     "notes": [
       {
-        "content": "F-01: Inadequate air circulation in eastern working panel at Level -2. Real-time airflow 1.9 m/s (minimum required 2.5 m/s). Ventilation ducting shows visible wear and multiple seams. Recurring issue from previous inspection; duct replacement not implemented."
+        "content": "F-01: Methane monitoring in the western development district found intermittent sensor readings above the prescribed warning threshold. Two fixed methane detectors showed calibration drift during verification. The affected sensors require immediate calibration and functional testing before continued operation."
       },
       {
-        "content": "F-02: Significant deterioration of installed rock bolts in active working panel. ~12 of 60 bolts show corrosion-induced loss of tensile strength. Critical stability concern requiring immediate remedial intervention. No roof falls to date."
+        "content": "F-02: Water accumulation observed near the underground sump and pumping station. One standby pump was non-operational and the emergency pump-start procedure was not documented at the station. Drainage capacity may be inadequate during periods of increased water inflow. Previous inspection noted minor drainage concerns, indicating a recurring deficiency."
       },
       {
-        "content": "F-03: Incomplete maintenance records for three LHD machines. One vehicle operated beyond scheduled service interval. Brake performance testing not documented for past three months. Risk of unexpected operational failure."
+        "content": "F-03: Conveyor belt guarding was incomplete at two transfer points. Exposed rotating components were accessible from the walkway without adequate physical protection. Warning signage was also missing at one location. Immediate guarding and access-control measures are required."
       },
       {
-        "content": "F-04: Moisture accumulation in several cable junction boxes at primary electrical substation. Insulation resistance on three main distribution circuits below acceptable standards. Recurring deficiency; corrective measures only partially implemented."
+        "content": "F-04: Underground communication system experienced intermittent signal loss in the southern working district. Two personnel tracking units were found with depleted batteries during inspection. Communication reliability should be restored and a documented battery inspection schedule established."
       },
       {
-        "content": "F-05: Main haul road surface deteriorated over ~200 m stretch with multiple potholes and uneven grading. Dust suppression systems inoperative. Traffic management controls inadequate. New observation."
+        "content": "F-05: Fire-fighting equipment inspection records were incomplete in the surface workshop. Three portable extinguishers had inspection tags that were overdue for renewal, although the extinguishers remained physically accessible. The inspection and tagging schedule should be brought up to date."
       },
       {
-        "content": "F-06: Emergency preparedness satisfactory. Assembly points properly designated and accessible. First aid facilities available. 14 trained rescue personnel on roster (meets regulatory requirements). No critical gaps."
+        "content": "F-06: Personnel access control at the underground shaft entrance was satisfactory. Attendance records were current, mandatory PPE checks were being conducted, and emergency communication equipment was functional. No significant deficiency was observed in this area."
       }
     ],
 
