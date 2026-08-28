@@ -1,0 +1,264 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Ask MIRA - {{ mine_name }}
+{% endblock %}
+
+{% block header_title %}
+Ask MIRA
+{% endblock %}
+
+{% block content %}
+
+<div class="max-w-5xl mx-auto space-y-6">
+
+    <!-- Mine Context -->
+    <div class="bg-white border border-brand-border rounded-xl p-5 shadow-sm">
+        <div class="flex items-center justify-between">
+            <div>
+                <p class="text-xs font-semibold uppercase text-gray-500">
+                    MIRA AI Assistant
+                </p>
+
+                <h1 class="text-xl font-bold mt-1">
+                    {{ mine_name }}
+                </h1>
+
+                <p class="text-sm text-gray-500 mt-1">
+                    Mine ID: {{ mine_id }}
+                    {% if mine_code %}
+                        · {{ mine_code }}
+                    {% endif %}
+                </p>
+            </div>
+
+            <a
+                href="{{ url_for('dashboard') }}"
+                class="px-4 py-2 bg-black text-white text-xs font-semibold rounded-lg hover:bg-zinc-800"
+            >
+                Close
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Report Information -->
+    {% if report_path %}
+    <div class="bg-white border border-brand-border rounded-xl p-5 shadow-sm">
+
+        <div class="flex items-center justify-between">
+
+            <div>
+                <p class="text-xs font-semibold uppercase text-gray-500">
+                    Generated Inspection Report
+                </p>
+
+                {% if report_no %}
+                <p class="text-sm font-semibold mt-1">
+                    {{ report_no }}
+                </p>
+                {% endif %}
+            </div>
+
+            <a
+                href="{{ report_path }}"
+                target="_blank"
+                class="px-4 py-2 border border-gray-300 text-xs font-semibold rounded-lg hover:bg-gray-50"
+            >
+                View Report
+            </a>
+
+        </div>
+
+    </div>
+    {% endif %}
+
+
+    <!-- Chat Container -->
+    <div class="bg-white border border-brand-border rounded-xl shadow-sm">
+
+        <div class="p-5 border-b border-brand-border">
+            <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700">
+                Chat with MIRA
+            </h2>
+
+            <p class="text-xs text-gray-500 mt-1">
+                Ask questions about this mine and its generated inspection report.
+            </p>
+        </div>
+
+
+        <!-- Messages -->
+        <div
+            id="chatMessages"
+            class="p-5 space-y-4 min-h-[400px] max-h-[550px] overflow-y-auto"
+        >
+
+            <div class="flex justify-start">
+                <div class="bg-gray-100 rounded-lg px-4 py-3 max-w-3xl">
+                    <p class="text-sm text-gray-700">
+                        Hello. I am MIRA.
+                    </p>
+
+                    <p class="text-sm text-gray-700 mt-1">
+                        I can answer questions using the information available
+                        for <strong>{{ mine_name }}</strong>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Input -->
+        <div class="p-5 border-t border-brand-border">
+
+            <form
+                id="chatForm"
+                class="flex gap-3"
+                onsubmit="sendMessage(event)"
+            >
+
+                <input
+                    id="chatInput"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Ask MIRA about this mine..."
+                    class="flex-1 border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black"
+                >
+
+                <button
+                    type="submit"
+                    class="px-5 py-3 bg-black text-white text-sm font-semibold rounded-lg hover:bg-zinc-800"
+                >
+                    Send
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    /*
+     * Only mine-level context is exposed to the chatbot.
+     *
+     * No inspection object and no complete database object
+     * are sent to the frontend.
+     */
+    const MINE_CONTEXT = {
+        mine_id: {{ mine_id | tojson }},
+        mine_name: {{ mine_name | tojson }},
+        mine_code: {{ mine_code | tojson }},
+        operator: {{ operator | tojson }},
+        state: {{ state | tojson }},
+        district: {{ district | tojson }},
+        latitude: {{ latitude | tojson }},
+        longitude: {{ longitude | tojson }},
+        report_path: {{ report_path | tojson }},
+        report_no: {{ report_no | tojson }}
+    };
+
+
+    /*
+     * Temporary in-memory chat history.
+     *
+     * Nothing is stored in the database.
+     * When the page is closed, this data disappears.
+     */
+    let chatHistory = [];
+
+
+    function addMessage(message, sender) {
+
+        const container = document.getElementById("chatMessages");
+
+        const wrapper = document.createElement("div");
+
+        if (sender === "user") {
+
+            wrapper.className = "flex justify-end";
+
+            wrapper.innerHTML = `
+                <div class="bg-black text-white rounded-lg px-4 py-3 max-w-3xl">
+                    <p class="text-sm"></p>
+                </div>
+            `;
+
+        } else {
+
+            wrapper.className = "flex justify-start";
+
+            wrapper.innerHTML = `
+                <div class="bg-gray-100 rounded-lg px-4 py-3 max-w-3xl">
+                    <p class="text-sm text-gray-700"></p>
+                </div>
+            `;
+        }
+
+        wrapper.querySelector("p").textContent = message;
+
+        container.appendChild(wrapper);
+
+        container.scrollTop = container.scrollHeight;
+    }
+
+
+    async function sendMessage(event) {
+
+        event.preventDefault();
+
+        const input = document.getElementById("chatInput");
+        const question = input.value.trim();
+
+        if (!question) {
+            return;
+        }
+
+        addMessage(question, "user");
+
+        input.value = "";
+
+        chatHistory.push({
+            role: "user",
+            content: question
+        });
+
+
+        /*
+         * Temporary response.
+         *
+         * Replace this section later with your
+         * generate_response() backend API.
+         */
+        addMessage(
+            "MIRA AI response generation will be connected here.",
+            "assistant"
+        );
+
+        chatHistory.push({
+            role: "assistant",
+            content: "MIRA AI response generation will be connected here."
+        });
+    }
+
+
+    /*
+     * Erase chat data when leaving the chatbot.
+     */
+    window.addEventListener("beforeunload", function () {
+
+        chatHistory = [];
+
+        sessionStorage.removeItem("mira_chat_history");
+
+    });
+
+</script>
+
+{% endblock %}

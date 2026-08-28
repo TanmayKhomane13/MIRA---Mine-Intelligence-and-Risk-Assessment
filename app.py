@@ -4829,6 +4829,238 @@ def gis_mines():
             cursor.close()
         conn.close()
 
+@app.route("/chatbot")
+@jwt_required()
+def chatbot():
+    mine_id = request.args.get("mine_id", type=int)
+
+    if not mine_id:
+        flash("Mine ID is required.", "danger")
+        return redirect(url_for("dashboard"))
+
+    conn = get_db_connection()
+
+    if conn is None:
+        flash("Database connection failed.", "danger")
+        return redirect(url_for("dashboard"))
+
+    cursor = None
+
+    try:
+        cursor = conn.cursor(dictionary=True)
+
+        # Get mine details
+        cursor.execute(
+            """
+            SELECT
+                id,
+                name,
+                code,
+                operator,
+                state,
+                district,
+                latitude,
+                longitude
+            FROM mines
+            WHERE id = ?
+            LIMIT 1
+            """,
+            (mine_id,)
+        )
+
+        mine = cursor.fetchone()
+
+        if not mine:
+            flash("Mine not found.", "danger")
+            return redirect(url_for("dashboard"))
+
+        # Get latest generated report for this mine
+        cursor.execute(
+            """
+            SELECT
+                id,
+                report_no,
+                pdf_path,
+                report_pdf,
+                created_at
+            FROM inspections
+            WHERE mine_id = ?
+              AND (
+                    pdf_path IS NOT NULL
+                    OR report_pdf IS NOT NULL
+                  )
+            ORDER BY created_at DESC
+            LIMIT 1
+            """,
+            (mine_id,)
+        )
+
+        report = cursor.fetchone()
+
+        report_path = None
+
+        if report:
+            report_path = report.get("report_pdf") or report.get("pdf_path")
+
+        return render_template(
+            "chatbot.html",
+            mine_id=int(mine["id"]),
+            mine_name=mine["name"],
+            mine_code=mine.get("code"),
+            operator=mine.get("operator"),
+            state=mine.get("state"),
+            district=mine.get("district"),
+            latitude=mine.get("latitude"),
+            longitude=mine.get("longitude"),
+            report_path=report_path,
+            report_no=report.get("report_no") if report else None
+        )
+
+    except mariadb.Error:
+        app.logger.exception("Chatbot mine lookup failed")
+        flash("Unable to load mine information.", "danger")
+        return redirect(url_for("dashboard"))
+
+    finally:
+        if cursor:
+            cursor.close()
+        conn.close()
+
+@app.route("/api/mine-chat", methods=["POST"])
+@jwt_required()
+def mine_chat():
+
+    claims = get_jwt()
+
+    # Admin-only chatbot
+    if claims.get("role") != "admin":
+        return jsonify({
+            "success": False,
+            "message": "Administrator access required."
+        }), 403
+
+    data = request.get_json(silent=True)
+
+    if not data:
+        return jsonify({
+            "success": False,
+            "message": "JSON body is required."
+        }), 400
+
+    mine_id = data.get("mine_id")
+    mine_name = data.get("mine_name")
+    report_path = data.get("report_path")
+    message = data.get("message")
+    history = data.get("history", [])
+
+    if not mine_id:
+        return jsonify({
+            "success": False,
+            "message": "mine_id is required."
+        }), 400
+
+    if not message:
+        return jsonify({
+            "success": False,
+            "message": "Message is required."
+        }), 400
+
+    conn = None
+    cursor = None
+
+    try:
+
+        conn = get_db_connection()
+
+        if conn is None:
+            return jsonify({
+                "success": False,
+                "message": "Database connection failed."
+            }), 500
+
+        cursor = conn.cursor(dictionary=True)
+
+        # ---------------------------------------------------------
+        # Fetch ONLY the mine information required by the chatbot.
+        # Do not expose inspector / raw inspection information here.
+        # ---------------------------------------------------------
+
+        cursor.execute(
+            """
+            SELECT
+                id,
+                name
+            FROM mines
+            WHERE id = ?
+            LIMIT 1
+            """,
+            (mine_id,)
+        )
+
+        mine = cursor.fetchone()
+
+        if not mine:
+            return jsonify({
+                "success": False,
+                "message": "Mine not found."
+            }), 404
+
+        # ---------------------------------------------------------
+        # Verify that the supplied mine name belongs to this mine.
+        # ---------------------------------------------------------
+
+        if mine_name and mine_name != mine["name"]:
+            mine_name = mine["name"]
+
+        # ---------------------------------------------------------
+        # Temporary GenLLM placeholder
+        #
+        # Replace this section later with:
+        #
+        # response = generate_response(
+        #     mine=mine,
+        #     report_path=report_path,
+        #     message=message,
+        #     history=history
+        # )
+        # ---------------------------------------------------------
+
+        response = (
+            f"GenLLM placeholder for {mine['name']} "
+            f"(Mine ID: {mine['id']}). "
+            f"You asked: {message}"
+        )
+
+        return jsonify({
+            "success": True,
+            "response": response
+        })
+
+    except mariadb.Error:
+
+        app.logger.exception("Mine chatbot database error")
+
+        return jsonify({
+            "success": False,
+            "message": "Database error while processing chatbot request."
+        }), 500
+
+    except Exception:
+
+        app.logger.exception("Mine chatbot error")
+
+        return jsonify({
+            "success": False,
+            "message": "Unable to process chatbot request."
+        }), 500
+
+    finally:
+
+        if cursor:
+            cursor.close()
+
+        if conn:
+            conn.close()
 
 if __name__ == "__main__":
     app.run(debug=True)
