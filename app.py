@@ -13,7 +13,7 @@ import pymupdf
 import torch
 import mariadb
 import pandas as pd
-import joblib
+import numpy as np
 from xml.sax.saxutils import escape
 from reportlab.lib.enums import TA_CENTER, TA_LEFT
 from reportlab.lib import colors
@@ -31,7 +31,12 @@ from reportlab.platypus import (
     KeepTogether
 )
 from werkzeug.utils import secure_filename
-from load_model import model_1, tokenizer_1, label_mappings, device_1, model_2, tokenizer_2, device_2, gen_pipeline
+from load_model import (
+    model_1, tokenizer_1, label_mappings, device_1,
+    model_2, tokenizer_2, device_2, gen_pipeline,
+    risk_model, risk_encoder,
+    regulatory_chunks, faiss_index, question_tokenizer, question_encoder, rag_ready
+)
 from dotenv import load_dotenv
 from werkzeug.security import check_password_hash, generate_password_hash
 from flask_jwt_extended import (
@@ -4832,11 +4837,15 @@ def gis_mines():
         conn.close()
 
 
-def generate_response(user_prompt, max_new_tokens=300):
+def generate_response(user_prompt, max_new_tokens=300, history=None):
     """
     Streaming version of generate_response.
     Yields decoded text chunks as the model produces them, instead of
     blocking until generation finishes and returning one string.
+
+    `history` is a list of {"role": "user"|"assistant", "content": str}
+    dicts representing prior turns in this chat session, so follow-up
+    questions are generated with awareness of what was already discussed.
     """
 
     model_2.eval()
@@ -4864,12 +4873,26 @@ def generate_response(user_prompt, max_new_tokens=300):
                 "Follow the Language and IMPORTANT LANGUAGE INSTRUCTION "
                 "provided in the user prompt exactly."
             )
-        },
-        {
-            "role": "user",
-            "content": user_prompt
         }
     ]
+
+    # Carry forward prior turns so follow-up questions are answered with
+    # awareness of what was already asked/answered in this chat session.
+    if history:
+        for turn in history:
+            if not isinstance(turn, dict):
+                continue
+
+            role = turn.get("role")
+            content = turn.get("content")
+
+            if role in ("user", "assistant") and content:
+                messages.append({"role": role, "content": str(content)})
+
+    messages.append({
+        "role": "user",
+        "content": user_prompt
+    })
 
     prompt = tokenizer_2.apply_chat_template(
         messages,
@@ -4947,7 +4970,7 @@ Category: {result['category']}
 Severity: {result['severity']}
 Recurring: {result['recurring']}
 Risk Level: {result['risk_level']}
-Risk Confidence: {result['risk_confidence']}%
+Inspection Risk Score: {result['risk_confidence']}%
 
 """
 
@@ -4963,6 +4986,133 @@ Retrieved Guidance:
 
 {retrieved_guidance}
 """
+
+
+# ============================================================
+# RAG — REGULATORY GUIDANCE RETRIEVAL
+# ============================================================
+
+def build_rag_query(user_query, risk_results):
+    """
+    Turns the current chat question plus findings/risk context into a
+    single text query used to search the regulatory-guidance FAISS index.
+
+    The user's actual question is included first (and weighted by being
+    first/most prominent) so retrieval is conditioned on what they're
+    actually asking, not just on whatever findings happen to be attached
+    to the mine's last inspection.
+    """
+
+    query_parts = []
+
+    if user_query:
+        query_parts.append(f"Question: {user_query}")
+
+    for result in risk_results:
+
+        query_parts.append(
+            f"""
+Finding: {result['finding_text']}
+Issue: {result['issue']}
+Category: {result['category']}
+Severity: {result['severity']}
+Recurring: {result['recurring']}
+"""
+        )
+
+    return "\n".join(query_parts).strip()
+
+
+def encode_query(user_query):
+    """Encode a text query with the DPR question encoder for FAISS search."""
+
+    inputs = question_tokenizer(
+        user_query,
+        return_tensors="pt",
+        truncation=True,
+        max_length=512
+    )
+
+    # Match classify_finding/generate_response: always place inputs on the
+    # same device as the model, otherwise this throws a device-mismatch
+    # RuntimeError whenever question_encoder lives on GPU.
+    try:
+        encoder_device = next(question_encoder.parameters()).device
+    except (StopIteration, AttributeError):
+        encoder_device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+
+    inputs = {
+        key: value.to(encoder_device)
+        for key, value in inputs.items()
+    }
+
+    with torch.inference_mode():
+        outputs = question_encoder(**inputs)
+
+    query_embedding = (
+        outputs.pooler_output
+        .detach()
+        .cpu()
+        .numpy()
+        .astype(np.float32)
+    )
+
+    return np.ascontiguousarray(query_embedding)
+
+
+def retrieve_guidance(query, k=5):
+    """
+    Searches the regulatory-guidance FAISS index for the k most relevant
+    chunks to `query`. Returns [] if the RAG index wasn't loaded
+    (see rag_ready in load_model.py) or the query is empty.
+    """
+
+    if not rag_ready or not query:
+        return []
+
+    try:
+        query_embedding = encode_query(query)
+
+        distances, indices = faiss_index.search(query_embedding, k)
+
+        results = []
+
+        for distance, idx in zip(distances[0], indices[0]):
+
+            if idx < 0 or idx >= len(regulatory_chunks):
+                continue
+
+            results.append({
+                "context": regulatory_chunks[idx],
+                "score": float(distance),
+                "index": int(idx)
+            })
+
+        return results
+
+    except Exception:
+        app.logger.exception("RAG retrieval failed")
+        return []
+
+
+def format_retrieved_guidance(rag_results):
+    """Formats retrieved regulatory chunks for insertion into the GenLLM prompt."""
+
+    if not rag_results:
+        return "No relevant regulatory guidance was retrieved."
+
+    guidance = ""
+
+    for i, result in enumerate(rag_results, 1):
+        guidance += f"""
+Guidance {i}:
+
+{result['context']}
+
+"""
+
+    return guidance.strip()
+
 
 @app.route("/chatbot")
 @jwt_required()
@@ -5130,6 +5280,9 @@ def mine_chat():
             "message": "Message is required."
         }), 400
 
+    if not isinstance(history, list):
+        history = []
+
     # ------------------------------------------------------------
     # All DB work (mine lookup, findings, risk) happens BEFORE we
     # open the SSE stream, so we can still return a clean JSON error
@@ -5181,12 +5334,17 @@ def mine_chat():
 
         if inspection:
 
+            # Join finding_texts so we get the actual free-text observation
+            # instead of only the short "issue" classification label - both
+            # the RAG query and the LLM context need the real finding text.
             cursor.execute(
                 """
-                SELECT id, issue, category, severity, recurring
-                FROM inspection_findings
-                WHERE inspection_id = ?
-                ORDER BY id ASC
+                SELECT f.id, f.issue, f.category, f.severity, f.recurring,
+                       ft.text AS finding_text
+                FROM inspection_findings f
+                LEFT JOIN finding_texts ft ON f.id = ft.finding_id
+                WHERE f.inspection_id = ?
+                ORDER BY f.id ASC
                 """,
                 (inspection["id"],)
             )
@@ -5206,21 +5364,40 @@ def mine_chat():
             risk = cursor.fetchone()
 
             risk_level = (risk.get("risk_level") if risk else None) or "UNKNOWN"
-            risk_confidence = (risk.get("risk_score") if risk else None) or 0
+
+            # This is the overall inspection-level risk score, not a
+            # per-finding confidence value - labeled accordingly below so
+            # the LLM (and anyone reading the prompt) isn't misled into
+            # thinking it varies per finding.
+            inspection_risk_score = (risk.get("risk_score") if risk else None) or 0
 
             for finding in findings:
+                finding_text = (
+                    finding.get("finding_text")
+                    or finding.get("issue")
+                    or ""
+                )
+
                 risk_results.append({
                     "finding_id": f"F-{finding['id']}",
-                    "finding_text": finding.get("issue") or "",
+                    "finding_text": finding_text,
                     "issue": finding.get("issue") or "",
                     "category": finding.get("category") or "",
                     "severity": finding.get("severity") or "",
                     "recurring": finding.get("recurring") or 0,
                     "risk_level": risk_level,
-                    "risk_confidence": risk_confidence
+                    "risk_confidence": inspection_risk_score
                 })
 
-        retrieved_guidance = ""
+        # Build a search query from the user's actual question plus the
+        # findings/risk context, retrieve the most relevant regulatory
+        # chunks from the RAG index, and format them for the prompt. Falls
+        # back to "no guidance" if the RAG index isn't loaded (see
+        # rag_ready in load_model.py) or both the question and findings
+        # context are empty.
+        rag_query = build_rag_query(message, risk_results)
+        rag_results = retrieve_guidance(rag_query, k=5)
+        retrieved_guidance = format_retrieved_guidance(rag_results)
 
         genllm_prompt = build_genllm_prompt(
             user_query=message,
@@ -5262,7 +5439,7 @@ def mine_chat():
 
     def event_stream():
         try:
-            for token in generate_response(genllm_prompt, max_new_tokens=300):
+            for token in generate_response(genllm_prompt, max_new_tokens=300, history=history):
                 payload = json.dumps({"token": token})
                 yield f"data: {payload}\n\n"
 

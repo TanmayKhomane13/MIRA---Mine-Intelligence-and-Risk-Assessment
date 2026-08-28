@@ -1,9 +1,24 @@
 import os
 import json
+import pickle
+import joblib
+import shutil
 import torch
 import torch.nn as nn
-from transformers import (AutoTokenizer,DistilBertModel,AutoModelForCausalLM,pipeline)
+from transformers import (
+    AutoTokenizer,
+    DistilBertModel,
+    AutoModelForCausalLM,
+    pipeline,
+    DPRQuestionEncoderTokenizer,
+    DPRQuestionEncoder
+)
 from peft import PeftModel
+
+try:
+    import faiss
+except ImportError:
+    faiss = None
 
 MODEL_1_PATH = "./models/mira-distilbert-lora"
 
@@ -126,6 +141,17 @@ model_1.to(device_1)
 model_1.eval()
 
 OFFLOAD_DIR = "./offload"
+
+# Wipe any stale offload index from a previous run. accelerate keys its
+# offload index (index.json) by the parameter names of whatever model was
+# dispatched into this folder. If a prior run left an index built from a
+# different model/wrapping (e.g. a non-PEFT-wrapped base model), reusing
+# this folder can serve up stale/mismatched keys and crash generation
+# with a KeyError deep inside the offload hooks. Since this is a build
+# artifact (not a cache we want to keep across model/code changes),
+# recreate it fresh every startup.
+if os.path.isdir(OFFLOAD_DIR):
+    shutil.rmtree(OFFLOAD_DIR)
 os.makedirs(
     OFFLOAD_DIR,
     exist_ok=True
@@ -170,12 +196,40 @@ base_model_2 = AutoModelForCausalLM.from_pretrained(
     BASE_MODEL_2,
     torch_dtype=model_2_dtype
 )
+if device_2 == "cuda":
+    # Dispatch (and offload, if VRAM is insufficient) happens exactly
+    # once, here, on the base model.
+    base_model_2 = AutoModelForCausalLM.from_pretrained(
+        BASE_MODEL_2,
+        torch_dtype=model_2_dtype,
+        device_map="auto",
+        offload_folder=OFFLOAD_DIR
+    )
+else:
+    base_model_2 = AutoModelForCausalLM.from_pretrained(
+        BASE_MODEL_2,
+        torch_dtype=model_2_dtype
+    )
 
 
 # --------------------------------------------
 # Load LoRA adapter
 # --------------------------------------------
 
+# IMPORTANT: do NOT pass device_map/offload_folder again here.
+#
+# base_model_2 has already been dispatched (and possibly offloaded) above.
+# LoRA only adds small adapter modules alongside the existing base layers
+# and does not need its own placement/offload pass. Passing device_map
+# again forces a second dispatch that reuses the same offload_folder, but
+# every parameter now has a "base_model.model." prefix added by PEFT - so
+# accelerate's offload index (built from the first, un-prefixed dispatch)
+# no longer matches the parameter names being looked up, and generation
+# crashes with:
+#   KeyError: 'base_model.model.model.layers.N.input_layernorm.weight'
+#
+# PeftModel automatically respects base_model_2's existing hf_device_map,
+# so no additional device_map/offload arguments are needed here.
 model_2 = PeftModel.from_pretrained(
     base_model_2,
     LORA_PATH_2
@@ -187,6 +241,8 @@ model_2 = PeftModel.from_pretrained(
 # --------------------------------------------
 
 model_2 = model_2.to(device_2)
+    LORA_PATH_2
+)
 
 model_2.eval()
 
@@ -203,6 +259,68 @@ gen_pipeline = pipeline(
     return_full_text=False,
     device = "mps"
 )
+# ============================================================
+# RISK ENGINE
+# ============================================================
+
+RISK_MODEL_PATH = "./models/mira-risk-classifier.pkl"
+RISK_ENCODER_PATH = "./models/mira-risk-encoder.pkl"
+
+risk_model = joblib.load(RISK_MODEL_PATH)
+risk_encoder = joblib.load(RISK_ENCODER_PATH)
+
+# ============================================================
+# RAG — REGULATORY GUIDANCE RETRIEVAL
+#
+# Loads a pre-built FAISS index of regulatory text chunks plus a DPR
+# question encoder, used at query time to retrieve the passages that get
+# inserted into the GenLLM prompt as "Retrieved Guidance". Loading is
+# defensive: if the index/chunks haven't been built yet, the app should
+# still start up and simply retrieve no guidance rather than crash.
+# ============================================================
+
+RAG_CHUNKS_PATH = os.getenv(
+    "RAG_CHUNKS_PATH",
+    "./models/mira-rag/regulatory_chunks.pkl"
+)
+RAG_INDEX_PATH = os.getenv(
+    "RAG_INDEX_PATH",
+    "./models/mira-rag/regulatory.index"
+)
+QUESTION_ENCODER_MODEL = "facebook/dpr-question_encoder-single-nq-base"
+
+regulatory_chunks = []
+faiss_index = None
+question_tokenizer = None
+question_encoder = None
+
+try:
+    with open(RAG_CHUNKS_PATH, "rb") as f:
+        regulatory_chunks = pickle.load(f)
+
+    if faiss is None:
+        raise RuntimeError("faiss is not installed")
+
+    faiss_index = faiss.read_index(RAG_INDEX_PATH)
+
+    question_tokenizer = DPRQuestionEncoderTokenizer.from_pretrained(
+        QUESTION_ENCODER_MODEL
+    )
+
+    question_encoder = DPRQuestionEncoder.from_pretrained(
+        QUESTION_ENCODER_MODEL
+    )
+
+    question_encoder.to("cpu")
+    question_encoder.eval()
+
+    rag_ready = True
+
+except Exception as e:
+    print(f"[MIRA] RAG index unavailable, continuing without it: {e}")
+    regulatory_chunks = []
+    faiss_index = None
+    rag_ready = False
 
 print("==============================================")
 print("MIRA AI MODELS LOADED")
@@ -221,4 +339,18 @@ print(
     "Model 2 device:",
     device_2
 )
+print(
+    "Risk Engine : MIRA Risk Classifier + Encoder"
+)
+print(
+    "RAG : Regulatory Guidance Retrieval —",
+    "READY" if rag_ready else "UNAVAILABLE (no guidance will be retrieved)"
+)
+if rag_ready:
+    print(
+        "RAG chunks / vectors:",
+        len(regulatory_chunks),
+        "/",
+        faiss_index.ntotal
+    )
 print("==============================================")
