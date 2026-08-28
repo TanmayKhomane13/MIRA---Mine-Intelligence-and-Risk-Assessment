@@ -11,3 +11,4 @@ AI/MIRA2_checkpoints/
 ./data/uploads
 *.pdf
 AI/models
+.DS_Store
