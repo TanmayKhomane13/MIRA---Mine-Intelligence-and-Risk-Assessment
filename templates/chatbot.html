@@ -78,9 +78,17 @@ Ask MIRA
     <div class="bg-white border border-brand-border rounded-xl shadow-sm">
 
         <div class="p-5 border-b border-brand-border">
-            <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700">
-                Chat with MIRA
-            </h2>
+            <div class="flex items-center gap-2">
+                <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700">
+                    Chat with
+                </h2>
+
+                <img
+                    src="{{ url_for('static', filename='images/logo.png') }}"
+                    alt="MIRA Logo"
+                    class="h-7 w-auto object-contain"
+                >
+            </div>
 
             <p class="text-xs text-gray-500 mt-1">
                 Ask questions about this mine and its generated inspection report.
@@ -141,8 +149,9 @@ Ask MIRA
     </div>
 
 </div>
-
-
+<footer class="mt-6 text-center text-xs text-gray-400">
+    MIRA AI can make mistakes. Please verify critical information.
+</footer>
 <script>
 
     /*

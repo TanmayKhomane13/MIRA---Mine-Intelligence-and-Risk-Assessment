@@ -8,7 +8,6 @@ Inspection Detail - MIRA
 Inspection: {{ inspection.report_no }}
 {% endblock %}
 
-
 {% block content %}
 
 <div class="space-y-6">
@@ -25,139 +24,264 @@ Inspection: {{ inspection.report_no }}
             <p class="text-xs font-semibold uppercase text-gray-500">
                 Inspection Date
             </p>
+
             <p class="text-lg font-bold mt-1">
                 {{ inspection.inspection_date }}
             </p>
         </div>
+
+
         <div class="bg-white border border-brand-border rounded-xl p-5 shadow-sm">
             <p class="text-xs font-semibold uppercase text-gray-500">
                 Status
             </p>
+
             <p class="text-lg font-bold mt-1">
                 {{ inspection.status | upper }}
             </p>
         </div>
+
     </div>
+
+
+    <!-- ========================================================= -->
+    <!-- MINE INFORMATION -->
+    <!-- ========================================================= -->
+
     <div class="bg-white border border-brand-border rounded-xl shadow-sm">
+
         <div class="p-5 border-b border-brand-border">
+
             <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700">
                 Mine Information
             </h2>
+
         </div>
+
+
         <div class="p-5 grid grid-cols-1 md:grid-cols-3 gap-5">
+
+            <!-- Mine -->
+
             <div>
+
                 <p class="text-xs uppercase font-semibold text-gray-500">
                     Mine
                 </p>
+
                 <p class="text-sm font-semibold mt-1">
                     {{ inspection.mine.name }}
                 </p>
+
             </div>
+
+
+            <!-- Mine Code -->
+
             <div>
+
                 <p class="text-xs uppercase font-semibold text-gray-500">
                     Mine Code
                 </p>
+
                 <p class="text-sm font-semibold mt-1">
                     {{ inspection.mine.code }}
                 </p>
+
             </div>
+
+
+            <!-- Operator -->
+
             <div>
+
                 <p class="text-xs uppercase font-semibold text-gray-500">
                     Operator
                 </p>
+
                 <p class="text-sm font-semibold mt-1">
                     {{ inspection.mine.operator or 'Not specified' }}
                 </p>
+
             </div>
+
+
+            <!-- State -->
+
             <div>
+
                 <p class="text-xs uppercase font-semibold text-gray-500">
                     State
                 </p>
+
                 <p class="text-sm font-semibold mt-1">
                     {{ inspection.mine.state }}
                 </p>
+
             </div>
+
+
+            <!-- District -->
+
             <div>
+
                 <p class="text-xs uppercase font-semibold text-gray-500">
                     District
                 </p>
+
                 <p class="text-sm font-semibold mt-1">
                     {{ inspection.mine.district }}
                 </p>
+
             </div>
+
+
+            <!-- Inspector -->
+
             <div>
+
                 <p class="text-xs uppercase font-semibold text-gray-500">
                     Inspector
                 </p>
+
                 <p class="text-sm font-semibold mt-1">
                     {{ inspection.inspector.name }}
                 </p>
+
             </div>
+
         </div>
+
     </div>
 
+
+    <!-- ========================================================= -->
+    <!-- INSPECTION INFORMATION -->
+    <!-- ========================================================= -->
+
     <div class="bg-white border border-brand-border rounded-xl shadow-sm">
+
         <div class="p-5 border-b border-brand-border">
+
             <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700">
                 Inspection Information
             </h2>
+
         </div>
+
+
         <div class="p-5 grid grid-cols-1 md:grid-cols-3 gap-5">
+
+            <!-- Inspection Date -->
+
             <div>
+
                 <p class="text-xs uppercase font-semibold text-gray-500">
                     Inspection Date
                 </p>
+
                 <p class="text-sm font-semibold mt-1">
                     {{ inspection.inspection_date }}
                 </p>
+
             </div>
+
+
+            <!-- Duration -->
+
             <div>
+
                 <p class="text-xs uppercase font-semibold text-gray-500">
                     Duration
                 </p>
+
                 <p class="text-sm font-semibold mt-1">
                     {{ inspection.duration or 'Not specified' }}
                 </p>
+
             </div>
+
+
+            <!-- Status -->
+
             <div>
+
                 <p class="text-xs uppercase font-semibold text-gray-500">
                     Status
                 </p>
+
                 <p class="text-sm font-semibold mt-1">
                     {{ inspection.status | upper }}
                 </p>
+
             </div>
+
         </div>
+
+
         {% if inspection.remarks %}
+
         <div class="px-5 pb-5">
+
             <p class="text-xs uppercase font-semibold text-gray-500 mb-2">
                 Remarks
             </p>
+
             <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
+
                 {{ inspection.remarks }}
+
             </div>
+
         </div>
+
         {% endif %}
+
     </div>
+
+
+    <!-- ========================================================= -->
+    <!-- INSPECTION FINDINGS -->
+    <!-- ========================================================= -->
+
     <div class="bg-white border border-brand-border rounded-xl shadow-sm">
+
         <div class="p-5 border-b border-brand-border">
+
             <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700">
                 Inspection Findings
             </h2>
+
         </div>
+
+
         <div class="p-5 space-y-4">
+
             {% for finding in inspection.findings %}
+
             <div class="border border-gray-200 rounded-lg p-4">
+
+                <!-- Finding Header -->
+
                 <div class="flex justify-between items-start gap-4">
+
                     <div>
+
                         <p class="text-xs font-semibold text-gray-500">
                             {{ finding.finding_code or ('F-' ~ finding.id) }}
                         </p>
+
                         <h3 class="font-semibold mt-1">
                             {{ finding.issue or 'Finding' }}
                         </h3>
+
                     </div>
-                    <span class="px-2.5 py-1 rounded-full text-xs font-semibold
+
+
+                    <!-- Severity -->
+
+                    <span
+                        class="px-2.5 py-1 rounded-full text-xs font-semibold
                         {% if finding.severity == 'CRITICAL' %}
                             bg-red-100 text-red-800
                         {% elif finding.severity == 'HIGH' %}
@@ -166,123 +290,569 @@ Inspection: {{ inspection.report_no }}
                             bg-yellow-50 text-yellow-700
                         {% else %}
                             bg-green-50 text-green-700
-                        {% endif %}
-                    ">
+                        {% endif %}"
+                    >
+
                         {{ finding.severity }}
+
                     </span>
+
                 </div>
+
+
+                <!-- Finding Description -->
+
                 {% if finding.text %}
+
                 <div class="bg-gray-50 rounded-lg p-4 mt-4 text-sm text-gray-700 leading-relaxed">
+
                     {{ finding.text }}
+
                 </div>
+
                 {% endif %}
+
+
+                <!-- Finding Metadata -->
+
                 <div class="flex flex-wrap gap-4 mt-4 text-xs text-gray-500">
+
                     <span>
+
                         Category:
+
                         <strong class="text-gray-700">
                             {{ finding.category or 'N/A' }}
                         </strong>
+
                     </span>
+
+
                     <span>
+
                         Recurring:
+
                         <strong class="text-gray-700">
+
                             {{ 'Yes' if finding.recurring else 'No' }}
+
                         </strong>
+
                     </span>
+
+
                     {% if finding.note %}
+
                     <span>
+
                         Location:
+
                         <strong class="text-gray-700">
+
                             {{ finding.note }}
+
                         </strong>
+
                     </span>
+
                     {% endif %}
+
                 </div>
+
             </div>
+
+
             {% else %}
+
             <div class="text-center py-8 text-sm text-gray-500">
+
                 No findings recorded for this inspection.
+
             </div>
+
             {% endfor %}
+
         </div>
+
     </div>
+
+
+    <!-- ========================================================= -->
+    <!-- INSPECTION EVIDENCE -->
+    <!-- ========================================================= -->
+
     <div class="bg-white border border-brand-border rounded-xl shadow-sm">
+
         <div class="p-5 border-b border-brand-border">
+
             <h2 class="text-sm font-bold uppercase tracking-wider text-gray-700">
                 Inspection Evidence
             </h2>
+
         </div>
+
+
         <div class="p-5">
+
             {% if inspection.evidence %}
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
                 {% for evidence in inspection.evidence %}
+
                 <div class="border border-gray-200 rounded-lg overflow-hidden">
+
                     {% if evidence.evidence_type == 'photo' %}
+
                     <img
                         src="{{ evidence.file_path }}"
                         alt="Inspection evidence"
                         class="w-full h-48 object-cover"
                     >
+
                     {% else %}
+
                     <div class="h-48 bg-gray-50 flex items-center justify-center text-sm text-gray-500">
+
                         {{ evidence.evidence_type | upper }}
+
                     </div>
+
                     {% endif %}
+
+
                     <div class="p-4">
+
                         <p class="text-xs font-semibold text-gray-700">
+
                             {{ evidence.evidence_type | upper }}
+
                         </p>
+
+
                         {% if evidence.description %}
+
                         <p class="text-xs text-gray-500 mt-1">
+
                             {{ evidence.description }}
+
                         </p>
+
                         {% endif %}
+
+
                         {% if evidence.latitude is not none and evidence.longitude is not none %}
+
                         <p class="text-xs text-gray-500 mt-3">
+
                             GPS:
+
                             {{ evidence.latitude }},
                             {{ evidence.longitude }}
+
                         </p>
+
                         {% endif %}
+
                     </div>
+
                 </div>
+
                 {% endfor %}
+
             </div>
+
+
             {% else %}
+
             <div class="text-center py-8 text-sm text-gray-500">
+
                 No evidence uploaded for this inspection.
+
             </div>
+
             {% endif %}
+
         </div>
+
     </div>
-{% if inspection.pdf_path %} 
-<div class="bg-white border border-brand-border rounded-xl shadow-sm p-5"> 
-    <div class="flex flex-wrap items-center gap-3"> 
-        <!-- View PDF --> 
-         <a href="{{ inspection.pdf_path }}" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-black text-white text-xs font-semibold rounded-lg hover:bg-zinc-800 transition" > 
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/> 
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/> 
-            </svg> View Inspection PDF 
-        </a>
-         <!-- Mine Chatbot -->
-           <button type="button" onclick="openMineChatbot()" class="inline-flex items-center gap-2 px-4 py-2 bg-white text-black border border-brand-border text-xs font-semibold rounded-lg hover:bg-gray-100 transition" > 
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h8M8 14h5"/> 
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 10.5a7 7 0 01-7 7H8l-4 3v-5.5a7 7 0 1115-4.5z"/> 
-            </svg>
-             Ask MIRA 
+
+
+    <!-- ========================================================= -->
+    <!-- REPORT / CHATBOT ACTIONS -->
+    <!-- ========================================================= -->
+
+    {% if inspection.pdf_path %}
+
+    <div class="bg-white border border-brand-border rounded-xl shadow-sm p-5">
+
+        <div class="flex flex-wrap items-center gap-3">
+
+
+            <!-- ================================================= -->
+            <!-- VIEW INSPECTION PDF -->
+            <!-- ================================================= -->
+
+            <a
+                href="{{ inspection.pdf_path }}"
+                target="_blank"
+                class="inline-flex items-center gap-2 px-4 py-2 bg-black text-white text-xs font-semibold rounded-lg hover:bg-zinc-800 transition"
+            >
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    />
+
+                </svg>
+
+                View Inspection PDF
+
+            </a>
+
+
+            <!-- ================================================= -->
+            <!-- ASK MIRA -->
+            <!-- ================================================= -->
+
+            <button
+                type="button"
+                onclick="openLanguagePopup()"
+                class="inline-flex items-center gap-2 px-4 py-2 bg-white text-black border border-brand-border text-xs font-semibold rounded-lg hover:bg-gray-100 transition"
+            >
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8 10h8M8 14h5"
+                    />
+
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 10.5a7 7 0 01-7 7H8l-4 3v-5.5a7 7 0 1115-4.5z"
+                    />
+
+                </svg>
+
+                Ask MIRA
+
             </button>
-         </div> 
+
         </div>
-        
-{% endif %}
+
+    </div>
+
+    {% endif %}
+
 </div>
+
+
+<!-- ============================================================= -->
+<!-- LANGUAGE SELECTION MODAL -->
+<!-- ============================================================= -->
+
+<div
+    id="languageModal"
+    class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+>
+
+    <div
+        class="w-full max-w-md mx-4 bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden"
+    >
+
+        <!-- ===================================================== -->
+        <!-- MODAL HEADER -->
+        <!-- ===================================================== -->
+
+        <div class="px-6 py-5 border-b border-gray-200">
+
+            <div class="flex items-center gap-3">
+
+                <img
+                    src="{{ url_for('static', filename='images/logo.png') }}"
+                    alt="MIRA Logo"
+                    class="h-10 w-auto object-contain"
+                >
+
+                <div>
+
+                    <h2 class="text-base font-bold text-gray-900">
+                        Chat with MIRA
+                    </h2>
+
+                    <p class="text-xs text-gray-500 mt-0.5">
+                        Select your preferred language
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===================================================== -->
+        <!-- MODAL BODY -->
+        <!-- ===================================================== -->
+
+        <div class="p-6">
+
+            <p class="text-sm text-gray-600 mb-5">
+
+                Which language would you like to use for your conversation?
+
+            </p>
+
+
+            <div class="grid grid-cols-2 gap-4">
+
+
+                <!-- ================================================= -->
+                <!-- ENGLISH -->
+                <!-- ================================================= -->
+
+                <button
+                    type="button"
+                    onclick="openMiraChat('English')"
+                    class="group border border-gray-200 rounded-xl p-5 text-center hover:border-black hover:bg-gray-50 transition"
+                >
+
+                    <div class="text-2xl mb-2">
+                        🇬🇧
+                    </div>
+
+                    <p class="text-sm font-bold text-gray-900">
+                        English
+                    </p>
+
+                    <p class="text-xs text-gray-500 mt-1">
+                        Respond in English
+                    </p>
+
+                </button>
+
+
+                <!-- ================================================= -->
+                <!-- HINDI -->
+                <!-- ================================================= -->
+
+                <button
+                    type="button"
+                    onclick="openMiraChat('Hindi')"
+                    class="group border border-gray-200 rounded-xl p-5 text-center hover:border-black hover:bg-gray-50 transition"
+                >
+
+                    <div class="text-2xl mb-2">
+                        🇮🇳
+                    </div>
+
+                    <p class="text-sm font-bold text-gray-900">
+                        हिन्दी
+                    </p>
+
+                    <p class="text-xs text-gray-500 mt-1">
+                        हिंदी में उत्तर
+                    </p>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===================================================== -->
+        <!-- MODAL FOOTER -->
+        <!-- ===================================================== -->
+
+        <div class="px-6 py-4 bg-gray-50 border-t border-gray-200 flex justify-end">
+
+            <button
+                type="button"
+                onclick="closeLanguagePopup()"
+                class="px-4 py-2 text-xs font-semibold text-gray-600 hover:text-black transition"
+            >
+
+                Cancel
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ============================================================= -->
+<!-- JAVASCRIPT -->
+<!-- ============================================================= -->
+
 <script>
-function openMineChatbot() {
-    const mineId = {{ inspection.mine.id | tojson }};
-    window.location.href = `/chatbot?mine_id=${encodeURIComponent(mineId)}`;
-}
+
+    /*
+     * Open language selection popup
+     */
+    function openLanguagePopup() {
+
+        const modal = document.getElementById("languageModal");
+
+        if (!modal) {
+
+            console.error("MIRA language modal not found.");
+
+            return;
+        }
+
+        modal.classList.remove("hidden");
+
+        document.body.classList.add("overflow-hidden");
+    }
+
+
+    /*
+     * Close language selection popup
+     */
+    function closeLanguagePopup() {
+
+        const modal = document.getElementById("languageModal");
+
+        if (!modal) {
+            return;
+        }
+
+        modal.classList.add("hidden");
+
+        document.body.classList.remove("overflow-hidden");
+    }
+
+
+    /*
+     * Open MIRA chatbot
+     *
+     * Example:
+     *
+     * /chatbot?mine_id=11&language=English
+     *
+     * or
+     *
+     * /chatbot?mine_id=11&language=Hindi
+     */
+    function openMiraChat(language) {
+
+        const mineId = "{{ inspection.mine.id }}";
+
+
+        /*
+         * Make sure mine ID exists
+         */
+        if (!mineId) {
+
+            alert("Unable to identify the mine.");
+
+            return;
+        }
+
+
+        /*
+         * Only allow English and Hindi
+         */
+        if (language !== "English" && language !== "Hindi") {
+
+            console.error("Invalid language:", language);
+
+            return;
+        }
+
+
+        /*
+         * Generate chatbot URL using Flask route
+         */
+        const chatbotUrl =
+            "{{ url_for('chatbot') }}" +
+            "?mine_id=" + encodeURIComponent(mineId) +
+            "&language=" + encodeURIComponent(language);
+
+
+        /*
+         * Close popup
+         */
+        closeLanguagePopup();
+
+
+        /*
+         * Navigate to chatbot
+         */
+        window.location.href = chatbotUrl;
+    }
+
+
+    /*
+     * Close modal when clicking outside the modal box
+     */
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const modal = document.getElementById("languageModal");
+
+        if (!modal) {
+            return;
+        }
+
+
+        modal.addEventListener("click", function (event) {
+
+            if (event.target === modal) {
+
+                closeLanguagePopup();
+
+            }
+
+        });
+
+    });
+
+
+    /*
+     * Close modal using ESC key
+     */
+    document.addEventListener("keydown", function (event) {
+
+        if (event.key === "Escape") {
+
+            closeLanguagePopup();
+
+        }
+
+    });
+
 </script>
+
 {% endblock %}

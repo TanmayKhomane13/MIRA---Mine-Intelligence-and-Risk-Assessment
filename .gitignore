@@ -12,3 +12,4 @@ AI/MIRA2_checkpoints/
 *.pdf
 AI/models
 .DS_Store
+offload

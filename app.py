@@ -4829,6 +4829,84 @@ def gis_mines():
             cursor.close()
         conn.close()
 
+def generate_response(user_prompt, max_new_tokens=300):
+
+    genLLM_model.eval()
+
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You are MIRA (Mine Intelligence and Risk Assessment), "
+                "an AI-based coal mine inspection and compliance assistant. "
+
+                "Use only the supplied inspection findings, structured AI "
+                "assessment, risk information, and retrieved regulatory guidance "
+                "to answer the user's question. "
+
+                "Do not calculate, modify, or override the provided issue, "
+                "category, severity, recurring status, risk level, or risk confidence. "
+
+                "Do not invent regulations, rule numbers, legal provisions, "
+                "inspection history, or evidence that is not present in the context. "
+
+                "For compliance-related questions, use only the Retrieved Guidance "
+                "provided in the user prompt. "
+
+                "If Language is English, respond in clear professional English. "
+
+                "If Language is Hindi, understand Romanized Hindi or Hinglish "
+                "input and respond ONLY in standard Hindi using Devanagari script. "
+                "Do not respond in Romanized Hindi or English."
+            )
+        },
+        {
+            "role": "user",
+            "content": user_prompt
+        }
+    ]
+
+    prompt = genLLM_tokenizer.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=True
+    )
+
+    inputs = genLLM_tokenizer(
+        prompt,
+        return_tensors="pt"
+    ).to(genLLM_model.device)
+
+    streamer = TextIteratorStreamer(
+        genLLM_tokenizer,
+        skip_prompt=True,
+        skip_special_tokens=True
+    )
+
+    generation_kwargs = {
+        **inputs,
+        "streamer": streamer,
+        "max_new_tokens": max_new_tokens,
+        "do_sample": False,
+        "pad_token_id": genLLM_tokenizer.pad_token_id,
+        "eos_token_id": genLLM_tokenizer.eos_token_id
+    }
+
+    thread = Thread(
+        target = genLLM_model.generate,
+        kwargs = generation_kwargs
+    )
+
+    thread.start()
+
+    response = ""
+
+    for new_text in streamer:
+        print(new_text, end="", flush=True)
+        response += new_text
+
+    thread.join()
+
 @app.route("/chatbot")
 @jwt_required()
 def chatbot():
