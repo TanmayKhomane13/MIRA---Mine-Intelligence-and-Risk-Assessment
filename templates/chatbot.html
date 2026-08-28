@@ -187,333 +187,333 @@ Ask MIRA
 <footer class="mt-6 text-center text-xs text-gray-400">
     MIRA AI can make mistakes. Please verify critical information.
 </footer>
-
 <script>
+    /*
+     * Mine context supplied by Flask.
+     * Language comes from the language-selection popup.
+     */
+    const MINE_CONTEXT = {
+        mine_id: {{ mine_id | tojson }},
+        mine_name: {{ mine_name | tojson }},
+        mine_code: {{ mine_code | tojson }},
+        operator: {{ operator | tojson }},
+        state: {{ state | tojson }},
+        district: {{ district | tojson }},
+        latitude: {{ latitude | tojson }},
+        longitude: {{ longitude | tojson }},
+        report_path: {{ report_path | tojson }},
+        report_no: {{ report_no | tojson }},
+        language: {{ language | tojson }}
+    };
 
-/* =========================================================
-   MINE CONTEXT
-   ========================================================= */
-
-const MINE_CONTEXT = {
-    mine_id: {{ mine_id | tojson }},
-    mine_name: {{ mine_name | tojson }},
-    language: {{ language | default("English") | tojson }}
-};
-
-
-/* =========================================================
-   TEMPORARY CHAT HISTORY
-   =========================================================
-
-   This exists only in browser memory.
-
-   Nothing is stored in the database.
-
-   When the chatbot page is closed/reloaded,
-   the conversation disappears.
-   ========================================================= */
-
-let chatHistory = [];
+    /*
+     * Chat history is kept only in browser memory.
+     */
+    let chatHistory = [];
 
 
-/* =========================================================
-   DOM ELEMENTS
-   ========================================================= */
+    /*
+     * Add a message to the chat UI. Returns the <p> element so the
+     * caller can keep updating its text as tokens stream in.
+     */
+    function addMessage(message, sender) {
 
-const chatMessages = document.getElementById("chatMessages");
-const chatInput = document.getElementById("chatInput");
-const chatForm = document.getElementById("chatForm");
-const sendButton = document.getElementById("sendButton");
+        const container = document.getElementById("chatMessages");
+
+        const wrapper = document.createElement("div");
+
+        if (sender === "user") {
+
+            wrapper.className = "flex justify-end";
+
+            wrapper.innerHTML = `
+                <div class="bg-black text-white rounded-lg px-4 py-3 max-w-3xl">
+                    <p class="text-sm whitespace-pre-wrap"></p>
+                </div>
+            `;
+
+        } else {
+
+            wrapper.className = "flex justify-start";
+
+            wrapper.innerHTML = `
+                <div class="bg-gray-100 rounded-lg px-4 py-3 max-w-3xl">
+                    <p class="text-sm text-gray-700 whitespace-pre-wrap"></p>
+                </div>
+            `;
+        }
+
+        const textEl = wrapper.querySelector("p");
+        textEl.textContent = message;
+
+        container.appendChild(wrapper);
+
+        container.scrollTop = container.scrollHeight;
+
+        return textEl;
+    }
 
 
-/* =========================================================
-   ADD MESSAGE TO UI
-   ========================================================= */
+    /*
+     * Show a temporary "MIRA is thinking..." message.
+     */
+    function addThinkingMessage() {
 
-function addMessage(message, sender) {
+        const container = document.getElementById("chatMessages");
 
-    const wrapper = document.createElement("div");
+        const wrapper = document.createElement("div");
 
-    if (sender === "user") {
-
-        wrapper.className = "flex justify-end";
-
-        wrapper.innerHTML = `
-            <div class="bg-black text-white rounded-lg px-4 py-3 max-w-3xl">
-                <p class="text-sm"></p>
-            </div>
-        `;
-
-    } else {
+        wrapper.id = "thinkingMessage";
 
         wrapper.className = "flex justify-start";
 
         wrapper.innerHTML = `
             <div class="bg-gray-100 rounded-lg px-4 py-3 max-w-3xl">
-                <p class="text-sm text-gray-700"></p>
+                <p class="text-sm text-gray-500">
+                    MIRA is thinking...
+                </p>
             </div>
         `;
-    }
 
-    wrapper.querySelector("p").textContent = message;
+        container.appendChild(wrapper);
 
-    chatMessages.appendChild(wrapper);
-
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-}
-
-
-/* =========================================================
-   LOADING MESSAGE
-   ========================================================= */
-
-function addLoadingMessage() {
-
-    const wrapper = document.createElement("div");
-
-    wrapper.id = "miraLoadingMessage";
-    wrapper.className = "flex justify-start";
-
-    wrapper.innerHTML = `
-        <div class="bg-gray-100 rounded-lg px-4 py-3">
-
-            <div class="flex items-center gap-2">
-
-                <div class="w-2 h-2 bg-gray-500 rounded-full animate-bounce"></div>
-
-                <div
-                    class="w-2 h-2 bg-gray-500 rounded-full animate-bounce"
-                    style="animation-delay: 0.15s"
-                ></div>
-
-                <div
-                    class="w-2 h-2 bg-gray-500 rounded-full animate-bounce"
-                    style="animation-delay: 0.30s"
-                ></div>
-
-                <span class="text-xs text-gray-500 ml-1">
-                    MIRA is thinking...
-                </span>
-
-            </div>
-
-        </div>
-    `;
-
-    chatMessages.appendChild(wrapper);
-
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-}
-
-
-/* =========================================================
-   REMOVE LOADING MESSAGE
-   ========================================================= */
-
-function removeLoadingMessage() {
-
-    const loading = document.getElementById("miraLoadingMessage");
-
-    if (loading) {
-        loading.remove();
-    }
-}
-
-
-/* =========================================================
-   SEND MESSAGE
-   ========================================================= */
-
-async function sendMessage(event) {
-
-    event.preventDefault();
-
-    const question = chatInput.value.trim();
-
-    if (!question) {
-        return;
+        container.scrollTop = container.scrollHeight;
     }
 
 
-    /* -----------------------------------------------------
-       Display user message
-       ----------------------------------------------------- */
+    /*
+     * Remove "MIRA is thinking..."
+     */
+    function removeThinkingMessage() {
 
-    addMessage(question, "user");
+        const thinking = document.getElementById("thinkingMessage");
 
-
-    /* -----------------------------------------------------
-       Add user message to temporary history
-       ----------------------------------------------------- */
-
-    chatHistory.push({
-        role: "user",
-        content: question
-    });
-
-
-    /* -----------------------------------------------------
-       Clear input
-       ----------------------------------------------------- */
-
-    chatInput.value = "";
-
-
-    /* -----------------------------------------------------
-       Disable input while generating
-       ----------------------------------------------------- */
-
-    chatInput.disabled = true;
-    sendButton.disabled = true;
-
-
-    /* -----------------------------------------------------
-       Loading indicator
-       ----------------------------------------------------- */
-
-    addLoadingMessage();
-
-
-    try {
-
-        /* -------------------------------------------------
-           Send request to Flask
-           ------------------------------------------------- */
-
-        const response = await fetch(
-            "{{ url_for('mine_chat') }}",
-            {
-                method: "POST",
-
-                headers: {
-                    "Content-Type": "application/json"
-                },
-
-                credentials: "include",
-
-                body: JSON.stringify({
-
-                    mine_id: MINE_CONTEXT.mine_id,
-
-                    language: MINE_CONTEXT.language,
-
-                    message: question,
-
-                    history: chatHistory
-
-                })
-            }
-        );
-
-
-        /* -------------------------------------------------
-           Parse JSON response
-           ------------------------------------------------- */
-
-        const data = await response.json();
-
-
-        removeLoadingMessage();
-
-
-        /* -------------------------------------------------
-           Handle backend error
-           ------------------------------------------------- */
-
-        if (!response.ok || !data.success) {
-
-            const errorMessage =
-                data.message ||
-                "Unable to generate a response.";
-
-            addMessage(errorMessage, "assistant");
-
-            return;
+        if (thinking) {
+            thinking.remove();
         }
-
-
-        /* -------------------------------------------------
-           Get MIRA response
-           ------------------------------------------------- */
-
-        const miraResponse =
-            data.response ||
-            "MIRA could not generate a response.";
-
-
-        /* -------------------------------------------------
-           Display response
-           ------------------------------------------------- */
-
-        addMessage(miraResponse, "assistant");
-
-
-        /* -------------------------------------------------
-           Save response to temporary history
-           ------------------------------------------------- */
-
-        chatHistory.push({
-            role: "assistant",
-            content: miraResponse
-        });
-
-
-    } catch (error) {
-
-        console.error("MIRA chatbot error:", error);
-
-        removeLoadingMessage();
-
-        addMessage(
-            "Unable to connect to MIRA. Please try again.",
-            "assistant"
-        );
-
-    } finally {
-
-        /* -------------------------------------------------
-           Re-enable input
-           ------------------------------------------------- */
-
-        chatInput.disabled = false;
-        sendButton.disabled = false;
-
-        chatInput.focus();
     }
-}
 
 
-/* =========================================================
-   ENTER KEY
-   ========================================================= */
-
-chatInput.addEventListener("keydown", function(event) {
-
-    if (event.key === "Enter" && !event.shiftKey) {
+    /*
+     * Send question to Flask backend and stream the response
+     * token by token via Server-Sent Events (text/event-stream).
+     */
+    async function sendMessage(event) {
 
         event.preventDefault();
 
-        chatForm.requestSubmit();
+        const input = document.getElementById("chatInput");
+        const sendButton = event.target.querySelector("button[type='submit']");
+
+        const question = input.value.trim();
+
+        if (!question) {
+            return;
+        }
+
+        addMessage(question, "user");
+
+        input.value = "";
+
+        chatHistory.push({
+            role: "user",
+            content: question
+        });
+
+        input.disabled = true;
+
+        if (sendButton) {
+            sendButton.disabled = true;
+            sendButton.textContent = "Thinking...";
+        }
+
+        addThinkingMessage();
+
+        let assistantTextEl = null;
+        let fullText = "";
+
+        try {
+
+            const response = await fetch(
+                "{{ url_for('mine_chat') }}",
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    credentials: "include",
+
+                    body: JSON.stringify({
+                        mine_id: MINE_CONTEXT.mine_id,
+                        mine_name: MINE_CONTEXT.mine_name,
+                        report_path: MINE_CONTEXT.report_path,
+                        message: question,
+                        language: MINE_CONTEXT.language,
+                        history: chatHistory
+                    })
+                }
+            );
+
+            if (!response.ok || !response.body) {
+
+                let errorMessage = "Unable to generate a response.";
+
+                try {
+                    const errorData = await response.json();
+                    errorMessage = errorData.message || errorMessage;
+                } catch (parseError) {
+                    // Response wasn't JSON (e.g. stream already started) - ignore.
+                }
+
+                removeThinkingMessage();
+                addMessage(errorMessage, "assistant");
+                return;
+            }
+
+            /*
+             * Read the SSE stream chunk by chunk. Each "data: {...}\n\n"
+             * block is parsed and its token appended to the live bubble.
+             */
+
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+
+            let buffer = "";
+            let streamErrored = false;
+
+            while (true) {
+
+                const { done, value } = await reader.read();
+
+                if (done) {
+                    break;
+                }
+
+                buffer += decoder.decode(value, { stream: true });
+
+                const events = buffer.split("\n\n");
+
+                // Keep the last (possibly incomplete) chunk in the buffer.
+                buffer = events.pop();
+
+                for (const rawEvent of events) {
+
+                    if (!rawEvent.trim()) {
+                        continue;
+                    }
+
+                    let eventType = "message";
+                    let dataLine = null;
+
+                    for (const line of rawEvent.split("\n")) {
+                        if (line.startsWith("event:")) {
+                            eventType = line.slice(6).trim();
+                        } else if (line.startsWith("data:")) {
+                            dataLine = line.slice(5).trim();
+                        }
+                    }
+
+                    if (!dataLine) {
+                        continue;
+                    }
+
+                    let payload;
+
+                    try {
+                        payload = JSON.parse(dataLine);
+                    } catch (jsonError) {
+                        continue;
+                    }
+
+                    if (eventType === "error") {
+
+                        streamErrored = true;
+
+                        removeThinkingMessage();
+
+                        addMessage(
+                            payload.message || "Unable to generate a response.",
+                            "assistant"
+                        );
+
+                        break;
+                    }
+
+                    if (eventType === "done") {
+                        continue;
+                    }
+
+                    // Regular token event.
+                    if (payload.token) {
+
+                        if (!assistantTextEl) {
+                            removeThinkingMessage();
+                            assistantTextEl = addMessage("", "assistant");
+                        }
+
+                        fullText += payload.token;
+                        assistantTextEl.textContent = fullText;
+
+                        const container = document.getElementById("chatMessages");
+                        container.scrollTop = container.scrollHeight;
+                    }
+                }
+
+                if (streamErrored) {
+                    break;
+                }
+            }
+
+            if (!streamErrored && fullText) {
+                chatHistory.push({
+                    role: "assistant",
+                    content: fullText
+                });
+            } else if (!streamErrored && !fullText) {
+                removeThinkingMessage();
+                addMessage("MIRA could not generate a response.", "assistant");
+            }
+
+        } catch (error) {
+
+            console.error("MIRA chatbot error:", error);
+
+            removeThinkingMessage();
+
+            addMessage(
+                "Unable to connect to MIRA. Please try again.",
+                "assistant"
+            );
+
+        } finally {
+
+            input.disabled = false;
+
+            if (sendButton) {
+                sendButton.disabled = false;
+                sendButton.textContent = "Send";
+            }
+
+            input.focus();
+        }
     }
 
-});
 
+    /*
+     * Clear temporary chat history when leaving the page.
+     */
+    window.addEventListener(
+        "beforeunload",
+        function () {
 
-/* =========================================================
-   ERASE CHAT WHEN PAGE IS CLOSED
-   ========================================================= */
+            chatHistory = [];
 
-window.addEventListener("beforeunload", function() {
-
-    chatHistory = [];
-
-});
-
-
-window.addEventListener("load", function() {
-
-    chatInput.focus();
-
-});
+            sessionStorage.removeItem(
+                "mira_chat_history"
+            );
+        }
+    );
 </script>
 {% endblock %}

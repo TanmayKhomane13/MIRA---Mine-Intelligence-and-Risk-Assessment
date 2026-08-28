@@ -1,6 +1,6 @@
 from flask import (
     Flask, render_template, session, request, redirect, url_for, flash,
-    jsonify, abort, send_from_directory
+    jsonify, abort, send_from_directory,Response, stream_with_context
 )
 from flask_session import Session
 from helper import login_required
@@ -43,6 +43,8 @@ from flask_jwt_extended import (
     set_access_cookies,
     unset_jwt_cookies
 )
+from transformers import TextIteratorStreamer
+from threading import Thread
 
 app = Flask(__name__)
 load_dotenv()
@@ -4829,71 +4831,99 @@ def gis_mines():
             cursor.close()
         conn.close()
 
+
 def generate_response(user_prompt, max_new_tokens=300):
+    """
+    Streaming version of generate_response.
+    Yields decoded text chunks as the model produces them, instead of
+    blocking until generation finishes and returning one string.
+    """
+
+    model_2.eval()
+
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You are MIRA (Mine Intelligence and Risk Assessment), "
+                "an AI-based coal mine inspection and compliance assistant.\n\n"
+
+                "Use ONLY the supplied inspection findings, structured AI "
+                "assessment, risk information, and retrieved regulatory guidance "
+                "to answer the user's question.\n\n"
+
+                "Do not calculate, modify, or override the provided issue, "
+                "category, severity, recurring status, risk level, or risk confidence.\n\n"
+
+                "Do not invent regulations, rule numbers, legal provisions, "
+                "inspection history, or evidence that is not present in the context.\n\n"
+
+                "For compliance-related questions, use ONLY the Retrieved Guidance "
+                "provided in the user prompt.\n\n"
+
+                "Follow the Language and IMPORTANT LANGUAGE INSTRUCTION "
+                "provided in the user prompt exactly."
+            )
+        },
+        {
+            "role": "user",
+            "content": user_prompt
+        }
+    ]
+
+    prompt = tokenizer_2.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=True
+    )
+
+    inputs = tokenizer_2(
+        prompt,
+        return_tensors="pt"
+    )
+
+    if torch.cuda.is_available():
+        try:
+            input_device = model_2.get_input_embeddings().weight.device
+        except Exception:
+            input_device = torch.device("cuda")
+
+        inputs = {
+            key: value.to(input_device)
+            for key, value in inputs.items()
+        }
+
+    streamer = TextIteratorStreamer(
+        tokenizer_2,
+        skip_prompt=True,
+        skip_special_tokens=True
+    )
+
+    generation_kwargs = {
+        **inputs,
+        "streamer": streamer,
+        "max_new_tokens": max_new_tokens,
+        "do_sample": False,
+        "pad_token_id": tokenizer_2.pad_token_id,
+        "eos_token_id": tokenizer_2.eos_token_id
+    }
+
+    thread = Thread(
+        target=model_2.generate,
+        kwargs=generation_kwargs
+    )
+
+    thread.start()
+
+    # This is the key difference from the old generate_response():
+    # each token is yielded to the caller immediately instead of being
+    # appended to a local string and returned only after thread.join().
     try:
-        # Qwen2.5-Instruct chat format
-        messages = [
-            {
-                "role": "system",
-                "content": (
-                    "You are MIRA (Mine Intelligence and Risk Assessment), "
-                    "an AI-based coal mine inspection and compliance assistant. "
-
-                    "Use only the supplied inspection findings, structured AI "
-                    "assessment, risk information, and retrieved regulatory guidance "
-                    "to answer the user's question. "
-
-                    "Do not calculate, modify, or override the provided issue, "
-                    "category, severity, recurring status, risk level, or risk confidence. "
-
-                    "Do not invent regulations, rule numbers, legal provisions, "
-                    "inspection history, or evidence that is not present in the context. "
-
-                    "For compliance-related questions, use only the Retrieved Guidance "
-                    "provided in the user prompt. "
-
-                    "If Language is English, respond in clear professional English. "
-
-                    "If Language is Hindi, understand Romanized Hindi or Hinglish "
-                    "input and respond ONLY in standard Hindi using Devanagari script. "
-                    "Do not respond in Romanized Hindi or English."
-                )
-            },
-            {
-                "role": "user",
-                "content": user_prompt
-            }
-        ]
-
-        # Convert messages to Qwen chat prompt
-        prompt = tokenizer_2.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True
-        )
-
-        # Generate using the existing pipeline
-        result = gen_pipeline(
-            prompt,
-            max_new_tokens=max_new_tokens,
-            do_sample=False,
-            return_full_text=False,
-            pad_token_id=tokenizer_2.eos_token_id
-        )
-
-        if not result:
-            return "MIRA was unable to generate a response."
-
-        response = result[0].get("generated_text", "")
-
-        if not isinstance(response, str):
-            response = str(response)
-
-        return response.strip()
-
-    except Exception:
-        app.logger.exception("GenLLM generation failed")
-        return "Unable to generate a response from MIRA."
+        for new_text in streamer:
+            if new_text:
+                yield new_text
+    finally:
+        thread.join()
 
 def build_genllm_prompt(
     user_query,
@@ -4940,14 +4970,16 @@ Retrieved Guidance:
 def chatbot():
 
     mine_id = request.args.get("mine_id", type=int)
+
     language = request.args.get("language", "English")
+
+    # Only allow these two languages
+    if language not in ["English", "Hindi"]:
+        language = "English"
 
     if not mine_id:
         flash("Mine ID is required.", "danger")
         return redirect(url_for("dashboard"))
-
-    if language not in ["English", "Hindi"]:
-        language = "English"
 
     conn = get_db_connection()
 
@@ -4960,10 +4992,6 @@ def chatbot():
     try:
 
         cursor = conn.cursor(dictionary=True)
-
-        # ---------------------------------------------------------
-        # Get ONLY mine information required by chatbot UI
-        # ---------------------------------------------------------
 
         cursor.execute(
             """
@@ -4989,10 +5017,6 @@ def chatbot():
             flash("Mine not found.", "danger")
             return redirect(url_for("dashboard"))
 
-        # ---------------------------------------------------------
-        # Get latest generated report for this mine
-        # ---------------------------------------------------------
-
         cursor.execute(
             """
             SELECT
@@ -5016,23 +5040,12 @@ def chatbot():
         report = cursor.fetchone()
 
         report_path = None
-        report_no = None
 
         if report:
-
             report_path = (
                 report.get("report_pdf")
                 or report.get("pdf_path")
             )
-
-            report_no = report.get("report_no")
-
-        # ---------------------------------------------------------
-        # Render chatbot
-        # IMPORTANT:
-        # Do NOT pass inspection=...
-        # chatbot.html should use these variables directly.
-        # ---------------------------------------------------------
 
         return render_template(
             "chatbot.html",
@@ -5040,17 +5053,20 @@ def chatbot():
             mine_id=int(mine["id"]),
             mine_name=mine["name"],
             mine_code=mine.get("code"),
-
             operator=mine.get("operator"),
             state=mine.get("state"),
             district=mine.get("district"),
-
             latitude=mine.get("latitude"),
             longitude=mine.get("longitude"),
 
             report_path=report_path,
-            report_no=report_no,
+            report_no=(
+                report.get("report_no")
+                if report
+                else None
+            ),
 
+            # IMPORTANT
             language=language
         )
 
@@ -5073,19 +5089,15 @@ def chatbot():
             cursor.close()
 
         conn.close()
-
+    
 @app.route("/api/mine-chat", methods=["POST"])
 @jwt_required()
 def mine_chat():
 
     claims = get_jwt()
 
-    # ---------------------------------------------------------
-    # ADMIN ONLY
-    # ---------------------------------------------------------
-
+    # Admin-only chatbot
     if claims.get("role") != "admin":
-
         return jsonify({
             "success": False,
             "message": "Administrator access required."
@@ -5094,59 +5106,45 @@ def mine_chat():
     data = request.get_json(silent=True)
 
     if not data:
-
         return jsonify({
             "success": False,
             "message": "JSON body is required."
         }), 400
 
-    # ---------------------------------------------------------
-    # Input
-    # ---------------------------------------------------------
-
     mine_id = data.get("mine_id")
+    language = data.get("language", "English")
     message = data.get("message")
+    history = data.get("history", [])
 
-    language = data.get(
-        "language",
-        "English"
-    )
-
-    history = data.get(
-        "history",
-        []
-    )
+    if language not in ["English", "Hindi"]:
+        language = "English"
 
     if not mine_id:
-
         return jsonify({
             "success": False,
             "message": "mine_id is required."
         }), 400
 
     if not message:
-
         return jsonify({
             "success": False,
             "message": "Message is required."
         }), 400
 
-    if language not in ["English", "Hindi"]:
-
-        return jsonify({
-            "success": False,
-            "message": "Language must be English or Hindi."
-        }), 400
+    # ------------------------------------------------------------
+    # All DB work (mine lookup, findings, risk) happens BEFORE we
+    # open the SSE stream, so we can still return a clean JSON error
+    # if something fails here. Once the stream starts we can only
+    # emit SSE-formatted events.
+    # ------------------------------------------------------------
 
     conn = None
     cursor = None
 
     try:
-
         conn = get_db_connection()
 
         if conn is None:
-
             return jsonify({
                 "success": False,
                 "message": "Database connection failed."
@@ -5154,54 +5152,25 @@ def mine_chat():
 
         cursor = conn.cursor(dictionary=True)
 
-        # =========================================================
-        # 1. GET MINE
-        # =========================================================
-
         cursor.execute(
-            """
-            SELECT
-                id,
-                name,
-                code,
-                operator,
-                state,
-                district,
-                latitude,
-                longitude
-            FROM mines
-            WHERE id = ?
-            LIMIT 1
-            """,
+            "SELECT id, name FROM mines WHERE id = ? LIMIT 1",
             (mine_id,)
         )
 
         mine = cursor.fetchone()
 
         if not mine:
-
             return jsonify({
                 "success": False,
                 "message": "Mine not found."
             }), 404
 
-        # =========================================================
-        # 2. GET LATEST INSPECTION FOR THIS MINE
-        # =========================================================
-
         cursor.execute(
             """
-            SELECT
-                id,
-                report_no,
-                inspection_date,
-                duration,
-                remarks,
-                pdf_path,
-                report_pdf
+            SELECT id
             FROM inspections
             WHERE mine_id = ?
-            ORDER BY inspection_date DESC, id DESC
+            ORDER BY created_at DESC
             LIMIT 1
             """,
             (mine_id,)
@@ -5209,115 +5178,50 @@ def mine_chat():
 
         inspection = cursor.fetchone()
 
-        if not inspection:
-
-            return jsonify({
-                "success": False,
-                "message": "No processed inspection found for this mine."
-            }), 404
-
-        inspection_id = inspection["id"]
-
-        # =========================================================
-        # 3. GET FINDINGS + RISK INFORMATION
-        # =========================================================
-
-        cursor.execute(
-            """
-            SELECT
-                f.id AS finding_id,
-
-                f.issue,
-                f.category,
-                f.severity,
-                f.recurring,
-
-                rs.risk_level,
-                rs.risk_score
-
-            FROM inspection_findings f
-
-            LEFT JOIN risk_scores rs
-                ON rs.inspection_id = f.inspection_id
-
-            WHERE f.inspection_id = ?
-
-            ORDER BY f.id ASC
-            """,
-            (inspection_id,)
-        )
-
-        findings = cursor.fetchall()
-
-        # =========================================================
-        # 4. CONVERT DB RESULTS TO GENLLM FORMAT
-        # =========================================================
-
         risk_results = []
 
-        for finding in findings:
+        if inspection:
 
-            risk_results.append({
+            cursor.execute(
+                """
+                SELECT id, issue, category, severity, recurring
+                FROM inspection_findings
+                WHERE inspection_id = ?
+                ORDER BY id ASC
+                """,
+                (inspection["id"],)
+            )
 
-                "finding_id": str(
-                    finding["finding_id"]
-                ),
+            findings = cursor.fetchall()
 
-                "finding_text": (
-                    finding.get("issue")
-                    or ""
-                ),
+            cursor.execute(
+                """
+                SELECT risk_level, risk_score
+                FROM risk_scores
+                WHERE inspection_id = ?
+                LIMIT 1
+                """,
+                (inspection["id"],)
+            )
 
-                "issue": (
-                    finding.get("issue")
-                    or ""
-                ),
+            risk = cursor.fetchone()
 
-                "category": (
-                    finding.get("category")
-                    or "N/A"
-                ),
+            risk_level = (risk.get("risk_level") if risk else None) or "UNKNOWN"
+            risk_confidence = (risk.get("risk_score") if risk else None) or 0
 
-                "severity": (
-                    finding.get("severity")
-                    or "LOW"
-                ),
+            for finding in findings:
+                risk_results.append({
+                    "finding_id": f"F-{finding['id']}",
+                    "finding_text": finding.get("issue") or "",
+                    "issue": finding.get("issue") or "",
+                    "category": finding.get("category") or "",
+                    "severity": finding.get("severity") or "",
+                    "recurring": finding.get("recurring") or 0,
+                    "risk_level": risk_level,
+                    "risk_confidence": risk_confidence
+                })
 
-                "recurring": bool(
-                    finding.get("recurring")
-                ),
-
-                "risk_level": (
-                    finding.get("risk_level")
-                    or "LOW"
-                ),
-
-                # Your DB risk_scores table contains risk_score.
-                # Your prompt builder calls this risk_confidence.
-                "risk_confidence": float(
-                    finding.get("risk_score") or 0
-                )
-            })
-
-        # =========================================================
-        # 5. RETRIEVED GUIDANCE
-        # =========================================================
-        #
-        # Replace this later with your RAG retrieval function.
-        #
-        # Example:
-        #
-        # retrieved_guidance = retrieve_regulations(message)
-        #
-        # =========================================================
-
-        retrieved_guidance = (
-            "No Retrieved Guidance is available for this question."
-        )
-
-        # =========================================================
-        # 6. BUILD GENLLM PROMPT
-        # =========================================================
+        retrieved_guidance = ""
 
         genllm_prompt = build_genllm_prompt(
             user_query=message,
@@ -5326,140 +5230,60 @@ def mine_chat():
             retrieved_guidance=retrieved_guidance
         )
 
-        # =========================================================
-        # 7. ADD MINE CONTEXT
-        # =========================================================
-        #
-        # We prepend mine information so MIRA knows which mine
-        # the user is asking about.
-        #
-        # =========================================================
-
-        mine_context = f"""
-Mine Information:
-
-Mine ID: {mine["id"]}
-Mine Name: {mine["name"]}
-Mine Code: {mine.get("code") or "N/A"}
-Operator: {mine.get("operator") or "N/A"}
-State: {mine.get("state") or "N/A"}
-District: {mine.get("district") or "N/A"}
-
-Inspection Information:
-
-Inspection ID: {inspection["id"]}
-Report Number: {inspection["report_no"]}
-Inspection Date: {inspection["inspection_date"]}
-Duration: {inspection.get("duration") or "N/A"}
-Remarks: {inspection.get("remarks") or "N/A"}
-
-"""
-
-        genllm_prompt = (
-            mine_context
-            + "\n"
-            + genllm_prompt
+        app.logger.info(
+            "MIRA language=%s mine_id=%s",
+            language,
+            mine_id
         )
-
-        # =========================================================
-        # 8. TEMPORARY CHAT HISTORY
-        # =========================================================
-        #
-        # History exists only for this request/session.
-        # Nothing is stored in the database.
-        #
-        # =========================================================
-
-        if history:
-
-            history_context = "\nPrevious Conversation:\n"
-
-            for item in history[-10:]:
-
-                role = item.get("role", "")
-                content = item.get("content", "")
-
-                if role and content:
-
-                    history_context += (
-                        f"\n{role.upper()}: {content}\n"
-                    )
-
-            genllm_prompt = (
-                mine_context
-                + history_context
-                + "\n"
-                + build_genllm_prompt(
-                    user_query=message,
-                    language=language,
-                    risk_results=risk_results,
-                    retrieved_guidance=retrieved_guidance
-                )
-            )
-
-        # =========================================================
-        # 9. GENERATE RESPONSE
-        # =========================================================
-
-        response = generate_response(
-            genllm_prompt,
-            max_new_tokens=300
-        )
-
-        # =========================================================
-        # 10. RETURN RESPONSE
-        # =========================================================
-
-        return jsonify({
-
-            "success": True,
-
-            "response": response,
-
-            "mine": {
-                "id": int(mine["id"]),
-                "name": mine["name"],
-                "code": mine.get("code")
-            },
-
-            "language": language,
-
-            "report": {
-                "id": int(inspection["id"]),
-                "report_no": inspection["report_no"]
-            }
-
-        })
 
     except mariadb.Error:
-
-        app.logger.exception(
-            "Mine chatbot database error"
-        )
-
+        app.logger.exception("Mine chatbot database error")
         return jsonify({
             "success": False,
             "message": "Database error while processing chatbot request."
         }), 500
 
     except Exception:
-
-        app.logger.exception(
-            "Mine chatbot GenLLM error"
-        )
-
+        app.logger.exception("Mine chatbot setup error")
         return jsonify({
             "success": False,
-            "message": "Unable to generate MIRA response."
+            "message": "Unable to process chatbot request."
         }), 500
 
     finally:
-
         if cursor:
             cursor.close()
-
         if conn:
             conn.close()
 
+    # ------------------------------------------------------------
+    # Now stream the actual generation as Server-Sent Events.
+    # Each token is sent the moment it's produced by the model.
+    # ------------------------------------------------------------
+
+    def event_stream():
+        try:
+            for token in generate_response(genllm_prompt, max_new_tokens=300):
+                payload = json.dumps({"token": token})
+                yield f"data: {payload}\n\n"
+
+            yield f"event: done\ndata: {json.dumps({'language': language})}\n\n"
+
+        except Exception:
+            app.logger.exception("Mine chatbot generation error")
+            error_payload = json.dumps({
+                "message": "Unable to generate a response."
+            })
+            yield f"event: error\ndata: {error_payload}\n\n"
+
+    return Response(
+        stream_with_context(event_stream()),
+        mimetype="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no"
+        }
+    )
+    
 if __name__ == "__main__":
     app.run(debug=True)
