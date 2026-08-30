@@ -50,6 +50,7 @@ from flask_jwt_extended import (
 )
 from transformers import TextIteratorStreamer
 from threading import Thread
+import joblib
 
 app = Flask(__name__)
 load_dotenv()
@@ -87,7 +88,17 @@ jwt = JWTManager(app)
 def get_db_connection():
     try:
         conn = mariadb.connect(**db_config)
+
+        print(
+            "CONNECTED DB:",
+            db_config["host"],
+            db_config["port"],
+            db_config["user"],
+            db_config["database"]
+        )
+
         return conn
+
     except mariadb.Error as e:
         app.logger.error(f"Error connecting to MariaDB: {e}")
         return None
@@ -5339,10 +5350,17 @@ def mine_chat():
             # the RAG query and the LLM context need the real finding text.
             cursor.execute(
                 """
-                SELECT f.id, f.issue, f.category, f.severity, f.recurring,
-                       ft.text AS finding_text
+                SELECT
+                    f.id,
+                    f.finding_code,
+                    f.issue,
+                    f.category,
+                    f.severity,
+                    f.recurring,
+                    ft.text AS finding_text
                 FROM inspection_findings f
-                LEFT JOIN finding_texts ft ON f.id = ft.finding_id
+                LEFT JOIN finding_texts ft
+                    ON ft.finding_id = f.id
                 WHERE f.inspection_id = ?
                 ORDER BY f.id ASC
                 """,
@@ -5379,12 +5397,13 @@ def mine_chat():
                 )
 
                 risk_results.append({
-                    "finding_id": f"F-{finding['id']}",
+                    "finding_id": finding.get("finding_code") or f"F-{finding['id']:02d}",
                     "finding_text": finding_text,
                     "issue": finding.get("issue") or "",
                     "category": finding.get("category") or "",
                     "severity": finding.get("severity") or "",
                     "recurring": finding.get("recurring") or 0,
+
                     "risk_level": risk_level,
                     "risk_confidence": inspection_risk_score
                 })

@@ -241,8 +241,6 @@ model_2 = PeftModel.from_pretrained(
 # --------------------------------------------
 
 model_2 = model_2.to(device_2)
-    LORA_PATH_2
-)
 
 model_2.eval()
 
@@ -263,8 +261,8 @@ gen_pipeline = pipeline(
 # RISK ENGINE
 # ============================================================
 
-RISK_MODEL_PATH = "./models/mira-risk-classifier.pkl"
-RISK_ENCODER_PATH = "./models/mira-risk-encoder.pkl"
+RISK_MODEL_PATH = "./models/mira_risk_engine/mira-risk-classifier.pkl"
+RISK_ENCODER_PATH = "./models/mira_risk_engine/mira-risk-encoder.pkl"
 
 risk_model = joblib.load(RISK_MODEL_PATH)
 risk_encoder = joblib.load(RISK_ENCODER_PATH)
@@ -281,11 +279,11 @@ risk_encoder = joblib.load(RISK_ENCODER_PATH)
 
 RAG_CHUNKS_PATH = os.getenv(
     "RAG_CHUNKS_PATH",
-    "./models/mira-rag/regulatory_chunks.pkl"
+    "./data/Encodings/regulatory_chunks.pkl"
 )
 RAG_INDEX_PATH = os.getenv(
     "RAG_INDEX_PATH",
-    "./models/mira-rag/regulatory.index"
+    "./data/Encodings/regulatory.index"
 )
 QUESTION_ENCODER_MODEL = "facebook/dpr-question_encoder-single-nq-base"
 

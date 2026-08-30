@@ -12,7 +12,6 @@ Ask MIRA
 
 <div class="max-w-5xl mx-auto space-y-6">
 
-```
 <!-- Mine Context -->
 <div class="bg-white border border-brand-border rounded-xl p-5 shadow-sm">
     <div class="flex items-center justify-between gap-4">
@@ -234,9 +233,15 @@ Ask MIRA
 
         } else {
 
-            wrapper.className = "flex justify-start";
+            wrapper.className = "flex justify-start items-start gap-2";
 
             wrapper.innerHTML = `
+                <img
+                    src="{{ url_for('static', filename='images/logo.png') }}"
+                    alt="MIRA"
+                    class="h-7 w-7 object-contain mt-1 flex-shrink-0"
+                >
+
                 <div class="bg-gray-100 rounded-lg px-4 py-3 max-w-3xl">
                     <p class="text-sm text-gray-700 whitespace-pre-wrap"></p>
                 </div>
@@ -265,9 +270,15 @@ Ask MIRA
 
         wrapper.id = "thinkingMessage";
 
-        wrapper.className = "flex justify-start";
+        wrapper.className = "flex justify-start items-start gap-2";
 
         wrapper.innerHTML = `
+            <img
+                src="{{ url_for('static', filename='images/logo.png') }}"
+                alt="MIRA"
+                class="h-7 w-7 object-contain mt-1 flex-shrink-0"
+            >
+
             <div class="bg-gray-100 rounded-lg px-4 py-3 max-w-3xl">
                 <p class="text-sm text-gray-500">
                     MIRA is thinking...
