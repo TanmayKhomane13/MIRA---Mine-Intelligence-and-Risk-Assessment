@@ -387,50 +387,9 @@ Uses retrieved regulatory guidance as context for AI-generated responses.
 
 # 🏗️ System Architecture
 
-```text
-                         ┌─────────────────────┐
-                         │     Web Dashboard   │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │      Flask API      │
-                         └──────────┬──────────┘
-                                    │
-             ┌──────────────────────┼──────────────────────┐
-             │                      │                      │
-             ▼                      ▼                      ▼
-      ┌─────────────┐        ┌─────────────┐        ┌─────────────┐
-      │ Compliance  │        │ Inspection  │        │ Operations  │
-      │   Database  │        │   Database  │        │   Database  │
-      └─────────────┘        └─────────────┘        └─────────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │  AI Intelligence   │
-                         └──────────┬──────────┘
-                                    │
-            ┌───────────────────────┼────────────────────────┐
-            │                       │                        │
-            ▼                       ▼                        ▼
-     ┌──────────────┐       ┌──────────────┐        ┌──────────────┐
-     │  DistilBERT  │       │ Risk Engine  │        │     RAG      │
-     │ Classification│       │  Logistic    │        │ DPR + FAISS  │
-     │              │       │ Regression   │        │              │
-     └──────────────┘       └──────────────┘        └──────┬───────┘
-                                                           │
-                                                           ▼
-                                                   ┌──────────────┐
-                                                   │ Qwen2.5-3B   │
-                                                   │  GenLLM      │
-                                                   └──────┬───────┘
-                                                          │
-                                                          ▼
-                                                   ┌──────────────┐
-                                                   │ AI Compliance│
-                                                   │   Response   │
-                                                   └──────────────┘
-```
+<p align="center">
+  <img src="docs/Sys_arch.jpg" alt="MIRA System Architecture" width="100%">
+</p>
 
 ---
 
